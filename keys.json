@@ -88,15 +88,6 @@
   ],
   "archived": [
     {
-      "user": "Misshannixa",
-      "expires": 1791247112,
-      "note": "",
-      "active": false,
-      "hash": "381ff81a3721591fb7336cf53291c851e7232bec868767a7eb41e0be1d1b029a",
-      "archivedAt": 1791288158,
-      "archivedReason": "expirada"
-    },
-    {
       "hash": "884ec79bfb72c223843cda5ff75e1e1e04e69fddf7c60e4ea8d963aa2eae941c",
       "user": "avx_077",
       "expires": 1791464074,
