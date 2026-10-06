@@ -30,13 +30,6 @@
       "hash": "4b51838fbb9c994b402eb5ca868c9dbdd93da5f2b9f7d83058b9f99a378d5255"
     },
     {
-      "user": "Cristian_a47",
-      "expires": 1791427828,
-      "note": "",
-      "active": false,
-      "hash": "2580a497d77b449fc6fd753235396806ed3eb3654b786318774504b8f0974b98"
-    },
-    {
       "hash": "d08f28f53eb13d53cd0bad9fe4995777fa729df5db88b750d1f7415140178b87",
       "user": "Misshannixa",
       "expires": 1791460957,
@@ -81,5 +74,15 @@
       "active": true
     }
   ],
-  "archived": []
+  "archived": [
+    {
+      "user": "Cristian_a47",
+      "expires": 1791427828,
+      "note": "",
+      "active": false,
+      "hash": "2580a497d77b449fc6fd753235396806ed3eb3654b786318774504b8f0974b98",
+      "archivedAt": 1791299405,
+      "archivedReason": "revocada"
+    }
+  ]
 }
