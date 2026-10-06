@@ -108,6 +108,15 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "9356c45d77a7b91307da82f65235764b99078486fad690ef3ea57633c832110b",
+      "user": "vicenteromero13",
+      "expires": 1794524794,
+      "duration": 2592000,
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": []
