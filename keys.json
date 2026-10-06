@@ -2,13 +2,6 @@
   "version": 3,
   "keys": [
     {
-      "user": "josepromanolo",
-      "expires": 1791248460,
-      "note": "",
-      "active": false,
-      "hash": "f24f740851452f711769d91cfeaa68ae4359f53938e59d90fab0dfcfd58ae4bb"
-    },
-    {
       "user": "Jxsderlis",
       "expires": 1791418756,
       "note": "",
@@ -86,5 +79,15 @@
       "active": true
     }
   ],
-  "archived": []
+  "archived": [
+    {
+      "user": "josepromanolo",
+      "expires": 1791248460,
+      "note": "",
+      "active": false,
+      "hash": "f24f740851452f711769d91cfeaa68ae4359f53938e59d90fab0dfcfd58ae4bb",
+      "archivedAt": 1791294797,
+      "archivedReason": "revocada"
+    }
+  ]
 }
