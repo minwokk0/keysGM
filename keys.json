@@ -79,11 +79,11 @@
       "active": true
     },
     {
-      "hash": "884ec79bfb72c223843cda5ff75e1e1e04e69fddf7c60e4ea8d963aa2eae941c",
+      "hash": "c73329507a00d1dafeb60f99c865874797e0f2f0756aa97488dc2cfb87964e2b",
       "user": "avx_077",
-      "expires": 1791464074,
+      "expires": 1791464105,
       "note": "",
-      "active": false
+      "active": true
     }
   ],
   "archived": [
@@ -112,6 +112,15 @@
       "active": false,
       "hash": "a08725cd1b940abf9a50541e7ddd5f433e10837ba316efc9a87098c65ac67851",
       "archivedAt": 1791288266,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "884ec79bfb72c223843cda5ff75e1e1e04e69fddf7c60e4ea8d963aa2eae941c",
+      "user": "avx_077",
+      "expires": 1791464074,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791291306,
       "archivedReason": "revocada"
     }
   ]
