@@ -79,15 +79,5 @@
       "active": true
     }
   ],
-  "archived": [
-    {
-      "user": "josepromanolo",
-      "expires": 1791248460,
-      "note": "",
-      "active": false,
-      "hash": "f24f740851452f711769d91cfeaa68ae4359f53938e59d90fab0dfcfd58ae4bb",
-      "archivedAt": 1791294797,
-      "archivedReason": "revocada"
-    }
-  ]
+  "archived": []
 }
