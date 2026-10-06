@@ -1,75 +1,75 @@
 {
-  "version": 2,
+  "version": 3,
   "keys": [
     {
-      "key": "GM-AKWU-QRH9-9T8D-FWJP",
       "user": "Misshannixa",
       "expires": 1791247112,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "381ff81a3721591fb7336cf53291c851e7232bec868767a7eb41e0be1d1b029a"
     },
     {
-      "key": "GM-L8C7-JYJU-R93A-QDQZ",
       "user": "josepromanolo",
       "expires": 1791248460,
       "note": "",
-      "active": false
+      "active": false,
+      "hash": "f24f740851452f711769d91cfeaa68ae4359f53938e59d90fab0dfcfd58ae4bb"
     },
     {
-      "key": "GM-UQPD-K4QN-N55R-QVT6",
       "user": "Jxsderlis",
       "expires": 1791418756,
       "note": "",
-      "active": false
+      "active": false,
+      "hash": "a2dc09debc0b110e679f73990d80c5b7fdbb214d6f178a5ef36bf688d5e7dafb"
     },
     {
-      "key": "GM-HU46-GX4P-AF94-6TDX",
       "user": "jxsderlis",
       "expires": 1791419217,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "c006ca4e4de7debee3b33276dcd74aa92a63ddf177279d5eb875f5f99d7bb649"
     },
     {
-      "key": "GM-UUF2-U5KM-WS7K-CBXU",
       "user": "jisusxdpera",
       "expires": 1791420529,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "fb59a3ab6d393835e64c3cc5bcd6d2e6197bd6d4688050c9b9b7f60f05908b56"
     },
     {
-      "key": "GM-L8UP-N757-NCYL-FZNU",
       "user": "ColinAnnDonna",
       "expires": 1791425200,
       "note": "",
-      "active": false
+      "active": false,
+      "hash": "92db4087a4c7a2b352edaae06b6ad745c762fef708032c5b544ce39a473fecb9"
     },
     {
-      "key": "GM-DQL9-THN5-85F4-XEPM",
       "user": "Cristian_a47",
       "expires": 1791426285,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "4340e471a538074902a06fd60d3705fdac65003b3d07eca9dbf2755d3039bb93"
     },
     {
-      "key": "GM-WEJY-K2YZ-DQAW-V3KW",
       "user": "lyrvec",
       "expires": 1791427460,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "4b51838fbb9c994b402eb5ca868c9dbdd93da5f2b9f7d83058b9f99a378d5255"
     },
     {
-      "key": "GM-VPXS-LB4Z-4YCX-WZ7U",
       "user": "ColinAnnDonna",
       "expires": 1791427670,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "a08725cd1b940abf9a50541e7ddd5f433e10837ba316efc9a87098c65ac67851"
     },
     {
-      "key": "GM-23WF-R258-LRQA-ZAXY",
       "user": "Cristian_a47",
       "expires": 1791427828,
       "note": "",
-      "active": true
+      "active": true,
+      "hash": "2580a497d77b449fc6fd753235396806ed3eb3654b786318774504b8f0974b98"
     }
   ]
 }
