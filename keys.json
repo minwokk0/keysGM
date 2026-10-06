@@ -72,6 +72,15 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "ceb0e592cdda67b5a4c295c4a88c3df5222dca59b320027c8388b00f8f955e72",
+      "user": "Cristian_a47",
+      "expires": 1792077041,
+      "duration": 172800,
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": []
