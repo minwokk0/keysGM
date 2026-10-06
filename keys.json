@@ -90,6 +90,15 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "5b6dc88909d6b9bef58ad70aff2c6f77354deb30ea5eeff6fa47e4ea9eebe8f1",
+      "user": "jxsderlis",
+      "expires": 1794517231,
+      "duration": 2592000,
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": []
