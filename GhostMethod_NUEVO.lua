@@ -1,4 +1,4 @@
-local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font
+local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font local XU=Enum.UserInputType local XK=Enum.KeyCode local XR=Enum.SortOrder local XA=Enum.AutomaticSize local XC=Enum.CoreGuiType
 local GM_ENV=(type(getgenv)=="\102\117\110\099\116\105\111\110") and getgenv() or _G
 if GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"] or GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069\068"] then
 if GM_ENV["\071\077\095\070\079\082\067\069"] then
@@ -374,7 +374,7 @@ scroll.BackgroundTransparency=1
 scroll.BorderSizePixel=0
 scroll.Size=UDim2.fromScale(1,1)
 scroll.CanvasSize=U2(0,0,0,0)
-scroll.AutomaticCanvasSize=Enum.AutomaticSize.Y
+scroll.AutomaticCanvasSize=XA.Y
 scroll.ScrollBarThickness=5
 scroll.ScrollBarImageColor3=CR(170,170,170)
 scroll.ScrollBarImageTransparency=0.5
@@ -390,7 +390,7 @@ pad.PaddingRight=UD(0,10)
 pad.Parent=scroll
 local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 lay.Padding=UD(0,12)
-lay.SortOrder=Enum.SortOrder.LayoutOrder
+lay.SortOrder=XR.LayoutOrder
 lay.Parent=scroll
 scroll.Parent=content
 pages[pageOrder]=scroll
@@ -551,7 +551,7 @@ navHolder.ZIndex=4
 navHolder.Parent=sidebar
 local navLayout=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 navLayout.Padding=UD(0,6)
-navLayout.SortOrder=Enum.SortOrder.LayoutOrder
+navLayout.SortOrder=XR.LayoutOrder
 navLayout.Parent=navHolder
 local profile=IN("\070\114\097\109\101")
 profile.Name="\080\114\111\102\105\108\101"
@@ -723,7 +723,7 @@ pmPad.PaddingRight=UD(0,4)
 pmPad.Parent=photoMenu
 local pmLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 pmLay.Padding=UD(0,2)
-pmLay.SortOrder=Enum.SortOrder.LayoutOrder
+pmLay.SortOrder=XR.LayoutOrder
 pmLay.Parent=photoMenu
 photoMenu.Parent=popLayer
 local menuEntry={}
@@ -1238,7 +1238,7 @@ card.BackgroundColor3=C_CARD
 card.BackgroundTransparency=0.04
 card.BorderSizePixel=0
 card.Size=U2(1,0,0,0)
-card.AutomaticSize=Enum.AutomaticSize.Y
+card.AutomaticSize=XA.Y
 card.LayoutOrder=nextRow()
 card.ZIndex=3
 local cc=IN("\085\073\067\111\114\110\101\114")
@@ -1252,7 +1252,7 @@ pad.PaddingBottom=UD(0,14)
 pad.Parent=card
 local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 lay.Padding=UD(0,CARD_GAP)
-lay.SortOrder=Enum.SortOrder.LayoutOrder
+lay.SortOrder=XR.LayoutOrder
 lay.Parent=card
 local head=IN("\070\114\097\109\101")
 head.BackgroundTransparency=1
@@ -1291,13 +1291,13 @@ local grid=IN("\070\114\097\109\101")
 grid.Name="\071\114\105\100"
 grid.BackgroundTransparency=1
 grid.Size=U2(1,0,0,0)
-grid.AutomaticSize=Enum.AutomaticSize.Y
+grid.AutomaticSize=XA.Y
 grid.LayoutOrder=nextRow()
 grid.ZIndex=3
 local gl=IN("\085\073\071\114\105\100\076\097\121\111\117\116")
 gl.CellSize=U2(0.5,-12,0,TOGGLE_ROW_H)
 gl.CellPadding=U2(0,24,0,GRID_PAD_Y)
-gl.SortOrder=Enum.SortOrder.LayoutOrder
+gl.SortOrder=XR.LayoutOrder
 gl.Parent=grid
 grid.Parent=card
 return grid
@@ -1530,8 +1530,8 @@ hit.Active=true
 hit.ZIndex=7
 hit.Parent=row
 local function beginDrag(input)
-if input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.Touch then
+if input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.Touch then
 dragging=true
 fromAbsX(input.Position.X)
 end
@@ -1545,14 +1545,14 @@ if not main.Visible or root.Parent==nil then
 dragging=false
 return
 end
-if input.UserInputType==Enum.UserInputType.MouseMovement
-or input.UserInputType==Enum.UserInputType.Touch then
+if input.UserInputType==XU.MouseMovement
+or input.UserInputType==XU.Touch then
 fromAbsX(input.Position.X)
 end
 end))
 bindConn(UserInputService.InputEnded:Connect(function(input)
-if input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.Touch then
+if input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.Touch then
 dragging=false
 end
 end))
@@ -1643,7 +1643,7 @@ gPad.PaddingRight=UD(0,4)
 gPad.Parent=popup
 local gLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 gLay.Padding=UD(0,POPUP_OPT_GAP)
-gLay.SortOrder=Enum.SortOrder.LayoutOrder
+gLay.SortOrder=XR.LayoutOrder
 gLay.Parent=popup
 popup.Parent=popLayer
 local catcher=IN("\084\101\120\116\066\117\116\116\111\110")
@@ -1834,19 +1834,19 @@ pill.Text="\046\046\046"
 pill.TextColor3=C_DIM
 listenConn=UserInputService.InputBegan:Connect(function(input)
 local name=nil
-if input.UserInputType==Enum.UserInputType.Keyboard then
-if input.KeyCode~=Enum.KeyCode.Unknown and input.KeyCode~=Enum.KeyCode.Escape then
+if input.UserInputType==XU.Keyboard then
+if input.KeyCode~=XK.Unknown and input.KeyCode~=XK.Escape then
 name=input.KeyCode.Name
 end
-elseif input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.MouseButton2
-or input.UserInputType==Enum.UserInputType.MouseButton3
-or input.UserInputType==Enum.UserInputType.MouseButton4
-or input.UserInputType==Enum.UserInputType.MouseButton5 then
+elseif input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.MouseButton2
+or input.UserInputType==XU.MouseButton3
+or input.UserInputType==XU.MouseButton4
+or input.UserInputType==XU.MouseButton5 then
 name=input.UserInputType.Name
 end
 if name==nil then
-if input.KeyCode==Enum.KeyCode.Escape then
+if input.KeyCode==XK.Escape then
 capturing=false
 if listenConn then
 listenConn:Disconnect()
@@ -1969,7 +1969,7 @@ local function mkHint(parent,text)
 local h=IN("\084\101\120\116\076\097\098\101\108")
 h.BackgroundTransparency=1
 h.Size=U2(1,0,0,0)
-h.AutomaticSize=Enum.AutomaticSize.Y
+h.AutomaticSize=XA.Y
 h.LayoutOrder=nextRow()
 h.Font=WIN_FONT
 h.TextSize=10
@@ -1988,12 +1988,12 @@ local holder=IN("\070\114\097\109\101")
 holder.Name="\076\105\115\116\072\111\108\100\101\114"
 holder.BackgroundTransparency=1
 holder.Size=U2(1,0,0,0)
-holder.AutomaticSize=Enum.AutomaticSize.Y
+holder.AutomaticSize=XA.Y
 holder.LayoutOrder=nextRow()
 holder.ZIndex=3
 local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 lay.Padding=UD(0,4)
-lay.SortOrder=Enum.SortOrder.LayoutOrder
+lay.SortOrder=XR.LayoutOrder
 lay.Parent=holder
 holder.Parent=parent
 return holder
@@ -2089,8 +2089,8 @@ local uiDragging=false
 local uiDragStart=nil
 local uiStartDx,uiStartDy=0,0
 local function uiHandleDown(input)
-if input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.Touch
+if input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.Touch
 then
 uiDragging=true
 uiDragStart=input.Position
@@ -2099,8 +2099,8 @@ uiStartDy=uiDy
 end
 end
 local function uiHandleUp(input)
-if input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.Touch
+if input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.Touch
 then
 if uiDragging then
 uiDragging=false
@@ -2116,8 +2116,8 @@ bindConn(UserInputService.InputChanged:Connect(function(input)
 if not uiDragging then
 return
 end
-if input.UserInputType==Enum.UserInputType.MouseMovement
-or input.UserInputType==Enum.UserInputType.Touch
+if input.UserInputType==XU.MouseMovement
+or input.UserInputType==XU.Touch
 then
 local delta=input.Position - uiDragStart
 local cam=Workspace.CurrentCamera
@@ -2209,7 +2209,7 @@ gPad.Parent=popup
 local gLay=IN("\085\073\071\114\105\100\076\097\121\111\117\116")
 gLay.CellSize=UDim2.fromOffset(24,24)
 gLay.CellPadding=UDim2.fromOffset(4,4)
-gLay.SortOrder=Enum.SortOrder.LayoutOrder
+gLay.SortOrder=XR.LayoutOrder
 gLay.Parent=popup
 popup.Parent=popLayer
 local entry={}
@@ -2380,12 +2380,12 @@ customRow=IN("\070\114\097\109\101")
 customRow.Name="\067\117\115\116\111\109\067\111\108\111\114\115"
 customRow.BackgroundTransparency=1
 customRow.Size=U2(1,0,0,0)
-customRow.AutomaticSize=Enum.AutomaticSize.Y
+customRow.AutomaticSize=XA.Y
 customRow.LayoutOrder=nextRow()
 customRow.ZIndex=3
 local cLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 cLay.Padding=UD(0,CARD_GAP)
-cLay.SortOrder=Enum.SortOrder.LayoutOrder
+cLay.SortOrder=XR.LayoutOrder
 cLay.Parent=customRow
 customRow.Parent=cardS
 customRow.Visible=ctx.getKeyColor()=="\080\101\114\115\111\110\097\108\105\122\097\100\111"
@@ -2544,7 +2544,7 @@ onClick=ctx.toggleScreenshot,
 local shotHint=IN("\084\101\120\116\076\097\098\101\108")
 shotHint.BackgroundTransparency=1
 shotHint.Size=U2(1,0,0,0)
-shotHint.AutomaticSize=Enum.AutomaticSize.Y
+shotHint.AutomaticSize=XA.Y
 shotHint.LayoutOrder=nextRow()
 shotHint.Font=WIN_FONT
 shotHint.TextSize=10
@@ -2645,7 +2645,7 @@ onClick=ctx.centerCrosshair,
 local chHint=IN("\084\101\120\116\076\097\098\101\108")
 chHint.BackgroundTransparency=1
 chHint.Size=U2(1,0,0,0)
-chHint.AutomaticSize=Enum.AutomaticSize.Y
+chHint.AutomaticSize=XA.Y
 chHint.LayoutOrder=nextRow()
 chHint.Font=WIN_FONT
 chHint.TextSize=10
@@ -2723,7 +2723,7 @@ onChange=ctx.setEvadeFontLabel,
 local fontHint=IN("\084\101\120\116\076\097\098\101\108")
 fontHint.BackgroundTransparency=1
 fontHint.Size=U2(1,0,0,0)
-fontHint.AutomaticSize=Enum.AutomaticSize.Y
+fontHint.AutomaticSize=XA.Y
 fontHint.LayoutOrder=nextRow()
 fontHint.Font=WIN_FONT
 fontHint.TextSize=10
@@ -3193,7 +3193,7 @@ onChange=ctx.setLanguage,
 local langHint=IN("\084\101\120\116\076\097\098\101\108")
 langHint.BackgroundTransparency=1
 langHint.Size=U2(1,0,0,0)
-langHint.AutomaticSize=Enum.AutomaticSize.Y
+langHint.AutomaticSize=XA.Y
 langHint.LayoutOrder=nextRow()
 langHint.Font=WIN_FONT
 langHint.TextSize=10
@@ -3217,7 +3217,7 @@ onChange=ctx.setSoundsOn,
 local sndHint=IN("\084\101\120\116\076\097\098\101\108")
 sndHint.BackgroundTransparency=1
 sndHint.Size=U2(1,0,0,0)
-sndHint.AutomaticSize=Enum.AutomaticSize.Y
+sndHint.AutomaticSize=XA.Y
 sndHint.LayoutOrder=nextRow()
 sndHint.Font=WIN_FONT
 sndHint.TextSize=10
@@ -3261,7 +3261,7 @@ end,
 local presHint=IN("\084\101\120\116\076\097\098\101\108")
 presHint.BackgroundTransparency=1
 presHint.Size=U2(1,0,0,0)
-presHint.AutomaticSize=Enum.AutomaticSize.Y
+presHint.AutomaticSize=XA.Y
 presHint.LayoutOrder=nextRow()
 presHint.Font=WIN_FONT
 presHint.TextSize=10
@@ -3315,7 +3315,7 @@ UserInputService.MouseIconEnabled=mouseIconWasEnabled
 end)
 end))
 bindConn(UserInputService.InputBegan:Connect(function(input)
-if input.UserInputType~=Enum.UserInputType.MouseButton2 then
+if input.UserInputType~=XU.MouseButton2 then
 return
 end
 if menuOpen then
@@ -3323,7 +3323,7 @@ modalBtn.Visible=false
 end
 end))
 bindConn(UserInputService.InputEnded:Connect(function(input)
-if input.UserInputType~=Enum.UserInputType.MouseButton2 then
+if input.UserInputType~=XU.MouseButton2 then
 return
 end
 if menuOpen then
@@ -3360,7 +3360,7 @@ bindConn(UserInputService.InputBegan:Connect(function(input)
 if root.Parent==nil then
 return
 end
-if input.KeyCode~=Enum.KeyCode.X then
+if input.KeyCode~=XK.X then
 return
 end
 if capturing or UserInputService:GetFocusedTextBox()~=nil then
@@ -3617,38 +3617,38 @@ return gap,gridW,gridH,padTop,panelW,panelH
 end
 local Rows={
 {
-{"\084\097\098",1.5,Enum.KeyCode.Tab},
-{"\081",1,Enum.KeyCode.Q},
-{"\087",1,Enum.KeyCode.W},
-{"\069",1,Enum.KeyCode.E},
-{"\082",1,Enum.KeyCode.R},
-{"\084",1,Enum.KeyCode.T},
+{"\084\097\098",1.5,XK.Tab},
+{"\081",1,XK.Q},
+{"\087",1,XK.W},
+{"\069",1,XK.E},
+{"\082",1,XK.R},
+{"\084",1,XK.T},
 },
 {
-{"\067\097\112\115\076\111\099\107",1.75,Enum.KeyCode.CapsLock},
-{"\065",1,Enum.KeyCode.A},
-{"\083",1,Enum.KeyCode.S},
-{"\068",1,Enum.KeyCode.D},
-{"\070",1,Enum.KeyCode.F},
-{"\071",1,Enum.KeyCode.G},
+{"\067\097\112\115\076\111\099\107",1.75,XK.CapsLock},
+{"\065",1,XK.A},
+{"\083",1,XK.S},
+{"\068",1,XK.D},
+{"\070",1,XK.F},
+{"\071",1,XK.G},
 },
 {
-{"\083\104\105\102\116",2.25,Enum.KeyCode.LeftShift},
-{"\090",1,Enum.KeyCode.Z},
-{"\088",1,Enum.KeyCode.X},
-{"\067",1,Enum.KeyCode.C},
-{"\086",1,Enum.KeyCode.V},
+{"\083\104\105\102\116",2.25,XK.LeftShift},
+{"\090",1,XK.Z},
+{"\088",1,XK.X},
+{"\067",1,XK.C},
+{"\086",1,XK.V},
 },
 {
-{"\067\116\114\108",1.25,Enum.KeyCode.LeftControl},
-{"\065\108\116",1.25,Enum.KeyCode.LeftAlt},
-{"\083\112\097\099\101",4,Enum.KeyCode.Space},
+{"\067\116\114\108",1.25,XK.LeftControl},
+{"\065\108\116",1.25,XK.LeftAlt},
+{"\083\112\097\099\101",4,XK.Space},
 },
 }
 local AlternateCodes={
-[Enum.KeyCode.LeftShift]=Enum.KeyCode.RightShift,
-[Enum.KeyCode.LeftControl]=Enum.KeyCode.RightControl,
-[Enum.KeyCode.LeftAlt]=Enum.KeyCode.RightAlt,
+[XK.LeftShift]=XK.RightShift,
+[XK.LeftControl]=XK.RightControl,
+[XK.LeftAlt]=XK.RightAlt,
 }
 local Keys
 local overlayGui,overlayRoot,scaleObj,overlayPanel
@@ -3829,8 +3829,8 @@ local dragging=false
 local dragStart,startPos
 local endConn
 Keys.Scope:Connect(handleGui.InputBegan,function(input)
-if input.UserInputType==Enum.UserInputType.MouseButton1
-or input.UserInputType==Enum.UserInputType.Touch
+if input.UserInputType==XU.MouseButton1
+or input.UserInputType==XU.Touch
 then
 dragging=true
 dragStart=input.Position
@@ -3856,8 +3856,8 @@ Keys.Scope:Connect(UserInputService.InputChanged,function(input)
 if not dragging or not overlayRoot or not startPos then
 return
 end
-if input.UserInputType==Enum.UserInputType.MouseMovement
-or input.UserInputType==Enum.UserInputType.Touch
+if input.UserInputType==XU.MouseMovement
+or input.UserInputType==XU.Touch
 then
 local delta=input.Position - dragStart
 KS.pos=U2(
@@ -4054,12 +4054,12 @@ end
 Keys.enabled=true
 buildOverlay(hidden)
 Keys.Scope:Connect(UserInputService.InputBegan,function(input)
-if input.UserInputType==Enum.UserInputType.Keyboard then
+if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,true)
 end
 end)
 Keys.Scope:Connect(UserInputService.InputEnded,function(input)
-if input.UserInputType==Enum.UserInputType.Keyboard then
+if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,false)
 end
 end)
@@ -4281,8 +4281,8 @@ bs.Parent=btn
 btn.Parent=gui
 btns[def.key]=btn
 btn.InputBegan:Connect(function(input)
-if input.UserInputType~=Enum.UserInputType.MouseButton1
-and input.UserInputType~=Enum.UserInputType.Touch then
+if input.UserInputType~=XU.MouseButton1
+and input.UserInputType~=XU.Touch then
 return
 end
 local cfg=env.getHudCfg()
@@ -4304,8 +4304,8 @@ paintBtn(def.key,true)
 end
 end)
 btn.InputEnded:Connect(function(input)
-if input.UserInputType~=Enum.UserInputType.MouseButton1
-and input.UserInputType~=Enum.UserInputType.Touch then
+if input.UserInputType~=XU.MouseButton1
+and input.UserInputType~=XU.Touch then
 return
 end
 if drags[def.key] then
@@ -4322,8 +4322,8 @@ end
 end)
 end
 HUD.Scope:Connect(UserInputService.InputChanged,function(input)
-if input.UserInputType~=Enum.UserInputType.MouseMovement
-and input.UserInputType~=Enum.UserInputType.Touch then
+if input.UserInputType~=XU.MouseMovement
+and input.UserInputType~=XU.Touch then
 return
 end
 for _,def in ipairs(DEFS) do
@@ -5362,6 +5362,7 @@ out[i]=string.format("\037\048\056\120",h[i])
 end
 return table.concat(out)
 end
+local zzV7=""
 local zzV4="\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\109\105\110\119\111\107\107\048\047\107\101\121\115\071\077\047\109\097\105\110\047\107\101\121\115\046\106\115\111\110"
 local zzV3={Minwo=true,Misshannixa=true}
 local zzV2
@@ -5412,16 +5413,75 @@ if eh==suppliedHash then
 if entry.active==false then
 return false,"\107\101\121\032\100\101\115\097\099\116\105\118\097\100\097"
 end
-local exp=tonumber(entry.expires)
-if not exp or exp<=0 then
+local hardExp=tonumber(entry.expires)
+if not hardExp or hardExp<=0 then
 return false,"\107\101\121\032\115\105\110\032\101\120\112\105\114\097\099\105\111\110"
 end
-if os.time()>exp then
+if os.time()>hardExp then
 return false,"\107\101\121\032\101\120\112\105\114\097\100\097"
 end
 local bound=entry.user
 if type(bound)=="\115\116\114\105\110\103" and #bound>0 and bound~=LocalPlayer.Name then
 return false,"\107\101\121\032\110\111\032\101\115\032\112\097\114\097\032\101\115\116\097\032\099\117\101\110\116\097"
+end
+local exp=hardExp
+local dur=tonumber(entry.duration)
+if dur and dur>0 then
+local hprefix=string.sub(eh,1,12)
+local actA=nil
+if zzV1["\097\099\116\071\101\116"] then
+actA=tonumber(zzV1["\097\099\116\071\101\116"](hprefix))
+end
+local actB=nil
+pcall(function()
+local fn="\071\077\095"..hprefix.."\046\100\097\116"
+if isfile and readfile and isfile(fn) then
+actB=tonumber(string.match(readfile(fn),"\094\037\100\043"))
+end
+end)
+local act=actA or actB
+if actA and actB and actB<actA then
+act=actB
+end
+if not act then
+act=os.time()
+pcall(function()
+if writefile then
+writefile("\071\077\095"..hprefix.."\046\100\097\116",
+tostring(act).."\124"..tostring(zzV5(act,dur,hprefix)))
+end
+end)
+if zzV1["\097\099\116\083\097\118\101"] then
+zzV1["\097\099\116\083\097\118\101"](hprefix,act)
+end
+pcall(function()
+if #zzV7>0 and type(request)=="\102\117\110\099\116\105\111\110" then
+request({
+Url=zzV7,
+Method="\080\079\083\084",
+Headers={["\067\111\110\116\101\110\116\045\084\121\112\101"]="\097\112\112\108\105\099\097\116\105\111\110\047\106\115\111\110"},
+Body=game:GetService("\072\116\116\112\083\101\114\118\105\099\101"):JSONEncode({
+content="\075\101\121\032"..hprefix.."\032\040"..tostring(bound)
+.."\041\032\097\099\116\105\118\097\100\097\032\060\116\058"..tostring(act).."\058\082\062",
+}),
+})
+end
+end)
+end
+local realExp=act+dur
+if os.time()>realExp then
+return false,"\107\101\121\032\101\120\112\105\114\097\100\097"
+end
+exp=realExp
+end
+local left=exp - os.time()
+if left>0 then
+local ld=math.floor(left/86400)
+local lh=math.floor((left%86400)/3600)
+local lm=math.floor((left%3600)/60)
+zzV1["\107\101\121\076\101\102\116\083\116\114"]=tostring(ld).."\100\032"
+..string.format("\037\048\050\100",lh).."\104\032"
+..string.format("\037\048\050\100",lm).."\109"
 end
 zzV1["\097\099\099\101\115\115\068\097\116\097"]={expires=exp,user=bound,key=supplied}
 zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=zzV5(exp,bound,supplied)
@@ -5707,7 +5767,7 @@ toastList.BackgroundTransparency=1
 toastList.Parent=toastGui
 local tLayout=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 tLayout.Padding=UD(0,8)
-tLayout.SortOrder=Enum.SortOrder.LayoutOrder
+tLayout.SortOrder=XR.LayoutOrder
 tLayout.Parent=toastList
 end
 local function notify(title,content,duration)
@@ -5719,7 +5779,7 @@ card.BackgroundColor3=CR(24,24,24)
 card.BackgroundTransparency=0.5
 card.BorderSizePixel=0
 card.Size=UDim2.fromOffset(290,0)
-card.AutomaticSize=Enum.AutomaticSize.Y
+card.AutomaticSize=XA.Y
 card.Parent=toastList
 local cardCorner=IN("\085\073\067\111\114\110\101\114")
 cardCorner.CornerRadius=UD(0,12)
@@ -5732,7 +5792,7 @@ cardPad.PaddingBottom=UD(0,12)
 cardPad.Parent=card
 local cardLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 cardLay.Padding=UD(0,2)
-cardLay.SortOrder=Enum.SortOrder.LayoutOrder
+cardLay.SortOrder=XR.LayoutOrder
 cardLay.Parent=card
 local ttl=IN("\084\101\120\116\076\097\098\101\108")
 ttl.BackgroundTransparency=1
@@ -5748,7 +5808,7 @@ ttl.Parent=card
 local body=IN("\084\101\120\116\076\097\098\101\108")
 body.BackgroundTransparency=1
 body.Size=U2(1,0,0,0)
-body.AutomaticSize=Enum.AutomaticSize.Y
+body.AutomaticSize=XA.Y
 body.Font=EF.Gotham
 body.TextSize=12
 body.TextXAlignment=TX.Left
@@ -5962,8 +6022,8 @@ return pcall(function()
 VirtualInputManager:SendKeyEvent(down,keyCode,false,game)
 end)
 end
-local A_KEY=Enum.KeyCode.A
-local D_KEY=Enum.KeyCode.D
+local A_KEY=XK.A
+local D_KEY=XK.D
 local Crunch
 local crunchKeyHeld=false
 local crunchHoldMs=50
@@ -6016,11 +6076,11 @@ end)
 task.spawn(function()
 while Crunch.enabled do
 if crunchKeyHeld or MOVE.crunchVirtual then
-if not vimKey(true,Enum.KeyCode.LeftControl) then
+if not vimKey(true,XK.LeftControl) then
 break
 end
 task.wait(crunchHoldMs/1000)
-if not vimKey(false,Enum.KeyCode.LeftControl) then
+if not vimKey(false,XK.LeftControl) then
 break
 end
 task.wait(crunchGapMs/1000)
@@ -6028,7 +6088,7 @@ else
 task.wait(0.06)
 end
 end
-vimKey(false,Enum.KeyCode.LeftControl)
+vimKey(false,XK.LeftControl)
 end)
 end,
 disable=function()
@@ -6037,7 +6097,7 @@ return
 end
 Crunch.enabled=false
 crunchKeyHeld=false
-vimKey(false,Enum.KeyCode.LeftControl)
+vimKey(false,XK.LeftControl)
 Crunch.Scope:Wipe()
 end,
 verify=function()
@@ -6107,7 +6167,7 @@ end
 Straffer.enabled=true
 strafeHeld=0
 Straffer.Scope:Connect(UserInputService.InputChanged,function(input)
-if input.UserInputType~=Enum.UserInputType.MouseMovement then
+if input.UserInputType~=XU.MouseMovement then
 return
 end
 local dx=input.Delta.X
@@ -7637,19 +7697,19 @@ scroll.BackgroundTransparency=1
 scroll.BorderSizePixel=0
 scroll.ScrollBarThickness=TOUCH and 6 or 4
 scroll.ScrollBarImageColor3=Palette.Accent
-scroll.AutomaticCanvasSize=Enum.AutomaticSize.Y
+scroll.AutomaticCanvasSize=XA.Y
 scroll.CanvasSize=U2()
 scroll.Parent=holder
 if columns==2 then
 local grid=IN("\085\073\071\114\105\100\076\097\121\111\117\116")
 grid.CellSize=U2(0.5,-5,0,P3_ROW_H)
 grid.CellPadding=U2(0,10,0,8)
-grid.SortOrder=Enum.SortOrder.LayoutOrder
+grid.SortOrder=XR.LayoutOrder
 grid.Parent=scroll
 else
 local list=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
 list.Padding=UD(0,6)
-list.SortOrder=Enum.SortOrder.LayoutOrder
+list.SortOrder=XR.LayoutOrder
 list.Parent=scroll
 end
 return scroll
@@ -9229,11 +9289,11 @@ end,
 DLSSX.shotHidden=false
 DLSSX.shotSnaps={}
 DLSSX.shotCoreTypes={
-Enum.CoreGuiType.Backpack,
-Enum.CoreGuiType.Chat,
-Enum.CoreGuiType.Health,
-Enum.CoreGuiType.PlayerList,
-Enum.CoreGuiType.EmotesMenu,
+XC.Backpack,
+XC.Chat,
+XC.Health,
+XC.PlayerList,
+XC.EmotesMenu,
 }
 DLSSX.ShotMod=RegisterModule({
 Name="\083\099\114\101\101\110\115\104\111\116\032\077\111\100\101",
@@ -9692,6 +9752,7 @@ spotifyName="",
 strafferOn=false,
 strafferInvert=false,
 strafferDeadzone=2,
+zzV8={},
 }
 local APPLIES={}
 APPLIES.keystrokes=function(withPos)
@@ -9878,6 +9939,19 @@ end
 end)
 end
 onOverlayMoved=gmMarkConfig
+zzV1["\097\099\116\071\101\116"]=function(hprefix)
+if CFG["\122\122\086\056"] then
+return CFG["\122\122\086\056"][hprefix]
+end
+return nil
+end
+zzV1["\097\099\116\083\097\118\101"]=function(hprefix,act)
+if not CFG["\122\122\086\056"] then
+CFG["\122\122\086\056"]={}
+end
+CFG["\122\122\086\056"][hprefix]=act
+gmMarkConfig()
+end
 gmSaveConfig=function()
 pcall(function()
 local op=KeysAPI.getPos()
@@ -10950,7 +11024,8 @@ end
 task.defer(function()
 runSelfTest(false)
 end)
-notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\099\097\114\103\097\100\111\032\045\032\112\114\101\115\105\111\110\097\032\088\032\112\097\114\097\032\101\108\032\109\101\110\117","\108\111\097\100\101\100\032\045\032\112\114\101\115\115\032\088\032\116\111\032\116\111\103\103\108\101\032\116\104\101\032\109\101\110\117"),5)
+notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\099\097\114\103\097\100\111\032\045\032\112\114\101\115\105\111\110\097\032\088\032\112\097\114\097\032\101\108\032\109\101\110\117","\108\111\097\100\101\100\032\045\032\112\114\101\115\115\032\088\032\116\111\032\116\111\103\103\108\101\032\116\104\101\032\109\101\110\117")
+..(zzV1["\107\101\121\076\101\102\116\083\116\114"] and("\032\124\032"..gmT("\107\101\121\058\032\116\101\032\113\117\101\100\097\110\032","\107\101\121\058\032")..zzV1["\107\101\121\076\101\102\116\083\116\114"]) or ""),5)
 zzV1["\102\105\110\097\108\065\112\112\108\121"]=nil
 end
 runSelfTest=function(withNotification)
