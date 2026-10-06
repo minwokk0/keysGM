@@ -2,13 +2,6 @@
   "version": 3,
   "keys": [
     {
-      "user": "Jxsderlis",
-      "expires": 1791418756,
-      "note": "",
-      "active": false,
-      "hash": "a2dc09debc0b110e679f73990d80c5b7fdbb214d6f178a5ef36bf688d5e7dafb"
-    },
-    {
       "user": "jxsderlis",
       "expires": 1791419217,
       "note": "",
@@ -79,5 +72,15 @@
       "active": true
     }
   ],
-  "archived": []
+  "archived": [
+    {
+      "user": "Jxsderlis",
+      "expires": 1791418756,
+      "note": "",
+      "active": false,
+      "hash": "a2dc09debc0b110e679f73990d80c5b7fdbb214d6f178a5ef36bf688d5e7dafb",
+      "archivedAt": 1791294804,
+      "archivedReason": "revocada"
+    }
+  ]
 }
