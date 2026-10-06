@@ -2,13 +2,6 @@
   "version": 3,
   "keys": [
     {
-      "user": "Misshannixa",
-      "expires": 1791247112,
-      "note": "",
-      "active": true,
-      "hash": "381ff81a3721591fb7336cf53291c851e7232bec868767a7eb41e0be1d1b029a"
-    },
-    {
       "user": "josepromanolo",
       "expires": 1791248460,
       "note": "",
@@ -70,7 +63,24 @@
       "note": "",
       "active": true,
       "hash": "2580a497d77b449fc6fd753235396806ed3eb3654b786318774504b8f0974b98"
+    },
+    {
+      "hash": "d08f28f53eb13d53cd0bad9fe4995777fa729df5db88b750d1f7415140178b87",
+      "user": "Misshannixa",
+      "expires": 1791460957,
+      "note": "",
+      "active": true
     }
   ],
-  "archived": []
+  "archived": [
+    {
+      "user": "Misshannixa",
+      "expires": 1791247112,
+      "note": "",
+      "active": false,
+      "hash": "381ff81a3721591fb7336cf53291c851e7232bec868767a7eb41e0be1d1b029a",
+      "archivedAt": 1791288158,
+      "archivedReason": "expirada"
+    }
+  ]
 }
