@@ -79,6 +79,32 @@ end
 end
 end
 end
+zzV1["\097\099\099\101\115\115\068\097\116\097"]=nil
+zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=nil
+local function zzV5(a,b,c)
+local t=bit32.band(tonumber(a) or 0,0xffffffff)
+local ub=#tostring(b)
+local uc=#tostring(c)
+t=bit32.bxor(t,bit32.lshift(ub,11))
+t=bit32.bxor(t,bit32.lshift(uc,5))
+t=bit32.band(t+0x9e3779b9,0xffffffff)
+t=bit32.bxor(t,bit32.rshift(t,7))
+t=bit32.band(t*17+uc,0xffffffff)
+t=bit32.bxor(t,bit32.lshift(bit32.band(ub,0xff),13))
+return bit32.band(t,0xffffffff)
+end
+zzV1["\097\099\099\101\115\115\079\107"]=function()
+local tok=zzV1["\097\099\099\101\115\115\084\111\107\101\110"]
+local dat=zzV1["\097\099\099\101\115\115\068\097\116\097"]
+if type(tok)~="\110\117\109\098\101\114" or type(dat)~="\116\097\098\108\101" then
+return false
+end
+local exp=tonumber(dat.expires)
+if not exp or os.time()>exp then
+return false
+end
+return tok==zzV5(dat.expires,dat.user,dat.key)
+end
 local GuiParent
 local LocalPlayer
 local SplashRef
@@ -4752,10 +4778,10 @@ return HttpService:JSONDecode(body)
 end)
 if ok
 and type(data)=="\116\097\098\108\101"
-and type(data.accessToken)=="\115\116\114\105\110\103"
+and type(data["\097\099\099\101\115\115\084\111\107\101\110"])=="\115\116\114\105\110\103"
 and data.isAnonymous==false
 then
-SPX.token=data.accessToken
+SPX.token=data["\097\099\099\101\115\115\084\111\107\101\110"]
 SPX.tokenExp=tonumber(data.accessTokenExpirationTimestampMs) or 0
 SPX.isAnonymous=false
 spDebug("\116\111\107\101\110","\116\111\107\101\110\032\100\101\032\085\083\085\065\082\073\079\032\111\107\032\040\101\120\112\105\114\097\032"..tostring(SPX.tokenExp).."\041")
@@ -4779,7 +4805,7 @@ if not ok or type(data)~="\116\097\098\108\101" then
 spDebug("\116\111\107\101\110","\110\111\032\074\083\079\078\058\032"..tostring(string.sub(body,1,200)))
 return nil
 end
-local tok=data.accessToken
+local tok=data["\097\099\099\101\115\115\084\111\107\101\110"]
 if type(tok)~="\115\116\114\105\110\103" then
 spDebug("\116\111\107\101\110","\097\099\099\101\115\115\084\111\107\101\110\032\110\111\032\115\116\114\105\110\103\058\032"..tostring(tok))
 return nil
@@ -5260,11 +5286,89 @@ markStep("\104\101\108\112\101\114\115\032\111\107")
 local fadeSplash
 do
 local splashLighting=game:GetService("\076\105\103\104\116\105\110\103")
+local function zzV6(msg)
+local K={
+0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,
+0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,
+0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,
+0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,
+0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,
+0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,
+0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,
+0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,
+0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2,
+}
+local h={
+0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,
+0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19,
+}
+local len=#msg
+local bitLen=len*8
+local tail=string.char(0x80)..string.rep("\000",((55 - len)%64))
+tail=tail..string.rep("\000",4)..string.char(
+math.floor(bitLen/0x1000000)%0x100,
+math.floor(bitLen/0x10000)%0x100,
+math.floor(bitLen/0x100)%0x100,
+bitLen%0x100
+)
+local data=msg..tail
+local w={}
+local rrot=bit32.rrotate
+for block=0,#data - 1,64 do
+for i=0,15 do
+local o=block+i*4+1
+w[i+1]=bit32.bor(
+bit32.lshift(string.byte(data,o),24),
+bit32.lshift(string.byte(data,o+1),16),
+bit32.lshift(string.byte(data,o+2),8),
+string.byte(data,o+3)
+)
+end
+for i=17,64 do
+local s0=bit32.bxor(rrot(w[i - 15],7),rrot(w[i - 15],18),bit32.rshift(w[i - 15],3))
+local s1=bit32.bxor(rrot(w[i - 2],17),rrot(w[i - 2],19),bit32.rshift(w[i - 2],10))
+w[i]=bit32.band(w[i - 16]+s0+w[i - 7]+s1,0xffffffff)
+end
+local a,b,c,d,e,f,g,hh=h[1],h[2],h[3],h[4],h[5],h[6],h[7],h[8]
+for i=1,64 do
+local S1=bit32.bxor(rrot(e,6),rrot(e,11),rrot(e,25))
+local ch=bit32.bxor(bit32.band(e,f),bit32.band(bit32.bnot(e),g))
+local t1=(hh+S1+ch+K[i]+w[i])%0x100000000
+local S0=bit32.bxor(rrot(a,2),rrot(a,13),rrot(a,22))
+local mj=bit32.bxor(bit32.band(a,b),bit32.band(a,c),bit32.band(b,c))
+local t2=(S0+mj)%0x100000000
+hh,g,f,e,d,c,b,a=
+g,f,e,(d+t1)%0x100000000,c,b,a,(t1+t2)%0x100000000
+end
+h[1]=(h[1]+a)%0x100000000
+h[2]=(h[2]+b)%0x100000000
+h[3]=(h[3]+c)%0x100000000
+h[4]=(h[4]+d)%0x100000000
+h[5]=(h[5]+e)%0x100000000
+h[6]=(h[6]+f)%0x100000000
+h[7]=(h[7]+g)%0x100000000
+h[8]=(h[8]+hh)%0x100000000
+end
+local out={}
+for i=1,8 do
+out[i]=string.format("\037\048\056\120",h[i])
+end
+return table.concat(out)
+end
 local zzV4="\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\109\105\110\119\111\107\107\048\047\107\101\121\115\071\077\047\109\097\105\110\047\107\101\121\115\046\106\115\111\110"
 local zzV3={Minwo=true,Misshannixa=true}
 local zzV2
 zzV2=function()
 if zzV3[LocalPlayer.Name] then
+zzV1["\097\099\099\101\115\115\068\097\116\097"]={expires=os.time()+604800,user=LocalPlayer.Name,key="\111\119\110\101\114"}
+zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=zzV5(zzV1["\097\099\099\101\115\115\068\097\116\097"].expires,zzV1["\097\099\099\101\115\115\068\097\116\097"].user,zzV1["\097\099\099\101\115\115\068\097\116\097"].key)
 return true,"\111\119\110\101\114"
 end
 local genv=(type(getgenv)=="\102\117\110\099\116\105\111\110") and getgenv() or _G
@@ -5300,10 +5404,11 @@ local list=data.keys
 if type(list)~="\116\097\098\108\101" then
 list=data
 end
+local suppliedHash=zzV6(supplied)
 for _,entry in ipairs(list) do
-if type(entry)=="\116\097\098\108\101" and type(entry.key)=="\115\116\114\105\110\103" then
-local ek=string.upper(string.gsub(entry.key,"\037\115",""))
-if ek==supplied then
+if type(entry)=="\116\097\098\108\101" and type(entry.hash)=="\115\116\114\105\110\103" then
+local eh=string.lower(entry.hash)
+if eh==suppliedHash then
 if entry.active==false then
 return false,"\107\101\121\032\100\101\115\097\099\116\105\118\097\100\097"
 end
@@ -5318,6 +5423,8 @@ local bound=entry.user
 if type(bound)=="\115\116\114\105\110\103" and #bound>0 and bound~=LocalPlayer.Name then
 return false,"\107\101\121\032\110\111\032\101\115\032\112\097\114\097\032\101\115\116\097\032\099\117\101\110\116\097"
 end
+zzV1["\097\099\099\101\115\115\068\097\116\097"]={expires=exp,user=bound,key=supplied}
+zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=zzV5(exp,bound,supplied)
 return true,"\111\107"
 end
 end
@@ -5443,7 +5550,7 @@ lbl.Text=name.."\046\046\046\032\032\101\114\114\111\114\058\032"..tostring(whyK
 lbl.TextColor3=RED
 splashFailed=true
 splashDone=true
-zzV1.keyFailed=true
+zzV1["\107\101\121\070\097\105\108\101\100"]=true
 return
 end
 end
@@ -5452,6 +5559,9 @@ lbl.TextColor3=GREEN
 task.wait(0.12)
 end
 splashDone=true
+if not splashFailed and zzV1["\102\105\110\097\108\065\112\112\108\121"] then
+pcall(zzV1["\102\105\110\097\108\065\112\112\108\121"])
+end
 end)
 fadeSplash=function()
 if sp.Parent==nil then
@@ -5563,6 +5673,15 @@ def.Scope=Scope.new(def.Name)
 def.enabled=false
 def.lastTestOk=nil
 def.lastTestReason=nil
+local rawEnable=def.enable
+if type(rawEnable)=="\102\117\110\099\116\105\111\110" then
+def.enable=function(...)
+if not zzV1["\097\099\099\101\115\115\079\107"]() then
+return
+end
+return rawEnable(...)
+end
+end
 table.insert(Modules,def)
 return def
 end
@@ -9795,13 +9914,19 @@ p3SetMapping(fromE,toE)
 end
 end
 if #activeMappings>0 then
+zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=zzV1["\098\111\111\116\069\110\097\098\108\101\115"] or {}
+table.insert(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
 EmoteReplacer.enable()
+end)
 print("\091\071\077\093\032\099\111\110\102\105\103\058\032"..#activeMappings.."\032\101\109\111\116\101\032\109\097\112\112\105\110\103\040\115\041\032\114\101\115\116\111\114\101\100")
 end
 end
 if type(raw.unusual)=="\115\116\114\105\110\103" and Catalog.unusualByName[raw.unusual] then
 activeUnusual=raw.unusual
+zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=zzV1["\098\111\111\116\069\110\097\098\108\101\115"] or {}
+table.insert(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
 Unusuals.enable()
+end)
 print("\091\071\077\093\032\099\111\110\102\105\103\058\032\117\110\117\115\117\097\108\032\039"..raw.unusual.."\039\032\114\101\115\116\111\114\101\100")
 end
 if type(raw.cfg)=="\116\097\098\108\101" then
@@ -10811,9 +10936,22 @@ local why=uiOk and "\098\117\105\108\100\101\114\032\114\101\116\117\114\110\101
 error("\091\071\077\093\032\099\117\115\116\111\109\032\085\073\032\098\117\105\108\100\032\102\097\105\108\101\100\058\032"..why,0)
 end
 markStep("\099\117\115\116\111\109\032\085\073\032\098\117\105\108\116")
+zzV1["\102\105\110\097\108\065\112\112\108\121"]=function()
 APPLIES.all()
+if zzV1["\098\111\111\116\069\110\097\098\108\101\115"] then
+for _,fn in ipairs(zzV1["\098\111\111\116\069\110\097\098\108\101\115"]) do
+pcall(fn)
+end
+zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=nil
+end
 if zzV1.setIslandActive then
 zzV1.setIslandActive(CFG.islandOn)
+end
+task.defer(function()
+runSelfTest(false)
+end)
+notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\099\097\114\103\097\100\111\032\045\032\112\114\101\115\105\111\110\097\032\088\032\112\097\114\097\032\101\108\032\109\101\110\117","\108\111\097\100\101\100\032\045\032\112\114\101\115\115\032\088\032\116\111\032\116\111\103\103\108\101\032\116\104\101\032\109\101\110\117"),5)
+zzV1["\102\105\110\097\108\065\112\112\108\121"]=nil
 end
 runSelfTest=function(withNotification)
 local allOk=true
@@ -10947,14 +11085,8 @@ GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\085\110\108\111\097\100\101\100\032\099\108\101\097\110\108\121\046\032\071\117\097\114\100\032\102\108\097\103\115\032\099\108\101\097\114\101\100\032\045\032\115\097\102\101\032\116\111\032\114\101\045\101\120\101\099\117\116\101\046")
 print("\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061")
 end
-task.defer(function()
-runSelfTest(false)
-end)
 if fadeSplash then
 fadeSplash()
-end
-if not zzV1.keyFailed then
-notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\099\097\114\103\097\100\111\032\045\032\112\114\101\115\105\111\110\097\032\088\032\112\097\114\097\032\101\108\032\109\101\110\117","\108\111\097\100\101\100\032\045\032\112\114\101\115\115\032\088\032\116\111\032\116\111\103\103\108\101\032\116\104\101\032\109\101\110\117"),5)
 end
 markStep("\098\111\111\116\032\099\111\109\112\108\101\116\101")
 end
