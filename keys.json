@@ -2,62 +2,6 @@
   "version": 3,
   "keys": [
     {
-      "user": "jxsderlis",
-      "expires": 1791419217,
-      "note": "",
-      "active": true,
-      "hash": "c006ca4e4de7debee3b33276dcd74aa92a63ddf177279d5eb875f5f99d7bb649"
-    },
-    {
-      "user": "jisusxdpera",
-      "expires": 1791420529,
-      "note": "",
-      "active": true,
-      "hash": "fb59a3ab6d393835e64c3cc5bcd6d2e6197bd6d4688050c9b9b7f60f05908b56"
-    },
-    {
-      "user": "Cristian_a47",
-      "expires": 1791426285,
-      "note": "",
-      "active": true,
-      "hash": "4340e471a538074902a06fd60d3705fdac65003b3d07eca9dbf2755d3039bb93"
-    },
-    {
-      "user": "lyrvec",
-      "expires": 1791427460,
-      "note": "",
-      "active": true,
-      "hash": "4b51838fbb9c994b402eb5ca868c9dbdd93da5f2b9f7d83058b9f99a378d5255"
-    },
-    {
-      "hash": "1ab23ecf23699d12a704adc330c9462f4a9dc0f4f0eca21e081fe33d55b77aeb",
-      "user": "ColinAnnDonna",
-      "expires": 1791461065,
-      "note": "",
-      "active": true
-    },
-    {
-      "hash": "51997799b3f2cc70b9cdfdfc3e2cb663395fb24133c9d2cff3b2fc1f8be82665",
-      "user": "brand755",
-      "expires": 1791461194,
-      "note": "",
-      "active": true
-    },
-    {
-      "hash": "741f8dbafbf59f57f685d296b7991f2732c1f037df6571973d472d034a468fc1",
-      "user": "4_urt3",
-      "expires": 1791463233,
-      "note": "",
-      "active": true
-    },
-    {
-      "hash": "c73329507a00d1dafeb60f99c865874797e0f2f0756aa97488dc2cfb87964e2b",
-      "user": "avx_077",
-      "expires": 1791464105,
-      "note": "",
-      "active": true
-    },
-    {
       "hash": "ceba685b27f4c8d249b866dd748e13f826d00df120d87cdede722740cfe86546",
       "user": "dnwkdnwls",
       "expires": 1792075679,
@@ -157,6 +101,78 @@
       "note": "",
       "active": false,
       "archivedAt": 1791494687,
+      "archivedReason": "expirada"
+    },
+    {
+      "user": "jxsderlis",
+      "expires": 1791419217,
+      "note": "",
+      "active": true,
+      "hash": "c006ca4e4de7debee3b33276dcd74aa92a63ddf177279d5eb875f5f99d7bb649",
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "user": "jisusxdpera",
+      "expires": 1791420529,
+      "note": "",
+      "active": true,
+      "hash": "fb59a3ab6d393835e64c3cc5bcd6d2e6197bd6d4688050c9b9b7f60f05908b56",
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "user": "Cristian_a47",
+      "expires": 1791426285,
+      "note": "",
+      "active": true,
+      "hash": "4340e471a538074902a06fd60d3705fdac65003b3d07eca9dbf2755d3039bb93",
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "user": "lyrvec",
+      "expires": 1791427460,
+      "note": "",
+      "active": true,
+      "hash": "4b51838fbb9c994b402eb5ca868c9dbdd93da5f2b9f7d83058b9f99a378d5255",
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "hash": "1ab23ecf23699d12a704adc330c9462f4a9dc0f4f0eca21e081fe33d55b77aeb",
+      "user": "ColinAnnDonna",
+      "expires": 1791461065,
+      "note": "",
+      "active": true,
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "hash": "51997799b3f2cc70b9cdfdfc3e2cb663395fb24133c9d2cff3b2fc1f8be82665",
+      "user": "brand755",
+      "expires": 1791461194,
+      "note": "",
+      "active": true,
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "hash": "741f8dbafbf59f57f685d296b7991f2732c1f037df6571973d472d034a468fc1",
+      "user": "4_urt3",
+      "expires": 1791463233,
+      "note": "",
+      "active": true,
+      "archivedAt": 1791494772,
+      "archivedReason": "expirada"
+    },
+    {
+      "hash": "c73329507a00d1dafeb60f99c865874797e0f2f0756aa97488dc2cfb87964e2b",
+      "user": "avx_077",
+      "expires": 1791464105,
+      "note": "",
+      "active": true,
+      "archivedAt": 1791494772,
       "archivedReason": "expirada"
     }
   ]
