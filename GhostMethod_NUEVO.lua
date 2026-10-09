@@ -1,4 +1,4 @@
-local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font local XU=Enum.UserInputType local XK=Enum.KeyCode local XR=Enum.SortOrder local XA=Enum.AutomaticSize local XC=Enum.CoreGuiType local TY=Enum.TextYAlignment local TT=Enum.TextTruncate local TSV=game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101") local TSC=function(a,b,c) return TSV:Create(a,b,c) end local UO=UDim2.fromOffset local US=UDim2.fromScale local VX=Vector2.new local MFL=math.floor local SFM=string.format local TDL=task.delay local SSB=string.sub local QQ=pcall local TSP=task.spawn local NSK=NumberSequenceKeypoint.new local CSN=ColorSequence.new local NSN=NumberSequence.new local SGM=string.match local SLW=string.lower local GGS=function(s) return game:GetService(s) end local TBI=table.insert local TCN=table.concat local SRP=string.rep local SUP=string.upper local SFD=string.find local IUC=function() return Instance.new("\085\073\067\111\114\110\101\114") end local INF=function() return Instance.new("\070\114\097\109\101") end local ITL=function() return Instance.new("\084\101\120\116\076\097\098\101\108") end local ITB=function() return Instance.new("\084\101\120\116\066\117\116\116\111\110") end local IUS=function() return Instance.new("\085\073\083\116\114\111\107\101") end local IUP=function() return Instance.new("\085\073\080\097\100\100\105\110\103") end local IUL=function() return Instance.new("\085\073\076\105\115\116\076\097\121\111\117\116") end local IIL=function() return Instance.new("\073\109\097\103\101\076\097\098\101\108") end local ISG=function() return Instance.new("\083\099\114\101\101\110\071\117\105") end local ITX=function() return Instance.new("\084\101\120\116\066\111\120") end local OCL=os.clock local EM=Enum.Material local CFN=CFrame.new local IP=ipairs local PR=pairs local TS=tostring local TN=tonumber local UIS=UserInputService local HST=Enum.HumanoidStateType local TW=task.wait local OD=os.date local MN=math.min local MX=math.max local SG=string.gsub local WF=writefile local EFB=Enum.Font.GothamBold local EFM=Enum.Font.GothamMedium local EFG=Enum.Font.Gotham local GC=function(o) return o:GetChildren() end local GD=function(o) return o:GetDescendants() end local FFC=function(o,c) return o:FindFirstChildOfClass(c) end local FF=function(o,...) return o:FindFirstChild(...) end local WFC=function(o,...) return o:WaitForChild(...) end local CN=function(s,f) return s:Connect(f) end local GPS=function(o,p) return o:GetPropertyChangedSignal(p) end local LWR=function(s) return s:lower() end local UPR=function(s) return s:upper() end local IUG=function() return Instance.new("\085\073\071\114\097\100\105\101\110\116") end local IWC=function() return Instance.new("\087\101\108\100\067\111\110\115\116\114\097\105\110\116") end local GCA=getcustomasset local ISF=isfile local SCT=Enum.ScaleType local EFZ=Enum.Font.GrenzeGotisch local AC1=CR(167,108,255) local AC2=CR(255,255,255) local AC3=CR(22,14,36) local AC4=CR(120,70,200) local AC5=CR(216,208,235) local TWI=function(...) return TweenInfo.new(...) end local TXL=Enum.TextXAlignment.Left local TYC=Enum.TextYAlignment.Center local TYT=Enum.TextYAlignment.Top local ESQ=ES.Quart local ESB=ES.Back
+local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font local XU=Enum.UserInputType local XK=Enum.KeyCode local XR=Enum.SortOrder local XA=Enum.AutomaticSize local XC=Enum.CoreGuiType local TY=Enum.TextYAlignment local TT=Enum.TextTruncate local TSV=game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101") local TSC=function(a,b,c) return TSV:Create(a,b,c) end local UO=UDim2.fromOffset local US=UDim2.fromScale local VX=Vector2.new local MFL=math.floor local SFM=string.format local TDL=task.delay local SSB=string.sub local QQ=pcall local TSP=task.spawn local NSK=NumberSequenceKeypoint.new local CSN=ColorSequence.new local NSN=NumberSequence.new local SGM=string.match local SLW=string.lower local GGS=function(s) return game:GetService(s) end local TBI=table.insert local TCN=table.concat local SRP=string.rep local SUP=string.upper local SFD=string.find local IUC=function() return Instance.new("\085\073\067\111\114\110\101\114") end local INF=function() return Instance.new("\070\114\097\109\101") end local ITL=function() return Instance.new("\084\101\120\116\076\097\098\101\108") end local ITB=function() return Instance.new("\084\101\120\116\066\117\116\116\111\110") end local IUS=function() return Instance.new("\085\073\083\116\114\111\107\101") end local IUP=function() return Instance.new("\085\073\080\097\100\100\105\110\103") end local IUL=function() return Instance.new("\085\073\076\105\115\116\076\097\121\111\117\116") end local IIL=function() return Instance.new("\073\109\097\103\101\076\097\098\101\108") end local ISG=function() return Instance.new("\083\099\114\101\101\110\071\117\105") end local ITX=function() return Instance.new("\084\101\120\116\066\111\120") end local OCL=os.clock local EM=Enum.Material local CFN=CFrame.new local IP=ipairs local PR=pairs local TS=tostring local TN=tonumber local UIS=game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101") local HST=Enum.HumanoidStateType local TW=task.wait local OD=os.date local MN=math.min local MX=math.max local SG=string.gsub local WF=writefile local EFB=Enum.Font.GothamBold local EFM=Enum.Font.GothamMedium local EFG=Enum.Font.Gotham local GC=function(o) return o:GetChildren() end local GD=function(o) return o:GetDescendants() end local FFC=function(o,c) return o:FindFirstChildOfClass(c) end local FF=function(o,...) return o:FindFirstChild(...) end local WFC=function(o,...) return o:WaitForChild(...) end local CN=function(s,f) return s:Connect(f) end local GPS=function(o,p) return o:GetPropertyChangedSignal(p) end local LWR=function(s) return s:lower() end local UPR=function(s) return s:upper() end local IUG=function() return Instance.new("\085\073\071\114\097\100\105\101\110\116") end local IWC=function() return Instance.new("\087\101\108\100\067\111\110\115\116\114\097\105\110\116") end local GCA=getcustomasset local ISF=isfile local SCT=Enum.ScaleType local EFZ=Enum.Font.GrenzeGotisch local AC1=CR(167,108,255) local AC2=CR(255,255,255) local AC3=CR(22,14,36) local AC4=CR(120,70,200) local AC5=CR(216,208,235) local TWI=function(...) return TweenInfo.new(...) end local TXL=Enum.TextXAlignment.Left local TYC=Enum.TextYAlignment.Center local TYT=Enum.TextYAlignment.Top local ESQ=ES.Quart local ESB=ES.Back
 local GM_ENV=(type(getgenv)=="\102\117\110\099\116\105\111\110") and getgenv() or _G
 if GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"] or GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069\068"] then
 if GM_ENV["\071\077\095\070\079\082\067\069"] then
@@ -471,7 +471,7 @@ else
 tailObj.Size=UO(3,tailLen)
 end
 end
-bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function(dt)
 local open=main.Visible and main.Parent~=nil and main.AbsoluteSize.X>10
 if open~=snakeWasOpen then
 snakeWasOpen=open
@@ -584,7 +584,7 @@ f.Visible=true
 f.Position=UO(m.x,m.y)
 end
 end
-bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function(dt)
 if dt>0.05 then
 dt=0.05
 end
@@ -646,7 +646,7 @@ pumpkin.ZIndex=5
 pumpkin.Visible=false
 pumpkin.Parent=root
 local fireT=OCL()
-bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function(dt)
 local open=main.Visible and main.Parent~=nil
 glow.Visible=open
 pumpkin.Visible=open
@@ -3914,7 +3914,7 @@ iconBeforeOpen=UIS.MouseIconEnabled
 end)
 applyCursorState()
 local iconClock=0
-bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").HCN(eartbeat, function()
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").Heartbeat:Connect(function()
 iconClock+=1
 if iconClock<30 then
 return
@@ -4243,7 +4243,7 @@ local function startRainbow()
 if rainbowConn or not Keys or not Keys.enabled then
 return
 end
-rainbowConn=CN(Keys.Scope, RunService.Heartbeat,function()
+rainbowConn=Keys.Scope:Bind(RunService.Heartbeat,function()
 if not overlayGui or not overlayRoot then
 return
 end
@@ -4400,7 +4400,7 @@ local function makeDraggable(handleGui)
 local dragging=false
 local dragStart,startPos
 local endConn
-CN(Keys.Scope, handleGui.InputBegan,function(input)
+Keys.Scope:Bind(handleGui.InputBegan,function(input)
 if input.UserInputType==XU.MouseButton1
 or input.UserInputType==XU.Touch
 then
@@ -4410,7 +4410,7 @@ startPos=overlayRoot and overlayRoot.Position or nil
 if endConn then
 endConn:Disconnect()
 end
-endConn=CN(Keys.Scope, input.Changed,function()
+endConn=Keys.Scope:Bind(input.Changed,function()
 if input.UserInputState==Enum.UserInputState.End then
 dragging=false
 if endConn then
@@ -4424,7 +4424,7 @@ end
 end)
 end
 end)
-CN(Keys.Scope, UIS.InputChanged,function(input)
+Keys.Scope:Bind(UIS.InputChanged,function(input)
 if not dragging or not overlayRoot or not startPos then
 return
 end
@@ -4625,17 +4625,17 @@ return
 end
 Keys.enabled=true
 buildOverlay(hidden)
-CN(Keys.Scope, UIS.InputBegan,function(input)
+Keys.Scope:Bind(UIS.InputBegan,function(input)
 if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,true)
 end
 end)
-CN(Keys.Scope, UIS.InputEnded,function(input)
+Keys.Scope:Bind(UIS.InputEnded,function(input)
 if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,false)
 end
 end)
-CN(Keys.Scope, UIS.WindowFocusReleased,function()
+Keys.Scope:Bind(UIS.WindowFocusReleased,function()
 for keyCode in PR(Chips) do
 setChipPressed(keyCode,false)
 end
@@ -4974,7 +4974,7 @@ EvadeFont.enabled=true
 local font=fontFromLabel(env.getCfg().font)
 scanAll(font)
 local pg=FF(lp, "\080\108\097\121\101\114\071\117\105")
-CN(EvadeFont.Scope, pg.DescendantAdded,function(inst)
+EvadeFont.Scope:Bind(pg.DescendantAdded,function(inst)
 task.defer(function()
 if EvadeFont.enabled and inst and inst.Parent then
 applyOne(inst,fontFromLabel(env.getCfg().font))
@@ -6818,7 +6818,7 @@ self.Instances={}
 self.Cleanups={}
 return self
 end
-function CN(Scope, signal,fn)
+function Scope:Bind(signal,fn)
 local conn=CN(signal, fn)
 TBI(self.Connections,conn)
 return conn
@@ -7056,7 +7056,7 @@ end
 if not Bhop.enabled then
 return
 end
-CN(Bhop.Scope, humanoid.StateChanged,function(_,newState)
+Bhop.Scope:Bind(humanoid.StateChanged,function(_,newState)
 if newState~=HST.Landed then
 return
 end
@@ -7088,17 +7088,17 @@ local character=LocalPlayer.Character
 if character then
 TSP(hookCharacter,character)
 end
-CN(Bhop.Scope, LocalPlayer.CharacterAdded,function(newCharacter)
+Bhop.Scope:Bind(LocalPlayer.CharacterAdded,function(newCharacter)
 TSP(hookCharacter,newCharacter)
 end)
-CN(Bhop.Scope, UIS.InputBegan,function(input,gameProcessed)
+Bhop.Scope:Bind(UIS.InputBegan,function(input,gameProcessed)
 if not bindMatches(input,gameProcessed) then
 return
 end
 keyHeld=true
 initialPush()
 end)
-CN(Bhop.Scope, UIS.InputEnded,function(input)
+Bhop.Scope:Bind(UIS.InputEnded,function(input)
 if not bindMatches(input,false) then
 return
 end
@@ -7198,7 +7198,7 @@ return
 end
 Crunch.enabled=true
 crunchKeyHeld=false
-CN(Crunch.Scope, UIS.InputBegan,function(input,gameProcessed)
+Crunch.Scope:Bind(UIS.InputBegan,function(input,gameProcessed)
 if UserInputService:GetFocusedTextBox()~=nil then
 return
 end
@@ -7206,7 +7206,7 @@ if crunchInputMatches(input,gameProcessed) then
 crunchKeyHeld=true
 end
 end)
-CN(Crunch.Scope, UIS.InputEnded,function(input)
+Crunch.Scope:Bind(UIS.InputEnded,function(input)
 if crunchInputMatches(input,false) then
 crunchKeyHeld=false
 end
@@ -7304,7 +7304,7 @@ return
 end
 Straffer.enabled=true
 strafeHeld=0
-CN(Straffer.Scope, UIS.InputChanged,function(input)
+Straffer.Scope:Bind(UIS.InputChanged,function(input)
 if input.UserInputType~=XU.MouseMovement then
 return
 end
@@ -7319,7 +7319,7 @@ end
 strafeSetHeld(dir)
 strafeLastMove=OCL()
 end)
-CN(Straffer.Scope, RunService.Heartbeat,function()
+Straffer.Scope:Bind(RunService.Heartbeat,function()
 if strafeHeld==0 then
 return
 end
@@ -7468,7 +7468,7 @@ if HeadlessReassertConn then
 return
 end
 HeadlessReassertClock=0
-HeadlessReassertConn=CN(Headless.Scope, RunService.Heartbeat,function()
+HeadlessReassertConn=Headless.Scope:Bind(RunService.Heartbeat,function()
 HeadlessReassertClock=HeadlessReassertClock+1
 if HeadlessReassertClock<30 then
 return
@@ -7789,7 +7789,7 @@ if KorbloxReassertConn then
 return
 end
 KorbloxReassertClock=0
-KorbloxReassertConn=CN(Korblox.Scope, RunService.Heartbeat,function()
+KorbloxReassertConn=Korblox.Scope:Bind(RunService.Heartbeat,function()
 KorbloxReassertClock=KorbloxReassertClock+1
 if KorbloxReassertClock<30 then
 return
@@ -8621,7 +8621,7 @@ swapFolderTo(m.from.template,Catalog.uri(m.to))
 end)
 end
 hookEmoteAnimator()
-CN(EmoteReplacer.Scope, RunService.Heartbeat,function()
+EmoteReplacer.Scope:Bind(RunService.Heartbeat,function()
 if not emoteHookConn or not emoteHookConn.Connected then
 hookEmoteAnimator()
 end
@@ -8796,7 +8796,7 @@ Unusuals.enabled=true
 if activeUnusual then
 applyUnusualNow(activeUnusual)
 end
-CN(Unusuals.Scope, RunService.Heartbeat,function()
+Unusuals.Scope:Bind(RunService.Heartbeat,function()
 if activeUnusual and #appliedUnusual==0 then
 applyUnusualNow(activeUnusual)
 end
@@ -10402,7 +10402,7 @@ end
 gfxApply()
 local shinyClock=0
 local p=GFX_PRESETS[gfxPreset] or GFX_PRESETS.Realista
-CN(Graphics.Scope, RunService.Heartbeat,function(dt)
+Graphics.Scope:Bind(RunService.Heartbeat,function(dt)
 gfxClock+=dt
 shinyClock+=dt
 if gfxClock>=2 then
@@ -10428,7 +10428,7 @@ gfxApplyShiny()
 end
 end
 end)
-CN(Graphics.Scope, RunService.Heartbeat,function()
+Graphics.Scope:Bind(RunService.Heartbeat,function()
 DLSSX.shadowApply(GFX_PRESETS[gfxPreset] or GFX_PRESETS.Realista)
 end)
 end,
@@ -10778,7 +10778,7 @@ end)
 twState.clock=twSnap.ClockTime or 14
 end
 twApply()
-CN(TimeWeather.Scope, RunService.Heartbeat,function(dt)
+TimeWeather.Scope:Bind(RunService.Heartbeat,function(dt)
 twClock+=dt
 if twClock<1 then
 return
@@ -10914,7 +10914,7 @@ end
 Island.enabled=true
 islBuild()
 local acc=0
-CN(Island.Scope, RunService.Heartbeat,function(dt)
+Island.Scope:Bind(RunService.Heartbeat,function(dt)
 islFrames+=1
 acc+=dt
 if acc<1 then
@@ -12471,7 +12471,7 @@ fadeSplash()
 end
 markStep("\098\111\111\116\032\099\111\109\112\108\101\116\101")
 end
-local okBoot,bootReport=xQQ(body,function(err)
+local okBoot,bootReport=xpcall(body,function(err)
 local okT,trace=QQ(debug.traceback,err,2)
 if okT and type(trace)=="\115\116\114\105\110\103" and #trace>0 then
 return trace
