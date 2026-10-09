@@ -103,14 +103,14 @@
       "active": true
     },
     {
-      "hash": "27746efed93e476acec23f4747d8468c4a74af2a0664ca1363d2519e97936f93",
+      "hash": "7f112fd301748bffae4d6b1fe20da00b172f6d20a6e9f678c8b3f800e0ec1e48",
       "user": "Misshannixa",
-      "expires": 1792327728,
+      "expires": 1792328011,
       "duration": 172800,
       "rank": "wraith",
       "activatedAt": null,
       "note": "",
-      "active": false
+      "active": true
     }
   ],
   "archived": [
@@ -205,6 +205,18 @@
       "note": "",
       "active": false,
       "archivedAt": 1791550129,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "27746efed93e476acec23f4747d8468c4a74af2a0664ca1363d2519e97936f93",
+      "user": "Misshannixa",
+      "expires": 1792327728,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791550412,
       "archivedReason": "revocada"
     }
   ]
