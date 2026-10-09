@@ -90,7 +90,8 @@
       "rank": "eclipse",
       "activatedAt": 1791503303,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "fe07b9b26a6be4fe3071568adae8303aaacd066b4996ec0713ef587d6e025b5d",
