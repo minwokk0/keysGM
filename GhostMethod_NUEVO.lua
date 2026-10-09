@@ -1,11 +1,11 @@
-local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font local XU=Enum.UserInputType local XK=Enum.KeyCode local XR=Enum.SortOrder local XA=Enum.AutomaticSize local XC=Enum.CoreGuiType
+local IN=Instance.new local U2=UDim2.new local UD=UDim.new local CR=Color3.fromRGB local TX=Enum.TextXAlignment local ES=Enum.EasingStyle local ED=Enum.EasingDirection local EF=Enum.Font local XU=Enum.UserInputType local XK=Enum.KeyCode local XR=Enum.SortOrder local XA=Enum.AutomaticSize local XC=Enum.CoreGuiType local TY=Enum.TextYAlignment local TT=Enum.TextTruncate local TSV=game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101") local TSC=function(a,b,c) return TSV:Create(a,b,c) end local UO=UDim2.fromOffset local US=UDim2.fromScale local VX=Vector2.new local MFL=math.floor local SFM=string.format local TDL=task.delay local SSB=string.sub local QQ=pcall local TSP=task.spawn local NSK=NumberSequenceKeypoint.new local CSN=ColorSequence.new local NSN=NumberSequence.new local SGM=string.match local SLW=string.lower local GGS=function(s) return game:GetService(s) end local TBI=table.insert local TCN=table.concat local SRP=string.rep local SUP=string.upper local SFD=string.find local IUC=function() return Instance.new("\085\073\067\111\114\110\101\114") end local INF=function() return Instance.new("\070\114\097\109\101") end local ITL=function() return Instance.new("\084\101\120\116\076\097\098\101\108") end local ITB=function() return Instance.new("\084\101\120\116\066\117\116\116\111\110") end local IUS=function() return Instance.new("\085\073\083\116\114\111\107\101") end local IUP=function() return Instance.new("\085\073\080\097\100\100\105\110\103") end local IUL=function() return Instance.new("\085\073\076\105\115\116\076\097\121\111\117\116") end local IIL=function() return Instance.new("\073\109\097\103\101\076\097\098\101\108") end local ISG=function() return Instance.new("\083\099\114\101\101\110\071\117\105") end local ITX=function() return Instance.new("\084\101\120\116\066\111\120") end local OCL=os.clock local EM=Enum.Material local CFN=CFrame.new local IP=ipairs local PR=pairs local TS=tostring local TN=tonumber local UIS=UserInputService local HST=Enum.HumanoidStateType local TW=task.wait local OD=os.date local MN=math.min local MX=math.max local SG=string.gsub local WF=writefile local EFB=Enum.Font.GothamBold local EFM=Enum.Font.GothamMedium local EFG=Enum.Font.Gotham local GC=function(o) return o:GetChildren() end local GD=function(o) return o:GetDescendants() end local FFC=function(o,c) return o:FindFirstChildOfClass(c) end local FF=function(o,...) return o:FindFirstChild(...) end local WFC=function(o,...) return o:WaitForChild(...) end local CN=function(s,f) return s:Connect(f) end local GPS=function(o,p) return o:GetPropertyChangedSignal(p) end local LWR=function(s) return s:lower() end local UPR=function(s) return s:upper() end local IUG=function() return Instance.new("\085\073\071\114\097\100\105\101\110\116") end local IWC=function() return Instance.new("\087\101\108\100\067\111\110\115\116\114\097\105\110\116") end local GCA=getcustomasset local ISF=isfile local SCT=Enum.ScaleType local EFZ=Enum.Font.GrenzeGotisch local AC1=CR(167,108,255) local AC2=CR(255,255,255) local AC3=CR(22,14,36) local AC4=CR(120,70,200) local AC5=CR(216,208,235) local TWI=function(...) return TweenInfo.new(...) end local TXL=Enum.TextXAlignment.Left local TYC=Enum.TextYAlignment.Center local TYT=Enum.TextYAlignment.Top local ESQ=ES.Quart local ESB=ES.Back
 local GM_ENV=(type(getgenv)=="\102\117\110\099\116\105\111\110") and getgenv() or _G
 if GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"] or GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069\068"] then
 if GM_ENV["\071\077\095\070\079\082\067\069"] then
 GM_ENV["\071\077\095\070\079\082\067\069"]=nil
 GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"]=nil
 GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069\068"]=nil
-print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\071\077\095\070\079\082\067\069\032\100\101\116\101\099\116\097\100\111\032\045\032\103\117\097\114\100\032\108\105\109\112\105\097\100\111\044\032\114\101\045\101\106\101\099\117\116\097\110\100\111\046")
+print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\071\077\095\070\079\082\067\069\032\100\101\116\101\099\116\101\100\032\045\032\103\117\097\114\100\032\099\108\101\097\114\101\100\044\032\114\101\045\101\120\101\099\117\116\105\110\103\046")
 else
 warn("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\068\111\117\098\108\101\032\101\120\101\099\117\116\105\111\110\032\100\101\116\101\099\116\101\100\032\045\032\097\108\114\101\097\100\121\032\114\117\110\110\105\110\103\046\032\083\101\099\111\110\100\032\101\120\101\099\117\116\105\111\110\032\105\103\110\111\114\101\100\046")
 warn("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\083\105\032\101\108\032\109\101\110\117\032\110\111\032\114\101\115\112\111\110\100\101\058\032\101\106\101\099\117\116\097\032\103\101\116\103\101\110\118\040\041\046\071\077\095\070\079\082\067\069\032\061\032\116\114\117\101\032\121\032\114\101\045\101\106\101\099\117\116\097\046")
@@ -15,7 +15,7 @@ end
 GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"]=true
 GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069\068"]=true
 local zzV1={}
-zzV1.language="\101\115"
+zzV1.language="\101\110"
 local function gmT(es,en)
 if zzV1.language=="\101\110" then
 return en or es
@@ -25,14 +25,14 @@ end
 zzV1.soundsOn=true
 local SND_POOL={}
 local SND_KINDS={
-click={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.00,vol=0.22},
-toggleOn={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.42,vol=0.30},
-toggleOff={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=0.88,vol=0.30},
-slider={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.72,vol=0.08},
-hover={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=2.05,vol=0.05},
-pop={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.18,vol=0.22},
-open={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\115\119\111\111\115\104\046\119\097\118",speed=0.92,vol=0.20},
-close={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\115\119\111\111\115\104\046\119\097\118",speed=1.22,vol=0.20},
+click={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=0.72,vol=0.16},
+toggleOn={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=0.95,vol=0.20},
+toggleOff={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=0.62,vol=0.18},
+slider={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.15,vol=0.05},
+hover={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=1.4,vol=0.03},
+pop={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\101\108\101\099\116\114\111\110\105\099\112\105\110\103\115\104\111\114\116\046\119\097\118",speed=0.85,vol=0.14},
+open={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\115\119\111\111\115\104\046\119\097\118",speed=0.78,vol=0.14},
+close={id="\114\098\120\097\115\115\101\116\058\047\047\115\111\117\110\100\115\047\115\119\111\111\115\104\046\119\097\118",speed=1.05,vol=0.14},
 }
 zzV1.uiSound=function(kind)
 if not zzV1.soundsOn then
@@ -45,10 +45,10 @@ end
 local s=SND_POOL[kind]
 if s==nil then
 local created
-pcall(function()
+QQ(function()
 created=IN("\083\111\117\110\100")
 created.SoundId=def.id
-created.Parent=game:GetService("\083\111\117\110\100\083\101\114\118\105\099\101")
+created.Parent=GGS("\083\111\117\110\100\083\101\114\118\105\099\101")
 end)
 if created then
 SND_POOL[kind]=created
@@ -60,7 +60,7 @@ end
 elseif s==false then
 return
 end
-pcall(function()
+QQ(function()
 s:Stop()
 s.PlaybackSpeed=def.speed
 s.Volume=def.vol
@@ -70,9 +70,9 @@ end
 zzV1.uiSoundSetEnabled=function(on)
 zzV1.soundsOn=on and true or false
 if not on then
-for _,s in pairs(SND_POOL) do
+for _,s in PR(SND_POOL) do
 if s then
-pcall(function()
+QQ(function()
 s:Stop()
 end)
 end
@@ -82,9 +82,9 @@ end
 zzV1["\097\099\099\101\115\115\068\097\116\097"]=nil
 zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=nil
 local function zzV5(a,b,c)
-local t=bit32.band(tonumber(a) or 0,0xffffffff)
-local ub=#tostring(b)
-local uc=#tostring(c)
+local t=bit32.band(TN(a) or 0,0xffffffff)
+local ub=#TS(b)
+local uc=#TS(c)
 t=bit32.bxor(t,bit32.lshift(ub,11))
 t=bit32.bxor(t,bit32.lshift(uc,5))
 t=bit32.band(t+0x9e3779b9,0xffffffff)
@@ -99,7 +99,7 @@ local dat=zzV1["\097\099\099\101\115\115\068\097\116\097"]
 if type(tok)~="\110\117\109\098\101\114" or type(dat)~="\116\097\098\108\101" then
 return false
 end
-local exp=tonumber(dat.expires)
+local exp=TN(dat.expires)
 if not exp or os.time()>exp then
 return false
 end
@@ -114,20 +114,20 @@ LAST_STEP=label
 print("\091\071\077\093\032"..label)
 end
 local function bootCrash(report)
-local reportText=tostring(report)
+local reportText=TS(report)
 local message=reportText
 local trace="\040\110\111\032\116\114\097\099\101\098\097\099\107\032\097\118\097\105\108\097\098\108\101\032\102\114\111\109\032\116\104\105\115\032\101\120\101\099\117\116\111\114\041"
-local nl=string.find(reportText,"\010",1,true)
+local nl=SFD(reportText,"\010",1,true)
 if nl then
-message=string.sub(reportText,1,nl - 1)
-trace=string.sub(reportText,nl+1)
+message=SSB(reportText,1,nl - 1)
+trace=SSB(reportText,nl+1)
 end
 print("\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061")
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\066\079\079\084\032\067\082\065\083\072\032\097\102\116\101\114\032\115\116\101\112\058\032"..LAST_STEP)
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\069\114\114\111\114\058\032"..message)
 print(trace)
 print("\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061")
-pcall(function()
+QQ(function()
 local lines={
 "\071\104\111\115\116\032\077\101\116\104\111\100\032\098\111\111\116\032\099\114\097\115\104\058",
 "\102\097\105\108\101\100\032\097\102\116\101\114\032\115\116\101\112\058\032"..LAST_STEP,
@@ -138,37 +138,37 @@ message,
 "\116\114\097\099\101\098\097\099\107\058",
 trace,
 }
-writefile("\071\077\095\098\111\111\116\108\111\103\046\116\120\116",table.concat(lines,"\010"))
+WF("\071\077\095\098\111\111\116\108\111\103\046\116\120\116",TCN(lines,"\010"))
 end)
 local shown=false
 if zzV1 and type(zzV1.toast)=="\102\117\110\099\116\105\111\110" then
-shown=pcall(function()
+shown=QQ(function()
 zzV1.toast(
 "\071\104\111\115\116\032\077\101\116\104\111\100\032\045\032\098\111\111\116\032\101\114\114\111\114",
 "\070\097\105\108\101\100\032\097\102\116\101\114\032\091"
 ..LAST_STEP
 .."\093\032\032\124\032\032"
-..string.sub(message,1,260),
+..SSB(message,1,260),
 5
 )
 end)
 end
 if not shown then
-pcall(function()
+QQ(function()
 local parent
 if LocalPlayer then
-parent=LocalPlayer:FindFirstChildOfClass("\080\108\097\121\101\114\071\117\105")
+parent=FFC(LocalPlayer, "\080\108\097\121\101\114\071\117\105")
 end
 if not parent then
-parent=GuiParent or game:GetService("\067\111\114\101\071\117\105")
+parent=GuiParent or GGS("\067\111\114\101\071\117\105")
 end
-local banner=IN("\083\099\114\101\101\110\071\117\105")
+local banner=ISG()
 banner.Name="\071\077\095\066\111\111\116\067\114\097\115\104"
 banner.ResetOnSpawn=false
 banner.DisplayOrder=2147483647
 banner.Parent=parent
-local frame=IN("\070\114\097\109\101")
-frame.AnchorPoint=Vector2.new(0.5,0.5)
+local frame=INF()
+frame.AnchorPoint=VX(0.5,0.5)
 frame.Position=U2(0.5,0,0.5,0)
 frame.Size=U2(0,520,0,120)
 frame.BackgroundColor3=CR(16,10,26)
@@ -176,21 +176,21 @@ frame.BackgroundTransparency=0.05
 frame.BorderSizePixel=0
 frame.Parent=banner
 IN("\085\073\067\111\114\110\101\114",frame).CornerRadius=UD(0,12)
-local stroke=IN("\085\073\083\116\114\111\107\101")
+local stroke=IUS()
 stroke.Color=CR(255,80,80)
 stroke.Thickness=2
 stroke.Parent=frame
-local title=IN("\084\101\120\116\076\097\098\101\108")
+local title=ITL()
 title.BackgroundTransparency=1
 title.Position=U2(0,14,0,8)
 title.Size=U2(1,-28,0,22)
-title.Font=EF.GothamBold
+title.Font=EFB
 title.Text="\071\072\079\083\084\032\077\069\084\072\079\068\032\124\032\066\079\079\084\032\069\082\082\079\082"
 title.TextColor3=CR(255,120,120)
 title.TextSize=17
-title.TextXAlignment=TX.Left
+title.TextXAlignment=TXL
 title.Parent=frame
-local body=IN("\084\101\120\116\076\097\098\101\108")
+local body=ITL()
 body.BackgroundTransparency=1
 body.Position=U2(0,14,0,34)
 body.Size=U2(1,-28,1,-44)
@@ -199,22 +199,22 @@ body.Text="\091"..LAST_STEP.."\093\032\032"..message
 body.TextColor3=CR(238,234,248)
 body.TextSize=14
 body.TextWrapped=true
-body.TextXAlignment=TX.Left
-body.TextYAlignment=Enum.TextYAlignment.Top
+body.TextXAlignment=TXL
+body.TextYAlignment=TYT
 body.Parent=frame
-task.delay(15,function()
+TDL(15,function()
 banner:Destroy()
 end)
 end)
 end
 if SplashRef then
-pcall(function()
+QQ(function()
 SplashRef:Destroy()
 end)
 SplashRef=nil
 end
-pcall(function()
-local splashBlur=game:GetService("\076\105\103\104\116\105\110\103"):FindFirstChild("\071\077\095\083\112\108\097\115\104\066\108\117\114")
+QQ(function()
+local splashBlur=GGS("\076\105\103\104\116\105\110\103"):FindFirstChild("\071\077\095\083\112\108\097\115\104\066\108\117\114")
 if splashBlur then
 splashBlur:Destroy()
 end
@@ -226,61 +226,61 @@ local function buildGhostUI(ctx)
 local TweenService=ctx.TweenService
 local UserInputService=ctx.UserInputService
 local LocalPlayer=ctx.LocalPlayer
-local Workspace=game:GetService("\087\111\114\107\115\112\097\099\101")
-local C_WINDOW=CR(13,13,13)
-local C_SIDEBAR=CR(15,15,15)
-local C_CARD=CR(26,26,26)
-local C_PILL=CR(38,38,38)
-local C_HOVER=CR(26,26,26)
-local C_PROFILE=CR(22,22,22)
-local C_POPUP=CR(32,32,32)
-local C_POPUP_HOVER=CR(46,46,46)
-local C_TRACK_OFF=CR(51,51,51)
-local C_KNOB_OFF=CR(207,207,207)
-local C_TRACK_ON=CR(242,242,242)
-local C_KNOB_ON=CR(17,17,17)
-local C_TEXT=CR(245,245,245)
-local C_DIM=CR(138,138,138)
-local C_OFF=CR(154,154,154)
+local Workspace=GGS("\087\111\114\107\115\112\097\099\101")
+local C_WINDOW=CR(10,8,15)
+local C_SIDEBAR=CR(14,11,20)
+local C_CARD=CR(18,16,26)
+local C_PILL=CR(26,22,38)
+local C_HOVER=CR(34,28,46)
+local C_PROFILE=CR(22,18,32)
+local C_POPUP=CR(32,26,44)
+local C_POPUP_HOVER=CR(46,38,62)
+local C_TRACK_OFF=CR(40,36,54)
+local C_KNOB_OFF=CR(210,206,220)
+local C_TRACK_ON=CR(255,255,255)
+local C_KNOB_ON=CR(20,16,28)
+local C_TEXT=CR(232,228,240)
+local C_DIM=CR(154,144,168)
+local C_OFF=CR(160,152,176)
 local C_ACCENT=CR(167,108,255)
 local C_RED=CR(239,68,68)
 local C_DANGER_BG=CR(46,22,24)
 local C_DANGER_HOVER=CR(64,30,32)
 local WIN_W,WIN_H=590,410
-local WIN_FONT=EF.Gotham
-local WIN_FONT_MED=EF.GothamMedium
-local WIN_FONT_BOLD=EF.GothamBold
-local WIN_FONT_GOTHIC=EF.GrenzeGotisch
-local TOUCH=UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+local WIN_FONT=EFG
+local WIN_FONT_MED=EFM
+local WIN_FONT_BOLD=EFB
+local WIN_FONT_GOTHIC=EFZ
+local TOUCH=UIS.TouchEnabled and not UIS.KeyboardEnabled
 local SIDEBAR_W=TOUCH and 172 or 158
 local TOGGLE_ROW_H=TOUCH and 40 or 28
-local SWITCH_W=TOUCH and 40 or 34
-local SWITCH_H=TOUCH and 22 or 18
-local KNOB_D=TOUCH and 16 or 14
+local SWITCH_W=TOUCH and 48 or 42
+local SWITCH_H=TOUCH and 26 or 22
+local KNOB_D=TOUCH and 18 or 16
 local CTRL_ROW_H=TOUCH and 44 or 30
 local PILL_H=TOUCH and 34 or 28
-local BTN_H=TOUCH and 38 or 28
-local BTN_FULL_H=TOUCH and 42 or 30
+local BTN_H=TOUCH and 42 or 32
+local BTN_FULL_H=TOUCH and 46 or 36
 local GRID_PAD_Y=TOUCH and 12 or 8
 local CARD_GAP=TOUCH and 10 or 8
 local POPUP_OPT_H=TOUCH and 34 or 24
 local POPUP_OPT_GAP=TOUCH and 4 or 2
-local TRACK_H=TOUCH and 12 or 6
-local TRACK_KNOB_D=TOUCH and 26 or 16
+local TRACK_H=TOUCH and 14 or 10
+local TRACK_KNOB_D=TOUCH and 28 or 22
 local uiConns={}
 local function bindConn(conn)
 uiConns[#uiConns+1]=conn
 return conn
 end
-local root=IN("\083\099\114\101\101\110\071\117\105")
+local root=ISG()
 root.Name="\071\077\095\085\073"
 root.ResetOnSpawn=false
 root.IgnoreGuiInset=true
 root.DisplayOrder=500
 root.Parent=ctx.GuiParent
-root.Destroying:Connect(function()
-for _,c in ipairs(uiConns) do
-pcall(function()
+CN(root.Destroying, function()
+for _,c in IP(uiConns) do
+QQ(function()
 c:Disconnect()
 end)
 end
@@ -294,7 +294,7 @@ if not cam then
 return
 end
 local vp=cam.ViewportSize
-local s=math.min((vp.X - 30)/WIN_W,(vp.Y - 30)/WIN_H,1)
+local s=MN((vp.X - 30)/WIN_W,(vp.Y - 30)/WIN_H,1)
 if s<0.55 then
 s=0.55
 end
@@ -302,64 +302,396 @@ currentFit=s
 uiScale.Scale=s
 end
 fitScale()
-bindConn(Workspace:GetPropertyChangedSignal("\067\117\114\114\101\110\116\067\097\109\101\114\097"):Connect(function()
+bindConn(GPS(Workspace, "\067\117\114\114\101\110\116\067\097\109\101\114\097"):Connect(function()
 fitScale()
 local cam=Workspace.CurrentCamera
 if cam then
-bindConn(cam:GetPropertyChangedSignal("\086\105\101\119\112\111\114\116\083\105\122\101"):Connect(fitScale))
+bindConn(GPS(cam, "\086\105\101\119\112\111\114\116\083\105\122\101"):Connect(fitScale))
 end
 end))
 local shadows={}
 do
 local defs={{8,0.84},{18,0.92},{30,0.955}}
-for i,def in ipairs(defs) do
-local sh=IN("\070\114\097\109\101")
+for i,def in IP(defs) do
+local sh=INF()
 sh.Name="\083\104\097\100\111\119"..i
-sh.AnchorPoint=Vector2.new(0.5,0.5)
+sh.AnchorPoint=VX(0.5,0.5)
 sh.Position=U2(0.5,0,0.5,0)
-sh.Size=UDim2.fromOffset(WIN_W+def[1]*2,WIN_H+def[1]*2)
+sh.Size=UO(WIN_W+def[1]*2,WIN_H+def[1]*2)
 sh.BackgroundColor3=Color3.new(0,0,0)
 sh.BackgroundTransparency=def[2]
 sh.BorderSizePixel=0
 sh.ZIndex=1
-local sc=IN("\085\073\067\111\114\110\101\114")
+local sc=IUC()
 sc.CornerRadius=UD(0,14+def[1])
 sc.Parent=sh
 sh.Parent=root
 shadows[i]=sh
 end
 end
-local main=IN("\070\114\097\109\101")
+local main=INF()
 main.Name="\077\097\105\110"
-main.AnchorPoint=Vector2.new(0.5,0.5)
+main.AnchorPoint=VX(0.5,0.5)
 main.Position=U2(0.5,0,0.5,0)
-main.Size=UDim2.fromOffset(WIN_W,WIN_H)
+main.Size=UO(WIN_W,WIN_H)
 main.BackgroundColor3=C_WINDOW
 main.BackgroundTransparency=0.05
 main.BorderSizePixel=0
 main.ClipsDescendants=true
 main.ZIndex=2
-local mainCorner=IN("\085\073\067\111\114\110\101\114")
-mainCorner.CornerRadius=UD(0,14)
+local mainCorner=IUC()
+mainCorner.CornerRadius=UD(0,18)
 mainCorner.Parent=main
+local mainStroke=IUS()
+mainStroke.Name="\077\097\105\110\083\116\114\111\107\101"
+mainStroke.Color=C_ACCENT
+mainStroke.Thickness=1
+mainStroke.Transparency=0.75
+mainStroke.Parent=main
+local strokeGrad=IUG()
+strokeGrad.Rotation=90
+strokeGrad.Color=CSN(
+CR(120,70,200),
+CR(80,50,160)
+)
+strokeGrad.Transparency=NSN({
+NSK(0,0.6),
+NSK(0.5,0.75),
+NSK(1,0.6),
+})
+strokeGrad.Parent=mainStroke
 main.Parent=root
-local popLayer=IN("\070\114\097\109\101")
+local snakeBorder=INF()
+snakeBorder.Name="\071\077\095\083\110\097\107\101\066\111\114\100\101\114"
+snakeBorder.AnchorPoint=VX(0,0)
+snakeBorder.BackgroundTransparency=1
+snakeBorder.BorderSizePixel=0
+snakeBorder.ZIndex=3
+local snakeBC=IUC()
+snakeBC.CornerRadius=UD(0,20)
+snakeBC.Parent=snakeBorder
+local snakeFrame=IUS()
+snakeFrame.Color=CR(108,72,168)
+snakeFrame.Thickness=1.6
+snakeFrame.Transparency=0.42
+snakeFrame.Parent=snakeBorder
+snakeBorder.Parent=root
+local snakeHead=INF()
+snakeHead.Name="\083\110\097\107\101\072\101\097\100"
+snakeHead.AnchorPoint=VX(0.5,0.5)
+snakeHead.BackgroundColor3=CR(214,176,255)
+snakeHead.BackgroundTransparency=0.05
+snakeHead.BorderSizePixel=0
+snakeHead.ZIndex=4
+local shC=IUC()
+shC.CornerRadius=UD(1,0)
+shC.Parent=snakeHead
+local shGlow=IUS()
+shGlow.Color=CR(167,108,255)
+shGlow.Thickness=7
+shGlow.Transparency=0.42
+shGlow.Parent=snakeHead
+snakeHead.Parent=snakeBorder
+local snakeTail=INF()
+snakeTail.Name="\083\110\097\107\101\084\097\105\108"
+snakeTail.AnchorPoint=VX(0.5,0.5)
+snakeTail.BackgroundColor3=CR(160,105,235)
+snakeTail.BackgroundTransparency=0.3
+snakeTail.BorderSizePixel=0
+snakeTail.ZIndex=4
+local stC=IUC()
+stC.CornerRadius=UD(1,0)
+stC.Parent=snakeTail
+local stGlow=IUS()
+stGlow.Color=CR(150,95,230)
+stGlow.Thickness=4
+stGlow.Transparency=0.6
+stGlow.Parent=snakeTail
+snakeTail.Parent=snakeBorder
+local snake2Head=snakeHead:Clone()
+snake2Head.Name="\083\110\097\107\101\072\101\097\100\050"
+snake2Head.BackgroundColor3=CR(172,124,240)
+snake2Head.BackgroundTransparency=0.22
+local s2hg=FFC(snake2Head, "\085\073\083\116\114\111\107\101")
+if s2hg then
+s2hg.Transparency=0.56
+s2hg.Thickness=5
+end
+snake2Head.Parent=snakeBorder
+local snake2Tail=snakeTail:Clone()
+snake2Tail.Name="\083\110\097\107\101\084\097\105\108\050"
+snake2Tail.BackgroundTransparency=0.5
+snake2Tail.BackgroundColor3=CR(140,92,215)
+snake2Tail.Parent=snakeBorder
+do
+local snakeT=0
+local snakeAge=0
+local snakeWasOpen=main.Visible
+local SNAKE_BASE=1/7.5
+local SNAKE_HEAD=8
+local SNAKE_TAIL=74
+local function snakeEdgePoint(d,W,H)
+local P=2*(W+H)
+d=((d%P)+P)%P
+if d<W then
+return d,0,true
+elseif d<W+H then
+return W,d - W,false
+elseif d<2*W+H then
+return W -(d - W - H),H,true
+else
+return 0,H -(d - 2*W - H),false
+end
+end
+local function snakeEdgeDist(d,W,H)
+local P=2*(W+H)
+d=((d%P)+P)%P
+if d<W then
+return d,W
+elseif d<W+H then
+return d - W,H
+elseif d<2*W+H then
+return d - W - H,W
+else
+return d - 2*W - H,H
+end
+end
+local function snakePlacePair(headObj,tailObj,headD,W,H,tailMax)
+local hx,hy=snakeEdgePoint(headD,W,H)
+headObj.Position=UO(hx,hy)
+headObj.Size=UO(SNAKE_HEAD,SNAKE_HEAD)
+local s=snakeEdgeDist(headD,W,H)
+local tailLen=MX(6,MN(tailMax,s))
+local cD=headD - tailLen/2
+local cx,cy,horiz=snakeEdgePoint(cD,W,H)
+tailObj.Position=UO(cx,cy)
+if horiz then
+tailObj.Size=UO(tailLen,3)
+else
+tailObj.Size=UO(3,tailLen)
+end
+end
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+local open=main.Visible and main.Parent~=nil and main.AbsoluteSize.X>10
+if open~=snakeWasOpen then
+snakeWasOpen=open
+if open then
+snakeAge=0
+end
+end
+snakeBorder.Visible=open
+if not open then
+return
+end
+local S=uiScale.Scale
+if S<=0.01 then
+S=1
+end
+local mp=main.AbsolutePosition - root.AbsolutePosition
+local ms=main.AbsoluteSize
+local wx=(mp.X/S) - 3
+local wy=(mp.Y/S) - 3
+local ww=(ms.X/S)+6
+local wh=(ms.Y/S)+6
+snakeBorder.Position=UO(wx,wy)
+snakeBorder.Size=UO(ww,wh)
+snakeAge+=dt
+local speed=SNAKE_BASE*(1+3.6*math.exp(-1.9*snakeAge))
+snakeT=(snakeT+speed*dt)%1
+local W=ww
+local H=wh
+local P=2*(W+H)
+local headD=snakeT*P
+snakePlacePair(snakeHead,snakeTail,headD,W,H,SNAKE_TAIL)
+snakePlacePair(snake2Head,snake2Tail,headD+P/2,W,H,SNAKE_TAIL - 16)
+end))
+end
+do
+local meteorLayer=INF()
+meteorLayer.Name="\071\077\095\077\101\116\101\111\114\115"
+meteorLayer.BackgroundTransparency=1
+meteorLayer.Size=US(1,1)
+meteorLayer.ZIndex=2
+meteorLayer.Parent=main
+local MDEFS={
+{22,40,1.4,0.62,42,70},
+{44,66,2.0,0.48,80,125},
+{70,108,2.6,0.36,145,205},
+}
+local MTIERS={1,1,1,1,2,2,2,3,3}
+local MRNG=Random.new()
+local meteorPool={}
+local function spawnMeteor(m,W)
+local def=MDEFS[m.tier]
+m.len=MRNG:NextNumber(def[1],def[2])
+m.frame.Size=UO(m.len,def[3])
+m.frame.Rotation=m.rot
+m.frame.BackgroundTransparency=def[4]+MRNG:NextNumber(-0.07,0.07)
+local sp=MRNG:NextNumber(def[5],def[6])
+local a=math.rad(m.rot)
+m.vx=math.cos(a)*sp
+m.vy=math.sin(a)*sp
+if MRNG:NextNumber()<0.6 then
+m.x=MRNG:NextNumber(-10,W)
+m.y=-m.len - MRNG:NextNumber(8,40)
+else
+m.x=-m.len - MRNG:NextNumber(8,40)
+m.y=MRNG:NextNumber(-10,260)
+end
+m.frame.Position=UO(m.x,m.y)
+end
+for i=1,#MTIERS do
+local tier=MTIERS[i]
+local f=INF()
+f.Name="\077\101\116\101\111\114"..i
+f.AnchorPoint=VX(0.5,0.5)
+f.BackgroundColor3=CR(208,178,255)
+f.BorderSizePixel=0
+f.ZIndex=2
+f.Visible=false
+local mc=IUC()
+mc.CornerRadius=UD(1,0)
+mc.Parent=f
+local ms=IUS()
+ms.Color=CR(167,108,255)
+ms.Thickness=2
+ms.Transparency=0.66
+ms.Parent=f
+local mg=IUG()
+mg.Color=CSN(CR(110,72,185),CR(224,198,255))
+mg.Transparency=NSN(1,0.3)
+mg.Parent=f
+f.Parent=meteorLayer
+local m={
+frame=f,
+tier=tier,
+rot=MRNG:NextNumber(18,40),
+x=0,
+y=0,
+vx=0,
+vy=0,
+len=30,
+}
+meteorPool[i]=m
+spawnMeteor(m,WIN_W)
+local t0=MRNG:NextNumber(0.5,7)
+m.x+=m.vx*t0
+m.y+=m.vy*t0
+if m.x - m.len>WIN_W or m.y - m.len>WIN_H then
+spawnMeteor(m,WIN_W)
+else
+f.Visible=true
+f.Position=UO(m.x,m.y)
+end
+end
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+if dt>0.05 then
+dt=0.05
+end
+local W=main.Size.X.Offset
+local H=main.Size.Y.Offset
+if not main.Visible or H<90 then
+meteorLayer.Visible=false
+return
+end
+meteorLayer.Visible=true
+for i=1,#meteorPool do
+local m=meteorPool[i]
+m.x+=m.vx*dt
+m.y+=m.vy*dt
+if m.x - m.len>W or m.y - m.len>H then
+spawnMeteor(m,W)
+else
+m.frame.Position=UO(m.x,m.y)
+end
+end
+end))
+end
+do
+local pumpkinImg=nil
+QQ(function()
+if isfile and readfile and ISF("\071\077\095\067\097\108\097\098\097\122\097\046\112\110\103") then
+local data=readfile("\071\077\095\067\097\108\097\098\097\122\097\046\112\110\103")
+if #data>100 then
+local fn="\071\077\095\112\095"..TS(MFL(OCL()*1000)).."\046\112\110\103"
+WF(fn,data)
+pumpkinImg=GCA(fn)
+end
+end
+end)
+if pumpkinImg then
+local glow=INF()
+glow.Name="\071\077\095\080\117\109\112\107\105\110\071\108\111\119"
+glow.AnchorPoint=VX(0.5,0.5)
+glow.BackgroundColor3=CR(255,138,40)
+glow.BackgroundTransparency=0.62
+glow.BorderSizePixel=0
+glow.ZIndex=1
+local gc=IUC()
+gc.CornerRadius=UD(1,0)
+gc.Parent=glow
+local gg=IUG()
+gg.Color=CSN(CR(255,170,60),CR(210,80,20))
+gg.Parent=glow
+glow.Visible=false
+glow.Parent=root
+local pumpkin=IIL()
+pumpkin.Name="\071\077\095\080\117\109\112\107\105\110"
+pumpkin.AnchorPoint=VX(0.5,0.5)
+pumpkin.BackgroundTransparency=1
+pumpkin.Size=UO(70,70)
+pumpkin.ScaleType=SCT.Fit
+pumpkin.Image=pumpkinImg
+pumpkin.ZIndex=5
+pumpkin.Visible=false
+pumpkin.Parent=root
+local fireT=OCL()
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").RCN(enderStepped, function(dt)
+local open=main.Visible and main.Parent~=nil
+glow.Visible=open
+pumpkin.Visible=open
+if not open then
+return
+end
+local S=uiScale.Scale
+if S<=0.01 then
+S=1
+end
+local mp=(main.AbsolutePosition - root.AbsolutePosition)/S
+local ms=main.AbsoluteSize/S
+local cx=mp.X+ms.X/2
+local topY=mp.Y
+fireT+=dt
+local flick=math.noise(fireT*1.7,0,0)
+local drift=math.noise(0,fireT*0.9,7.3)*9
+local burst=math.noise(fireT*5.2,9.1,0)
+local inten=0.5+0.5*flick+0.22*burst
+pumpkin.Position=UO(cx,topY - 14)
+local glowSize=108+22*inten
+glow.Size=UO(glowSize,glowSize)
+glow.Position=UO(cx+drift,topY+2)
+glow.BackgroundTransparency=0.78 - 0.3*math.clamp(inten,0,1)
+gg.Rotation=(gg.Rotation+dt*(26+60*math.clamp(burst,0,1)))%360
+end))
+end
+end
+local popLayer=INF()
 popLayer.Name="\080\111\112\076\097\121\101\114"
 popLayer.BackgroundTransparency=1
-popLayer.Size=UDim2.fromScale(1,1)
+popLayer.Size=US(1,1)
 popLayer.Visible=true
 popLayer.ZIndex=40
 popLayer.Parent=main
 local popups={}
 local function closeAllPopups()
-for _,p in ipairs(popups) do
+for _,p in IP(popups) do
 p.close()
 end
 end
-local content=IN("\070\114\097\109\101")
+local content=INF()
 content.Name="\067\111\110\116\101\110\116"
 content.BackgroundTransparency=1
-content.Position=UDim2.fromOffset(SIDEBAR_W,0)
+content.Position=UO(SIDEBAR_W,0)
 content.Size=U2(1,-SIDEBAR_W,1,0)
 content.ZIndex=3
 content.Parent=main
@@ -372,7 +704,7 @@ scroll.Name="\080\097\103\101"..pageOrder
 scroll.Visible=false
 scroll.BackgroundTransparency=1
 scroll.BorderSizePixel=0
-scroll.Size=UDim2.fromScale(1,1)
+scroll.Size=US(1,1)
 scroll.CanvasSize=U2(0,0,0,0)
 scroll.AutomaticCanvasSize=XA.Y
 scroll.ScrollBarThickness=5
@@ -382,13 +714,13 @@ scroll.ScrollingDirection=Enum.ScrollingDirection.Y
 scroll.ElasticBehavior=Enum.ElasticBehavior.WhenScrollable
 scroll.Active=true
 scroll.ZIndex=3
-local pad=IN("\085\073\080\097\100\100\105\110\103")
+local pad=IUP()
 pad.PaddingTop=UD(0,12)
 pad.PaddingBottom=UD(0,14)
 pad.PaddingLeft=UD(0,14)
 pad.PaddingRight=UD(0,10)
 pad.Parent=scroll
-local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local lay=IUL()
 lay.Padding=UD(0,12)
 lay.SortOrder=XR.LayoutOrder
 lay.Parent=scroll
@@ -397,57 +729,57 @@ pages[pageOrder]=scroll
 return scroll
 end
 local function mkIcon(parent,kind,tint)
-local holder=IN("\070\114\097\109\101")
+local holder=INF()
 holder.Name="\073\099\111\110\095"..kind
 holder.BackgroundTransparency=1
-holder.Size=UDim2.fromOffset(16,16)
+holder.Size=UO(16,16)
 local pieces={}
 local function bar(x,y,w,h,rot,filled,round)
-local g=IN("\070\114\097\109\101")
+local g=INF()
 g.BorderSizePixel=0
-g.Position=UDim2.fromOffset(x - 1,y - 1)
-g.Size=UDim2.fromOffset(w+2,h+2)
+g.Position=UO(x - 1,y - 1)
+g.Size=UO(w+2,h+2)
 g.Rotation=rot or 0
 g.Parent=holder
 if filled then
 g.BackgroundColor3=tint
 g.BackgroundTransparency=0.84
 if round then
-local gc=IN("\085\073\067\111\114\110\101\114")
+local gc=IUC()
 gc.CornerRadius=UD(1,0)
 gc.Parent=g
 end
 else
 g.BackgroundTransparency=1
-local gs=IN("\085\073\083\116\114\111\107\101")
+local gs=IUS()
 gs.Thickness=2.5
 gs.Color=tint
 gs.Transparency=0.86
 gs.Parent=g
 if round then
-local gc=IN("\085\073\067\111\114\110\101\114")
+local gc=IUC()
 gc.CornerRadius=UD(1,0)
 gc.Parent=g
 end
 end
-local f=IN("\070\114\097\109\101")
+local f=INF()
 f.BorderSizePixel=0
-f.Position=UDim2.fromOffset(x,y)
-f.Size=UDim2.fromOffset(w,h)
+f.Position=UO(x,y)
+f.Size=UO(w,h)
 f.Rotation=rot or 0
 if filled then
 f.BackgroundColor3=tint
 pieces[#pieces+1]={frame=f}
 else
 f.BackgroundTransparency=1
-local st=IN("\085\073\083\116\114\111\107\101")
+local st=IUS()
 st.Thickness=1.5
 st.Color=tint
 st.Parent=f
 pieces[#pieces+1]={frame=f,stroke=st}
 end
 if round then
-local cr=IN("\085\073\067\111\114\110\101\114")
+local cr=IUC()
 cr.CornerRadius=UD(1,0)
 cr.Parent=f
 end
@@ -498,16 +830,16 @@ end
 holder.Parent=parent
 local api={frame=holder}
 function api.tint(color)
-for _,p in ipairs(pieces) do
+for _,p in IP(pieces) do
 if p.stroke then
 p.stroke.Color=color
 else
 p.frame.BackgroundColor3=color
 end
 end
-for _,d in ipairs(holder:GetChildren()) do
+for _,d in IP(GC(holder)) do
 if d:IsA("\070\114\097\109\101") and d~=api.frame then
-local gs=d:FindFirstChildOfClass("\085\073\083\116\114\111\107\101")
+local gs=FFC(d, "\085\073\083\116\114\111\107\101")
 if gs then
 gs.Color=color
 elseif d.BackgroundTransparency>0.5 then
@@ -518,89 +850,274 @@ end
 end
 return api
 end
-local sidebar=IN("\070\114\097\109\101")
+local sidebar=INF()
 sidebar.Name="\083\105\100\101\098\097\114"
 sidebar.Size=U2(0,SIDEBAR_W,1,0)
 sidebar.BackgroundColor3=C_SIDEBAR
 sidebar.BorderSizePixel=0
 sidebar.ZIndex=3
-local sbCorner=IN("\085\073\067\111\114\110\101\114")
+local sbCorner=IUC()
 sbCorner.CornerRadius=UD(0,14)
 sbCorner.Parent=sidebar
 sidebar.Parent=main
-local logo=IN("\084\101\120\116\076\097\098\101\108")
+local logoImg=nil
+local rankImg=nil
+local function gmLoadRankAsset(rank)
+if not(isfile and readfile) then
+return nil
+end
+local tryFiles={}
+if type(rank)=="\115\116\114\105\110\103" and #rank>0 then
+tryFiles[#tryFiles+1]="\071\077\095\114\097\110\107\095"..rank.."\046\112\110\103"
+end
+tryFiles[#tryFiles+1]="\071\077\095\114\097\110\107\095\101\099\108\105\112\115\101\046\112\110\103"
+for _,fn in IP(tryFiles) do
+if ISF(fn) then
+local okData,data2=QQ(readfile,fn)
+if okData and type(data2)=="\115\116\114\105\110\103" and #data2>100 then
+local fname2="\071\077\095\114\095"..TS(MFL(OCL()*1000)).."\046\112\110\103"
+if QQ(writefile,fname2,data2) then
+return GCA(fname2)
+end
+end
+end
+end
+return nil
+end
+QQ(function()
+if isfile and readfile and ISF("\071\077\095\108\111\103\111\046\112\110\103") then
+local data=readfile("\071\077\095\108\111\103\111\046\112\110\103")
+if #data>100 then
+local fname="\071\077\095\108\095"..TS(MFL(OCL()*1000)).."\046\112\110\103"
+WF(fname,data)
+logoImg=GCA(fname)
+end
+end
+rankImg=gmLoadRankAsset(zzV1.keyRank)
+end)
+local rankDef={x=54,y=-19,s=88,r=0}
+local logoDef={x=-16,y=3,s=44}
+local rankPos=type(ctx.getRankPos)=="\102\117\110\099\116\105\111\110" and ctx.getRankPos() or nil
+if type(rankPos)~="\116\097\098\108\101" then
+rankPos=rankDef
+end
+local logoPos=type(ctx.getLogoPos)=="\102\117\110\099\116\105\111\110" and ctx.getLogoPos() or nil
+if type(logoPos)~="\116\097\098\108\101" then
+logoPos=logoDef
+end
+local logo=IIL()
 logo.Name="\076\111\103\111"
 logo.BackgroundTransparency=1
-logo.Position=UDim2.fromOffset(16,10)
-logo.Size=UDim2.fromOffset(SIDEBAR_W - 30,34)
-logo.Font=WIN_FONT_GOTHIC
-logo.TextSize=27
-logo.RichText=true
-logo.TextXAlignment=TX.Left
-logo.TextYAlignment=Enum.TextYAlignment.Center
-logo.TextColor3=C_TEXT
-logo.Text="\071\104\111\115\116\032\060\102\111\110\116\032\099\111\108\111\114\061\034\035\065\055\054\067\070\070\034\062\077\101\116\104\111\100\060\047\102\111\110\116\062"
+logo.Position=UO(logoPos.x,logoPos.y)
+logo.Size=UO(SIDEBAR_W - 62,logoPos.s)
+logo.ScaleType=SCT.Fit
+logo.Image=logoImg or ""
 logo.ZIndex=4
 logo.Parent=sidebar
-local navHolder=IN("\070\114\097\109\101")
+if not logoImg then
+logo:Destroy()
+local logoText=ITL()
+logoText.Name="\076\111\103\111"
+logoText.BackgroundTransparency=1
+logoText.Position=UO(logoPos.x,logoPos.y)
+logoText.Size=UO(SIDEBAR_W - 70,logoPos.s)
+logoText.Font=WIN_FONT_GOTHIC
+logoText.TextSize=24
+logoText.RichText=true
+logoText.TextXAlignment=TXL
+logoText.TextYAlignment=TYC
+logoText.TextColor3=C_TEXT
+logoText.Text="\071\104\111\115\116\032\060\102\111\110\116\032\099\111\108\111\114\061\034\035\065\055\054\067\070\070\034\062\077\101\116\104\111\100\060\047\102\111\110\116\062"
+logoText.ZIndex=4
+logoText.Parent=sidebar
+zzV1.transformLogo=logoText
+else
+zzV1.transformLogo=logo
+end
+local rankBtn=IIL()
+rankBtn.Name="\082\097\110\107\066\097\100\103\101"
+rankBtn.BackgroundTransparency=1
+rankBtn.Position=UO(rankPos.x,rankPos.y)
+rankBtn.Size=UO(rankPos.s,rankPos.s)
+rankBtn.ScaleType=SCT.Fit
+rankBtn.Image=rankImg or ""
+rankBtn.Rotation=rankPos.r or 0
+rankBtn.ZIndex=5
+rankBtn.Parent=sidebar
+zzV1.transformRank=rankBtn
+zzV1.setRankBadge=function(rank)
+if type(rank)~="\115\116\114\105\110\103" or #rank==0 then
+return
+end
+QQ(function()
+local img=gmLoadRankAsset(rank)
+if img then
+rankBtn.Image=img
+end
+end)
+end
+local setVisible
+local winBtns=INF()
+winBtns.Name="\087\105\110\100\111\119\066\117\116\116\111\110\115"
+winBtns.AnchorPoint=VX(1,0)
+winBtns.Position=U2(1,-10,0,8)
+winBtns.Size=UO(76,32)
+winBtns.BackgroundTransparency=1
+winBtns.ZIndex=20
+winBtns.Parent=main
+local wbLay=IUL()
+wbLay.FillDirection=Enum.FillDirection.Horizontal
+wbLay.Padding=UD(0,6)
+wbLay.HorizontalAlignment=Enum.HorizontalAlignment.Right
+wbLay.Parent=winBtns
+local function winBtn(txt,color,hover,onClick)
+local b=ITB()
+b.Size=UO(32,32)
+b.BackgroundColor3=color
+b.BackgroundTransparency=0.25
+b.BorderSizePixel=0
+b.Font=WIN_FONT_BOLD
+b.TextSize=14
+b.TextColor3=C_TEXT
+b.Text=txt
+b.AutoButtonColor=false
+b.ZIndex=21
+local bc=IUC()
+bc.CornerRadius=UD(1,0)
+bc.Parent=b
+local bs=IUS()
+bs.Color=C_ACCENT
+bs.Thickness=1
+bs.Transparency=0.6
+bs.Parent=b
+CN(b.MouseEnter, function()
+TSC(b,TWI(0.15,ESQ,ED.Out),{BackgroundTransparency=0,BackgroundColor3=hover,Size=UO(34,34)}):Play()
+TSC(bs,TWI(0.15),{Transparency=0.2}):Play()
+zzV1.uiSound("\104\111\118\101\114")
+end)
+CN(b.MouseLeave, function()
+TSC(b,TWI(0.15,ESQ,ED.Out),{BackgroundTransparency=0.25,BackgroundColor3=color,Size=UO(32,32)}):Play()
+TSC(bs,TWI(0.15),{Transparency=0.6}):Play()
+end)
+CN(b.Activated, function()
+zzV1.uiSound("\099\108\105\099\107")
+onClick()
+end)
+b.Parent=winBtns
+return b
+end
+local minimized=false
+winBtn("\126",CR(38,28,58),CR(58,42,88),function()
+minimized=not minimized
+local nav=FF(sidebar, "\078\097\118")
+local prof=FF(sidebar, "\080\114\111\102\105\108\101")
+local divider=nav and FF(nav, "\078\097\118\068\105\118\105\100\101\114")
+if minimized then
+TSC(main,TWI(0.35,ESB,ED.In),{Size=UO(WIN_W,46)}):Play()
+content.Visible=false
+if nav then nav.Visible=false end
+if prof then prof.Visible=false end
+for _,sh in IP(shadows) do
+TSC(sh,TWI(0.3),{Size=UO(WIN_W+18,46+18)}):Play()
+end
+else
+TSC(main,TWI(0.35,ESB,ED.Out),{Size=UO(WIN_W,WIN_H)}):Play()
+TW(0.25)
+content.Visible=true
+if nav then nav.Visible=true end
+if prof then prof.Visible=true end
+for _,sh in IP(shadows) do
+TSC(sh,TWI(0.3),{Size=UO(WIN_W+18,WIN_H+18)}):Play()
+end
+end
+end)
+winBtn("\088",CR(46,22,24),CR(64,30,32),function()
+setVisible(false,true)
+end)
+local navHolder=IN("\083\099\114\111\108\108\105\110\103\070\114\097\109\101")
 navHolder.Name="\078\097\118"
 navHolder.BackgroundTransparency=1
-navHolder.Position=UDim2.fromOffset(12,58)
+navHolder.Position=UO(12,58)
 navHolder.Size=U2(1,-24,1,-58 - 74)
 navHolder.ZIndex=4
+navHolder.BorderSizePixel=0
+navHolder.ScrollBarThickness=3
+navHolder.ScrollBarImageColor3=C_ACCENT
+navHolder.ScrollBarImageTransparency=0.7
+navHolder.ScrollingDirection=Enum.ScrollingDirection.Y
+navHolder.CanvasSize=U2(0,0,0,0)
+navHolder.AutomaticCanvasSize=XA.Y
+navHolder.ElasticBehavior=Enum.ElasticBehavior.WhenScrollable
+navHolder.ClipsDescendants=true
 navHolder.Parent=sidebar
-local navLayout=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local navFade=INF()
+navFade.Name="\078\097\118\070\097\100\101"
+navFade.AnchorPoint=VX(0,1)
+navFade.Position=U2(0,0,1,-58)
+navFade.Size=U2(1,0,0,24)
+navFade.BackgroundTransparency=1
+navFade.ZIndex=6
+navFade.Parent=sidebar
+local fadeGrad=IUG()
+fadeGrad.Rotation=90
+fadeGrad.Color=CSN(C_SIDEBAR)
+fadeGrad.Transparency=NSN({
+NSK(0,1),
+NSK(1,0),
+})
+fadeGrad.Parent=navFade
+local navLayout=IUL()
 navLayout.Padding=UD(0,6)
 navLayout.SortOrder=XR.LayoutOrder
 navLayout.Parent=navHolder
-local profile=IN("\070\114\097\109\101")
+local profile=INF()
 profile.Name="\080\114\111\102\105\108\101"
-profile.AnchorPoint=Vector2.new(0,1)
+profile.AnchorPoint=VX(0,1)
 profile.Position=U2(0,12,1,-12)
 profile.Size=U2(1,-24,0,58)
 profile.BackgroundColor3=C_PROFILE
 profile.BorderSizePixel=0
 profile.ZIndex=3
-local pfCorner=IN("\085\073\067\111\114\110\101\114")
+local pfCorner=IUC()
 pfCorner.CornerRadius=UD(0,10)
 pfCorner.Parent=profile
 profile.Parent=sidebar
-local avatar=IN("\070\114\097\109\101")
+local avatar=INF()
 avatar.Name="\065\118\097\116\097\114"
-avatar.Position=UDim2.fromOffset(12,14)
-avatar.Size=UDim2.fromOffset(30,30)
+avatar.Position=UO(12,14)
+avatar.Size=UO(30,30)
 avatar.BackgroundColor3=C_PILL
 avatar.BorderSizePixel=0
 avatar.ZIndex=4
-local avCorner=IN("\085\073\067\111\114\110\101\114")
+local avCorner=IUC()
 avCorner.CornerRadius=UD(1,0)
 avCorner.Parent=avatar
-local avRing=IN("\085\073\083\116\114\111\107\101")
+local avRing=IUS()
 avRing.Color=C_ACCENT
 avRing.Thickness=1.5
 avRing.Transparency=0.35
 avRing.Parent=avatar
 avatar.Parent=profile
-local initial=IN("\084\101\120\116\076\097\098\101\108")
+local initial=ITL()
 initial.BackgroundTransparency=1
-initial.Size=UDim2.fromScale(1,1)
+initial.Size=US(1,1)
 initial.Font=WIN_FONT_BOLD
 initial.TextSize=13
 initial.TextColor3=C_DIM
-initial.Text=string.sub(LocalPlayer.DisplayName,1,1)
+initial.Text=SSB(LocalPlayer.DisplayName,1,1)
 initial.ZIndex=4
 initial.Parent=avatar
-local thumb=IN("\073\109\097\103\101\076\097\098\101\108")
+local thumb=IIL()
 thumb.Name="\084\104\117\109\098"
 thumb.BackgroundTransparency=1
-thumb.Size=UDim2.fromScale(1,1)
+thumb.Size=US(1,1)
 thumb.Image="\114\098\120\116\104\117\109\098\058\047\047\116\121\112\101\061\065\118\097\116\097\114\072\101\097\100\083\104\111\116\038\105\100\061"..LocalPlayer.UserId.."\038\119\061\052\056\038\104\061\052\056"
 thumb.ZIndex=5
-local thCorner=IN("\085\073\067\111\114\110\101\114")
+local thCorner=IUC()
 thCorner.CornerRadius=UD(1,0)
 thCorner.Parent=thumb
 thumb.Parent=avatar
-pcall(function()
+QQ(function()
 local AVATAR_DEFAULT="\114\098\120\116\104\117\109\098\058\047\047\116\121\112\101\061\065\118\097\116\097\114\072\101\097\100\083\104\111\116\038\105\100\061"..LocalPlayer.UserId.."\038\119\061\052\056\038\104\061\052\056"
 local photoActive=false
 local function setPhotoImage(url)
@@ -614,7 +1131,7 @@ end
 end
 local photoState=ctx.getProfilePhoto()
 if photoState.mode=="\097\115\115\101\116" and photoState.assetId and photoState.assetId>0 then
-setPhotoImage("\114\098\120\097\115\115\101\116\105\100\058\047\047"..tostring(photoState.assetId))
+setPhotoImage("\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(photoState.assetId))
 photoActive=true
 elseif photoState.mode=="\102\105\108\101" then
 local status,url=ctx.photoFileStatus()
@@ -630,98 +1147,98 @@ end
 else
 setPhotoImage(nil)
 end
-local avDim=IN("\070\114\097\109\101")
+local avDim=INF()
 avDim.Name="\068\105\109"
-avDim.Size=UDim2.fromScale(1,1)
+avDim.Size=US(1,1)
 avDim.BackgroundColor3=Color3.new(0,0,0)
 avDim.BackgroundTransparency=0.45
 avDim.BorderSizePixel=0
 avDim.Visible=false
 avDim.ZIndex=6
-local dimCorner=IN("\085\073\067\111\114\110\101\114")
+local dimCorner=IUC()
 dimCorner.CornerRadius=UD(1,0)
 dimCorner.Parent=avDim
 avDim.Parent=avatar
-local pencil=IN("\070\114\097\109\101")
+local pencil=INF()
 pencil.Name="\080\101\110\099\105\108"
 pencil.BackgroundTransparency=1
-pencil.AnchorPoint=Vector2.new(0.5,0.5)
-pencil.Position=UDim2.fromScale(0.5,0.5)
-pencil.Size=UDim2.fromScale(1,1)
+pencil.AnchorPoint=VX(0.5,0.5)
+pencil.Position=US(0.5,0.5)
+pencil.Size=US(1,1)
 pencil.Visible=false
 pencil.ZIndex=7
 pencil.Parent=avatar
-local pShaft=IN("\070\114\097\109\101")
-pShaft.AnchorPoint=Vector2.new(0.5,0.5)
+local pShaft=INF()
+pShaft.AnchorPoint=VX(0.5,0.5)
 pShaft.Position=U2(0.54,1,0.46,-1)
-pShaft.Size=UDim2.fromOffset(9,2.4)
+pShaft.Size=UO(9,2.4)
 pShaft.Rotation=45
 pShaft.BackgroundColor3=C_TEXT
 pShaft.BorderSizePixel=0
-local shaftCorner=IN("\085\073\067\111\114\110\101\114")
+local shaftCorner=IUC()
 shaftCorner.CornerRadius=UD(1,0)
 shaftCorner.Parent=pShaft
 pShaft.Parent=pencil
-local pTip=IN("\070\114\097\109\101")
-pTip.AnchorPoint=Vector2.new(0.5,0.5)
+local pTip=INF()
+pTip.AnchorPoint=VX(0.5,0.5)
 pTip.Position=U2(0.2,0,0.8,0)
-pTip.Size=UDim2.fromOffset(3.6,3.2)
+pTip.Size=UO(3.6,3.2)
 pTip.Rotation=45
 pTip.BackgroundColor3=C_TEXT
 pTip.BorderSizePixel=0
-local tipCorner=IN("\085\073\067\111\114\110\101\114")
+local tipCorner=IUC()
 tipCorner.CornerRadius=UD(1,0)
 tipCorner.Parent=pTip
 pTip.Parent=pencil
-local dotsBtn=IN("\084\101\120\116\066\117\116\116\111\110")
+local dotsBtn=ITB()
 dotsBtn.Name="\068\111\116\115"
 dotsBtn.Text=""
 dotsBtn.AutoButtonColor=false
 dotsBtn.BackgroundTransparency=1
-dotsBtn.Position=UDim2.fromOffset(44,18)
-dotsBtn.Size=UDim2.fromOffset(12,22)
+dotsBtn.Position=UO(44,18)
+dotsBtn.Size=UO(12,22)
 dotsBtn.Visible=false
 dotsBtn.ZIndex=9
 dotsBtn.Parent=profile
 for i=0,2 do
-local d=IN("\070\114\097\109\101")
-d.AnchorPoint=Vector2.new(0.5,0)
+local d=INF()
+d.AnchorPoint=VX(0.5,0)
 d.Position=U2(0.5,0,0,i*8)
-d.Size=UDim2.fromOffset(3.5,3.5)
+d.Size=UO(3.5,3.5)
 d.BackgroundColor3=C_TEXT
 d.BackgroundTransparency=0.15
 d.BorderSizePixel=0
-local dCorner=IN("\085\073\067\111\114\110\101\114")
+local dCorner=IUC()
 dCorner.CornerRadius=UD(1,0)
 dCorner.Parent=d
 d.Parent=dotsBtn
 end
-local hoverBtn=IN("\084\101\120\116\066\117\116\116\111\110")
+local hoverBtn=ITB()
 hoverBtn.Name="\072\111\118\101\114"
 hoverBtn.Text=""
 hoverBtn.AutoButtonColor=false
 hoverBtn.BackgroundTransparency=1
-hoverBtn.Size=UDim2.fromScale(1,1)
+hoverBtn.Size=US(1,1)
 hoverBtn.ZIndex=8
 hoverBtn.Parent=avatar
-local photoMenu=IN("\070\114\097\109\101")
+local photoMenu=INF()
 photoMenu.Name="\080\104\111\116\111\077\101\110\117"
 photoMenu.Visible=false
 photoMenu.BackgroundColor3=C_POPUP
 photoMenu.BackgroundTransparency=0.04
 photoMenu.BorderSizePixel=0
-photoMenu.Size=UDim2.fromOffset(96,60)
+photoMenu.Size=UO(96,60)
 photoMenu.ZIndex=40
-local pmCorner=IN("\085\073\067\111\114\110\101\114")
+local pmCorner=IUC()
 pmCorner.CornerRadius=UD(0,10)
 pmCorner.Parent=photoMenu
-local pmPad=IN("\085\073\080\097\100\100\105\110\103")
+local pmPad=IUP()
 pmPad.PaddingTop=UD(0,4)
 pmPad.PaddingBottom=UD(0,4)
 pmPad.PaddingLeft=UD(0,4)
 pmPad.PaddingRight=UD(0,4)
 pmPad.Parent=photoMenu
-local pmLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local pmLay=IUL()
 pmLay.Padding=UD(0,2)
 pmLay.SortOrder=XR.LayoutOrder
 pmLay.Parent=photoMenu
@@ -736,15 +1253,15 @@ menuOpen=false
 photoMenu.Visible=false
 end
 popups[#popups+1]=menuEntry
-local photoDialog=IN("\070\114\097\109\101")
+local photoDialog=INF()
 photoDialog.Name="\080\104\111\116\111\068\105\097\108\111\103"
 photoDialog.Visible=false
 photoDialog.BackgroundColor3=C_POPUP
 photoDialog.BackgroundTransparency=0.04
 photoDialog.BorderSizePixel=0
-photoDialog.Size=UDim2.fromOffset(300,200)
+photoDialog.Size=UO(300,200)
 photoDialog.ZIndex=40
-local pdCorner=IN("\085\073\067\111\114\110\101\114")
+local pdCorner=IUC()
 pdCorner.CornerRadius=UD(0,12)
 pdCorner.Parent=photoDialog
 photoDialog.Parent=popLayer
@@ -758,29 +1275,29 @@ dlgOpen=false
 photoDialog.Visible=false
 end
 popups[#popups+1]=dlgEntry
-local pdTitle=IN("\084\101\120\116\076\097\098\101\108")
+local pdTitle=ITL()
 pdTitle.BackgroundTransparency=1
-pdTitle.Position=UDim2.fromOffset(14,10)
+pdTitle.Position=UO(14,10)
 pdTitle.Size=U2(1,-28,0,20)
 pdTitle.Font=WIN_FONT_MED
 pdTitle.TextSize=16
-pdTitle.TextXAlignment=TX.Left
+pdTitle.TextXAlignment=TXL
 pdTitle.TextColor3=C_TEXT
 pdTitle.Text="\070\111\116\111\032\100\101\032\112\101\114\102\105\108"
 pdTitle.ZIndex=41
 pdTitle.Parent=photoDialog
-local pdUrlLabel=IN("\084\101\120\116\076\097\098\101\108")
+local pdUrlLabel=ITL()
 pdUrlLabel.BackgroundTransparency=1
-pdUrlLabel.Position=UDim2.fromOffset(14,34)
+pdUrlLabel.Position=UO(14,34)
 pdUrlLabel.Size=U2(1,-28,0,12)
 pdUrlLabel.Font=WIN_FONT_MED
 pdUrlLabel.TextSize=11
-pdUrlLabel.TextXAlignment=TX.Left
+pdUrlLabel.TextXAlignment=TXL
 pdUrlLabel.TextColor3=C_TEXT
 pdUrlLabel.Text="\080\101\103\097\032\101\108\032\108\105\110\107\032\100\101\032\116\117\032\105\109\097\103\101\110\058"
 pdUrlLabel.ZIndex=41
 pdUrlLabel.Parent=photoDialog
-local pdUrlBox=IN("\084\101\120\116\066\111\120")
+local pdUrlBox=ITX()
 pdUrlBox.Name="\085\114\108\066\111\120"
 pdUrlBox.PlaceholderText="\104\116\116\112\115\058\047\047\046\046\046\032\040\105\109\103\117\114\044\032\067\068\078\044\032\101\116\099\041"
 pdUrlBox.Text=""
@@ -790,68 +1307,68 @@ pdUrlBox.TextColor3=C_TEXT
 pdUrlBox.PlaceholderColor3=C_DIM
 pdUrlBox.BackgroundColor3=C_PILL
 pdUrlBox.BorderSizePixel=0
-pdUrlBox.Position=UDim2.fromOffset(14,50)
-pdUrlBox.Size=UDim2.fromOffset(212,26)
+pdUrlBox.Position=UO(14,50)
+pdUrlBox.Size=UO(212,26)
 pdUrlBox.ZIndex=41
 pdUrlBox.ClearTextOnFocus=false
-local puCorner=IN("\085\073\067\111\114\110\101\114")
+local puCorner=IUC()
 puCorner.CornerRadius=UD(0,8)
 puCorner.Parent=pdUrlBox
-local puPad=IN("\085\073\080\097\100\100\105\110\103")
+local puPad=IUP()
 puPad.PaddingLeft=UD(0,8)
 puPad.PaddingRight=UD(0,8)
 puPad.Parent=pdUrlBox
 pdUrlBox.Parent=photoDialog
-local pdLoad=IN("\084\101\120\116\066\117\116\116\111\110")
+local pdLoad=ITB()
 pdLoad.Name="\076\111\097\100\085\114\108"
 pdLoad.AutoButtonColor=false
 pdLoad.BackgroundColor3=C_ACCENT
 pdLoad.BackgroundTransparency=0.25
-pdLoad.Position=UDim2.fromOffset(232,50)
-pdLoad.Size=UDim2.fromOffset(54,26)
+pdLoad.Position=UO(232,50)
+pdLoad.Size=UO(54,26)
 pdLoad.Font=WIN_FONT_MED
 pdLoad.TextSize=11
 pdLoad.TextColor3=C_TEXT
 pdLoad.Text="\067\097\114\103\097\114"
 pdLoad.ZIndex=41
-local plCorner=IN("\085\073\067\111\114\110\101\114")
+local plCorner=IUC()
 plCorner.CornerRadius=UD(0,8)
 plCorner.Parent=pdLoad
 pdLoad.Parent=photoDialog
-local pdStatus=IN("\084\101\120\116\076\097\098\101\108")
+local pdStatus=ITL()
 pdStatus.BackgroundTransparency=1
-pdStatus.Position=UDim2.fromOffset(14,80)
+pdStatus.Position=UO(14,80)
 pdStatus.Size=U2(1,-28,0,14)
 pdStatus.Font=WIN_FONT_MED
 pdStatus.TextSize=10
-pdStatus.TextXAlignment=TX.Left
+pdStatus.TextXAlignment=TXL
 pdStatus.TextColor3=C_ACCENT
 pdStatus.Text=""
 pdStatus.ZIndex=41
 pdStatus.Parent=photoDialog
-local pdHint=IN("\084\101\120\116\076\097\098\101\108")
+local pdHint=ITL()
 pdHint.BackgroundTransparency=1
-pdHint.Position=UDim2.fromOffset(14,96)
+pdHint.Position=UO(14,96)
 pdHint.Size=U2(1,-28,0,12)
 pdHint.Font=WIN_FONT
 pdHint.TextSize=9
-pdHint.TextXAlignment=TX.Left
+pdHint.TextXAlignment=TXL
 pdHint.TextColor3=C_DIM
-pdHint.Text="\082\101\099\111\109\101\110\100\097\100\111\058\032\105\109\097\103\101\110\032\099\117\097\100\114\097\100\097\044\032\101\106\032\053\048\048\120\053\048\048\112\120\046\032\083\101\032\097\106\117\115\116\097\032\097\108\032\105\099\111\110\111\032\115\111\108\097\046"
+pdHint.Text=gmT("\082\101\099\111\109\101\110\100\097\100\111\058\032\105\109\097\103\101\110\032\099\117\097\100\114\097\100\097\044\032\101\106\032\053\048\048\120\053\048\048\112\120\046\032\083\101\032\097\106\117\115\116\097\032\097\108\032\105\099\111\110\111\032\115\111\108\097\046","\082\101\099\111\109\109\101\110\100\101\100\058\032\115\113\117\097\114\101\032\105\109\097\103\101\044\032\101\046\103\046\032\053\048\048\120\053\048\048\112\120\046\032\073\116\032\097\117\116\111\045\102\105\116\115\032\116\104\101\032\105\099\111\110\046")
 pdHint.ZIndex=41
 pdHint.Parent=photoDialog
-local pdIdLabel=IN("\084\101\120\116\076\097\098\101\108")
+local pdIdLabel=ITL()
 pdIdLabel.BackgroundTransparency=1
-pdIdLabel.Position=UDim2.fromOffset(14,116)
+pdIdLabel.Position=UO(14,116)
 pdIdLabel.Size=U2(1,-28,0,12)
 pdIdLabel.Font=WIN_FONT_MED
 pdIdLabel.TextSize=11
-pdIdLabel.TextXAlignment=TX.Left
+pdIdLabel.TextXAlignment=TXL
 pdIdLabel.TextColor3=C_TEXT
 pdIdLabel.Text="\111\032\117\110\032\065\115\115\101\116\032\073\068\032\100\101\032\082\111\098\108\111\120\058"
 pdIdLabel.ZIndex=41
 pdIdLabel.Parent=photoDialog
-local pdBox=IN("\084\101\120\116\066\111\120")
+local pdBox=ITX()
 pdBox.PlaceholderText="\065\115\115\101\116\032\073\068\032\040\110\117\109\101\114\111\115\041"
 pdBox.Text=""
 pdBox.Font=WIN_FONT_MED
@@ -860,56 +1377,56 @@ pdBox.TextColor3=C_TEXT
 pdBox.PlaceholderColor3=C_DIM
 pdBox.BackgroundColor3=C_PILL
 pdBox.BorderSizePixel=0
-pdBox.Position=UDim2.fromOffset(14,132)
-pdBox.Size=UDim2.fromOffset(160,26)
+pdBox.Position=UO(14,132)
+pdBox.Size=UO(160,26)
 pdBox.ZIndex=41
 pdBox.ClearTextOnFocus=false
-local pbCorner=IN("\085\073\067\111\114\110\101\114")
+local pbCorner=IUC()
 pbCorner.CornerRadius=UD(0,8)
 pbCorner.Parent=pdBox
-local pbPad=IN("\085\073\080\097\100\100\105\110\103")
+local pbPad=IUP()
 pbPad.PaddingLeft=UD(0,8)
 pbPad.PaddingRight=UD(0,8)
 pbPad.Parent=pdBox
 pdBox.Parent=photoDialog
-local pdApply=IN("\084\101\120\116\066\117\116\116\111\110")
+local pdApply=ITB()
 pdApply.Name="\065\112\112\108\121\073\100"
 pdApply.AutoButtonColor=false
 pdApply.BackgroundColor3=C_PILL
-pdApply.Position=UDim2.fromOffset(180,132)
-pdApply.Size=UDim2.fromOffset(62,26)
+pdApply.Position=UO(180,132)
+pdApply.Size=UO(62,26)
 pdApply.Font=WIN_FONT_MED
 pdApply.TextSize=11
 pdApply.TextColor3=C_TEXT
 pdApply.Text="\065\112\108\105\099\097\114\032\073\068"
 pdApply.ZIndex=41
-local paCorner=IN("\085\073\067\111\114\110\101\114")
+local paCorner=IUC()
 paCorner.CornerRadius=UD(0,8)
 paCorner.Parent=pdApply
 pdApply.Parent=photoDialog
-local pdFileNote=IN("\084\101\120\116\076\097\098\101\108")
+local pdFileNote=ITL()
 pdFileNote.BackgroundTransparency=1
-pdFileNote.Position=UDim2.fromOffset(14,164)
+pdFileNote.Position=UO(14,164)
 pdFileNote.Size=U2(1,-28,0,12)
 pdFileNote.Font=WIN_FONT
 pdFileNote.TextSize=9
-pdFileNote.TextXAlignment=TX.Left
+pdFileNote.TextXAlignment=TXL
 pdFileNote.TextColor3=C_DIM
 pdFileNote.Text="\069\120\116\114\097\058\032\071\077\095\102\111\116\111\046\112\110\103\047\106\112\103\032\101\110\032\101\108\032\119\111\114\107\115\112\097\099\101\032\115\101\032\100\101\116\101\099\116\097\032\115\111\108\111\046"
 pdFileNote.ZIndex=41
 pdFileNote.Parent=photoDialog
-local pdClose=IN("\084\101\120\116\066\117\116\116\111\110")
+local pdClose=ITB()
 pdClose.Name="\067\108\111\115\101"
 pdClose.AutoButtonColor=false
 pdClose.BackgroundColor3=C_PILL
 pdClose.Position=U2(1,-76,1,-34)
-pdClose.Size=UDim2.fromOffset(62,24)
+pdClose.Size=UO(62,24)
 pdClose.Font=WIN_FONT_MED
 pdClose.TextSize=11
 pdClose.TextColor3=C_DIM
 pdClose.Text="\067\101\114\114\097\114"
 pdClose.ZIndex=41
-local pcCorner=IN("\085\073\067\111\114\110\101\114")
+local pcCorner=IUC()
 pcCorner.CornerRadius=UD(0,8)
 pcCorner.Parent=pdClose
 pdClose.Parent=photoDialog
@@ -917,7 +1434,7 @@ local pollToken=0
 local function startPolling()
 pollToken=pollToken+1
 local myToken=pollToken
-task.spawn(function()
+TSP(function()
 while dlgOpen and myToken==pollToken do
 local status,url=ctx.photoFileStatus()
 if status=="\111\107" and url then
@@ -934,9 +1451,9 @@ pdStatus.Text="\069\115\116\101\032\101\120\101\099\117\116\111\114\032\110\111\
 elseif status=="\098\097\100\102\105\108\101" then
 pdStatus.Text="\071\077\095\102\111\116\111\046\112\110\103\047\106\112\103\032\101\115\116\097\032\099\111\114\114\117\112\116\111\032\111\032\110\111\032\101\115\032\117\110\097\032\105\109\097\103\101\110\046"
 else
-pdStatus.Text="\065\117\116\111\045\100\101\116\101\099\116\097\110\100\111\032\071\077\095\102\111\116\111\032\101\110\032\101\108\032\119\111\114\107\115\112\097\099\101\046\046\046"
+pdStatus.Text=gmT("\065\117\116\111\045\100\101\116\101\099\116\097\110\100\111\032\071\077\095\102\111\116\111\032\101\110\032\101\108\032\119\111\114\107\115\112\097\099\101\046\046\046","\065\117\116\111\045\100\101\116\101\099\116\105\110\103\032\071\077\095\102\111\116\111\032\105\110\032\116\104\101\032\119\111\114\107\115\112\097\099\101\046\046\046")
 end
-task.wait(1)
+TW(1)
 end
 end)
 end
@@ -949,23 +1466,23 @@ pdBox.Text=""
 dlgOpen=true
 local mSize=main.AbsoluteSize
 local dSize=photoDialog.AbsoluteSize
-photoDialog.Position=UDim2.fromOffset(10,mSize.Y - dSize.Y - 80)
+photoDialog.Position=UO(10,mSize.Y - dSize.Y - 80)
 photoDialog.Visible=true
 local baseStatus=ctx.photoFileStatus()
 if baseStatus=="\111\107" then
-pdStatus.Text="\070\111\116\111\032\097\099\116\117\097\108\032\100\101\116\101\099\116\097\100\097\046\032\067\097\109\098\105\097\108\097\032\099\111\110\032\117\110\032\108\105\110\107\032\111\032\065\115\115\101\116\032\073\068\046"
+pdStatus.Text=gmT("\070\111\116\111\032\097\099\116\117\097\108\032\100\101\116\101\099\116\097\100\097\046\032\067\097\109\098\105\097\108\097\032\099\111\110\032\117\110\032\108\105\110\107\032\111\032\065\115\115\101\116\032\073\068\046","\067\117\114\114\101\110\116\032\112\104\111\116\111\032\100\101\116\101\099\116\101\100\046\032\067\104\097\110\103\101\032\105\116\032\119\105\116\104\032\097\032\108\105\110\107\032\111\114\032\065\115\115\101\116\032\073\068\046")
 else
 startPolling()
 end
 end
-pdLoad.Activated:Connect(function()
+CN(pdLoad.Activated, function()
 local url=pdUrlBox.Text
 if type(url)~="\115\116\114\105\110\103" or #url<8 then
 pdStatus.Text="\080\101\103\097\032\112\114\105\109\101\114\111\032\101\108\032\108\105\110\107\032\100\101\032\116\117\032\105\109\097\103\101\110\046"
 return
 end
-pdStatus.Text="\068\101\115\099\097\114\103\097\110\100\111\032\105\109\097\103\101\110\046\046\046"
-task.spawn(function()
+pdStatus.Text="\068\111\119\110\108\111\097\100\105\110\103\032\105\109\097\103\101\046\046\046"
+TSP(function()
 local res=ctx.downloadPhoto(url)
 if res=="\111\107" then
 local status,curl=ctx.photoFileStatus()
@@ -978,23 +1495,23 @@ if zzV1.toast then
 zzV1.toast("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\070\111\116\111\032\097\112\108\105\099\097\100\097\032\100\101\115\100\101\032\101\108\032\108\105\110\107\046","\080\104\111\116\111\032\097\112\112\108\105\101\100\032\102\114\111\109\032\116\104\101\032\108\105\110\107\046"),4)
 end
 else
-pdStatus.Text="\068\101\115\099\097\114\103\097\100\097\032\112\101\114\111\032\110\111\032\115\101\032\112\117\100\111\032\109\111\115\116\114\097\114\032\045\032\112\114\117\101\098\097\032\111\116\114\097\046"
+pdStatus.Text="\068\111\119\110\108\111\097\100\101\100\032\098\117\116\032\099\111\117\108\100\032\110\111\116\032\100\105\115\112\108\097\121\032\045\032\116\114\121\032\097\110\111\116\104\101\114\032\111\110\101\046"
 end
 elseif res=="\110\111\116\105\109\103" then
-pdStatus.Text="\069\115\032\117\110\097\032\112\097\103\105\110\097\044\032\110\111\032\117\110\097\032\105\109\097\103\101\110\058\032\099\111\112\105\097\032\101\108\032\108\105\110\107\032\068\069\032\108\097\032\105\109\097\103\101\110\046"
+pdStatus.Text="\084\104\097\116\032\105\115\032\097\032\119\101\098\112\097\103\101\044\032\110\111\116\032\097\110\032\105\109\097\103\101\058\032\099\111\112\121\032\116\104\101\032\105\109\097\103\101\032\068\073\082\069\067\084\032\108\105\110\107\046"
 elseif res=="\098\097\100\119\114\105\116\101" then
-pdStatus.Text="\078\111\032\115\101\032\112\117\100\111\032\103\117\097\114\100\097\114\032\101\108\032\097\114\099\104\105\118\111\046"
+pdStatus.Text="\067\111\117\108\100\032\110\111\116\032\115\097\118\101\032\116\104\101\032\102\105\108\101\046"
 else
-pdStatus.Text="\078\111\032\115\101\032\112\117\100\111\032\100\101\115\099\097\114\103\097\114\032\045\032\114\101\118\105\115\097\032\101\108\032\108\105\110\107\046"
+pdStatus.Text="\067\111\117\108\100\032\110\111\116\032\100\111\119\110\108\111\097\100\032\045\032\099\104\101\099\107\032\116\104\101\032\108\105\110\107\046"
 end
 end)
 end)
-pdApply.Activated:Connect(function()
-local id=tonumber(pdBox.Text)
+CN(pdApply.Activated, function()
+local id=TN(pdBox.Text)
 if id and id>0 then
 photoActive=true
-setPhotoImage("\114\098\120\097\115\115\101\116\105\100\058\047\047"..tostring(id))
-ctx.savePhotoMode("\097\115\115\101\116",math.floor(id))
+setPhotoImage("\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(id))
+ctx.savePhotoMode("\097\115\115\101\116",MFL(id))
 dlgEntry.close()
 if zzV1.toast then
 zzV1.toast("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\070\111\116\111\032\097\112\108\105\099\097\100\097\032\100\101\115\100\101\032\065\115\115\101\116\032\073\068\046","\080\104\111\116\111\032\097\112\112\108\105\101\100\032\102\114\111\109\032\065\115\115\101\116\032\073\068\046"),4)
@@ -1003,14 +1520,14 @@ else
 pdStatus.Text="\069\115\101\032\065\115\115\101\116\032\073\068\032\110\111\032\101\115\032\118\097\108\105\100\111\032\040\115\111\108\111\032\110\117\109\101\114\111\115\041\046"
 end
 end)
-pdClose.Activated:Connect(function()
+CN(pdClose.Activated, function()
 dlgEntry.close()
 end)
 local hideToken=0
 local function hideOverlays()
 hideToken=hideToken+1
 local myToken=hideToken
-task.delay(0.25,function()
+TDL(0.25,function()
 if hideToken==myToken then
 avDim.Visible=false
 pencil.Visible=false
@@ -1018,7 +1535,7 @@ dotsBtn.Visible=false
 end
 end)
 end
-hoverBtn.MouseEnter:Connect(function()
+CN(hoverBtn.MouseEnter, function()
 hideToken=hideToken+1
 if photoActive then
 dotsBtn.Visible=true
@@ -1027,11 +1544,11 @@ avDim.Visible=true
 pencil.Visible=true
 end
 end)
-hoverBtn.MouseLeave:Connect(hideOverlays)
-dotsBtn.MouseEnter:Connect(function()
+CN(hoverBtn.MouseLeave, hideOverlays)
+CN(dotsBtn.MouseEnter, function()
 hideToken=hideToken+1
 end)
-dotsBtn.MouseLeave:Connect(hideOverlays)
+CN(dotsBtn.MouseLeave, hideOverlays)
 local function toggleMenu()
 if menuOpen then
 menuEntry.close()
@@ -1050,48 +1567,48 @@ end
 if y<6 then
 y=6
 end
-photoMenu.Position=UDim2.fromOffset(x,y)
+photoMenu.Position=UO(x,y)
 photoMenu.Visible=true
 end
 end
-hoverBtn.Activated:Connect(function()
+CN(hoverBtn.Activated, function()
 if not photoActive then
 openPhotoDialog()
 else
 toggleMenu()
 end
 end)
-dotsBtn.Activated:Connect(function()
+CN(dotsBtn.Activated, function()
 toggleMenu()
 end)
 local function menuOption(text,onClick,danger)
-local ob=IN("\084\101\120\116\066\117\116\116\111\110")
+local ob=ITB()
 ob.Text=""
 ob.AutoButtonColor=false
 ob.BackgroundColor3=C_POPUP
 ob.BackgroundTransparency=1
 ob.Size=U2(1,0,0,26)
 ob.ZIndex=41
-local oc=IN("\085\073\067\111\114\110\101\114")
+local oc=IUC()
 oc.CornerRadius=UD(0,6)
 oc.Parent=ob
-local ol=IN("\084\101\120\116\076\097\098\101\108")
+local ol=ITL()
 ol.BackgroundTransparency=1
-ol.Size=UDim2.fromScale(1,1)
+ol.Size=US(1,1)
 ol.Font=WIN_FONT_MED
 ol.TextSize=11
 ol.TextColor3=danger and C_RED or C_TEXT
 ol.Text=text
 ol.ZIndex=42
 ol.Parent=ob
-ob.MouseEnter:Connect(function()
+CN(ob.MouseEnter, function()
 ob.BackgroundColor3=C_POPUP_HOVER
 ob.BackgroundTransparency=0
 end)
-ob.MouseLeave:Connect(function()
+CN(ob.MouseLeave, function()
 ob.BackgroundTransparency=1
 end)
-ob.Activated:Connect(function()
+CN(ob.Activated, function()
 menuEntry.close()
 onClick()
 end)
@@ -1110,85 +1627,151 @@ menuOption("\069\100\105\116\097\114",function()
 openPhotoDialog()
 end,false)
 end)
-local profName=IN("\084\101\120\116\076\097\098\101\108")
+local profName=ITL()
 profName.BackgroundTransparency=1
-profName.Position=UDim2.fromOffset(50,14)
+profName.Position=UO(50,14)
 profName.Size=U2(1,-58,0,14)
 profName.Font=WIN_FONT_MED
 profName.TextSize=12
-profName.TextXAlignment=TX.Left
-profName.TextTruncate=Enum.TextTruncate.AtEnd
+profName.TextXAlignment=TXL
+profName.TextTruncate=TT.AtEnd
 profName.TextColor3=C_TEXT
 profName.Text=LocalPlayer.DisplayName
 profName.ZIndex=4
 profName.Parent=profile
-local profHandle=IN("\084\101\120\116\076\097\098\101\108")
+local profHandle=ITL()
 profHandle.BackgroundTransparency=1
-profHandle.Position=UDim2.fromOffset(50,30)
+profHandle.Position=UO(50,30)
 profHandle.Size=U2(1,-58,0,12)
 profHandle.Font=WIN_FONT
 profHandle.TextSize=10
-profHandle.TextXAlignment=TX.Left
-profHandle.TextTruncate=Enum.TextTruncate.AtEnd
+profHandle.TextXAlignment=TXL
+profHandle.TextTruncate=TT.AtEnd
 profHandle.TextColor3=C_DIM
 profHandle.Text="\064"..LocalPlayer.Name
 profHandle.ZIndex=4
 profHandle.Parent=profile
 local navBtns={}
 local selectPage
+local iconCache={}
+local function loadIcon(name)
+if iconCache[name]~=nil then
+return iconCache[name]
+end
+local url=nil
+QQ(function()
+if isfile and readfile then
+local fn="\071\077\095\105\099\111\110\095"..name.."\046\112\110\103"
+if ISF(fn) then
+local data=readfile(fn)
+if #data>50 then
+local cached="\071\077\095\105\099\111\110\095"..name.."\095"..TS(MFL(OCL()*1000)).."\046\112\110\103"
+WF(cached,data)
+url=GCA(cached)
+end
+end
+end
+end)
+iconCache[name]=url or false
+return url
+end
 local function mkNavButton(holder,idx,def)
-local btn=IN("\084\101\120\116\066\117\116\116\111\110")
+local btn=ITB()
 btn.Name="\078\097\118\095"..def.name
 btn.AutoButtonColor=false
 btn.Text=""
-btn.Size=U2(1,0,0,TOUCH and 46 or 38)
+btn.Size=U2(1,0,0,TOUCH and 48 or 42)
 btn.LayoutOrder=idx
-btn.BackgroundColor3=C_PILL
-btn.BackgroundTransparency=1
+btn.BackgroundColor3=C_CARD
+btn.BackgroundTransparency=0.25
+btn.BorderSizePixel=0
 btn.ZIndex=4
-local nc=IN("\085\073\067\111\114\110\101\114")
-nc.CornerRadius=UD(1,0)
+local nc=IUC()
+nc.CornerRadius=UD(0,12)
 nc.Parent=btn
-local icon=mkIcon(btn,def.icon,C_DIM)
-icon.frame.Position=UDim2.fromOffset(14,11)
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local nStroke=IUS()
+nStroke.Name="\066\116\110\083\116\114\111\107\101"
+nStroke.Color=C_PILL
+nStroke.Thickness=1
+nStroke.Transparency=0.5
+nStroke.Parent=btn
+local iconUrl=loadIcon(def.icon)
+local iconWidget
+if iconUrl then
+local img=IIL()
+img.Name="\073\099\111\110"
+img.BackgroundTransparency=1
+img.Position=U2(0,8,0.5,-14)
+img.Size=UO(28,28)
+img.ScaleType=SCT.Fit
+img.Image=iconUrl
+img.ZIndex=5
+img.Parent=btn
+iconWidget={tint=function(c) img.ImageColor3=c end}
+zzV1.navIcons=zzV1.navIcons or {}
+zzV1.navIcons[def.icon]=img
+else
+local ic=mkIcon(btn,def.icon,C_DIM)
+ic.frame.Position=UO(14,12)
+iconWidget=ic
+end
+local lbl=ITL()
 lbl.BackgroundTransparency=1
-lbl.Position=UDim2.fromOffset(38,0)
+lbl.Position=UO(38,0)
 lbl.Size=U2(1,-46,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=TOUCH and 13 or 12
-lbl.TextXAlignment=TX.Left
+lbl.TextXAlignment=TXL
 lbl.TextColor3=C_DIM
 lbl.Text=gmT(def.nameEs or def.name,def.name)
 lbl.ZIndex=4
 lbl.Parent=btn
 local state={active=false,hover=false}
-local nInfo=TweenInfo.new(0.18,ES.Quart,ED.Out)
+local indicator=INF()
+indicator.Name="\073\110\100\105\099\097\116\111\114"
+indicator.AnchorPoint=VX(0,0.5)
+indicator.Position=U2(0,2,0.5,0)
+indicator.Size=UO(3,TOUCH and 28 or 24)
+indicator.BackgroundColor3=CR(255,255,255)
+indicator.BorderSizePixel=0
+indicator.ZIndex=6
+indicator.Visible=false
+local indCorner=IUC()
+indCorner.CornerRadius=UD(1,0)
+indCorner.Parent=indicator
+indicator.Parent=btn
+local nInfo=TWI(0.2,ESQ,ED.Out)
 local function paint()
 if state.active then
-TweenService:Create(btn,nInfo,{BackgroundTransparency=0,BackgroundColor3=C_PILL}):Play()
-TweenService:Create(lbl,nInfo,{TextColor3=C_TEXT}):Play()
-icon.tint(C_TEXT)
+TSC(btn,nInfo,{BackgroundTransparency=0.02,BackgroundColor3=CR(55,35,92)}):Play()
+TSC(nStroke,nInfo,{Color=C_ACCENT,Transparency=0.08,Thickness=1.5}):Play()
+TSC(lbl,nInfo,{TextColor3=C_TEXT}):Play()
+iconWidget.tint(CR(255,255,255))
+indicator.Visible=true
 elseif state.hover then
-TweenService:Create(btn,nInfo,{BackgroundTransparency=0,BackgroundColor3=C_HOVER}):Play()
-TweenService:Create(lbl,nInfo,{TextColor3=C_OFF}):Play()
-icon.tint(C_OFF)
+TSC(btn,nInfo,{BackgroundTransparency=0.08,BackgroundColor3=C_HOVER}):Play()
+TSC(nStroke,nInfo,{Color=C_ACCENT,Transparency=0.3,Thickness=1}):Play()
+TSC(lbl,nInfo,{TextColor3=C_OFF}):Play()
+iconWidget.tint(C_OFF)
+indicator.Visible=false
 else
-TweenService:Create(btn,nInfo,{BackgroundTransparency=1,BackgroundColor3=C_PILL}):Play()
-TweenService:Create(lbl,nInfo,{TextColor3=C_DIM}):Play()
-icon.tint(C_DIM)
+TSC(btn,nInfo,{BackgroundTransparency=0.25,BackgroundColor3=C_CARD}):Play()
+TSC(nStroke,nInfo,{Color=C_PILL,Transparency=0.5,Thickness=1}):Play()
+TSC(lbl,nInfo,{TextColor3=C_DIM}):Play()
+iconWidget.tint(C_DIM)
+indicator.Visible=false
 end
 end
-btn.MouseEnter:Connect(function()
+CN(btn.MouseEnter, function()
 state.hover=true
 paint()
 zzV1.uiSound("\104\111\118\101\114")
 end)
-btn.MouseLeave:Connect(function()
+CN(btn.MouseLeave, function()
 state.hover=false
 paint()
 end)
-btn.Activated:Connect(function()
+CN(btn.Activated, function()
 if not state.active then
 zzV1.uiSound("\112\111\112")
 end
@@ -1203,7 +1786,7 @@ navBtns[idx]=api
 return api
 end
 selectPage=function(idx)
-for i,b in ipairs(navBtns) do
+for i,b in IP(navBtns) do
 b.state.active=(i==idx)
 b.paint()
 if pages[i] then
@@ -1212,16 +1795,16 @@ end
 end
 local pg=pages[idx]
 if pg then
-local psc=pg:FindFirstChild("\071\077\095\080\097\103\101\080\111\112")
+local psc=FF(pg, "\071\077\095\080\097\103\101\080\111\112")
 if not psc then
 psc=IN("\085\073\083\099\097\108\101")
 psc.Name="\071\077\095\080\097\103\101\080\111\112"
 psc.Parent=pg
 end
 psc.Scale=0.97
-TweenService:Create(
+TSC(
 psc,
-TweenInfo.new(0.22,ES.Back,ED.Out),
+TWI(0.22,ESB,ED.Out),
 {Scale=1}
 ):Play()
 end
@@ -1232,7 +1815,7 @@ rowOrder+=1
 return rowOrder
 end
 local function mkCard(page,title)
-local card=IN("\070\114\097\109\101")
+local card=INF()
 card.Name="\067\097\114\100\095"..title
 card.BackgroundColor3=C_CARD
 card.BackgroundTransparency=0.04
@@ -1241,44 +1824,44 @@ card.Size=U2(1,0,0,0)
 card.AutomaticSize=XA.Y
 card.LayoutOrder=nextRow()
 card.ZIndex=3
-local cc=IN("\085\073\067\111\114\110\101\114")
+local cc=IUC()
 cc.CornerRadius=UD(0,12)
 cc.Parent=card
-local pad=IN("\085\073\080\097\100\100\105\110\103")
+local pad=IUP()
 pad.PaddingLeft=UD(0,16)
 pad.PaddingRight=UD(0,16)
 pad.PaddingTop=UD(0,14)
 pad.PaddingBottom=UD(0,14)
 pad.Parent=card
-local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local lay=IUL()
 lay.Padding=UD(0,CARD_GAP)
 lay.SortOrder=XR.LayoutOrder
 lay.Parent=card
-local head=IN("\070\114\097\109\101")
+local head=INF()
 head.BackgroundTransparency=1
 head.Size=U2(1,0,0,20)
 head.LayoutOrder=nextRow()
 head.ZIndex=3
 head.Parent=card
-local marker=IN("\070\114\097\109\101")
-marker.Size=UDim2.fromOffset(7,7)
+local marker=INF()
+marker.Size=UO(7,7)
 marker.Position=U2(0,1,0,6)
 marker.Rotation=45
 marker.BackgroundColor3=C_ACCENT
 marker.BorderSizePixel=0
 marker.ZIndex=3
-local mkCorner2=IN("\085\073\067\111\114\110\101\114")
+local mkCorner2=IUC()
 mkCorner2.CornerRadius=UD(0,2)
 mkCorner2.Parent=marker
 marker.Parent=head
-local ttl=IN("\084\101\120\116\076\097\098\101\108")
+local ttl=ITL()
 ttl.BackgroundTransparency=1
-ttl.Position=UDim2.fromOffset(14,0)
+ttl.Position=UO(14,0)
 ttl.Size=U2(1,-14,1,0)
 ttl.Font=WIN_FONT_MED
 ttl.TextSize=17
-ttl.TextXAlignment=TX.Left
-ttl.TextYAlignment=Enum.TextYAlignment.Center
+ttl.TextXAlignment=TXL
+ttl.TextYAlignment=TYC
 ttl.TextColor3=C_DIM
 ttl.Text=title
 ttl.ZIndex=3
@@ -1287,7 +1870,7 @@ card.Parent=page
 return card
 end
 local function mkGrid(card)
-local grid=IN("\070\114\097\109\101")
+local grid=INF()
 grid.Name="\071\114\105\100"
 grid.BackgroundTransparency=1
 grid.Size=U2(1,0,0,0)
@@ -1303,7 +1886,7 @@ grid.Parent=card
 return grid
 end
 local function mkToggle(parent,cfg)
-local row=IN("\084\101\120\116\066\117\116\116\111\110")
+local row=ITB()
 row.Name="\084\111\103\103\108\101\095"..cfg.label
 row.AutoButtonColor=false
 row.Text=""
@@ -1311,63 +1894,79 @@ row.BackgroundTransparency=1
 row.Size=U2(1,0,0,TOGGLE_ROW_H)
 row.LayoutOrder=nextRow()
 row.ZIndex=3
-local track=IN("\070\114\097\109\101")
+local track=INF()
 track.Name="\084\114\097\099\107"
 track.Position=U2(0,0,0.5,-(SWITCH_H/2))
-track.Size=UDim2.fromOffset(SWITCH_W,SWITCH_H)
+track.Size=UO(SWITCH_W,SWITCH_H)
 track.BackgroundColor3=C_TRACK_OFF
 track.BorderSizePixel=0
 track.ZIndex=4
-local tc=IN("\085\073\067\111\114\110\101\114")
+local tc=IUC()
 tc.CornerRadius=UD(1,0)
 tc.Parent=track
+local tglow=IUS()
+tglow.Name="\071\108\111\119"
+tglow.Color=C_ACCENT
+tglow.Thickness=2
+tglow.Transparency=1
+tglow.Parent=track
 track.Parent=row
-local knob=IN("\070\114\097\109\101")
+local knob=INF()
 knob.Name="\075\110\111\098"
-knob.Position=UDim2.fromOffset(2,(SWITCH_H - KNOB_D)/2)
-knob.Size=UDim2.fromOffset(KNOB_D,KNOB_D)
+knob.Position=UO(3,(SWITCH_H - KNOB_D)/2)
+knob.Size=UO(KNOB_D,KNOB_D)
 knob.BackgroundColor3=C_KNOB_OFF
 knob.BorderSizePixel=0
 knob.ZIndex=5
-local kc=IN("\085\073\067\111\114\110\101\114")
+local kc=IUC()
 kc.CornerRadius=UD(1,0)
 kc.Parent=knob
+local kglow=IUS()
+kglow.Name="\075\110\111\098\071\108\111\119"
+kglow.Color=C_ACCENT
+kglow.Thickness=1.5
+kglow.Transparency=1
+kglow.Parent=knob
 knob.Parent=track
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
-lbl.Position=UDim2.fromOffset(SWITCH_W+8,0)
+lbl.Position=UO(SWITCH_W+8,0)
 lbl.Size=U2(1,-48,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=12
-lbl.TextXAlignment=TX.Left
-lbl.TextYAlignment=Enum.TextYAlignment.Center
-lbl.TextTruncate=Enum.TextTruncate.AtEnd
+lbl.TextXAlignment=TXL
+lbl.TextYAlignment=TYC
+lbl.TextTruncate=TT.AtEnd
 lbl.TextColor3=C_OFF
 lbl.Text=cfg.label
 lbl.ZIndex=4
 lbl.Parent=row
 local on=cfg.init==true
-local infoC=TweenInfo.new(0.18,ES.Quart,ED.Out)
-local infoK=TweenInfo.new(0.26,ES.Back,ED.Out)
+local infoC=TWI(0.18,ESQ,ED.Out)
+local infoK=TWI(0.28,ESB,ED.Out)
 local function paint(animate)
 local trackC=on and C_TRACK_ON or C_TRACK_OFF
 local knobC=on and C_KNOB_ON or C_KNOB_OFF
 local lblC=on and C_TEXT or C_OFF
-local knobP=on and UDim2.fromOffset(SWITCH_W - KNOB_D - 2,(SWITCH_H - KNOB_D)/2)
-or UDim2.fromOffset(2,(SWITCH_H - KNOB_D)/2)
+local knobP=on and UO(SWITCH_W - KNOB_D - 3,(SWITCH_H - KNOB_D)/2)
+or UO(3,(SWITCH_H - KNOB_D)/2)
 if animate then
-TweenService:Create(track,infoC,{BackgroundColor3=trackC}):Play()
-TweenService:Create(knob,infoK,{BackgroundColor3=knobC,Position=knobP}):Play()
-TweenService:Create(lbl,infoC,{TextColor3=lblC}):Play()
+TSC(track,infoC,{BackgroundColor3=trackC}):Play()
+TSC(knob,infoK,{BackgroundColor3=knobC,Position=knobP}):Play()
+TSC(lbl,infoC,{TextColor3=lblC}):Play()
+TSC(tglow,TWI(0.3,ESQ,ED.Out),{Transparency=on and 0.25 or 1}):Play()
+TSC(kglow,TWI(0.3,ESQ,ED.Out),{Transparency=on and 0.15 or 1}):Play()
 else
 track.BackgroundColor3=trackC
 knob.BackgroundColor3=knobC
 knob.Position=knobP
 lbl.TextColor3=lblC
+tglow.Transparency=on and 0.25 or 1
+kglow.Transparency=on and 0.15 or 1
 end
 end
 paint(false)
-row.Activated:Connect(function()
+CN(row.Activated, function()
 on=not on
 paint(true)
 zzV1.uiSound(on and "\116\111\103\103\108\101\079\110" or "\116\111\103\103\108\101\079\102\102")
@@ -1379,65 +1978,83 @@ row.Parent=parent
 return row
 end
 local function mkSlider(parent,cfg)
-local row=IN("\070\114\097\109\101")
+local row=INF()
 row.Name="\083\108\105\100\101\114\095"..cfg.label
 row.BackgroundTransparency=1
 row.Size=U2(1,0,0,CTRL_ROW_H)
 row.LayoutOrder=nextRow()
 row.ZIndex=3
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
 lbl.Size=U2(0,160,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=12
-lbl.TextXAlignment=TX.Left
-lbl.TextYAlignment=Enum.TextYAlignment.Center
-lbl.TextTruncate=Enum.TextTruncate.AtEnd
+lbl.TextXAlignment=TXL
+lbl.TextYAlignment=TYC
+lbl.TextTruncate=TT.AtEnd
 lbl.TextColor3=C_TEXT
 lbl.Text=cfg.label
 lbl.ZIndex=4
 lbl.Parent=row
-local track=IN("\070\114\097\109\101")
+local track=INF()
 track.Name="\084\114\097\099\107"
 track.Position=U2(0,168,0.5,-(TRACK_H/2))
-track.Size=UDim2.fromOffset(150,TRACK_H)
+track.Size=UO(150,TRACK_H)
 track.BackgroundColor3=C_TRACK_OFF
 track.BorderSizePixel=0
 track.ZIndex=4
-local tc=IN("\085\073\067\111\114\110\101\114")
+local tc=IUC()
 tc.CornerRadius=UD(1,0)
 tc.Parent=track
 track.Parent=row
-local fill=IN("\070\114\097\109\101")
+local fill=INF()
 fill.Name="\070\105\108\108"
 fill.Size=U2(0,0,1,0)
 fill.BackgroundColor3=C_TEXT
 fill.BorderSizePixel=0
 fill.ZIndex=5
-local fc=IN("\085\073\067\111\114\110\101\114")
+local fc=IUC()
 fc.CornerRadius=UD(1,0)
 fc.Parent=fill
+local fgrad=IUG()
+fgrad.Name="\069\097\116\071\114\097\100\105\101\110\116"
+fgrad.Rotation=0
+fgrad.Transparency=NSN({
+NSK(0,0),
+NSK(0.75,0),
+NSK(0.88,0.5),
+NSK(0.95,0.85),
+NSK(1,1),
+})
+fgrad.Color=CSN(C_ACCENT,C_ACCENT)
+fgrad.Parent=fill
 fill.Parent=track
-local knob=IN("\070\114\097\109\101")
+local knob=INF()
 knob.Name="\075\110\111\098"
-knob.AnchorPoint=Vector2.new(0.5,0.5)
+knob.AnchorPoint=VX(0.5,0.5)
 knob.Position=U2(0,0,0.5,0)
-knob.Size=UDim2.fromOffset(TRACK_KNOB_D,TRACK_KNOB_D)
-knob.BackgroundColor3=C_TEXT
+knob.Size=UO(TRACK_KNOB_D+8,TRACK_KNOB_D)
+knob.BackgroundColor3=CR(255,255,255)
 knob.BorderSizePixel=0
 knob.ZIndex=6
-local kc=IN("\085\073\067\111\114\110\101\114")
-kc.CornerRadius=UD(0,5)
+local kc=IUC()
+kc.CornerRadius=UD(0,6)
 kc.Parent=knob
+local kglow=IUS()
+kglow.Name="\075\110\111\098\071\108\111\119"
+kglow.Color=C_ACCENT
+kglow.Thickness=1.5
+kglow.Transparency=0.2
+kglow.Parent=knob
 knob.Parent=track
-local value=IN("\084\101\120\116\076\097\098\101\108")
+local value=ITL()
 value.BackgroundTransparency=1
-value.Position=UDim2.fromOffset(324,0)
-value.Size=UDim2.fromOffset(54,CTRL_ROW_H)
+value.Position=UO(324,0)
+value.Size=UO(54,CTRL_ROW_H)
 value.Font=WIN_FONT
 value.TextSize=12
 value.TextXAlignment=TX.Right
-value.TextYAlignment=Enum.TextYAlignment.Center
+value.TextYAlignment=TYC
 value.TextColor3=C_TEXT
 value.ZIndex=4
 value.Parent=row
@@ -1446,9 +2063,9 @@ local dragging=false
 local function fmt(v)
 local txt
 if cfg.decimals then
-txt=string.format("\037\046"..tostring(cfg.decimals).."\102",v)
+txt=SFM("\037\046"..TS(cfg.decimals).."\102",v)
 else
-txt=string.format("\037\100",math.floor(v+0.5))
+txt=SFM("\037\100",MFL(v+0.5))
 end
 if cfg.suffix then
 txt=txt..cfg.suffix
@@ -1473,9 +2090,9 @@ if dragging then
 fill.Size=targetFill
 knob.Position=targetKnob
 else
-local infoS=TweenInfo.new(0.16,ES.Quart,ED.Out)
-TweenService:Create(fill,infoS,{Size=targetFill}):Play()
-TweenService:Create(knob,infoS,{Position=targetKnob}):Play()
+local infoS=TWI(0.16,ESQ,ED.Out)
+TSC(fill,infoS,{Size=targetFill}):Play()
+TSC(knob,infoS,{Position=targetKnob}):Play()
 end
 value.Text=fmt(current)
 end
@@ -1492,7 +2109,7 @@ current=v
 render()
 if fire then
 if changed then
-local now=os.clock()
+local now=OCL()
 if now - lastTick>0.045 then
 lastTick=now
 zzV1.uiSound("\115\108\105\100\101\114")
@@ -1517,11 +2134,11 @@ if pct>1 then
 pct=1
 end
 local raw=cfg.min+pct*(cfg.max - cfg.min)
-local snapped=math.floor(raw/cfg.step+0.5)*cfg.step
-local clean=math.floor(snapped*100+0.5)/100
+local snapped=MFL(raw/cfg.step+0.5)*cfg.step
+local clean=MFL(snapped*100+0.5)/100
 setValue(clean,true)
 end
-local hit=IN("\070\114\097\109\101")
+local hit=INF()
 hit.Name="\072\105\116\090\111\110\101"
 hit.Position=U2(0,160,0,0)
 hit.Size=U2(0,220,1,0)
@@ -1536,8 +2153,8 @@ dragging=true
 fromAbsX(input.Position.X)
 end
 end
-hit.InputBegan:Connect(beginDrag)
-bindConn(UserInputService.InputChanged:Connect(function(input)
+CN(hit.InputBegan, beginDrag)
+bindConn(CN(UIS.InputChanged, function(input)
 if not dragging then
 return
 end
@@ -1550,7 +2167,7 @@ or input.UserInputType==XU.Touch then
 fromAbsX(input.Position.X)
 end
 end))
-bindConn(UserInputService.InputEnded:Connect(function(input)
+bindConn(CN(UIS.InputEnded, function(input)
 if input.UserInputType==XU.MouseButton1
 or input.UserInputType==XU.Touch then
 dragging=false
@@ -1561,97 +2178,97 @@ row.Parent=parent
 return row
 end
 local function mkDropdown(parent,cfg)
-local row=IN("\070\114\097\109\101")
+local row=INF()
 row.Name="\068\114\111\112\100\111\119\110\095"..cfg.label
 row.BackgroundTransparency=1
 row.Size=U2(1,0,0,CTRL_ROW_H)
 row.LayoutOrder=nextRow()
 row.ZIndex=3
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
 lbl.Size=U2(0,160,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=12
-lbl.TextXAlignment=TX.Left
-lbl.TextYAlignment=Enum.TextYAlignment.Center
-lbl.TextTruncate=Enum.TextTruncate.AtEnd
+lbl.TextXAlignment=TXL
+lbl.TextYAlignment=TYC
+lbl.TextTruncate=TT.AtEnd
 lbl.TextColor3=C_TEXT
 lbl.Text=cfg.label
 lbl.ZIndex=4
 lbl.Parent=row
 local pillW=132
-local pill=IN("\084\101\120\116\066\117\116\116\111\110")
+local pill=ITB()
 pill.Name="\080\105\108\108"
 pill.AutoButtonColor=false
-pill.AnchorPoint=Vector2.new(0,0.5)
+pill.AnchorPoint=VX(0,0.5)
 pill.Position=U2(0,168,0.5,0)
-pill.Size=UDim2.fromOffset(pillW,PILL_H)
+pill.Size=UO(pillW,PILL_H)
 pill.BackgroundColor3=C_PILL
 pill.BorderSizePixel=0
 pill.Font=WIN_FONT_MED
 pill.TextSize=11
 pill.TextColor3=C_TEXT
-pill.TextXAlignment=TX.Left
+pill.TextXAlignment=TXL
 pill.Text=cfg.init
 pill.ZIndex=4
-local pc=IN("\085\073\067\111\114\110\101\114")
+local pc=IUC()
 pc.CornerRadius=UD(1,0)
 pc.Parent=pill
-local pPad=IN("\085\073\080\097\100\100\105\110\103")
+local pPad=IUP()
 pPad.PaddingLeft=UD(0,14)
 pPad.PaddingRight=UD(0,24)
 pPad.Parent=pill
 pill.Parent=row
-local chev=IN("\070\114\097\109\101")
+local chev=INF()
 chev.Name="\067\104\101\118\114\111\110"
-chev.AnchorPoint=Vector2.new(1,0.5)
+chev.AnchorPoint=VX(1,0.5)
 chev.Position=U2(1,-9,0.5,0)
-chev.Size=UDim2.fromOffset(8,8)
+chev.Size=UO(8,8)
 chev.BackgroundTransparency=1
 chev.ZIndex=5
 chev.Parent=pill
-local c1=IN("\070\114\097\109\101")
-c1.Position=UDim2.fromOffset(0,3)
-c1.Size=UDim2.fromOffset(5,1.5)
+local c1=INF()
+c1.Position=UO(0,3)
+c1.Size=UO(5,1.5)
 c1.Rotation=45
 c1.BackgroundColor3=C_DIM
 c1.BorderSizePixel=0
 c1.Parent=chev
-local c2=IN("\070\114\097\109\101")
-c2.Position=UDim2.fromOffset(3,3)
-c2.Size=UDim2.fromOffset(5,1.5)
+local c2=INF()
+c2.Position=UO(3,3)
+c2.Size=UO(5,1.5)
 c2.Rotation=-45
 c2.BackgroundColor3=C_DIM
 c2.BorderSizePixel=0
 c2.Parent=chev
-local popup=IN("\070\114\097\109\101")
+local popup=INF()
 popup.Name="\080\111\112\117\112"
 popup.Visible=false
 popup.BackgroundColor3=C_POPUP
 popup.BackgroundTransparency=0.04
 popup.BorderSizePixel=0
-popup.Size=UDim2.fromOffset(pillW+48,#cfg.options*(POPUP_OPT_H+POPUP_OPT_GAP)+8)
+popup.Size=UO(pillW+48,#cfg.options*(POPUP_OPT_H+POPUP_OPT_GAP)+8)
 popup.ZIndex=60
-local gc=IN("\085\073\067\111\114\110\101\114")
+local gc=IUC()
 gc.CornerRadius=UD(0,10)
 gc.Parent=popup
-local gPad=IN("\085\073\080\097\100\100\105\110\103")
+local gPad=IUP()
 gPad.PaddingTop=UD(0,4)
 gPad.PaddingBottom=UD(0,4)
 gPad.PaddingLeft=UD(0,4)
 gPad.PaddingRight=UD(0,4)
 gPad.Parent=popup
-local gLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local gLay=IUL()
 gLay.Padding=UD(0,POPUP_OPT_GAP)
 gLay.SortOrder=XR.LayoutOrder
 gLay.Parent=popup
 popup.Parent=popLayer
-local catcher=IN("\084\101\120\116\066\117\116\116\111\110")
+local catcher=ITB()
 catcher.Name="\067\097\116\099\104\101\114"
 catcher.Text=""
 catcher.AutoButtonColor=false
 catcher.BackgroundTransparency=1
-catcher.Size=UDim2.fromScale(1,1)
+catcher.Size=US(1,1)
 catcher.Visible=false
 catcher.ZIndex=50
 catcher.Parent=popLayer
@@ -1669,7 +2286,7 @@ catcher.Visible=false
 end
 popups[#popups+1]=entry
 local function refreshLabels()
-for opt,l in pairs(optionLbls) do
+for opt,l in PR(optionLbls) do
 l.TextColor3=(opt==current) and C_TEXT or C_OFF
 end
 end
@@ -1696,23 +2313,23 @@ end
 if y<6 then
 y=6
 end
-popup.Position=UDim2.fromOffset(x,y)
+popup.Position=UO(x,y)
 popup.Visible=true
 catcher.Visible=true
-local psc=popup:FindFirstChild("\071\077\095\080\111\112")
+local psc=FF(popup, "\071\077\095\080\111\112")
 if not psc then
 psc=IN("\085\073\083\099\097\108\101")
 psc.Name="\071\077\095\080\111\112"
 psc.Parent=popup
 end
 psc.Scale=0.86
-TweenService:Create(
+TSC(
 psc,
-TweenInfo.new(0.2,ES.Back,ED.Out),
+TWI(0.2,ESB,ED.Out),
 {Scale=1}
 ):Play()
 end
-pill.Activated:Connect(function()
+CN(pill.Activated, function()
 if open then
 zzV1.uiSound("\116\111\103\103\108\101\079\102\102")
 entry.close()
@@ -1721,11 +2338,11 @@ zzV1.uiSound("\112\111\112")
 openPopup()
 end
 end)
-catcher.Activated:Connect(function()
+CN(catcher.Activated, function()
 entry.close()
 end)
-for i,option in ipairs(cfg.options) do
-local ob=IN("\084\101\120\116\066\117\116\116\111\110")
+for i,option in IP(cfg.options) do
+local ob=ITB()
 ob.Name="\079\112\116\095"..option
 ob.AutoButtonColor=false
 ob.Text=""
@@ -1734,31 +2351,31 @@ ob.BackgroundTransparency=1
 ob.Size=U2(1,0,0,POPUP_OPT_H)
 ob.LayoutOrder=i
 ob.ZIndex=61
-local oc=IN("\085\073\067\111\114\110\101\114")
+local oc=IUC()
 oc.CornerRadius=UD(0,6)
 oc.Parent=ob
-local ol=IN("\084\101\120\116\076\097\098\101\108")
+local ol=ITL()
 ol.BackgroundTransparency=1
-ol.Position=UDim2.fromOffset(10,0)
+ol.Position=UO(10,0)
 ol.Size=U2(1,-14,1,0)
 ol.Font=WIN_FONT_MED
 ol.TextSize=TOUCH and 12 or 11
-ol.TextXAlignment=TX.Left
-ol.TextYAlignment=Enum.TextYAlignment.Center
-ol.TextTruncate=Enum.TextTruncate.AtEnd
+ol.TextXAlignment=TXL
+ol.TextYAlignment=TYC
+ol.TextTruncate=TT.AtEnd
 ol.TextColor3=(option==current) and C_TEXT or C_OFF
 ol.Text=option
 ol.ZIndex=62
 ol.Parent=ob
 optionLbls[option]=ol
-ob.MouseEnter:Connect(function()
+CN(ob.MouseEnter, function()
 ob.BackgroundTransparency=0
 ob.BackgroundColor3=C_POPUP_HOVER
 end)
-ob.MouseLeave:Connect(function()
+CN(ob.MouseLeave, function()
 ob.BackgroundTransparency=1
 end)
-ob.Activated:Connect(function()
+CN(ob.Activated, function()
 zzV1.uiSound("\099\108\105\099\107")
 current=option
 pill.Text=option
@@ -1775,42 +2392,42 @@ return row
 end
 local capturing=false
 local function mkKeybind(parent,cfg)
-local row=IN("\070\114\097\109\101")
+local row=INF()
 row.Name="\075\101\121\098\105\110\100\095"..cfg.label
 row.BackgroundTransparency=1
 row.Size=U2(1,0,0,CTRL_ROW_H)
 row.LayoutOrder=nextRow()
 row.ZIndex=3
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
 lbl.Size=U2(0,160,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=12
-lbl.TextXAlignment=TX.Left
-lbl.TextYAlignment=Enum.TextYAlignment.Center
-lbl.TextTruncate=Enum.TextTruncate.AtEnd
+lbl.TextXAlignment=TXL
+lbl.TextYAlignment=TYC
+lbl.TextTruncate=TT.AtEnd
 lbl.TextColor3=C_TEXT
 lbl.Text=cfg.label
 lbl.ZIndex=4
 lbl.Parent=row
-local pill=IN("\084\101\120\116\066\117\116\116\111\110")
+local pill=ITB()
 pill.Name="\080\105\108\108"
 pill.AutoButtonColor=false
-pill.AnchorPoint=Vector2.new(0,0.5)
+pill.AnchorPoint=VX(0,0.5)
 pill.Position=U2(0,168,0.5,0)
-pill.Size=UDim2.fromOffset(110,PILL_H)
+pill.Size=UO(110,PILL_H)
 pill.BackgroundColor3=C_PILL
 pill.BorderSizePixel=0
 pill.Font=WIN_FONT_MED
 pill.TextSize=11
 pill.TextColor3=C_TEXT
-pill.TextXAlignment=TX.Left
+pill.TextXAlignment=TXL
 pill.Text=cfg.init
 pill.ZIndex=4
-local pc=IN("\085\073\067\111\114\110\101\114")
+local pc=IUC()
 pc.CornerRadius=UD(1,0)
 pc.Parent=pill
-local pPad=IN("\085\073\080\097\100\100\105\110\103")
+local pPad=IUP()
 pPad.PaddingLeft=UD(0,14)
 pPad.PaddingRight=UD(0,14)
 pPad.Parent=pill
@@ -1818,21 +2435,21 @@ pill.Parent=row
 local element={CurrentKeybind=cfg.init}
 local listenConn=nil
 local function displayName(name)
-local short=string.gsub(name,"\094\077\111\117\115\101\066\117\116\116\111\110","\077\066")
-short=string.gsub(short,"\094\088\066\117\116\116\111\110\049\036","\077\066\052")
-short=string.gsub(short,"\094\088\066\117\116\116\111\110\050\036","\077\066\053")
+local short=SG(name,"\094\077\111\117\115\101\066\117\116\116\111\110","\077\066")
+short=SG(short,"\094\088\066\117\116\116\111\110\049\036","\077\066\052")
+short=SG(short,"\094\088\066\117\116\116\111\110\050\036","\077\066\053")
 return short
 end
-pill.TextTruncate=Enum.TextTruncate.AtEnd
+pill.TextTruncate=TT.AtEnd
 pill.Text=displayName(element.CurrentKeybind)
-pill.Activated:Connect(function()
+CN(pill.Activated, function()
 if capturing or listenConn then
 return
 end
 capturing=true
 pill.Text="\046\046\046"
 pill.TextColor3=C_DIM
-listenConn=UserInputService.InputBegan:Connect(function(input)
+listenConn=CN(UIS.InputBegan, function(input)
 local name=nil
 if input.UserInputType==XU.Keyboard then
 if input.KeyCode~=XK.Unknown and input.KeyCode~=XK.Escape then
@@ -1878,7 +2495,7 @@ row.Parent=parent
 return element
 end
 local function mkButton(parent,cfg)
-local btn=IN("\084\101\120\116\066\117\116\116\111\110")
+local btn=ITB()
 btn.Name="\066\117\116\116\111\110\095"..cfg.label
 btn.AutoButtonColor=false
 btn.Size=U2(1,0,0,cfg.full and BTN_FULL_H or BTN_H)
@@ -1888,46 +2505,46 @@ btn.BorderSizePixel=0
 btn.Font=WIN_FONT_MED
 btn.TextSize=12
 btn.TextColor3=cfg.danger and C_RED or C_TEXT
-btn.TextTruncate=Enum.TextTruncate.AtEnd
+btn.TextTruncate=TT.AtEnd
 btn.Text=cfg.label
 btn.ZIndex=3
-local bc=IN("\085\073\067\111\114\110\101\114")
+local bc=IUC()
 bc.CornerRadius=UD(1,0)
 bc.Parent=btn
-local bPad=IN("\085\073\080\097\100\100\105\110\103")
+local bPad=IUP()
 bPad.PaddingLeft=UD(0,14)
 bPad.PaddingRight=UD(0,14)
 bPad.Parent=btn
 local hoverBg=cfg.danger and C_DANGER_HOVER or C_POPUP_HOVER
 local baseBg=cfg.danger and C_DANGER_BG or C_PILL
-local hInfo=TweenInfo.new(0.15,ES.Quart,ED.Out)
-btn.MouseEnter:Connect(function()
+local hInfo=TWI(0.15,ESQ,ED.Out)
+CN(btn.MouseEnter, function()
 zzV1.uiSound("\104\111\118\101\114")
-TweenService:Create(btn,hInfo,{BackgroundColor3=hoverBg}):Play()
+TSC(btn,hInfo,{BackgroundColor3=hoverBg}):Play()
 end)
-btn.MouseLeave:Connect(function()
-TweenService:Create(btn,hInfo,{BackgroundColor3=baseBg}):Play()
+CN(btn.MouseLeave, function()
+TSC(btn,hInfo,{BackgroundColor3=baseBg}):Play()
 end)
-btn.Activated:Connect(function()
+CN(btn.Activated, function()
 zzV1.uiSound("\099\108\105\099\107")
 local sc=IN("\085\073\083\099\097\108\101")
 sc.Parent=btn
 sc.Scale=1
-TweenService:Create(
+TSC(
 sc,
-TweenInfo.new(0.07,ES.Quad,ED.Out),
+TWI(0.07,ES.Quad,ED.Out),
 {Scale=0.94}
 ):Play()
-task.delay(0.08,function()
+TDL(0.08,function()
 if sc.Parent then
-TweenService:Create(
+TSC(
 sc,
-TweenInfo.new(0.24,ES.Back,ED.Out),
+TWI(0.24,ESB,ED.Out),
 {Scale=1}
 ):Play()
 end
 end)
-task.delay(0.36,function()
+TDL(0.36,function()
 if sc.Parent then
 sc:Destroy()
 end
@@ -1940,8 +2557,8 @@ btn.Parent=parent
 return btn
 end
 local function mkInput(parent,ph)
-local box=IN("\084\101\120\116\066\111\120")
-box.Name="\073\110\112\117\116\095"..tostring(ph)
+local box=ITX()
+box.Name="\073\110\112\117\116\095"..TS(ph)
 box.Size=U2(1,0,0,TOUCH and 38 or 28)
 box.LayoutOrder=nextRow()
 box.BackgroundColor3=C_PILL
@@ -1953,12 +2570,12 @@ box.PlaceholderText=ph or ""
 box.PlaceholderColor3=C_DIM
 box.Text=""
 box.ClearTextOnFocus=false
-box.TextXAlignment=TX.Left
+box.TextXAlignment=TXL
 box.ZIndex=3
-local bc=IN("\085\073\067\111\114\110\101\114")
+local bc=IUC()
 bc.CornerRadius=UD(1,0)
 bc.Parent=box
-local bPad=IN("\085\073\080\097\100\100\105\110\103")
+local bPad=IUP()
 bPad.PaddingLeft=UD(0,14)
 bPad.PaddingRight=UD(0,14)
 bPad.Parent=box
@@ -1966,15 +2583,15 @@ box.Parent=parent
 return box
 end
 local function mkHint(parent,text)
-local h=IN("\084\101\120\116\076\097\098\101\108")
+local h=ITL()
 h.BackgroundTransparency=1
 h.Size=U2(1,0,0,0)
 h.AutomaticSize=XA.Y
 h.LayoutOrder=nextRow()
 h.Font=WIN_FONT
 h.TextSize=10
-h.TextXAlignment=TX.Left
-h.TextYAlignment=Enum.TextYAlignment.Top
+h.TextXAlignment=TXL
+h.TextYAlignment=TYT
 h.TextWrapped=true
 h.TextColor3=C_DIM
 h.TextTransparency=0.3
@@ -1984,14 +2601,14 @@ h.Parent=parent
 return h
 end
 local function mkListHolder(parent)
-local holder=IN("\070\114\097\109\101")
+local holder=INF()
 holder.Name="\076\105\115\116\072\111\108\100\101\114"
 holder.BackgroundTransparency=1
 holder.Size=U2(1,0,0,0)
 holder.AutomaticSize=XA.Y
 holder.LayoutOrder=nextRow()
 holder.ZIndex=3
-local lay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local lay=IUL()
 lay.Padding=UD(0,4)
 lay.SortOrder=XR.LayoutOrder
 lay.Parent=holder
@@ -1999,14 +2616,14 @@ holder.Parent=parent
 return holder
 end
 local function clearList(holder)
-for _,ch in ipairs(holder:GetChildren()) do
+for _,ch in IP(GC(holder)) do
 if ch:IsA("\071\117\105\066\117\116\116\111\110") then
 ch:Destroy()
 end
 end
 end
 local function mkTrackRow(parent,text,onClick)
-local b=IN("\084\101\120\116\066\117\116\116\111\110")
+local b=ITB()
 b.Name="\084\114\097\099\107\082\111\119"
 b.AutoButtonColor=false
 b.Size=U2(1,0,0,TOUCH and 30 or 22)
@@ -2015,26 +2632,26 @@ b.BackgroundTransparency=1
 b.Font=WIN_FONT_MED
 b.TextSize=TOUCH and 12 or 11
 b.TextColor3=C_TEXT
-b.TextXAlignment=TX.Left
-b.TextTruncate=Enum.TextTruncate.AtEnd
+b.TextXAlignment=TXL
+b.TextTruncate=TT.AtEnd
 b.Text=text
 b.ZIndex=3
-local bc=IN("\085\073\067\111\114\110\101\114")
+local bc=IUC()
 bc.CornerRadius=UD(1,0)
 bc.Parent=b
-local bPad=IN("\085\073\080\097\100\100\105\110\103")
+local bPad=IUP()
 bPad.PaddingLeft=UD(0,10)
 bPad.PaddingRight=UD(0,10)
 bPad.Parent=b
-b.MouseEnter:Connect(function()
+CN(b.MouseEnter, function()
 b.BackgroundTransparency=0
 b.BackgroundColor3=C_HOVER
 zzV1.uiSound("\104\111\118\101\114")
 end)
-b.MouseLeave:Connect(function()
+CN(b.MouseLeave, function()
 b.BackgroundTransparency=1
 end)
-b.Activated:Connect(function()
+CN(b.Activated, function()
 zzV1.uiSound("\099\108\105\099\107")
 onClick()
 end)
@@ -2050,21 +2667,38 @@ local NAV_DEFS={
 {name="\083\112\111\116\105\102\121",nameEs="\083\112\111\116\105\102\121",icon="\109\117\115\105\099",hidden=true},
 {name="\083\101\116\116\105\110\103\115",nameEs="\065\106\117\115\116\101\115",icon="\103\101\097\114"},
 }
-for i,def in ipairs(NAV_DEFS) do
+for i,def in IP(NAV_DEFS) do
 if i==#NAV_DEFS then
-local spacer=IN("\070\114\097\109\101")
+local spacer=INF()
 spacer.Name="\078\097\118\068\105\118\105\100\101\114"
-spacer.Size=U2(1,-28,0,9)
+spacer.Size=U2(1,-28,0,14)
 spacer.BackgroundTransparency=1
 spacer.LayoutOrder=i - 0.5
 spacer.ZIndex=4
 spacer.Parent=navHolder
-local line=IN("\070\114\097\109\101")
+local dvLabel=ITL()
+dvLabel.BackgroundTransparency=1
+dvLabel.Size=U2(1,0,0,9)
+dvLabel.Font=WIN_FONT
+dvLabel.TextSize=8
+dvLabel.TextXAlignment=TXL
+dvLabel.TextColor3=C_ACCENT
+dvLabel.TextTransparency=0.5
+dvLabel.Text=gmT("\032\032\045\032\032\065\074\085\083\084\069\083\032\032\045","\032\032\045\032\032\083\069\084\084\073\078\071\083\032\032\045")
+dvLabel.ZIndex=4
+dvLabel.Parent=spacer
+local line=INF()
 line.Size=U2(1,0,0,1)
-line.Position=U2(0,0,0,4)
+line.Position=U2(0,0,0,11)
 line.BackgroundColor3=C_ACCENT
-line.BackgroundTransparency=0.72
+line.BackgroundTransparency=0.5
 line.BorderSizePixel=0
+line.ZIndex=4
+local ls=IUS()
+ls.Color=C_ACCENT
+ls.Thickness=1
+ls.Transparency=0.7
+ls.Parent=line
 line.Parent=spacer
 end
 mkNavButton(navHolder,i,def)
@@ -2074,13 +2708,13 @@ local uiDx,uiDy=0,0
 do
 local saved=ctx.getUiPos()
 if type(saved)=="\116\097\098\108\101" and #saved==2 then
-uiDx=tonumber(saved[1]) or 0
-uiDy=tonumber(saved[2]) or 0
+uiDx=TN(saved[1]) or 0
+uiDy=TN(saved[2]) or 0
 end
 end
 local function applyUiPos()
 main.Position=U2(0.5,uiDx,0.5,uiDy)
-for _,sh in ipairs(shadows) do
+for _,sh in IP(shadows) do
 sh.Position=U2(0.5,uiDx,0.5,uiDy)
 end
 end
@@ -2108,11 +2742,11 @@ ctx.setUiPos(uiDx,uiDy)
 end
 end
 end
-bindConn(sidebar.InputBegan:Connect(uiHandleDown))
-bindConn(sidebar.InputEnded:Connect(uiHandleUp))
-bindConn(logo.InputBegan:Connect(uiHandleDown))
-bindConn(logo.InputEnded:Connect(uiHandleUp))
-bindConn(UserInputService.InputChanged:Connect(function(input)
+bindConn(CN(sidebar.InputBegan, uiHandleDown))
+bindConn(CN(sidebar.InputEnded, uiHandleUp))
+bindConn(CN(logo.InputBegan, uiHandleDown))
+bindConn(CN(logo.InputEnded, uiHandleUp))
+bindConn(CN(UIS.InputChanged, function(input)
 if not uiDragging then
 return
 end
@@ -2121,7 +2755,7 @@ or input.UserInputType==XU.Touch
 then
 local delta=input.Position - uiDragStart
 local cam=Workspace.CurrentCamera
-local vp=cam and cam.ViewportSize or Vector2.new(1280,720)
+local vp=cam and cam.ViewportSize or VX(1280,720)
 local nx=uiStartDx+delta.X
 local ny=uiStartDy+delta.Y
 local maxX=vp.X/2 - 80
@@ -2143,72 +2777,72 @@ end
 end))
 selectPage(1)
 local function safeBuild(kind,fn)
-local ok,err=pcall(fn)
+local ok,err=QQ(fn)
 if not ok then
-warn("\091\071\077\093\032\085\073\032\112\097\103\101\032\114\101\106\101\099\116\101\100\032\040"..kind.."\041\058\032"..tostring(err))
+warn("\091\071\077\093\032\085\073\032\112\097\103\101\032\114\101\106\101\099\116\101\100\032\040"..kind.."\041\058\032"..TS(err))
 end
 return ok
 end
 safeBuild("\072\085\068",function()
 local page=pages[1]
 local function mkColorSwatch(parent,cfg)
-local row=IN("\070\114\097\109\101")
+local row=INF()
 row.Name="\083\119\097\116\099\104\095"..cfg.label
 row.BackgroundTransparency=1
 row.Size=U2(1,0,0,CTRL_ROW_H)
 row.LayoutOrder=nextRow()
 row.ZIndex=3
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
 lbl.Size=U2(0,160,1,0)
 lbl.Font=WIN_FONT_MED
 lbl.TextSize=12
-lbl.TextXAlignment=TX.Left
-lbl.TextYAlignment=Enum.TextYAlignment.Center
-lbl.TextTruncate=Enum.TextTruncate.AtEnd
+lbl.TextXAlignment=TXL
+lbl.TextYAlignment=TYC
+lbl.TextTruncate=TT.AtEnd
 lbl.TextColor3=C_TEXT
 lbl.Text=cfg.label
 lbl.ZIndex=4
 lbl.Parent=row
-local pill=IN("\084\101\120\116\066\117\116\116\111\110")
+local pill=ITB()
 pill.Name="\080\105\108\108"
 pill.AutoButtonColor=false
-pill.AnchorPoint=Vector2.new(0,0.5)
+pill.AnchorPoint=VX(0,0.5)
 pill.Position=U2(0,168,0.5,0)
-pill.Size=UDim2.fromOffset(44,PILL_H)
+pill.Size=UO(44,PILL_H)
 pill.BackgroundColor3=cfg.color
 pill.Text=""
 pill.BorderSizePixel=0
 pill.ZIndex=4
-local pc=IN("\085\073\067\111\114\110\101\114")
+local pc=IUC()
 pc.CornerRadius=UD(1,0)
 pc.Parent=pill
-local ps=IN("\085\073\083\116\114\111\107\101")
+local ps=IUS()
 ps.Color=C_DIM
 ps.Thickness=1
 ps.Transparency=0.5
 ps.Parent=pill
 pill.Parent=row
-local popup=IN("\070\114\097\109\101")
+local popup=INF()
 popup.Name="\080\111\112\117\112"
 popup.Visible=false
 popup.BackgroundColor3=C_POPUP
 popup.BackgroundTransparency=0.04
 popup.BorderSizePixel=0
-popup.Size=UDim2.fromOffset(6*24+5*4+8,4*24+3*4+8)
+popup.Size=UO(6*24+5*4+8,4*24+3*4+8)
 popup.ZIndex=60
-local gc=IN("\085\073\067\111\114\110\101\114")
+local gc=IUC()
 gc.CornerRadius=UD(0,10)
 gc.Parent=popup
-local gPad=IN("\085\073\080\097\100\100\105\110\103")
+local gPad=IUP()
 gPad.PaddingTop=UD(0,4)
 gPad.PaddingBottom=UD(0,4)
 gPad.PaddingLeft=UD(0,4)
 gPad.PaddingRight=UD(0,4)
 gPad.Parent=popup
 local gLay=IN("\085\073\071\114\105\100\076\097\121\111\117\116")
-gLay.CellSize=UDim2.fromOffset(24,24)
-gLay.CellPadding=UDim2.fromOffset(4,4)
+gLay.CellSize=UO(24,24)
+gLay.CellPadding=UO(4,4)
 gLay.SortOrder=XR.LayoutOrder
 gLay.Parent=popup
 popup.Parent=popLayer
@@ -2236,32 +2870,32 @@ CR(30,30,40),CR(15,15,25),
 CR(40,90,60),CR(140,200,255),
 }
 local order=0
-for _,c in ipairs(SWATCHES) do
+for _,c in IP(SWATCHES) do
 order=order+1
-local ob=IN("\084\101\120\116\066\117\116\116\111\110")
+local ob=ITB()
 ob.Text=""
 ob.AutoButtonColor=false
 ob.BackgroundColor3=c
 ob.BorderSizePixel=0
 ob.LayoutOrder=order
 ob.ZIndex=61
-local oc=IN("\085\073\067\111\114\110\101\114")
+local oc=IUC()
 oc.CornerRadius=UD(0,6)
 oc.Parent=ob
-ob.MouseEnter:Connect(function()
+CN(ob.MouseEnter, function()
 ob.BackgroundTransparency=0.15
 end)
-ob.MouseLeave:Connect(function()
+CN(ob.MouseLeave, function()
 ob.BackgroundTransparency=0
 end)
-ob.Activated:Connect(function()
+CN(ob.Activated, function()
 entry.close()
 pill.BackgroundColor3=c
 cfg.onChange(c)
 end)
 ob.Parent=popup
 end
-pill.Activated:Connect(function()
+CN(pill.Activated, function()
 if open then
 entry.close()
 else
@@ -2287,7 +2921,7 @@ end
 if y<6 then
 y=6
 end
-popup.Position=UDim2.fromOffset(x,y)
+popup.Position=UO(x,y)
 popup.Visible=true
 end
 end)
@@ -2307,7 +2941,7 @@ init=ctx.getKeyWm(),
 onChange=ctx.setKeyWm,
 })
 mkSlider(card,{
-label="\069\115\099\097\108\097",
+label="\083\099\097\108\101",
 min=50,
 max=150,
 step=5,
@@ -2316,7 +2950,7 @@ init=ctx.getKeyScale(),
 onChange=ctx.setKeyScale,
 })
 mkSlider(card,{
-label="\079\112\097\099\105\100\097\100\032\116\101\099\108\097\115",
+label="\075\101\121\032\111\112\097\099\105\116\121",
 min=20,
 max=100,
 step=5,
@@ -2325,7 +2959,7 @@ init=ctx.getKeyOpacity(),
 onChange=ctx.setKeyOpacity,
 })
 mkSlider(card,{
-label="\079\112\097\099\105\100\097\100\032\102\111\110\100\111",
+label="\066\097\099\107\103\114\111\117\110\100\032\111\112\097\099\105\116\121",
 min=0,
 max=100,
 step=5,
@@ -2334,7 +2968,7 @@ init=ctx.getKeyBgOpacity(),
 onChange=ctx.setKeyBgOpacity,
 })
 mkSlider(card,{
-label="\084\097\109\097\110\111\032\116\101\120\116\111",
+label="\084\101\120\116\032\115\105\122\101",
 min=8,
 max=20,
 step=1,
@@ -2350,57 +2984,57 @@ onClick=ctx.resetOverlayPosition,
 local cardS=mkCard(page,"\075\101\121\115\116\114\111\107\101\115\032\101\115\116\105\108\111")
 local customRow
 mkDropdown(cardS,{
-label="\068\105\115\101\110\111",
+label="\068\101\115\105\103\110",
 options={"\071\108\097\115\115","\077\105\110\105\109\097\108","\071\111\116\105\099\111","\067\104\105\108\108"},
 init=ctx.getKeyDesign(),
 onChange=ctx.setKeyDesign,
 })
 mkDropdown(cardS,{
-label="\067\111\108\111\114\101\115",
+label="\067\111\108\111\114\115",
 options={"\068\097\114\107","\080\117\114\112\108\101","\065\110\105\109\101","\080\097\115\116\101\108","\082\097\105\110\098\111\119","\080\101\114\115\111\110\097\108\105\122\097\100\111"},
 init=ctx.getKeyColor(),
 onChange=function(name)
 ctx.setKeyColor(name)
-customRow.Visible=string.find(name,"\080\101\114\115\111\110\097\108\105\122\097\100\111",1,true)~=nil
+customRow.Visible=SFD(name,"\080\101\114\115\111\110\097\108\105\122\097\100\111",1,true)~=nil
 end,
 })
 mkDropdown(cardS,{
-label="\070\117\101\110\116\101",
+label="\070\111\110\116",
 options={"\065\117\116\111","\071\111\116\104\097\109","\071\111\116\105\099\111","\066\097\110\103\101\114\115","\067\111\100\101","\077\105\099\104\114\111\109\097","\077\105\110\101\099\114\097\102\116"},
 init=ctx.getKeyFont(),
 onChange=ctx.setKeyFont,
 })
 local gridS=mkGrid(cardS)
 mkToggle(gridS,{
-label="\070\111\110\100\111\032\118\105\115\105\098\108\101",
+label="\066\097\099\107\103\114\111\117\110\100\032\118\105\115\105\098\108\101",
 init=ctx.getKeyBg(),
 onChange=ctx.setKeyBg,
 })
-customRow=IN("\070\114\097\109\101")
+customRow=INF()
 customRow.Name="\067\117\115\116\111\109\067\111\108\111\114\115"
 customRow.BackgroundTransparency=1
 customRow.Size=U2(1,0,0,0)
 customRow.AutomaticSize=XA.Y
 customRow.LayoutOrder=nextRow()
 customRow.ZIndex=3
-local cLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local cLay=IUL()
 cLay.Padding=UD(0,CARD_GAP)
 cLay.SortOrder=XR.LayoutOrder
 cLay.Parent=customRow
 customRow.Parent=cardS
 customRow.Visible=ctx.getKeyColor()=="\080\101\114\115\111\110\097\108\105\122\097\100\111"
 mkColorSwatch(customRow,{
-label="\067\111\108\111\114\032\116\101\099\108\097",
+label="\075\101\121\032\099\111\108\111\114",
 color=ctx.getKeyCustomIdle(),
 onChange=ctx.setKeyCustomIdle,
 })
 mkColorSwatch(customRow,{
-label="\067\111\108\111\114\032\112\114\101\115\105\111\110\097\100\097",
+label="\080\114\101\115\115\101\100\032\099\111\108\111\114",
 color=ctx.getKeyCustomPressed(),
 onChange=ctx.setKeyCustomPressed,
 })
 mkColorSwatch(customRow,{
-label="\067\111\108\111\114\032\116\101\120\116\111",
+label="\084\101\120\116\032\099\111\108\111\114",
 color=ctx.getKeyCustomText(),
 onChange=ctx.setKeyCustomText,
 })
@@ -2420,31 +3054,6 @@ onChange=ctx.setIslandMode,
 end)
 safeBuild("\077\111\118\101\109\101\110\116",function()
 local page=pages[2]
-local cardH=mkCard(page,gmT("\072\085\068\032\099\101\108\117\108\097\114","\077\111\098\105\108\101\032\072\085\068"))
-local gridH=mkGrid(cardH)
-mkToggle(gridH,{
-label=gmT("\068\101\115\098\108\111\113\117\101\097\114\032\112\111\115\105\099\105\111\110\101\115","\085\110\108\111\099\107\032\112\111\115\105\116\105\111\110\115"),
-init=ctx.getHudUnlocked(),
-onChange=ctx.setHudUnlocked,
-})
-mkSlider(cardH,{
-label=gmT("\084\097\109\097\110\111\032\098\111\116\111\110\101\115","\066\117\116\116\111\110\032\115\105\122\101"),
-min=60,
-max=140,
-step=4,
-suffix="\112\120",
-init=ctx.getHudSize(),
-onChange=ctx.setHudSize,
-})
-mkSlider(cardH,{
-label=gmT("\079\112\097\099\105\100\097\100\032\098\111\116\111\110\101\115","\066\117\116\116\111\110\032\111\112\097\099\105\116\121"),
-min=20,
-max=100,
-step=5,
-suffix="\037",
-init=ctx.getHudOpacity(),
-onChange=ctx.setHudOpacity,
-})
 local card=mkCard(page,"\065\117\116\111\032\066\072\079\080\032\045\032\111\110\099\101\032\112\101\114\032\108\097\110\100\105\110\103")
 local grid=mkGrid(card)
 mkToggle(grid,{
@@ -2467,17 +3076,6 @@ suffix="\109\115",
 init=ctx.getBhopDelay(),
 onChange=ctx.setBhopDelay,
 })
-mkToggle(grid,{
-label=gmT("\066\111\116\111\110\032\100\101\032\067\101\108\117\108\097\114","\077\111\098\105\108\101\032\098\117\116\116\111\110"),
-init=ctx.getHudBhopOn(),
-onChange=ctx.setHudBhopOn,
-})
-mkDropdown(card,{
-label=gmT("\077\111\100\111\032\100\101\108\032\098\111\116\111\110","\066\117\116\116\111\110\032\109\111\100\101"),
-options={"\077\097\110\116\101\110\101\114","\084\111\103\103\108\101"},
-init=ctx.getHudBhopMode(),
-onChange=ctx.setHudBhopMode,
-})
 local card2=mkCard(page,"\067\114\117\110\099\104\032\115\112\097\109")
 local grid2=mkGrid(card2)
 mkToggle(grid2,{
@@ -2492,24 +3090,13 @@ onBind=ctx.setCrunchKeybind,
 onSet=ctx.onCrunchKeySet,
 })
 mkSlider(card2,{
-label="\072\111\108\100\032\121\032\103\097\112",
+label="\072\111\108\100\032\038\032\103\097\112",
 min=10,
 max=150,
 step=5,
 suffix="\109\115",
 init=ctx.getCrunchSpeed(),
 onChange=ctx.setCrunchSpeed,
-})
-mkToggle(grid2,{
-label=gmT("\066\111\116\111\110\032\100\101\032\067\101\108\117\108\097\114","\077\111\098\105\108\101\032\098\117\116\116\111\110"),
-init=ctx.getHudCrunchOn(),
-onChange=ctx.setHudCrunchOn,
-})
-mkDropdown(card2,{
-label=gmT("\077\111\100\111\032\100\101\108\032\098\111\116\111\110","\066\117\116\116\111\110\032\109\111\100\101"),
-options={"\077\097\110\116\101\110\101\114","\084\111\103\103\108\101"},
-init=ctx.getHudCrunchMode(),
-onChange=ctx.setHudCrunchMode,
 })
 local card3=mkCard(page,"\065\117\116\111\032\083\116\114\097\102\102\101\114\032\040\097\105\114\101\041")
 local grid3=mkGrid(card3)
@@ -2541,15 +3128,15 @@ label=gmT("\079\099\117\108\116\097\114\032\116\111\100\097\032\108\097\032\085\
 full=true,
 onClick=ctx.toggleScreenshot,
 })
-local shotHint=IN("\084\101\120\116\076\097\098\101\108")
+local shotHint=ITL()
 shotHint.BackgroundTransparency=1
 shotHint.Size=U2(1,0,0,0)
 shotHint.AutomaticSize=XA.Y
 shotHint.LayoutOrder=nextRow()
 shotHint.Font=WIN_FONT
 shotHint.TextSize=10
-shotHint.TextXAlignment=TX.Left
-shotHint.TextYAlignment=Enum.TextYAlignment.Top
+shotHint.TextXAlignment=TXL
+shotHint.TextYAlignment=TYT
 shotHint.TextWrapped=true
 shotHint.TextColor3=C_DIM
 shotHint.TextTransparency=0.3
@@ -2642,15 +3229,15 @@ mkButton(chPosGrid,{
 label=gmT("\067\101\110\116\114\097\114","\067\101\110\116\101\114"),
 onClick=ctx.centerCrosshair,
 })
-local chHint=IN("\084\101\120\116\076\097\098\101\108")
+local chHint=ITL()
 chHint.BackgroundTransparency=1
 chHint.Size=U2(1,0,0,0)
 chHint.AutomaticSize=XA.Y
 chHint.LayoutOrder=nextRow()
 chHint.Font=WIN_FONT
 chHint.TextSize=10
-chHint.TextXAlignment=TX.Left
-chHint.TextYAlignment=Enum.TextYAlignment.Top
+chHint.TextXAlignment=TXL
+chHint.TextYAlignment=TYT
 chHint.TextWrapped=true
 chHint.TextColor3=C_DIM
 chHint.TextTransparency=0.3
@@ -2669,7 +3256,7 @@ local chColors={
 {gmT("\082\111\115\097","\080\105\110\107"),255,105,180},
 }
 local chGrid=mkGrid(cardCh)
-for _,cdef in ipairs(chColors) do
+for _,cdef in IP(chColors) do
 mkButton(chGrid,{
 label=cdef[1],
 onClick=function()
@@ -2720,15 +3307,15 @@ options={"\071\111\116\104\097\109","\071\111\116\104\097\109\032\066\111\108\10
 init=ctx.getEvadeFontLabel(),
 onChange=ctx.setEvadeFontLabel,
 })
-local fontHint=IN("\084\101\120\116\076\097\098\101\108")
+local fontHint=ITL()
 fontHint.BackgroundTransparency=1
 fontHint.Size=U2(1,0,0,0)
 fontHint.AutomaticSize=XA.Y
 fontHint.LayoutOrder=nextRow()
 fontHint.Font=WIN_FONT
 fontHint.TextSize=10
-fontHint.TextXAlignment=TX.Left
-fontHint.TextYAlignment=Enum.TextYAlignment.Top
+fontHint.TextXAlignment=TXL
+fontHint.TextYAlignment=TYT
 fontHint.TextWrapped=true
 fontHint.TextColor3=C_DIM
 fontHint.TextTransparency=0.3
@@ -2782,6 +3369,12 @@ label="\079\112\101\110\032\117\110\117\115\117\097\108\115\032\112\105\099\107\
 full=true,
 onClick=ctx.openUnusualsPicker,
 })
+mkDropdown(card2,{
+label=gmT("\067\111\108\111\114\032\100\101\108\032\117\110\117\115\117\097\108","\085\110\117\115\117\097\108\032\099\111\108\111\114"),
+options={"\079\114\105\103\105\110\097\108","\082\101\100","\079\114\097\110\103\101","\071\111\108\100","\071\114\101\101\110","\067\121\097\110","\066\108\117\101","\080\117\114\112\108\101","\080\105\110\107"},
+init=ctx.getUnusualColorLabel(),
+onChange=ctx.setUnusualColor,
+})
 local cardSkin=mkCard(page,gmT("\083\107\105\110\032\099\104\097\110\103\101\114","\083\107\105\110\032\099\104\097\110\103\101\114"))
 local skinBox=mkInput(cardSkin,gmT("\085\115\101\114\110\097\109\101\032\100\101\032\082\111\098\108\111\120\046\046\046","\082\111\098\108\111\120\032\117\115\101\114\110\097\109\101\046\046\046"))
 local skinStatus
@@ -2795,7 +3388,7 @@ end
 skinStatus.Text=gmT("\067\097\114\103\097\110\100\111\032\097\118\097\116\097\114\046\046\046","\076\111\097\100\105\110\103\032\097\118\097\116\097\114\046\046\046")
 local name=skinBox.Text
 ctx.skinApply(name,function(ok,msg)
-skinStatus.Text=tostring(msg)
+skinStatus.Text=TS(msg)
 end)
 end,
 })
@@ -2803,14 +3396,14 @@ mkButton(skinGrid,{
 label=gmT("\082\101\115\116\097\117\114\097\114\032\109\105\111","\082\101\115\116\111\114\101\032\109\105\110\101"),
 onClick=function()
 ctx.skinRestore(function(ok,msg)
-skinStatus.Text=tostring(msg)
+skinStatus.Text=TS(msg)
 end)
 end,
 })
 skinStatus=mkHint(cardSkin,"\032")
 mkHint(cardSkin,gmT(
-"\069\115\099\114\105\098\101\032\101\108\032\117\115\101\114\110\097\109\101\032\100\101\032\099\117\097\108\113\117\105\101\114\032\112\101\114\115\111\110\097\032\121\032\116\117\032\097\118\097\116\097\114\032\116\111\109\097\032\115\117\032\115\107\105\110\046\032\049\048\048\037\032\108\111\099\097\108\058\032\101\108\032\115\101\114\118\105\100\111\114\032\115\105\103\117\101\032\118\105\101\110\100\111\032\084\085\032\097\118\097\116\097\114\046\032\082\101\115\116\097\117\114\097\114\032\100\101\118\117\101\108\118\101\032\101\108\032\116\117\121\111\032\101\120\097\099\116\111\046",
-"\084\121\112\101\032\097\110\121\111\110\101\039\115\032\117\115\101\114\110\097\109\101\032\097\110\100\032\121\111\117\114\032\097\118\097\116\097\114\032\116\097\107\101\115\032\116\104\101\105\114\032\115\107\105\110\046\032\049\048\048\037\032\108\111\099\097\108\058\032\116\104\101\032\115\101\114\118\101\114\032\115\116\105\108\108\032\115\101\101\115\032\089\079\085\082\032\097\118\097\116\097\114\046\032\082\101\115\116\111\114\101\032\098\114\105\110\103\115\032\121\111\117\114\115\032\098\097\099\107\032\101\120\097\099\116\108\121\046"
+"\069\115\099\114\105\098\101\032\101\108\032\117\115\101\114\110\097\109\101\032\100\101\032\099\117\097\108\113\117\105\101\114\032\112\101\114\115\111\110\097\032\121\032\116\117\032\097\118\097\116\097\114\032\116\111\109\097\032\115\117\032\115\107\105\110\032\040\099\117\101\114\112\111\044\032\114\111\112\097\032\121\032\099\097\098\101\122\097\032\105\110\099\108\117\105\100\111\115\041\046\032\083\105\032\101\115\116\097\032\101\110\032\116\117\032\115\101\114\118\101\114\044\032\116\117\032\099\111\112\105\097\032\115\101\032\097\099\116\117\097\108\105\122\097\032\115\111\108\097\032\099\117\097\110\100\111\032\101\108\032\099\097\109\098\105\097\032\115\117\032\097\118\097\116\097\114\046\032\049\048\048\037\032\108\111\099\097\108\046",
+"\084\121\112\101\032\097\110\121\111\110\101\039\115\032\117\115\101\114\110\097\109\101\032\097\110\100\032\121\111\117\114\032\097\118\097\116\097\114\032\116\097\107\101\115\032\116\104\101\105\114\032\115\107\105\110\032\040\098\111\100\121\044\032\099\108\111\116\104\101\115\032\097\110\100\032\104\101\097\100\032\105\110\099\108\117\100\101\100\041\046\032\073\102\032\116\104\101\121\039\114\101\032\105\110\032\121\111\117\114\032\115\101\114\118\101\114\044\032\121\111\117\114\032\099\111\112\121\032\117\112\100\097\116\101\115\032\105\116\115\101\108\102\032\119\104\101\110\032\116\104\101\121\032\099\104\097\110\103\101\032\116\104\101\105\114\032\097\118\097\116\097\114\046\032\049\048\048\037\032\108\111\099\097\108\046"
 ))
 end)
 safeBuild("\065\116\109\111\115\112\104\101\114\101",function()
@@ -2954,8 +3547,8 @@ safeBuild("\083\112\111\116\105\102\121",function()
 local page=pages[6]
 local function renderTrackList(holder,tracks,playFn)
 clearList(holder)
-for i,tr in ipairs(tracks) do
-local label=tostring(i).."\046\032"..tr.title.."\032\045\032"..tr.artist
+for i,tr in IP(tracks) do
+local label=TS(i).."\046\032"..tr.title.."\032\045\032"..tr.artist
 if not tr.url then
 label=label..gmT("\032\040\115\105\110\032\112\114\101\118\105\101\119\041","\032\040\110\111\032\112\114\101\118\105\101\119\041")
 end
@@ -2975,7 +3568,7 @@ local doMyPlaylists
 local cardA=mkCard(page,gmT("\084\117\032\099\117\101\110\116\097","\089\111\117\114\032\097\099\099\111\117\110\116"))
 local logged,accName=ctx.spGetAccount()
 local accLabel=mkHint(cardA,logged
-and(gmT("\067\111\110\101\099\116\097\100\111\032\099\111\109\111\058\032","\067\111\110\110\101\099\116\101\100\032\097\115\058\032")..tostring(accName))
+and(gmT("\067\111\110\101\099\116\097\100\111\032\099\111\109\111\058\032","\067\111\110\110\101\099\116\101\100\032\097\115\058\032")..TS(accName))
 or gmT("\083\101\115\105\111\110\032\110\111\032\105\110\105\099\105\097\100\097","\078\111\116\032\108\111\103\103\101\100\032\105\110"))
 local dcBox=mkInput(cardA,"\115\112\095\100\099\032\046\046\046")
 local accGrid=mkGrid(cardA)
@@ -2990,7 +3583,7 @@ accLabel.Text=gmT("\067\111\110\101\099\116\097\110\100\111\046\046\046","\067\1
 local dc=dcBox.Text
 ctx.spLogin(dc,function(ok,msg)
 if ok then
-accLabel.Text=gmT("\067\111\110\101\099\116\097\100\111\032\099\111\109\111\058\032","\067\111\110\110\101\099\116\101\100\032\097\115\058\032")..tostring(msg)
+accLabel.Text=gmT("\067\111\110\101\099\116\097\100\111\032\099\111\109\111\058\032","\067\111\110\110\101\099\116\101\100\032\097\115\058\032")..TS(msg)
 if doRecent then
 doRecent()
 end
@@ -2998,7 +3591,7 @@ if doMyPlaylists then
 doMyPlaylists()
 end
 else
-accLabel.Text=tostring(msg)
+accLabel.Text=TS(msg)
 end
 end)
 end,
@@ -3039,9 +3632,9 @@ onChange=ctx.spSetVolume,
 })
 ctx.spSetStateHandler(function(state)
 if state and state.playing then
-nowLabel.Text="\126\032"..tostring(state.title).."\032\045\032"..tostring(state.artist)
+nowLabel.Text="\126\032"..TS(state.title).."\032\045\032"..TS(state.artist)
 elseif state and state.title~="" then
-nowLabel.Text=gmT("\080\097\117\115\097\100\111\058\032","\080\097\117\115\101\100\058\032")..tostring(state.title)
+nowLabel.Text=gmT("\080\097\117\115\097\100\111\058\032","\080\097\117\115\101\100\058\032")..TS(state.title)
 else
 nowLabel.Text=gmT("\078\097\100\097\032\115\117\101\110\097\032\116\111\100\097\118\105\097","\078\111\116\104\105\110\103\032\112\108\097\121\105\110\103\032\121\101\116")
 end
@@ -3064,11 +3657,11 @@ if err then
 searchStatus.Text=gmT("\070\097\108\108\111\032\108\097\032\098\117\115\113\117\101\100\097\032\045\032\114\101\118\105\115\097\032\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116","\083\101\097\114\099\104\032\102\097\105\108\101\100\032\045\032\099\104\101\099\107\032\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116")
 return
 end
-searchStatus.Text=tostring(#tracks)
+searchStatus.Text=TS(#tracks)
 ..gmT("\032\114\101\115\117\108\116\097\100\111\115\032\045\032\116\111\099\097\032\117\110\097\032\099\097\110\099\105\111\110","\032\114\101\115\117\108\116\115\032\045\032\116\097\112\032\097\032\115\111\110\103")
 clearList(resultsHolder)
-for i,tr in ipairs(tracks) do
-local label=tostring(i).."\046\032"..tr.title.."\032\045\032"..tr.artist
+for i,tr in IP(tracks) do
+local label=TS(i).."\046\032"..tr.title.."\032\045\032"..tr.artist
 if not tr.url then
 label=label..gmT("\032\040\115\105\110\032\112\114\101\118\105\101\119\041","\032\040\110\111\032\112\114\101\118\105\101\119\041")
 end
@@ -3100,7 +3693,7 @@ if err then
 recentStatus.Text=gmT("\078\101\099\101\115\105\116\097\115\032\105\110\105\099\105\097\114\032\115\101\115\105\111\110\046","\089\111\117\032\110\101\101\100\032\116\111\032\108\111\103\032\105\110\032\102\105\114\115\116\046")
 return
 end
-recentStatus.Text=tostring(#tracks)..gmT("\032\099\097\110\099\105\111\110\101\115\032\045\032\116\111\099\097\032\112\097\114\097\032\101\115\099\117\099\104\097\114","\032\115\111\110\103\115\032\045\032\116\097\112\032\116\111\032\104\101\097\114")
+recentStatus.Text=TS(#tracks)..gmT("\032\099\097\110\099\105\111\110\101\115\032\045\032\116\111\099\097\032\112\097\114\097\032\101\115\099\117\099\104\097\114","\032\115\111\110\103\115\032\045\032\116\097\112\032\116\111\032\104\101\097\114")
 renderTrackList(recentsHolder,tracks,function(i)
 ctx.spPlayResult(i)
 end)
@@ -3125,9 +3718,9 @@ if err then
 playlistListStatus.Text=gmT("\078\101\099\101\115\105\116\097\115\032\105\110\105\099\105\097\114\032\115\101\115\105\111\110\046","\089\111\117\032\110\101\101\100\032\116\111\032\108\111\103\032\105\110\032\102\105\114\115\116\046")
 return
 end
-playlistListStatus.Text=tostring(#lists)..gmT("\032\112\108\097\121\108\105\115\116\115\032\045\032\116\111\099\097\032\117\110\097\032\112\097\114\097\032\099\097\114\103\097\114\108\097","\032\112\108\097\121\108\105\115\116\115\032\045\032\116\097\112\032\111\110\101\032\116\111\032\108\111\097\100\032\105\116")
+playlistListStatus.Text=TS(#lists)..gmT("\032\112\108\097\121\108\105\115\116\115\032\045\032\116\111\099\097\032\117\110\097\032\112\097\114\097\032\099\097\114\103\097\114\108\097","\032\112\108\097\121\108\105\115\116\115\032\045\032\116\097\112\032\111\110\101\032\116\111\032\108\111\097\100\032\105\116")
 clearList(playlistsHolder)
-for _,pl in ipairs(lists) do
+for _,pl in IP(lists) do
 local pid=pl.id
 mkTrackRow(playlistsHolder,pl.name,function()
 if queueStatus then
@@ -3137,7 +3730,7 @@ ctx.spPlaylist(pid,function(err2,tracks)
 if err2 or not queueStatus then
 return
 end
-queueStatus.Text=tostring(#tracks)
+queueStatus.Text=TS(#tracks)
 ..gmT("\032\099\097\110\099\105\111\110\101\115\032\045\032\116\111\099\097\032\117\110\097\032\121\032\115\105\103\117\101\032\115\111\108\097","\032\115\111\110\103\115\032\045\032\116\097\112\032\111\110\101\032\097\110\100\032\105\116\032\107\101\101\112\115\032\103\111\105\110\103")
 if queueHolder then
 renderTrackList(queueHolder,tracks,function(i)
@@ -3165,7 +3758,7 @@ if err then
 queueStatus.Text=gmT("\078\111\032\115\101\032\112\117\100\111\032\099\097\114\103\097\114\032\045\032\114\101\118\105\115\097\032\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116","\067\111\117\108\100\032\110\111\116\032\108\111\097\100\032\045\032\099\104\101\099\107\032\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116")
 return
 end
-queueStatus.Text=tostring(#tracks)
+queueStatus.Text=TS(#tracks)
 ..gmT("\032\099\097\110\099\105\111\110\101\115\032\045\032\116\111\099\097\032\117\110\097\032\121\032\115\105\103\117\101\032\101\110\032\111\114\100\101\110\032\115\111\108\097","\032\116\114\097\099\107\115\032\045\032\116\097\112\032\111\110\101\032\097\110\100\032\105\116\032\107\101\101\112\115\032\103\111\105\110\103")
 renderTrackList(queueHolder,tracks,function(i)
 ctx.spPlayQueue(i)
@@ -3186,19 +3779,19 @@ local page=pages[7]
 local cardL=mkCard(page,gmT("\073\100\105\111\109\097","\076\097\110\103\117\097\103\101"))
 mkDropdown(cardL,{
 label=gmT("\073\100\105\111\109\097\032\100\101\108\032\115\099\114\105\112\116","\083\099\114\105\112\116\032\108\097\110\103\117\097\103\101"),
-options={"\069\115\112\097\110\111\108","\069\110\103\108\105\115\104"},
+options={"\069\110\103\108\105\115\104","\069\115\112\097\110\111\108"},
 init=ctx.getLanguageLabel(),
 onChange=ctx.setLanguage,
 })
-local langHint=IN("\084\101\120\116\076\097\098\101\108")
+local langHint=ITL()
 langHint.BackgroundTransparency=1
 langHint.Size=U2(1,0,0,0)
 langHint.AutomaticSize=XA.Y
 langHint.LayoutOrder=nextRow()
 langHint.Font=WIN_FONT
 langHint.TextSize=10
-langHint.TextXAlignment=TX.Left
-langHint.TextYAlignment=Enum.TextYAlignment.Top
+langHint.TextXAlignment=TXL
+langHint.TextYAlignment=TYT
 langHint.TextWrapped=true
 langHint.TextColor3=C_DIM
 langHint.TextTransparency=0.3
@@ -3214,15 +3807,15 @@ label=gmT("\083\111\110\105\100\111\115\032\085\073","\085\073\032\115\111\117\1
 init=ctx.getSoundsOn(),
 onChange=ctx.setSoundsOn,
 })
-local sndHint=IN("\084\101\120\116\076\097\098\101\108")
+local sndHint=ITL()
 sndHint.BackgroundTransparency=1
 sndHint.Size=U2(1,0,0,0)
 sndHint.AutomaticSize=XA.Y
 sndHint.LayoutOrder=nextRow()
 sndHint.Font=WIN_FONT
 sndHint.TextSize=10
-sndHint.TextXAlignment=TX.Left
-sndHint.TextYAlignment=Enum.TextYAlignment.Top
+sndHint.TextXAlignment=TXL
+sndHint.TextYAlignment=TYT
 sndHint.TextWrapped=true
 sndHint.TextColor3=C_DIM
 sndHint.TextTransparency=0.3
@@ -3258,15 +3851,15 @@ onClick=function()
 ctx.savePreset("\066")
 end,
 })
-local presHint=IN("\084\101\120\116\076\097\098\101\108")
+local presHint=ITL()
 presHint.BackgroundTransparency=1
 presHint.Size=U2(1,0,0,0)
 presHint.AutomaticSize=XA.Y
 presHint.LayoutOrder=nextRow()
 presHint.Font=WIN_FONT
 presHint.TextSize=10
-presHint.TextXAlignment=TX.Left
-presHint.TextYAlignment=Enum.TextYAlignment.Top
+presHint.TextXAlignment=TXL
+presHint.TextYAlignment=TYT
 presHint.TextWrapped=true
 presHint.TextColor3=C_DIM
 presHint.TextTransparency=0.3
@@ -3290,54 +3883,83 @@ onClick=ctx.factoryReset,
 })
 end)
 local menuOpen=true
-local modalBtn=IN("\084\101\120\116\066\117\116\116\111\110")
+local modalBtn=ITB()
 modalBtn.Name="\077\111\100\097\108\076\111\099\107"
 modalBtn.Text=""
 modalBtn.AutoButtonColor=false
 modalBtn.BackgroundColor3=Color3.new(1,1,1)
 modalBtn.BackgroundTransparency=1
-modalBtn.Size=UDim2.fromOffset(1,1)
-modalBtn.Position=UDim2.fromOffset(2,2)
+modalBtn.Size=UO(1,1)
+modalBtn.Position=UO(2,2)
 modalBtn.Modal=true
 modalBtn.Visible=true
 modalBtn.ZIndex=1
 modalBtn.Parent=root
-local mouseIconWasEnabled=UserInputService.MouseIconEnabled
+local rmbFreeLook=false
+local iconBeforeOpen=true
+local function setIcon(on)
+QQ(function()
+UIS.MouseIconEnabled=on
+end)
+end
 local function applyCursorState()
-pcall(function()
-UserInputService.MouseIconEnabled=menuOpen and true or mouseIconWasEnabled
-end)
+if menuOpen and not rmbFreeLook then
+setIcon(true)
+else
+setIcon(iconBeforeOpen)
 end
+end
+QQ(function()
+iconBeforeOpen=UIS.MouseIconEnabled
+end)
 applyCursorState()
-bindConn(root.Destroying:Connect(function()
-pcall(function()
-UserInputService.MouseIconEnabled=mouseIconWasEnabled
-end)
+local iconClock=0
+bindConn(GGS("\082\117\110\083\101\114\118\105\099\101").HCN(eartbeat, function()
+iconClock+=1
+if iconClock<30 then
+return
+end
+iconClock=0
+if menuOpen and not rmbFreeLook and not UIS.MouseIconEnabled then
+setIcon(true)
+end
 end))
-bindConn(UserInputService.InputBegan:Connect(function(input)
+bindConn(CN(root.Destroying, function()
+setIcon(iconBeforeOpen)
+end))
+bindConn(CN(UIS.InputBegan, function(input)
 if input.UserInputType~=XU.MouseButton2 then
 return
 end
 if menuOpen then
+rmbFreeLook=true
 modalBtn.Visible=false
+setIcon(false)
 end
 end))
-bindConn(UserInputService.InputEnded:Connect(function(input)
+bindConn(CN(UIS.InputEnded, function(input)
 if input.UserInputType~=XU.MouseButton2 then
 return
 end
 if menuOpen then
+rmbFreeLook=false
 modalBtn.Visible=true
+setIcon(true)
 end
 end))
 local applyPillPos=nil
-local function setVisible(state,animate)
+setVisible=function(state,animate)
 if animate then
 zzV1.uiSound(state and "\111\112\101\110" or "\099\108\111\115\101")
 end
 menuOpen=state
+if state then
+QQ(function()
+iconBeforeOpen=UIS.MouseIconEnabled
+end)
+end
 main.Visible=state
-for _,sh in ipairs(shadows) do
+for _,sh in IP(shadows) do
 sh.Visible=state
 end
 modalBtn.Visible=state
@@ -3346,9 +3968,9 @@ if not state then
 closeAllPopups()
 elseif animate then
 uiScale.Scale=currentFit*0.88
-TweenService:Create(
+TSC(
 uiScale,
-TweenInfo.new(0.26,ES.Back,ED.Out),
+TWI(0.26,ESB,ED.Out),
 {Scale=currentFit}
 ):Play()
 end
@@ -3356,7 +3978,7 @@ if applyPillPos then
 applyPillPos(animate==true)
 end
 end
-bindConn(UserInputService.InputBegan:Connect(function(input)
+bindConn(CN(UIS.InputBegan, function(input)
 if root.Parent==nil then
 return
 end
@@ -3368,56 +3990,6 @@ return
 end
 setVisible(not menuOpen,true)
 end))
-if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled then
-local openPill=IN("\084\101\120\116\066\117\116\116\111\110")
-openPill.Name="\079\112\101\110\080\105\108\108"
-openPill.AutoButtonColor=false
-openPill.AnchorPoint=Vector2.new(0.5,0)
-openPill.Position=U2(0.5,0,0,2)
-openPill.Size=UDim2.fromOffset(54,54)
-openPill.BackgroundColor3=C_CARD
-openPill.BackgroundTransparency=0.15
-openPill.BorderSizePixel=0
-openPill.Font=WIN_FONT_GOTHIC
-openPill.TextSize=18
-openPill.TextColor3=C_TEXT
-openPill.Text="\071\077"
-openPill.ZIndex=2
-local opCorner=IN("\085\073\067\111\114\110\101\114")
-opCorner.CornerRadius=UD(1,0)
-opCorner.Parent=openPill
-local opStroke=IN("\085\073\083\116\114\111\107\101")
-opStroke.Color=C_ACCENT
-opStroke.Thickness=1.5
-opStroke.Transparency=0.45
-opStroke.Parent=openPill
-openPill.Parent=root
-openPill.Activated:Connect(function()
-setVisible(not menuOpen,true)
-end)
-local islandActive=false
-local pillInfo=TweenInfo.new(0.3,ES.Back,ED.Out)
-applyPillPos=function(animate)
-local target
-if menuOpen then
-target=U2(1,-44,0,2)
-elseif islandActive then
-target=U2(0.5,124,0,2)
-else
-target=U2(0.5,0,0,2)
-end
-if animate then
-TweenService:Create(openPill,pillInfo,{Position=target}):Play()
-else
-openPill.Position=target
-end
-end
-zzV1.setIslandActive=function(active)
-islandActive=active==true
-applyPillPos(true)
-end
-applyPillPos(false)
-end
 zzV1.root=root
 zzV1.setVisible=setVisible
 return root
@@ -3454,7 +4026,7 @@ strokePressed=2.4,
 panelCorner=14,
 panelGradient=true,
 glassStroke=1.5,
-font=EF.GothamMedium,
+font=EFM,
 textDelta=0,
 },
 Minimal={
@@ -3466,7 +4038,7 @@ strokePressed=1.6,
 panelCorner=12,
 panelGradient=false,
 glassStroke=1,
-font=EF.Gotham,
+font=EFG,
 textDelta=-1,
 },
 Gotico={
@@ -3478,7 +4050,7 @@ strokePressed=2.8,
 panelCorner=4,
 panelGradient=false,
 glassStroke=2,
-font=EF.GrenzeGotisch,
+font=EFZ,
 textDelta=2,
 },
 Chill={
@@ -3490,7 +4062,7 @@ strokePressed=2.2,
 panelCorner=18,
 panelGradient=true,
 glassStroke=1.2,
-font=EF.GothamMedium,
+font=EFM,
 textDelta=0,
 },
 }
@@ -3550,8 +4122,8 @@ panelGrad=CR(228,225,238),
 }
 local FONTS={
 Auto=nil,
-Gotham=EF.Gotham,
-Gotico=EF.GrenzeGotisch,
+Gotham=EFG,
+Gotico=EFZ,
 Bangers=EF.Bangers,
 Code=EF.Code,
 Michroma=EF.Michroma,
@@ -3566,29 +4138,29 @@ return {
 idle=CR(i[1],i[2],i[3]),
 pressed=CR(p[1],p[2],p[3]),
 stroke=CR(
-math.floor(i[1]*0.8+p[1]*0.2+0.5),
-math.floor(i[2]*0.8+p[2]*0.2+0.5),
-math.floor(i[3]*0.8+p[3]*0.2+0.5)
+MFL(i[1]*0.8+p[1]*0.2+0.5),
+MFL(i[2]*0.8+p[2]*0.2+0.5),
+MFL(i[3]*0.8+p[3]*0.2+0.5)
 ),
 text=CR(t[1],t[2],t[3]),
 textPressed=CR(255,255,255),
-panel=CR(math.floor(i[1]*0.6),math.floor(i[2]*0.6),math.floor(i[3]*0.6)),
+panel=CR(MFL(i[1]*0.6),MFL(i[2]*0.6),MFL(i[3]*0.6)),
 panelStroke=CR(i[1],i[2],i[3]),
 handle=CR(
-math.floor(i[1]*0.8+60),
-math.floor(i[2]*0.8+40),
-math.floor(i[3]*0.8+90)
+MFL(i[1]*0.8+60),
+MFL(i[2]*0.8+40),
+MFL(i[3]*0.8+90)
 ),
 handleText=CR(255,255,255),
 keyGrad=CR(
-math.floor(i[1]*0.4+153),
-math.floor(i[2]*0.4+153),
-math.floor(i[3]*0.4+153)
+MFL(i[1]*0.4+153),
+MFL(i[2]*0.4+153),
+MFL(i[3]*0.4+153)
 ),
 panelGrad=CR(
-math.floor(i[1]*0.5+100),
-math.floor(i[2]*0.5+100),
-math.floor(i[3]*0.5+100)
+MFL(i[1]*0.5+100),
+MFL(i[2]*0.5+100),
+MFL(i[3]*0.5+100)
 ),
 }
 end
@@ -3608,7 +4180,7 @@ local PAD_BOTTOM=10
 local function metrics()
 local D=DESIGNS[KS.design] or DESIGNS.Glass
 local gap=D.gap
-local gridW=math.floor(6.75*KEY_SIZE+5*gap+0.5)
+local gridW=MFL(6.75*KEY_SIZE+5*gap+0.5)
 local gridH=4*KEY_SIZE+3*gap
 local padTop=KS.wm and 30 or 6
 local panelW=gridW+PAD_X*2
@@ -3661,7 +4233,7 @@ return Color3.fromHSV(hue,0.55,0.62),Color3.fromHSV(hue,0.7,0.75)
 end
 local function stopRainbow()
 if rainbowConn then
-pcall(function()
+QQ(function()
 rainbowConn:Disconnect()
 end)
 rainbowConn=nil
@@ -3671,12 +4243,12 @@ local function startRainbow()
 if rainbowConn or not Keys or not Keys.enabled then
 return
 end
-rainbowConn=Keys.Scope:Connect(RunService.Heartbeat,function()
+rainbowConn=CN(Keys.Scope, RunService.Heartbeat,function()
 if not overlayGui or not overlayRoot then
 return
 end
 local o=KS.opacity
-for _,chip in pairs(Chips) do
+for _,chip in PR(Chips) do
 if not chip.pressed then
 local bg,st=rainbowIdle(chip)
 chip.frame.BackgroundColor3=bg
@@ -3708,27 +4280,27 @@ textPressed=CR(20,20,30),
 end
 local bg=C.pressed
 local tx=C.textPressed
-TweenService:Create(
+TSC(
 chip.frame,
-TweenInfo.new(0.07,ES.Quad,ED.Out),
+TWI(0.07,ES.Quad,ED.Out),
 {BackgroundColor3=bg,BackgroundTransparency=1 -(0.92*o)}
 ):Play()
 if chip.hasStroke then
-TweenService:Create(
+TSC(
 chip.stroke,
-TweenInfo.new(0.07,ES.Quad,ED.Out),
+TWI(0.07,ES.Quad,ED.Out),
 {Color=bg,Thickness=D.strokePressed,Transparency=1 -(0.95*o)}
 ):Play()
 end
-TweenService:Create(
+TSC(
 chip.label,
-TweenInfo.new(0.07,ES.Quad,ED.Out),
+TWI(0.07,ES.Quad,ED.Out),
 {TextColor3=tx,TextTransparency=1 -(0.95*o)}
 ):Play()
 if chip.popScale then
-TweenService:Create(
+TSC(
 chip.popScale,
-TweenInfo.new(0.07,ES.Quad,ED.Out),
+TWI(0.07,ES.Quad,ED.Out),
 {Scale=0.92}
 ):Play()
 end
@@ -3742,27 +4314,27 @@ bg=C.idle
 tx=C.text
 st=C.stroke
 end
-TweenService:Create(
+TSC(
 chip.frame,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {BackgroundColor3=bg,BackgroundTransparency=1 -(0.88*o)}
 ):Play()
 if chip.hasStroke and st then
-TweenService:Create(
+TSC(
 chip.stroke,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {Color=st,Thickness=D.stroke,Transparency=1 -(0.6*o)}
 ):Play()
 end
-TweenService:Create(
+TSC(
 chip.label,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {TextColor3=tx,TextTransparency=1 -(0.85*o)}
 ):Play()
 if chip.popScale then
-TweenService:Create(
+TSC(
 chip.popScale,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {Scale=1}
 ):Play()
 end
@@ -3777,7 +4349,7 @@ chip.pressed=pressed
 chipVisual(chip,pressed)
 end
 local function repaintChips()
-for _,chip in pairs(Chips) do
+for _,chip in PR(Chips) do
 chipVisual(chip,chip.pressed)
 end
 end
@@ -3789,31 +4361,31 @@ local bo=KS.bgOpacity
 local D=DESIGNS[KS.design] or DESIGNS.Glass
 local C=activeColors()
 local panelT=KS.bg and(1 -(0.55*bo)) or 1
-TweenService:Create(
+TSC(
 overlayPanel,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {BackgroundTransparency=panelT,BackgroundColor3=C.panel}
 ):Play()
 if overlayPanel.GlassStroke then
 local strokeT=KS.bg and(1 -(0.9*bo)) or 1
-TweenService:Create(
+TSC(
 overlayPanel.GlassStroke,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {Transparency=strokeT,Color=C.panelStroke,Thickness=D.glassStroke}
 ):Play()
 end
-local handle=overlayPanel:FindFirstChild("\072\097\110\100\108\101")
+local handle=FF(overlayPanel, "\072\097\110\100\108\101")
 if handle then
-TweenService:Create(
+TSC(
 handle,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {BackgroundTransparency=1 -(0.45*bo),BackgroundColor3=C.handle}
 ):Play()
-local lbl=handle:FindFirstChild("\076\097\098\101\108")
+local lbl=FF(handle, "\076\097\098\101\108")
 if lbl then
-TweenService:Create(
+TSC(
 lbl,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
+TWI(0.12,ES.Quad,ED.Out),
 {TextTransparency=1 -(0.95*bo),TextColor3=C.handleText}
 ):Play()
 end
@@ -3828,7 +4400,7 @@ local function makeDraggable(handleGui)
 local dragging=false
 local dragStart,startPos
 local endConn
-Keys.Scope:Connect(handleGui.InputBegan,function(input)
+CN(Keys.Scope, handleGui.InputBegan,function(input)
 if input.UserInputType==XU.MouseButton1
 or input.UserInputType==XU.Touch
 then
@@ -3838,7 +4410,7 @@ startPos=overlayRoot and overlayRoot.Position or nil
 if endConn then
 endConn:Disconnect()
 end
-endConn=Keys.Scope:Connect(input.Changed,function()
+endConn=CN(Keys.Scope, input.Changed,function()
 if input.UserInputState==Enum.UserInputState.End then
 dragging=false
 if endConn then
@@ -3852,7 +4424,7 @@ end
 end)
 end
 end)
-Keys.Scope:Connect(UserInputService.InputChanged,function(input)
+CN(Keys.Scope, UIS.InputChanged,function(input)
 if not dragging or not overlayRoot or not startPos then
 return
 end
@@ -3875,30 +4447,30 @@ end
 local function makeChip(parent,labelText,x,y,w,h,keyCode,rowIndex)
 local D=DESIGNS[KS.design] or DESIGNS.Glass
 local C=activeColors()
-local frame=IN("\070\114\097\109\101")
+local frame=INF()
 frame.Name="\075\101\121\095"..labelText
-frame.AnchorPoint=Vector2.new(0.5,0.5)
-frame.Position=UDim2.fromOffset(x+w/2,y+h/2)
-frame.Size=UDim2.fromOffset(w,h)
+frame.AnchorPoint=VX(0.5,0.5)
+frame.Position=UO(x+w/2,y+h/2)
+frame.Size=UO(w,h)
 frame.BackgroundColor3=C.idle
 frame.BackgroundTransparency=1 -(0.88*KS.opacity)
 frame.BorderSizePixel=0
 frame.Active=false
 frame.Selectable=false
 frame.Parent=parent
-local corner=IN("\085\073\067\111\114\110\101\114")
+local corner=IUC()
 corner.CornerRadius=UD(0,D.corner)
 corner.Parent=frame
 if D.gradient then
-local gradient=IN("\085\073\071\114\097\100\105\101\110\116")
+local gradient=IUG()
 gradient.Rotation=90
-gradient.Color=ColorSequence.new(CR(255,255,255),C.keyGrad)
+gradient.Color=CSN(CR(255,255,255),C.keyGrad)
 gradient.Parent=frame
 end
 local hasStroke=D.stroke>0
 local stroke=nil
 if hasStroke then
-stroke=IN("\085\073\083\116\114\111\107\101")
+stroke=IUS()
 stroke.Name="\083\116\114\111\107\101"
 stroke.Color=C.stroke
 stroke.Thickness=D.stroke
@@ -3906,13 +4478,13 @@ stroke.Transparency=1 -(0.6*KS.opacity)
 stroke.ApplyStrokeMode=Enum.ApplyStrokeMode.Border
 stroke.Parent=frame
 end
-local label=IN("\084\101\120\116\076\097\098\101\108")
+local label=ITL()
 label.Name="\076\097\098\101\108"
 label.BackgroundTransparency=1
-label.Size=UDim2.fromScale(1,1)
+label.Size=US(1,1)
 label.Font=keyFont()
 label.Text=labelText
-label.TextSize=math.max(7,KS.textSize+D.textDelta)
+label.TextSize=MX(7,KS.textSize+D.textDelta)
 label.TextColor3=C.text
 label.TextTransparency=1 -(0.85*KS.opacity)
 label.Parent=frame
@@ -3945,63 +4517,63 @@ builtKeys=0
 local D=DESIGNS[KS.design] or DESIGNS.Glass
 local C=activeColors()
 local gap,gridW,gridH,padTop,panelW,panelH=metrics()
-overlayGui=IN("\083\099\114\101\101\110\071\117\105")
+overlayGui=ISG()
 overlayGui.Name="\071\104\111\115\116\077\101\116\104\111\100\095\075\101\121\115\116\114\111\107\101\115"
 overlayGui.ResetOnSpawn=false
 overlayGui.IgnoreGuiInset=true
 overlayGui.DisplayOrder=9999
 overlayGui.Enabled=not startHidden
 Keys.Scope:Track(overlayGui)
-overlayRoot=IN("\070\114\097\109\101")
+overlayRoot=INF()
 overlayRoot.Name="\082\111\111\116"
-overlayRoot.AnchorPoint=Vector2.new(0.5,0.5)
+overlayRoot.AnchorPoint=VX(0.5,0.5)
 overlayRoot.Position=KS.pos or DEFAULT_POS
-overlayRoot.Size=UDim2.fromOffset(panelW,panelH)
+overlayRoot.Size=UO(panelW,panelH)
 overlayRoot.BackgroundTransparency=1
 overlayRoot.Parent=overlayGui
 scaleObj=IN("\085\073\083\099\097\108\101")
 scaleObj.Scale=KS.scale
 scaleObj.Parent=overlayRoot
-overlayPanel=IN("\070\114\097\109\101")
+overlayPanel=INF()
 overlayPanel.Name="\080\097\110\101\108"
-overlayPanel.Size=UDim2.fromScale(1,1)
+overlayPanel.Size=US(1,1)
 overlayPanel.BackgroundColor3=C.panel
 overlayPanel.BackgroundTransparency=KS.bg and(1 -(0.55*KS.bgOpacity)) or 1
 overlayPanel.BorderSizePixel=0
 overlayPanel.Parent=overlayRoot
-local panelCorner=IN("\085\073\067\111\114\110\101\114")
+local panelCorner=IUC()
 panelCorner.CornerRadius=UD(0,D.panelCorner)
 panelCorner.Parent=overlayPanel
 if D.panelGradient then
-local panelGradient=IN("\085\073\071\114\097\100\105\101\110\116")
+local panelGradient=IUG()
 panelGradient.Rotation=90
-panelGradient.Color=ColorSequence.new(CR(255,255,255),C.panelGrad)
+panelGradient.Color=CSN(CR(255,255,255),C.panelGrad)
 panelGradient.Parent=overlayPanel
 end
-local glassStroke=IN("\085\073\083\116\114\111\107\101")
+local glassStroke=IUS()
 glassStroke.Name="\071\108\097\115\115\083\116\114\111\107\101"
 glassStroke.Color=C.panelStroke
 glassStroke.Thickness=D.glassStroke
 glassStroke.Transparency=KS.bg and(1 -(0.9*KS.bgOpacity)) or 1
 glassStroke.Parent=overlayPanel
 if KS.wm then
-local handle=IN("\070\114\097\109\101")
+local handle=INF()
 handle.Name="\072\097\110\100\108\101"
-handle.AnchorPoint=Vector2.new(0.5,0)
+handle.AnchorPoint=VX(0.5,0)
 handle.Position=U2(0.5,0,0,6)
-handle.Size=UDim2.fromOffset(134,20)
+handle.Size=UO(134,20)
 handle.BackgroundColor3=C.handle
 handle.BackgroundTransparency=1 -(0.45*KS.bgOpacity)
 handle.BorderSizePixel=0
 handle.Parent=overlayPanel
-local handleCorner=IN("\085\073\067\111\114\110\101\114")
+local handleCorner=IUC()
 handleCorner.CornerRadius=UD(0,D.panelCorner)
 handleCorner.Parent=handle
-local handleLabel=IN("\084\101\120\116\076\097\098\101\108")
+local handleLabel=ITL()
 handleLabel.Name="\076\097\098\101\108"
 handleLabel.BackgroundTransparency=1
-handleLabel.Size=UDim2.fromScale(1,1)
-handleLabel.Font=EF.GrenzeGotisch
+handleLabel.Size=US(1,1)
+handleLabel.Font=EFZ
 handleLabel.Text="\071\072\079\083\084\032\077\069\084\072\079\068"
 handleLabel.TextSize=12
 handleLabel.TextColor3=C.handleText
@@ -4009,17 +4581,17 @@ handleLabel.TextTransparency=1 -(0.95*KS.bgOpacity)
 handleLabel.Parent=handle
 makeDraggable(handle)
 end
-local container=IN("\070\114\097\109\101")
+local container=INF()
 container.Name="\075\101\121\115"
-container.Position=UDim2.fromOffset(PAD_X,padTop)
-container.Size=UDim2.fromOffset(gridW,gridH)
+container.Position=UO(PAD_X,padTop)
+container.Size=UO(gridW,gridH)
 container.BackgroundTransparency=1
 container.Parent=overlayPanel
-for rowIndex,row in ipairs(Rows) do
+for rowIndex,row in IP(Rows) do
 local y=(rowIndex - 1)*(KEY_SIZE+gap)
 local x=0
-for _,def in ipairs(row) do
-local w=math.floor(def[2]*KEY_SIZE+0.5)
+for _,def in IP(row) do
+local w=MFL(def[2]*KEY_SIZE+0.5)
 makeChip(container,def[1],x,y,w,KEY_SIZE,def[3],rowIndex)
 x=x+w+gap
 end
@@ -4032,7 +4604,7 @@ local function rebuild()
 if not overlayGui then
 return
 end
-pcall(function()
+QQ(function()
 overlayGui:Destroy()
 end)
 overlayGui=nil
@@ -4053,18 +4625,18 @@ return
 end
 Keys.enabled=true
 buildOverlay(hidden)
-Keys.Scope:Connect(UserInputService.InputBegan,function(input)
+CN(Keys.Scope, UIS.InputBegan,function(input)
 if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,true)
 end
 end)
-Keys.Scope:Connect(UserInputService.InputEnded,function(input)
+CN(Keys.Scope, UIS.InputEnded,function(input)
 if input.UserInputType==XU.Keyboard then
 setChipPressed(input.KeyCode,false)
 end
 end)
-Keys.Scope:Connect(UserInputService.WindowFocusReleased,function()
-for keyCode in pairs(Chips) do
+CN(Keys.Scope, UIS.WindowFocusReleased,function()
+for keyCode in PR(Chips) do
 setChipPressed(keyCode,false)
 end
 end)
@@ -4088,7 +4660,7 @@ if not overlayGui or overlayGui.Parent==nil then
 return false,"\111\118\101\114\108\097\121\032\083\099\114\101\101\110\071\117\105\032\110\111\116\032\112\097\114\101\110\116\101\100"
 end
 if builtKeys~=20 then
-return false,"\101\120\112\101\099\116\101\100\032\050\048\032\107\101\121\115\032\040\054\043\054\043\053\043\051\041\044\032\098\117\105\108\116\032"..tostring(builtKeys)
+return false,"\101\120\112\101\099\116\101\100\032\050\048\032\107\101\121\115\032\040\054\043\054\043\053\043\051\041\044\032\098\117\105\108\116\032"..TS(builtKeys)
 end
 if not scaleObj or not overlayPanel or not overlayRoot then
 return false,"\111\118\101\114\108\097\121\032\115\116\114\117\099\116\117\114\101\032\105\110\099\111\109\112\108\101\116\101"
@@ -4133,8 +4705,8 @@ end
 API.setTextSize=function(v)
 KS.textSize=v
 local D=DESIGNS[KS.design] or DESIGNS.Glass
-local size=math.max(7,v+D.textDelta)
-for _,chip in pairs(Chips) do
+local size=MX(7,v+D.textDelta)
+for _,chip in PR(Chips) do
 chip.label.TextSize=size
 end
 end
@@ -4203,273 +4775,12 @@ end
 end
 return API
 end
-local function buildMobileHUD(env)
-local TweenService=game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101")
-local UserInputService=game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101")
-local HUD
-local gui=nil
-local btns={}
-local drags={}
-local virtual={bhop=false,crunch=false}
-local DEFS={
-{key="\098\104\111\112",label="\066\072\079\080"},
-{key="\099\114\117\110\099\104",label="\067\082\085\078\067\072"},
-}
-local DEFAULT_POS={
-bhop=U2(0.85,0,0.78,0),
-crunch=U2(0.85,0,0.93,0),
-}
-local function paintBtn(key,active)
-local btn=btns[key]
-if not btn then
-return
-end
-pcall(function()
-TweenService:Create(
-btn,
-TweenInfo.new(0.12,ES.Quad,ED.Out),
-{
-BackgroundColor3=active
-and CR(167,108,255)
-or CR(22,14,36),
-TextColor3=active
-and CR(255,255,255)
-or CR(216,208,235),
-}
-):Play()
-end)
-end
-local function ensureGui()
-if gui and gui.Parent then
-return true
-end
-local root=env.getRoot and env.getRoot() or nil
-if not root then
-return false
-end
-gui=IN("\070\114\097\109\101")
-gui.Name="\071\077\095\077\111\098\105\108\101\072\085\068"
-gui.BackgroundTransparency=1
-gui.Size=UDim2.fromScale(1,1)
-gui.Visible=false
-gui.ZIndex=2
-gui.Parent=root
-HUD.Scope:Track(gui)
-for _,def in ipairs(DEFS) do
-local btn=IN("\084\101\120\116\066\117\116\116\111\110")
-btn.Name="\071\077\095\072\085\068\095"..def.label
-btn.Text=def.label
-btn.AutoButtonColor=false
-btn.AnchorPoint=Vector2.new(0.5,0.5)
-btn.BackgroundColor3=CR(22,14,36)
-btn.BackgroundTransparency=0.15
-btn.BorderSizePixel=0
-btn.Font=EF.GothamBold
-btn.TextSize=14
-btn.TextColor3=CR(216,208,235)
-btn.Active=true
-btn.ZIndex=2
-local bc=IN("\085\073\067\111\114\110\101\114")
-bc.CornerRadius=UD(0,14)
-bc.Parent=btn
-local bs=IN("\085\073\083\116\114\111\107\101")
-bs.Name="\083\116\114\111\107\101"
-bs.Color=CR(120,80,190)
-bs.Thickness=1.5
-bs.Transparency=0.4
-bs.Parent=btn
-btn.Parent=gui
-btns[def.key]=btn
-btn.InputBegan:Connect(function(input)
-if input.UserInputType~=XU.MouseButton1
-and input.UserInputType~=XU.Touch then
-return
-end
-local cfg=env.getHudCfg()
-if cfg.unlocked then
-drags[def.key]={
-start=input.Position,
-startPos=btn.Position,
-}
-return
-end
-if cfg[def.key.."\077\111\100\101"]=="\084\111\103\103\108\101" then
-virtual[def.key]=not virtual[def.key]
-env.setVirtual(def.key,virtual[def.key])
-paintBtn(def.key,virtual[def.key])
-else
-virtual[def.key]=true
-env.setVirtual(def.key,true)
-paintBtn(def.key,true)
-end
-end)
-btn.InputEnded:Connect(function(input)
-if input.UserInputType~=XU.MouseButton1
-and input.UserInputType~=XU.Touch then
-return
-end
-if drags[def.key] then
-drags[def.key]=nil
-env.setBtnPos(def.key,btn.Position)
-return
-end
-local cfg=env.getHudCfg()
-if cfg[def.key.."\077\111\100\101"]~="\084\111\103\103\108\101" then
-virtual[def.key]=false
-env.setVirtual(def.key,false)
-paintBtn(def.key,false)
-end
-end)
-end
-HUD.Scope:Connect(UserInputService.InputChanged,function(input)
-if input.UserInputType~=XU.MouseMovement
-and input.UserInputType~=XU.Touch then
-return
-end
-for _,def in ipairs(DEFS) do
-local st=drags[def.key]
-local btn=btns[def.key]
-if st and btn then
-local delta=input.Position - st.start
-btn.Position=U2(
-st.startPos.X.Scale,st.startPos.X.Offset+delta.X,
-st.startPos.Y.Scale,st.startPos.Y.Offset+delta.Y
-)
-end
-end
-end)
-return true
-end
-local function apply()
-local cfg=env.getHudCfg()
-local dbg={
-os.date("\037\072\058\037\077\058\037\083\032").."\097\112\112\108\121\058\032\098\104\111\112\079\110\061"..tostring(cfg.bhopOn)
-.."\032\099\114\117\110\099\104\079\110\061"..tostring(cfg.crunchOn)
-.."\032\115\105\122\101\061"..tostring(cfg.size)
-.."\032\111\112\097\099\105\116\121\061"..tostring(cfg.opacity),
-}
-if not(cfg.bhopOn or cfg.crunchOn) then
-if gui then
-gui.Visible=false
-end
-dbg[#dbg+1]="\115\105\110\032\098\111\116\111\110\101\115\058\032\103\117\105\032"..(gui and "\111\099\117\108\116\111" or "\110\111\032\099\114\101\097\100\111")
-pcall(function()
-writefile("\071\077\095\104\117\100\095\100\101\098\117\103\046\116\120\116",table.concat(dbg,"\010"))
-end)
-return
-end
-if not ensureGui() then
-dbg[#dbg+1]="\101\110\115\117\114\101\071\117\105\032\070\065\076\076\079"
-pcall(function()
-writefile("\071\077\095\104\117\100\095\100\101\098\117\103\046\116\120\116",table.concat(dbg,"\010"))
-end)
-return
-end
-gui.Visible=true
-dbg[#dbg+1]="\103\117\105\058\032"..tostring(gui:GetFullName()).."\032\118\105\115\105\098\108\101\061"..tostring(gui.Visible)
-for _,def in ipairs(DEFS) do
-local btn=btns[def.key]
-local on=cfg[def.key.."\079\110"]==true
-btn.Visible=on
-if on then
-local size=cfg.size
-btn.Size=UDim2.fromOffset(size,size)
-btn.TextSize=math.max(11,math.floor(size/6))
-local op=cfg.opacity/100
-btn.BackgroundTransparency=1 -(0.85*op)
-btn.TextTransparency=1 -(0.9*op)
-local stroke=btn:FindFirstChild("\083\116\114\111\107\101")
-if stroke then
-stroke.Transparency=1 -(0.6*op)
-stroke.Color=cfg.unlocked
-and CR(167,108,255)
-or CR(120,80,190)
-stroke.Thickness=cfg.unlocked and 2.5 or 1.5
-end
-local pos=cfg.pos[def.key]
-if type(pos)=="\116\097\098\108\101" and #pos==4 then
-btn.Position=U2(pos[1],pos[2],pos[3],pos[4])
-else
-btn.Position=DEFAULT_POS[def.key]
-end
-task.defer(function()
-pcall(function()
-dbg[#dbg+1]=def.label.."\058\032\118\105\115\105\098\108\101\061"..tostring(btn.Visible)
-.."\032\112\111\115\061"..tostring(btn.Position)
-.."\032\097\098\115\061"..tostring(btn.AbsolutePosition)
-.."\032\115\105\122\101\061"..tostring(btn.AbsoluteSize)
-.."\032\098\103\084\061"..tostring(btn.BackgroundTransparency)
-end)
-pcall(function()
-writefile("\071\077\095\104\117\100\095\100\101\098\117\103\046\116\120\116",table.concat(dbg,"\010"))
-end)
-end)
-end
-end
-end
-HUD=env.RegisterModule({
-Name="\077\111\098\105\108\101\032\072\085\068",
-enable=function(opts)
-if HUD.enabled then
-return
-end
-local okApply,errApply=pcall(function()
-HUD.enabled=true
-apply()
-end)
-if not okApply then
-HUD.enabled=false
-pcall(function()
-writefile("\071\077\095\104\117\100\095\100\101\098\117\103\046\116\120\116",os.date("\037\072\058\037\077\058\037\083\032")
-.."\069\078\065\066\076\069\032\069\082\082\079\082\058\032"..tostring(errApply))
-end)
-if env.notify then
-env.notify("\071\104\111\115\116\032\077\101\116\104\111\100","\072\085\068\032\099\101\108\117\108\097\114\032\101\114\114\111\114\058\032"..tostring(errApply),8)
-end
-end
-end,
-disable=function()
-if not HUD.enabled then
-return
-end
-HUD.enabled=false
-if gui then
-gui.Visible=false
-end
-for _,def in ipairs(DEFS) do
-if virtual[def.key] then
-virtual[def.key]=false
-env.setVirtual(def.key,false)
-end
-end
-drags={}
-end,
-verify=function()
-local cfg=env.getHudCfg()
-if not(cfg.bhopOn or cfg.crunchOn) then
-return true
-end
-if not(gui and gui.Parent) then
-return false,"\103\117\105\032\110\111\116\032\098\117\105\108\116\032\119\104\105\108\101\032\101\110\097\098\108\101\100"
-end
-return true
-end,
-verifyClean=function()
-if gui and gui.Visible then
-return false,"\103\117\105\032\115\116\105\108\108\032\118\105\115\105\098\108\101\032\097\102\116\101\114\032\100\105\115\097\098\108\101\040\041"
-end
-return true
-end,
-applyNow=apply,
-})
-return HUD
-end
 local function buildCrosshair(env)
 local Crosshair
 local chGui=nil
 local function chDestroy()
 if chGui then
-pcall(function()
+QQ(function()
 chGui:Destroy()
 end)
 chGui=nil
@@ -4484,33 +4795,33 @@ end
 local cfg=env.getCfg()
 local raw=cfg.color or {167,108,255}
 local color=CR(
-math.clamp(math.floor(raw[1] or 167),0,255),
-math.clamp(math.floor(raw[2] or 108),0,255),
-math.clamp(math.floor(raw[3] or 255),0,255)
+math.clamp(MFL(raw[1] or 167),0,255),
+math.clamp(MFL(raw[2] or 108),0,255),
+math.clamp(MFL(raw[3] or 255),0,255)
 )
 local alpha=1 - math.clamp(cfg.opacity or 100,5,100)/100
 local size=math.clamp(cfg.size or 12,2,40)
 local gap=math.clamp(cfg.gap or 4,0,24)
 local thick=math.clamp(cfg.thickness or 2,1,10)
 local style=cfg.style or "\067\114\111\115\115"
-chGui=IN("\083\099\114\101\101\110\071\117\105")
+chGui=ISG()
 chGui.Name="\071\077\095\067\114\111\115\115\104\097\105\114"
 chGui.ResetOnSpawn=false
 chGui.IgnoreGuiInset=true
 chGui.DisplayOrder=40
 chGui.Parent=root
-local holder=IN("\070\114\097\109\101")
+local holder=INF()
 holder.Name="\072\111\108\100\101\114"
-holder.AnchorPoint=Vector2.new(0.5,0.5)
+holder.AnchorPoint=VX(0.5,0.5)
 holder.Position=U2(0.5,math.clamp(cfg.offX or 0,-600,600),0.5,math.clamp(cfg.offY or 0,-600,600))
-holder.Size=UDim2.fromOffset((gap+size)*2+8,(gap+size)*2+8)
+holder.Size=UO((gap+size)*2+8,(gap+size)*2+8)
 holder.BackgroundTransparency=1
 holder.Parent=chGui
 local function mkShape(px,py,w,h)
-local f=IN("\070\114\097\109\101")
-f.AnchorPoint=Vector2.new(0.5,0.5)
-f.Position=UDim2.fromOffset(px,py)
-f.Size=UDim2.fromOffset(w,h)
+local f=INF()
+f.AnchorPoint=VX(0.5,0.5)
+f.Position=UO(px,py)
+f.Size=UO(w,h)
 f.BackgroundColor3=color
 f.BackgroundTransparency=alpha
 f.BorderSizePixel=0
@@ -4519,7 +4830,7 @@ return f
 end
 local function mkDot(d)
 local f=mkShape(0,0,d,d)
-local c=IN("\085\073\067\111\114\110\101\114")
+local c=IUC()
 c.CornerRadius=UD(1,0)
 c.Parent=f
 return f
@@ -4527,7 +4838,7 @@ end
 local function mkRing(d)
 local f=mkShape(0,0,d,d)
 f.BackgroundTransparency=1
-local st=IN("\085\073\083\116\114\111\107\101")
+local st=IUS()
 st.Color=color
 st.Transparency=alpha
 st.Thickness=thick
@@ -4548,7 +4859,7 @@ elseif style=="\067\105\114\099\108\101" then
 mkRing(size)
 elseif style=="\067\114\111\115\115\032\043\032\068\111\116" then
 mkArms()
-mkDot(math.max(2,math.floor(thick*1.5)))
+mkDot(MX(2,MFL(thick*1.5)))
 else
 mkArms()
 end
@@ -4600,15 +4911,15 @@ if not gui then
 return true
 end
 local n=gui.Name
-return string.sub(n,1,3)=="\071\077\095"
+return SSB(n,1,3)=="\071\077\095"
 or n=="\071\077\095\085\073"
 or n=="\071\077\095\084\111\097\115\116\115"
 or n=="\071\077\095\067\114\111\115\115\104\097\105\114"
 end
 local function fontFromLabel(label)
 local map={
-["\071\111\116\104\097\109"]=EF.Gotham,
-["\071\111\116\104\097\109\032\066\111\108\100"]=EF.GothamBold,
+["\071\111\116\104\097\109"]=EFG,
+["\071\111\116\104\097\109\032\066\111\108\100"]=EFB,
 ["\077\111\110\116\115\101\114\114\097\116"]=EF.Montserrat,
 ["\083\099\105\045\070\105"]=EF.SciFi,
 ["\065\114\099\097\100\101"]=EF.Arcade,
@@ -4619,7 +4930,7 @@ local map={
 ["\065\110\116\105\113\117\101"]=EF.Antique,
 ["\077\105\110\101\099\114\097\102\116"]=EF.Arcade,
 }
-return map[label] or EF.Gotham
+return map[label] or EFG
 end
 local function applyOne(inst,font)
 if not targetClasses[inst.ClassName] then
@@ -4628,7 +4939,7 @@ end
 if isOurs(inst) then
 return
 end
-pcall(function()
+QQ(function()
 if snaps[inst]==nil then
 snaps[inst]=inst.Font
 end
@@ -4640,11 +4951,11 @@ local lp=env.getLocalPlayer()
 if not lp then
 return
 end
-local pg=lp:FindFirstChild("\080\108\097\121\101\114\071\117\105")
+local pg=FF(lp, "\080\108\097\121\101\114\071\117\105")
 if not pg then
 return
 end
-for _,inst in ipairs(pg:GetDescendants()) do
+for _,inst in IP(GD(pg)) do
 applyOne(inst,font)
 end
 end
@@ -4655,15 +4966,15 @@ if EvadeFont.enabled then
 return
 end
 local lp=env.getLocalPlayer()
-if not lp or not lp:FindFirstChild("\080\108\097\121\101\114\071\117\105") then
+if not lp or not FF(lp, "\080\108\097\121\101\114\071\117\105") then
 env.notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\078\111\032\115\101\032\101\110\099\111\110\116\114\111\032\108\097\032\085\073\032\100\101\032\069\118\097\100\101\032\116\111\100\097\118\105\097\046","\069\118\097\100\101\039\115\032\085\073\032\110\111\116\032\102\111\117\110\100\032\121\101\116\046"),4)
 return
 end
 EvadeFont.enabled=true
 local font=fontFromLabel(env.getCfg().font)
 scanAll(font)
-local pg=lp:FindFirstChild("\080\108\097\121\101\114\071\117\105")
-EvadeFont.Scope:Connect(pg.DescendantAdded,function(inst)
+local pg=FF(lp, "\080\108\097\121\101\114\071\117\105")
+CN(EvadeFont.Scope, pg.DescendantAdded,function(inst)
 task.defer(function()
 if EvadeFont.enabled and inst and inst.Parent then
 applyOne(inst,fontFromLabel(env.getCfg().font))
@@ -4677,8 +4988,8 @@ return
 end
 EvadeFont.enabled=false
 EvadeFont.Scope:Wipe()
-for inst,orig in pairs(snaps) do
-pcall(function()
+for inst,orig in PR(snaps) do
+QQ(function()
 if inst and inst.Parent then
 inst.Font=orig
 end
@@ -4716,7 +5027,7 @@ SPX.playing=false
 SPX.onState=nil
 local function pushState()
 if SPX.onState then
-pcall(function()
+QQ(function()
 SPX.onState({
 playing=SPX.playing,
 title=SPX.current and SPX.current.title or "",
@@ -4726,10 +5037,10 @@ end)
 end
 end
 local function spDebug(tag,text)
-pcall(function()
-writefile("\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116",os.date("\037\072\058\037\077\058\037\083")
+QQ(function()
+WF("\071\077\095\115\112\111\116\105\102\121\095\100\101\098\117\103\046\116\120\116",OD("\037\072\058\037\077\058\037\083")
 .."\032\091"..tag.."\093\032"
-..tostring(text))
+..TS(text))
 end)
 end
 local function rawRequest(url,headers)
@@ -4742,25 +5053,25 @@ elseif syn and type(syn.request)=="\102\117\110\099\116\105\111\110" then
 fn=syn.request
 end
 if fn then
-local ok,res=pcall(function()
+local ok,res=QQ(function()
 return fn({Url=url,Method="\071\069\084",Headers=headers or {}})
 end)
 if ok and type(res)=="\116\097\098\108\101" then
 return(res.Body or res.body or ""),true
 end
-spDebug("\114\101\113\117\101\115\116\045\102\110","\102\097\108\108\111\058\032"..tostring(res))
+spDebug("\114\101\113\117\101\115\116\045\102\110","\102\097\108\108\111\058\032"..TS(res))
 return nil,true
 end
-local ok2,body=pcall(function()
+local ok2,body=QQ(function()
 return game:HttpGet(url)
 end)
 if ok2 then
 return body,false
 end
-spDebug("\104\116\116\112\103\101\116","\102\097\108\108\111\058\032"..tostring(body))
+spDebug("\104\116\116\112\103\101\116","\102\097\108\108\111\058\032"..TS(body))
 return nil,false
 end
-local HttpService=game:GetService("\072\116\116\112\083\101\114\118\105\099\101")
+local HttpService=GGS("\072\116\116\112\083\101\114\118\105\099\101")
 local function spToken(force)
 local now=os.time()*1000
 if not force and SPX.token and now<(SPX.tokenExp or 0) - 60000 then
@@ -4773,7 +5084,7 @@ local body=rawRequest(
 {Cookie="\115\112\095\100\099\061"..dc}
 )
 if body and #body>0 then
-local ok,data=pcall(function()
+local ok,data=QQ(function()
 return HttpService:JSONDecode(body)
 end)
 if ok
@@ -4782,13 +5093,13 @@ and type(data["\097\099\099\101\115\115\084\111\107\101\110"])=="\115\116\114\10
 and data.isAnonymous==false
 then
 SPX.token=data["\097\099\099\101\115\115\084\111\107\101\110"]
-SPX.tokenExp=tonumber(data.accessTokenExpirationTimestampMs) or 0
+SPX.tokenExp=TN(data.accessTokenExpirationTimestampMs) or 0
 SPX.isAnonymous=false
-spDebug("\116\111\107\101\110","\116\111\107\101\110\032\100\101\032\085\083\085\065\082\073\079\032\111\107\032\040\101\120\112\105\114\097\032"..tostring(SPX.tokenExp).."\041")
+spDebug("\116\111\107\101\110","\116\111\107\101\110\032\100\101\032\085\083\085\065\082\073\079\032\111\107\032\040\101\120\112\105\114\097\032"..TS(SPX.tokenExp).."\041")
 return SPX.token
 end
 spDebug("\116\111\107\101\110\045\117\115\101\114","\099\111\111\107\105\101\032\115\112\095\100\099\032\105\110\118\097\108\105\100\097\032\111\032\097\110\111\110\105\109\097\058\032"
-..tostring(string.sub(tostring(body),1,160)))
+..TS(SSB(TS(body),1,160)))
 else
 spDebug("\116\111\107\101\110\045\117\115\101\114","\103\101\116\095\097\099\099\101\115\115\095\116\111\107\101\110\032\115\105\110\032\114\101\115\112\117\101\115\116\097\032\040\099\111\111\107\105\101\041")
 end
@@ -4798,21 +5109,21 @@ if not body or #body==0 then
 spDebug("\116\111\107\101\110","\114\101\115\112\117\101\115\116\097\032\118\097\099\105\097\032\047\032\114\101\113\117\101\115\116\032\102\097\108\108\111")
 return nil
 end
-local ok,data=pcall(function()
+local ok,data=QQ(function()
 return HttpService:JSONDecode(body)
 end)
 if not ok or type(data)~="\116\097\098\108\101" then
-spDebug("\116\111\107\101\110","\110\111\032\074\083\079\078\058\032"..tostring(string.sub(body,1,200)))
+spDebug("\116\111\107\101\110","\110\111\032\074\083\079\078\058\032"..TS(SSB(body,1,200)))
 return nil
 end
 local tok=data["\097\099\099\101\115\115\084\111\107\101\110"]
 if type(tok)~="\115\116\114\105\110\103" then
-spDebug("\116\111\107\101\110","\097\099\099\101\115\115\084\111\107\101\110\032\110\111\032\115\116\114\105\110\103\058\032"..tostring(tok))
+spDebug("\116\111\107\101\110","\097\099\099\101\115\115\084\111\107\101\110\032\110\111\032\115\116\114\105\110\103\058\032"..TS(tok))
 return nil
 end
 SPX.token=tok
 SPX.isAnonymous=true
-SPX.tokenExp=tonumber(data.accessTokenExpirationTimestampMs) or(os.time()*1000+1800000)
+SPX.tokenExp=TN(data.accessTokenExpirationTimestampMs) or(os.time()*1000+1800000)
 spDebug("\116\111\107\101\110","\116\111\107\101\110\032\065\078\079\078\073\077\079\032\111\107")
 return tok
 end
@@ -4825,16 +5136,16 @@ local body=rawRequest(url,{Authorization="\066\101\097\114\101\114\032"..tok})
 if not body or #body==0 then
 return nil,"\101\109\112\116\121"
 end
-local ok,data=pcall(function()
+local ok,data=QQ(function()
 return HttpService:JSONDecode(body)
 end)
 if not ok or type(data)~="\116\097\098\108\101" then
-spDebug("\097\112\105","\110\111\032\074\083\079\078\058\032"..tostring(string.sub(tostring(body),1,200)))
+spDebug("\097\112\105","\110\111\032\074\083\079\078\058\032"..TS(SSB(TS(body),1,200)))
 return nil,"\098\097\100\045\106\115\111\110"
 end
 if data.error then
-spDebug("\097\112\105","\115\112\111\116\105\102\121\032\101\114\114\111\114\058\032"..tostring(data.error.message))
-return nil,"\115\112\111\116\105\102\121\058\032"..tostring(data.error.message)
+spDebug("\097\112\105","\115\112\111\116\105\102\121\032\101\114\114\111\114\058\032"..TS(data.error.message))
+return nil,"\115\112\111\116\105\102\121\058\032"..TS(data.error.message)
 end
 return data,nil
 end
@@ -4844,18 +5155,18 @@ return nil
 end
 local artist=""
 if type(t.artists)=="\116\097\098\108\101" and t.artists[1] and t.artists[1].name then
-artist=tostring(t.artists[1].name)
+artist=TS(t.artists[1].name)
 end
 return {
-title=tostring(t.name or "\063"),
+title=TS(t.name or "\063"),
 artist=artist,
 url=t.preview_url,
-ms=tonumber(t.duration_ms) or 0,
+ms=TN(t.duration_ms) or 0,
 }
 end
 local function spStop()
 if SPX.sound then
-pcall(function()
+QQ(function()
 SPX.sound:Destroy()
 end)
 SPX.sound=nil
@@ -4873,19 +5184,19 @@ env.notify("\083\112\111\116\105\102\121",gmT("\069\115\097\032\099\097\110\099\
 return
 end
 if SPX.sound then
-pcall(function()
+QQ(function()
 SPX.sound:Destroy()
 end)
 end
 local s=IN("\083\111\117\110\100")
 s.SoundId=track.url
 s.Volume=(env.getVolume() or 50)/100
-s.Parent=game:GetService("\083\111\117\110\100\083\101\114\118\105\099\101")
+s.Parent=GGS("\083\111\117\110\100\083\101\114\118\105\099\101")
 SPX.sound=s
 SPX.current=track
 SPX.playing=true
 Spotify.enabled=true
-s.Ended:Connect(function()
+CN(s.Ended, function()
 if SPX.playing and #SPX.queue>0 and SPX.queuePos<#SPX.queue then
 SPX.queuePos+=1
 spPlay(SPX.queue[SPX.queuePos])
@@ -4894,7 +5205,7 @@ SPX.playing=false
 pushState()
 end
 end)
-pcall(function()
+QQ(function()
 s:Play()
 end)
 pushState()
@@ -4925,16 +5236,16 @@ return true
 end,
 })
 SPX.search=function(query,cb)
-task.spawn(function()
+TSP(function()
 if type(query)~="\115\116\114\105\110\103" or #query==0 then
 return
 end
 local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\111\116\105\102\121\046\099\111\109\047\118\049\047\115\101\097\114\099\104\063\113\061"
-..game:GetService("\072\116\116\112\083\101\114\118\105\099\101"):UrlEncode(query)
+..GGS("\072\116\116\112\083\101\114\118\105\099\101"):UrlEncode(query)
 .."\038\116\121\112\101\061\116\114\097\099\107\038\108\105\109\105\116\061\056")
 local out={}
 if data and data.tracks and type(data.tracks.items)=="\116\097\098\108\101" then
-for _,t in ipairs(data.tracks.items) do
+for _,t in IP(data.tracks.items) do
 local tr=trackOf(t)
 if tr then
 out[#out+1]=tr
@@ -4942,20 +5253,20 @@ end
 end
 end
 SPX.results=out
-pcall(function()
+QQ(function()
 cb(err,out)
 end)
 end)
 end
 SPX.loadPlaylist=function(link,cb)
-task.spawn(function()
-local id=tostring(link or "")
-local m=string.match(id,"\112\108\097\121\108\105\115\116\047\040\091\037\119\093\043\041")
+TSP(function()
+local id=TS(link or "")
+local m=SGM(id,"\112\108\097\121\108\105\115\116\047\040\091\037\119\093\043\041")
 if m then
 id=m
 end
 if #id<10 then
-pcall(function()
+QQ(function()
 cb("\098\097\100\045\105\100",{})
 end)
 return
@@ -4964,7 +5275,7 @@ local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\1
 ..id.."\047\116\114\097\099\107\115\063\108\105\109\105\116\061\051\048")
 local out={}
 if data and type(data.items)=="\116\097\098\108\101" then
-for _,it in ipairs(data.items) do
+for _,it in IP(data.items) do
 local tr=trackOf(it and it.track)
 if tr then
 out[#out+1]=tr
@@ -4973,15 +5284,15 @@ end
 end
 SPX.queue=out
 SPX.queuePos=0
-pcall(function()
+QQ(function()
 cb(err,out)
 end)
 end)
 end
 SPX.login=function(dc,cb)
-task.spawn(function()
+TSP(function()
 if type(dc)~="\115\116\114\105\110\103" or #dc<20 then
-pcall(function()
+QQ(function()
 cb(false,gmT("\080\101\103\097\032\101\108\032\118\097\108\111\114\032\100\101\032\115\112\095\100\099\032\040\101\115\032\108\097\114\103\111\041\046","\080\097\115\116\101\032\116\104\101\032\115\112\095\100\099\032\118\097\108\117\101\032\040\105\116\039\115\032\108\111\110\103\041\046"))
 end)
 return
@@ -4990,41 +5301,41 @@ env.setDc(dc)
 SPX.token=nil
 local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\111\116\105\102\121\046\099\111\109\047\118\049\047\109\101")
 if data and data.id then
-SPX.userName=tostring(data.display_name or data.id)
+SPX.userName=TS(data.display_name or data.id)
 SPX.isAnonymous=false
 env.setUserName(SPX.userName)
 spDebug("\108\111\103\105\110","\079\075\032\099\111\109\111\032"..SPX.userName)
-pcall(function()
+QQ(function()
 cb(true,SPX.userName)
 end)
 else
 env.setDc("")
 SPX.token=nil
-spDebug("\108\111\103\105\110","\102\097\108\108\111\058\032"..tostring(err))
-pcall(function()
+spDebug("\108\111\103\105\110","\102\097\108\108\111\058\032"..TS(err))
+QQ(function()
 cb(false,gmT("\083\101\115\105\111\110\032\105\110\118\097\108\105\100\097\032\045\032\099\111\112\105\097\032\115\112\095\100\099\032\100\101\032\110\117\101\118\111","\073\110\118\097\108\105\100\032\115\101\115\115\105\111\110\032\045\032\099\111\112\121\032\115\112\095\100\099\032\097\103\097\105\110"))
 end)
 end
 end)
 end
 SPX.logout=function(cb)
-task.spawn(function()
+TSP(function()
 env.setDc("")
 env.setUserName("")
 SPX.token=nil
 SPX.userName=nil
 SPX.isAnonymous=nil
-pcall(function()
+QQ(function()
 cb(true,gmT("\083\101\115\105\111\110\032\099\101\114\114\097\100\097\046","\076\111\103\103\101\100\032\111\117\116\046"))
 end)
 end)
 end
 SPX.recent=function(cb)
-task.spawn(function()
+TSP(function()
 local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\111\116\105\102\121\046\099\111\109\047\118\049\047\109\101\047\112\108\097\121\101\114\047\114\101\099\101\110\116\108\121\045\112\108\097\121\101\100\063\108\105\109\105\116\061\049\048")
 local out={}
 if data and type(data.items)=="\116\097\098\108\101" then
-for _,it in ipairs(data.items) do
+for _,it in IP(data.items) do
 local tr=trackOf(it and it.track)
 if tr then
 out[#out+1]=tr
@@ -5032,40 +5343,40 @@ end
 end
 end
 SPX.results=out
-pcall(function()
+QQ(function()
 cb(err,out)
 end)
 end)
 end
 SPX.myPlaylists=function(cb)
-task.spawn(function()
+TSP(function()
 local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\111\116\105\102\121\046\099\111\109\047\118\049\047\109\101\047\112\108\097\121\108\105\115\116\115\063\108\105\109\105\116\061\049\048")
 local out={}
 if data and type(data.items)=="\116\097\098\108\101" then
-for _,it in ipairs(data.items) do
+for _,it in IP(data.items) do
 if type(it)=="\116\097\098\108\101" and it.id then
-out[#out+1]={name=tostring(it.name or "\063"),id=tostring(it.id)}
+out[#out+1]={name=TS(it.name or "\063"),id=TS(it.id)}
 end
 end
 end
-pcall(function()
+QQ(function()
 cb(err,out)
 end)
 end)
 end
 SPX.myTracks=function(cb)
-task.spawn(function()
+TSP(function()
 local data,err=spApi("\104\116\116\112\115\058\047\047\097\112\105\046\115\112\111\116\105\102\121\046\099\111\109\047\118\049\047\109\101\047\116\114\097\099\107\115\063\108\105\109\105\116\061\051\048")
 local out={}
 if data and type(data.items)=="\116\097\098\108\101" then
-for _,it in ipairs(data.items) do
+for _,it in IP(data.items) do
 local tr=trackOf(it and it.track)
 if tr then
 out[#out+1]=tr
 end
 end
 end
-pcall(function()
+QQ(function()
 cb(err,out)
 end)
 end)
@@ -5081,7 +5392,7 @@ SPX.pauseResume=function()
 if not SPX.sound then
 return
 end
-pcall(function()
+QQ(function()
 if SPX.playing then
 SPX.sound:Pause()
 SPX.playing=false
@@ -5095,7 +5406,7 @@ end
 SPX.stop=spStop
 SPX.setVolume=function(v)
 if SPX.sound then
-pcall(function()
+QQ(function()
 SPX.sound.Volume=v/100
 end)
 end
@@ -5106,160 +5417,928 @@ end
 return SPX
 end
 local function buildSkinChanger(env)
-local SkinChanger
 local SKX={}
-SKX.original=nil
 SKX.appliedName=nil
-local Workspace=game:GetService("\087\111\114\107\115\112\097\099\101")
-local Players=game:GetService("\080\108\097\121\101\114\115")
-local function humOf(model)
-if not model then
-return nil
+SKX.enabled=false
+local Workspace=GGS("\087\111\114\107\115\112\097\099\101")
+local Players=GGS("\080\108\097\121\101\114\115")
+local RunService=GGS("\082\117\110\083\101\114\118\105\099\101")
+local HttpService=GGS("\072\116\116\112\083\101\114\118\105\099\101")
+local ContentProvider=GGS("\067\111\110\116\101\110\116\080\114\111\118\105\100\101\114")
+if _G.GM_SKIN_STOP then
+QQ(_G.GM_SKIN_STOP)
 end
-return model:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+local alive=true
+_G.GM_SKIN_STOP=function()
+alive=false
 end
-local function rigOf()
+local function rigOf(name)
 local lp=env.getLocalPlayer()
-if not lp then
+if not name then
+if not lp then return nil end
+name=lp.Name
+end
+local rigs=FF(Workspace, "\082\105\103\115")
+if not rigs then return nil end
+return FF(rigs, name)
+end
+local function cmKey(c)
+return "\067\077\058"..TS(c.BodyPart).."\058"..TS(c.MeshId)
+end
+local function headChildKey(ch)
+if ch:IsA("\077\101\115\104") then
+return "\077\101\115\104\058"..TS(ch.MeshId).."\058"..TS(ch.TextureId)
+elseif ch:IsA("\083\112\101\099\105\097\108\077\101\115\104") then
+return "\083\077\058"..TS(ch.MeshType).."\058"..TS(ch.MeshId).."\058"..TS(ch.Scale)
+elseif ch:IsA("\070\097\099\101\067\111\110\116\114\111\108\115") then
+return "\070\067"
+elseif ch:IsA("\068\101\099\097\108") then
+return "\100\101\099\097\108\058"..ch.Name.."\058"..TS(ch.Texture)
+end
 return nil
 end
-local rigs=Workspace:FindFirstChild("\082\105\103\115")
-if not rigs then
+local function captureHeadState(rig)
+local head=FF(rig, "\072\101\097\100")
+if not head then return nil end
+local h={keys={},props={}}
+for _,ch in IP(GC(head)) do
+local k=headChildKey(ch)
+if k then h.keys[k]=ch:Clone() end
+end
+QQ(function()
+h.props.Color=head.Color
+h.props.Transparency=head.Transparency
+h.props.Material=head.Material
+end)
+return h
+end
+local function parentAcc(rig,tpl)
+local acc=tpl:Clone()
+local head=FF(rig, "\072\101\097\100")
+QQ(function()
+for _,d in IP(GD(acc)) do
+if d:IsA("\066\097\115\101\080\097\114\116") then
+d.CanCollide=false
+d.CanQuery=false
+d.CanTouch=false
+d.Massless=true
+d.Anchored=false
+if head then d.CFrame=head.CFrame end
+elseif d:IsA("\074\111\105\110\116\073\110\115\116\097\110\099\101") or d:IsA("\087\101\108\100\067\111\110\115\116\114\097\105\110\116") then
+local function inside(x)
+return x~=nil and x:IsDescendantOf(acc)
+end
+if not(inside(d.Part0) and inside(d.Part1)) then d:Destroy() end
+elseif d:IsA("\067\111\110\115\116\114\097\105\110\116") then
+local function ins(a)
+return a~=nil and a:IsDescendantOf(acc)
+end
+if not(ins(d.Attachment0) and ins(d.Attachment1)) then d:Destroy() end
+end
+end
+end)
+acc.Parent=rig
+return acc
+end
+local fpNow=false
+local function cameraInFirstPerson()
+local cam=Workspace.CurrentCamera
+if not cam then return false end
+local ok,dist=QQ(function()
+return(cam.CFrame.Position - cam.Focus.Position).Magnitude
+end)
+if not ok then return false end
+return dist<2
+end
+local function applyFP(rig,inFirst)
+QQ(function()
+local want=inFirst and 1 or 0
+local head=FF(rig, "\072\101\097\100")
+if head and head:IsA("\066\097\115\101\080\097\114\116") and head.LocalTransparencyModifier~=want then
+head.LocalTransparencyModifier=want
+end
+for _,acc in IP(GC(rig)) do
+if acc:IsA("\065\099\099\101\115\115\111\114\121") then
+local handle=FF(acc, "\072\097\110\100\108\101")
+if handle and handle:IsA("\066\097\115\101\080\097\114\116") then
+local handleAtt=FFC(handle, "\065\116\116\097\099\104\109\101\110\116")
+if handleAtt and head and FF(head, handleAtt.Name) then
+for _,d in IP(GD(acc)) do
+if d:IsA("\066\097\115\101\080\097\114\116") and d.LocalTransparencyModifier~=want then
+d.LocalTransparencyModifier=want
+end
+end
+end
+end
+end
+end
+end)
+end
+local SEED_BODY={
+[86499666]={p="\084\111\114\115\111",m=82987757},
+[86499716]={p="\076\101\102\116\065\114\109",m=83001137},
+[86499698]={p="\082\105\103\104\116\065\114\109",m=83001181},
+[86499753]={p="\076\101\102\116\076\101\103",m=746825633},
+[86499793]={p="\082\105\103\104\116\076\101\103",m=83001181},
+[2807146071]={p="\082\105\103\104\116\076\101\103",m=2794659901,ot=2530631626},
+[48474356]={p="\084\111\114\115\111",m=48112070},
+[27493604]={p="\084\111\114\115\111",m=27493004},
+[32357619]={p="\076\101\102\116\065\114\109",m=32331863},
+[32357584]={p="\082\105\103\104\116\065\114\109",m=32331968},
+[27493718]={p="\082\105\103\104\116\076\101\103",m=27493073,ot=27493193},
+[27493683]={p="\076\101\102\116\076\101\103",m=27493033},
+[139607718]={p="\082\105\103\104\116\076\101\103",m=101851696,ot=101851254},
+}
+local SEED_HEAD={
+[72451007866240]={m="\114\098\120\097\115\115\101\116\105\100\058\047\047\049\050\054\051\052\056\054\057\056\057\053\048\054\050\048",t="\070\105\108\101\077\101\115\104"},
+[94191288988769]={m="\114\098\120\097\115\115\101\116\105\100\058\047\047\049\049\051\051\054\057\048\056\051\048\057\057\056\052\055",t="\070\105\108\101\077\101\115\104"},
+[14819526414]={m="\114\098\120\097\115\115\101\116\105\100\058\047\047\049\052\056\048\049\053\049\049\048\057\055",t="\070\105\108\101\077\101\115\104"},
+[14488197116]={m="\114\098\120\097\115\115\101\116\105\100\058\047\047\049\052\052\055\056\055\052\051\057\049\056",t="\070\105\108\101\077\101\115\104"},
+[0]={t="\072\101\097\100",s={1.25,1.25,1.25}},
+}
+local cacheBody={}
+local cacheHead={}
+local function loadCache()
+if not(isfile and readfile) then return end
+QQ(function()
+if not ISF("\071\077\095\098\111\100\121\108\105\098\046\106\115\111\110") then return end
+local data=HttpService:JSONDecode(readfile("\071\077\095\098\111\100\121\108\105\098\046\106\115\111\110"))
+if type(data)=="\116\097\098\108\101" then
+if type(data.body)=="\116\097\098\108\101" then
+for k,v in PR(data.body) do
+cacheBody[TN(k) or k]=v
+end
+end
+if type(data.head)=="\116\097\098\108\101" then
+for k,v in PR(data.head) do
+cacheHead[TN(k) or k]=v
+end
+end
+end
+end)
+end
+local function saveCache()
+if not writefile then return end
+QQ(function()
+WF("\071\077\095\098\111\100\121\108\105\098\046\106\115\111\110",HttpService:JSONEncode({body=cacheBody,head=cacheHead}))
+end)
+end
+local function knownBody(asset)
+return SEED_BODY[asset] or cacheBody[asset]
+end
+local function knownHead(asset)
+return SEED_HEAD[asset] or cacheHead[asset]
+end
+local function loadBodyPairViaGetObjects(assetId,partName)
+if type(game.GetObjects)~="\102\117\110\099\116\105\111\110" then return nil end
+local ok,loaded=QQ(function()
+return game:GetObjects("\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(assetId))
+end)
+if not ok or type(loaded)~="\116\097\098\108\101" or #loaded==0 then
 return nil
 end
-return rigs:FindFirstChild(lp.Name)
+local found=nil
+for _,obj in IP(loaded) do
+local pool={}
+if obj:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+pool[#pool+1]=obj
 end
-local function snapshotOriginal()
-if SKX.original then
-return
+for _,d in IP(GD(obj)) do
+if d:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+pool[#pool+1]=d
 end
-local lp=env.getLocalPlayer()
-local hum=humOf(lp and lp.Character)
-if hum then
-pcall(function()
-SKX.original=hum:GetAppliedDescription()
+end
+for _,cm in IP(pool) do
+local pn=TS(cm.BodyPart):match("\037\046\040\037\119\043\041\036")
+if pn==partName then
+found={p=partName,m=cm.MeshId,bt=cm.BaseTextureId or 0,ot=cm.OverlayTextureId or 0}
+end
+end
+QQ(function() obj:Destroy() end)
+if found then break end
+end
+return found
+end
+local function loadHeadPairViaGetObjects(headAsset)
+if type(game.GetObjects)~="\102\117\110\099\116\105\111\110" then return nil end
+local ok,loaded=QQ(function()
+return game:GetObjects("\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(headAsset))
+end)
+if not ok or type(loaded)~="\116\097\098\108\101" or #loaded==0 then
+return nil
+end
+local found=nil
+for _,obj in IP(loaded) do
+local pool={}
+if obj:IsA("\066\097\115\101\080\097\114\116") then
+pool[#pool+1]=obj
+end
+for _,d in IP(GD(obj)) do
+if d:IsA("\066\097\115\101\080\097\114\116") then
+pool[#pool+1]=d
+end
+end
+for _,part in IP(pool) do
+local meshId=nil
+QQ(function()
+if part:IsA("\077\101\115\104\080\097\114\116") then
+meshId=part.MeshId
+else
+local sm=FFC(part, "\083\112\101\099\105\097\108\077\101\115\104") or FFC(part, "\077\101\115\104")
+if sm then
+meshId=sm.MeshId
+end
+end
+end)
+if meshId and meshId~="" and meshId~=0 then
+found={m=TS(meshId),t="\070\105\108\101\077\101\115\104",s={1,1,1}}
+end
+end
+QQ(function() obj:Destroy() end)
+if found then break end
+end
+return found
+end
+local function meshFromPair(pair)
+local cm=IN("\067\104\097\114\097\099\116\101\114\077\101\115\104")
+QQ(function()
+cm.BodyPart=Enum.BodyPart[pair.p]
+cm.MeshId=pair.m
+cm.BaseTextureId=pair.bt or 0
+cm.OverlayTextureId=pair.ot or 0
+end)
+return cm
+end
+local function headFromPair(pair,desc)
+local h={keys={},props={}}
+local sm=IN("\083\112\101\099\105\097\108\077\101\115\104")
+QQ(function()
+if pair.t=="\072\101\097\100" then
+sm.MeshType=Enum.MeshType.Head
+else
+sm.MeshType=Enum.MeshType.FileMesh
+sm.MeshId=pair.m
+end
+local s=pair.s
+if type(s)=="\116\097\098\108\101" and #s>=3 then
+sm.Scale=Vector3.new(TN(s[1]) or 1,TN(s[2]) or 1,TN(s[3]) or 1)
+end
+end)
+h.keys[headChildKey(sm)]=sm
+QQ(function()
+if desc and desc.Face and desc.Face~=0 then
+local fd=IN("\068\101\099\097\108")
+fd.Name="\102\097\099\101"
+fd.Texture="\114\098\120\097\115\115\101\116\105\100\058\047\047"..desc.Face
+h.keys[headChildKey(fd)]=fd
+end
+end)
+return h
+end
+local lastScan=0
+local function scanPlayer(p)
+local learned=0
+local r=rigOf(p.Name)
+if not r then return 0 end
+local hasCM=false
+for _,c in IP(GC(r)) do
+if c:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+hasCM=true
+break
+end
+end
+local headMesh=nil
+local head=FF(r, "\072\101\097\100")
+if head then
+for _,ch in IP(GC(head)) do
+local cls,mtype,mid
+QQ(function()
+if ch:IsA("\083\112\101\099\105\097\108\077\101\115\104") or ch:IsA("\077\101\115\104") then
+cls=ch.ClassName
+mtype=ch.MeshType
+mid=ch.MeshId
+end
+end)
+if cls then
+local custom=(mtype~=Enum.MeshType.Head) and(mid~=nil and mid~="" and mid~=0)
+if custom then
+headMesh=ch
+break
+elseif mtype==Enum.MeshType.Head and not knownHead(0) then
+headMesh=ch
+break
+end
+end
+end
+end
+if not hasCM and not headMesh then return 0 end
+local d=nil
+QQ(function() d=Players:GetHumanoidDescriptionFromUserId(p.UserId) end)
+if not d then return 0 end
+QQ(function()
+local assets={
+Head=d.Head,Torso=d.Torso,LeftArm=d.LeftArm,
+RightArm=d.RightArm,LeftLeg=d.LeftLeg,RightLeg=d.RightLeg,
+}
+if hasCM then
+for _,c in IP(GC(r)) do
+if c:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+local partName=TS(c.BodyPart):match("\037\046\040\037\119\043\041\036")
+local asset=assets[partName]
+if asset and asset~=0 and not knownBody(asset) then
+cacheBody[asset]={p=partName,m=c.MeshId,bt=c.BaseTextureId or 0,ot=c.OverlayTextureId or 0}
+learned+=1
+end
+end
+end
+end
+if headMesh then
+local ha=assets.Head
+if ha and ha~=0 then
+if not knownHead(ha) then
+local sc=headMesh.Scale
+cacheHead[ha]={m=TS(headMesh.MeshId),t="\070\105\108\101\077\101\115\104",s={sc.X,sc.Y,sc.Z}}
+learned+=1
+end
+elseif not knownHead(0) then
+local sc=headMesh.Scale
+cacheHead[0]={t="\072\101\097\100",s={sc.X,sc.Y,sc.Z}}
+learned+=1
+end
+end
+end)
+return learned
+end
+local function scanLobby()
+local learned=0
+for _,p in IP(Players:GetPlayers()) do
+if alive then
+learned+=scanPlayer(p)
+end
+end
+lastScan=OCL()
+if learned>0 then
+saveCache()
+warn("\091\071\077\093\032\083\107\105\110\058\032\108\105\098\114\101\114\105\097\032\100\101\032\099\117\101\114\112\111\115\032\043"..TS(learned).."\032\112\097\114\101\115\032\110\117\101\118\111\115")
+end
+return learned
+end
+local function sameTemplate(a,b)
+local na=TS(a):match("\037\100\043\036")
+local nb=TS(b):match("\037\100\043\036")
+return na~=nil and nb~=nil and na==nb
+end
+local function templateLoads(cls,template)
+local ok=false
+QQ(function()
+local inst=IN(cls)
+if cls=="\083\104\105\114\116" then inst.ShirtTemplate=template
+elseif cls=="\080\097\110\116\115" then inst.PantsTemplate=template
+elseif cls=="\083\104\105\114\116\071\114\097\112\104\105\099" then inst.GraphicTemplate=template end
+ContentProvider:PreloadAsync({inst},function(id,status)
+if TS(status):find("\083\117\099\099\101\115\115") then ok=true end
+end)
+inst:Destroy()
+end)
+return ok
+end
+local function httpGet(url)
+local ok,body=QQ(function() return game:HttpGet(url) end)
+if ok and type(body)=="\115\116\114\105\110\103" and #body>0 then
+return body
+end
+local fn
+if type(http_request)=="\102\117\110\099\116\105\111\110" then
+fn=http_request
+elseif type(syn)=="\116\097\098\108\101" and type(syn.request)=="\102\117\110\099\116\105\111\110" then
+fn=syn.request
+end
+if fn then
+local ok2,res=QQ(function() return fn({Url=url,Method="\071\069\084"}) end)
+if ok2 and type(res)=="\116\097\098\108\101" and type(res.Body)=="\115\116\114\105\110\103" then
+return res.Body
+end
+end
+return nil
+end
+local function fixClothes(state,uid)
+local defs={
+{key="\115\104\105\114\116\084\101\109\112\108\097\116\101",cls="\083\104\105\114\116",ak="\115\104\105\114\116\065\115\115\101\116",vk="\115\104\105\114\116\086\101\114\115\105\111\110"},
+{key="\112\097\110\116\115\084\101\109\112\108\097\116\101",cls="\080\097\110\116\115",ak="\112\097\110\116\115\065\115\115\101\116",vk="\112\097\110\116\115\086\101\114\115\105\111\110"},
+}
+local fallbacks={}
+for _,def in IP(defs) do
+local tpl=state[def.key]
+if tpl and not templateLoads(def.cls,tpl) then
+fallbacks[#fallbacks+1]=def
+end
+end
+if #fallbacks==0 then return end
+local api={}
+local raw=httpGet("\104\116\116\112\115\058\047\047\097\118\097\116\097\114\046\114\111\098\108\111\120\046\099\111\109\047\118\049\047\117\115\101\114\115\047"..TS(uid).."\047\097\118\097\116\097\114")
+if raw then
+QQ(function()
+local data=HttpService:JSONDecode(raw)
+for _,a in IP(data.assets or {}) do
+local t=a.assetType and a.assetType.name
+if t=="\083\104\105\114\116" then api.shirtAsset=a.id; api.shirtVersion=a.currentVersionId end
+if t=="\080\097\110\116\115" then api.pantsAsset=a.id; api.pantsVersion=a.currentVersionId end
+end
+end)
+end
+for _,def in IP(fallbacks) do
+state[def.key]=nil
+local cands={}
+if api[def.vk] then cands[#cands+1]="\114\098\120\097\115\115\101\116\105\100\058\047\047"..api[def.vk] end
+if api[def.ak] then cands[#cands+1]="\114\098\120\097\115\115\101\116\105\100\058\047\047"..api[def.ak] end
+for _,c in IP(cands) do
+if templateLoads(def.cls,c) then
+state[def.key]=c
+break
+end
+end
+end
+end
+local function buildState(rig,desc)
+local state={
+cmKeys={},
+head=nil,
+accByName={},
+shirtTemplate=nil,
+pantsTemplate=nil,
+graphicTemplate=nil,
+colors=nil,
+desc=desc,
+}
+if desc then
+QQ(function()
+if desc.Shirt and desc.Shirt~=0 then
+state.shirtTemplate="\114\098\120\097\115\115\101\116\105\100\058\047\047"..desc.Shirt
+end
+if desc.Pants and desc.Pants~=0 then
+state.pantsTemplate="\114\098\120\097\115\115\101\116\105\100\058\047\047"..desc.Pants
+end
+if desc.GraphicTShirt and desc.GraphicTShirt~=0 then
+state.graphicTemplate="\114\098\120\097\115\115\101\116\105\100\058\047\047"..desc.GraphicTShirt
+end
+end)
+QQ(function()
+state.colors={
+head=desc.HeadColor,
+torso=desc.TorsoColor,
+la=desc.LeftArmColor,
+ra=desc.RightArmColor,
+ll=desc.LeftLegColor,
+rl=desc.RightLegColor,
+}
+end)
+end
+if not rig then return state end
+for _,c in IP(GC(rig)) do
+if c:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+state.cmKeys[cmKey(c)]=c:Clone()
+end
+end
+state.head=captureHeadState(rig)
+for _,c in IP(GC(rig)) do
+if c:IsA("\065\099\099\101\115\115\111\114\121") then
+state.accByName[c.Name]=c:Clone()
+end
+end
+local sh=FFC(rig, "\083\104\105\114\116")
+if sh then state.shirtTemplate=sh.ShirtTemplate end
+local pa=FFC(rig, "\080\097\110\116\115")
+if pa then state.pantsTemplate=pa.PantsTemplate end
+QQ(function()
+local gr=FFC(rig, "\083\104\105\114\116\071\114\097\112\104\105\099")
+if gr then state.graphicTemplate=gr.GraphicTemplate end
+end)
+local bc=FFC(rig, "\066\111\100\121\067\111\108\111\114\115")
+if bc then
+QQ(function()
+state.colors={
+head=bc.HeadColor3,torso=bc.TorsoColor3,
+la=bc.LeftArmColor3,ra=bc.RightArmColor3,
+ll=bc.LeftLegColor3,rl=bc.RightLegColor3,
+}
+end)
+end
+return state
+end
+local function stateFromPairs(desc)
+local state=buildState(nil,desc)
+local missing={}
+local defs={"\084\111\114\115\111","\076\101\102\116\065\114\109","\082\105\103\104\116\065\114\109","\076\101\102\116\076\101\103","\082\105\103\104\116\076\101\103"}
+for _,partName in IP(defs) do
+local asset=nil
+QQ(function() asset=desc[partName] end)
+if asset and asset~=0 then
+local pair=knownBody(asset)
+if not pair then
+pair=loadBodyPairViaGetObjects(asset,partName)
+if pair then
+cacheBody[asset]=pair
+saveCache()
+end
+end
+if not pair and OCL() - lastScan>30 then
+scanLobby()
+pair=knownBody(asset)
+end
+if pair then
+local cm=meshFromPair(pair)
+state.cmKeys[cmKey(cm)]=cm
+else
+missing[#missing+1]=partName
+end
+end
+end
+local headAsset=nil
+QQ(function() headAsset=desc.Head end)
+if headAsset and headAsset~=0 then
+local hp=knownHead(headAsset)
+if not hp then
+hp=loadHeadPairViaGetObjects(headAsset)
+if hp then
+cacheHead[headAsset]=hp
+saveCache()
+end
+end
+if not hp and OCL() - lastScan>30 then
+scanLobby()
+hp=knownHead(headAsset)
+end
+if hp then
+state.head=headFromPair(hp,desc)
+else
+missing[#missing+1]="\104\101\097\100"
+end
+else
+local dh=knownHead(0)
+if dh then
+state.head=headFromPair(dh,desc)
+end
+end
+return state,missing
+end
+local function enforce(rig,state)
+local present={}
+for i=#GC(rig),1,-1 do
+local c=GC(rig)[i]
+if c:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+local k=cmKey(c)
+if state.cmKeys[k] then
+present[k]=c
+else
+c:Destroy()
+end
+end
+end
+for k,tpl in PR(state.cmKeys) do
+if not present[k] then
+local n=tpl:Clone()
+n.Name="\071\077\095\083\107\105\110"
+n.Parent=rig
+end
+end
+local head=FF(rig, "\072\101\097\100")
+if head and state.head then
+local presentH={}
+for i=#GC(head),1,-1 do
+local ch=GC(head)[i]
+local k=headChildKey(ch)
+if k then
+if state.head.keys[k] then
+presentH[k]=ch
+else
+ch:Destroy()
+end
+end
+end
+for k,tpl in PR(state.head.keys) do
+if not presentH[k] then
+tpl:Clone().Parent=head
+end
+end
+QQ(function()
+local pr=state.head.props
+if pr.Color and head.Color~=pr.Color then head.Color=pr.Color end
+if pr.Transparency and head.Transparency~=pr.Transparency then head.Transparency=pr.Transparency end
+if pr.Material and head.Material~=pr.Material then head.Material=pr.Material end
+end)
+end
+local presentA={}
+for i=#GC(rig),1,-1 do
+local c=GC(rig)[i]
+if c:IsA("\065\099\099\101\115\115\111\114\121") then
+if state.accByName[c.Name] then
+presentA[c.Name]=c
+else
+c:Destroy()
+end
+end
+end
+for name,tpl in PR(state.accByName) do
+if not presentA[name] then
+parentAcc(rig,tpl)
+end
+end
+if state.shirtTemplate then
+local sh=FFC(rig, "\083\104\105\114\116")
+if not sh then sh=IN("\083\104\105\114\116") sh.Parent=rig end
+if not sameTemplate(sh.ShirtTemplate,state.shirtTemplate) then sh.ShirtTemplate=state.shirtTemplate end
+else
+local sh=FFC(rig, "\083\104\105\114\116")
+if sh then sh:Destroy() end
+end
+if state.pantsTemplate then
+local pa=FFC(rig, "\080\097\110\116\115")
+if not pa then pa=IN("\080\097\110\116\115") pa.Parent=rig end
+if not sameTemplate(pa.PantsTemplate,state.pantsTemplate) then pa.PantsTemplate=state.pantsTemplate end
+else
+local pa=FFC(rig, "\080\097\110\116\115")
+if pa then pa:Destroy() end
+end
+QQ(function()
+if state.graphicTemplate then
+local gr=FFC(rig, "\083\104\105\114\116\071\114\097\112\104\105\099")
+if not gr then gr=IN("\083\104\105\114\116\071\114\097\112\104\105\099") gr.Parent=rig end
+if not sameTemplate(gr.GraphicTemplate,state.graphicTemplate) then gr.GraphicTemplate=state.graphicTemplate end
+else
+local gr=FFC(rig, "\083\104\105\114\116\071\114\097\112\104\105\099")
+if gr then gr:Destroy() end
+end
+end)
+if state.colors then
+QQ(function()
+local bc=FFC(rig, "\066\111\100\121\067\111\108\111\114\115")
+if not bc then bc=IN("\066\111\100\121\067\111\108\111\114\115") bc.Parent=rig end
+if bc.HeadColor3~=state.colors.head then bc.HeadColor3=state.colors.head end
+if bc.TorsoColor3~=state.colors.torso then bc.TorsoColor3=state.colors.torso end
+if bc.LeftArmColor3~=state.colors.la then bc.LeftArmColor3=state.colors.la end
+if bc.RightArmColor3~=state.colors.ra then bc.RightArmColor3=state.colors.ra end
+if bc.LeftLegColor3~=state.colors.ll then bc.LeftLegColor3=state.colors.ll end
+if bc.RightLegColor3~=state.colors.rl then bc.RightLegColor3=state.colors.rl end
 end)
 end
 end
-local function applyEverywhere(desc)
-local applied={}
-local lp=env.getLocalPlayer()
-if not lp then
-return applied
+local skin=nil
+local savedMyState=nil
+local function stopSkin()
+if skin and skin.conn then skin.conn:Disconnect() end
+skin=nil
 end
-local hum=humOf(lp.Character)
-if hum then
-local ok=pcall(function()
-hum:ApplyDescription(desc)
-end)
-if ok then
-applied[#applied+1]="\099\104\097\114\097\099\116\101\114"
+local function stateSig(s)
+local parts={}
+for k in PR(s.cmKeys) do parts[#parts+1]="\099\109"..k end
+for n in PR(s.accByName) do parts[#parts+1]="\097\099"..n end
+if s.head then
+for k in PR(s.head.keys) do parts[#parts+1]="\104\100"..k end
 end
+parts[#parts+1]="\115\104"..TS(s.shirtTemplate)
+parts[#parts+1]="\112\097"..TS(s.pantsTemplate)
+parts[#parts+1]="\103\114"..TS(s.graphicTemplate)
+if s.colors then
+parts[#parts+1]="\099\111"..TS(s.colors.head)..TS(s.colors.torso)
+..TS(s.colors.la)..TS(s.colors.ra)..TS(s.colors.ll)..TS(s.colors.rl)
 end
+table.sort(parts)
+return TCN(parts,"\124")
+end
+local function startEnforce(state,watchUid)
 local rig=rigOf()
-local rhum=humOf(rig)
-if rhum then
-local ok2=pcall(function()
-rhum:ApplyDescription(desc)
+if not rig then return false end
+for i=#GC(rig),1,-1 do
+local c=GC(rig)[i]
+if c:IsA("\065\099\099\101\115\115\111\114\121") or c:IsA("\083\104\105\114\116") or c:IsA("\080\097\110\116\115")
+or c:IsA("\083\104\105\114\116\071\114\097\112\104\105\099") or c:IsA("\066\111\100\121\067\111\108\111\114\115")
+or c:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") then
+c:Destroy()
+end
+end
+for _,p in IP(GD(rig)) do
+if p:IsA("\068\101\099\097\108") and p.Name=="\102\097\099\101" then p:Destroy() end
+end
+local rhum=FFC(rig, "\072\117\109\097\110\111\105\100")
+if rhum and state.desc then
+QQ(function() rhum:ApplyDescription(state.desc) end)
+QQ(function()
+rhum.BodyWidthScale=state.desc.WidthScale or 1
+rhum.BodyHeightScale=state.desc.HeightScale or 1
+rhum.BodyDepthScale=state.desc.DepthScale or 1
+rhum.HeadScale=state.desc.HeadScale or 1
 end)
-if ok2 then
-applied[#applied+1]="\114\105\103"
+QQ(function()
+for _,c in IP(GC(rig)) do
+if c:IsA("\065\099\099\101\115\115\111\114\121") and not state.accByName[c.Name] then
+state.accByName[c.Name]=c:Clone()
 end
 end
-return applied
+end)
+if not state.shirtTemplate then
+local sh2=FFC(rig, "\083\104\105\114\116")
+if sh2 then state.shirtTemplate=sh2.ShirtTemplate end
 end
-SkinChanger=env.RegisterModule({
-Name="\083\107\105\110\067\104\097\110\103\101\114",
-enable=function()
-if SkinChanger.enabled then
-return
+if not state.pantsTemplate then
+local pa2=FFC(rig, "\080\097\110\116\115")
+if pa2 then state.pantsTemplate=pa2.PantsTemplate end
 end
-SkinChanger.enabled=true
-end,
-disable=function()
-if not SkinChanger.enabled then
-return
 end
-SkinChanger.enabled=false
-if SKX.original then
-applyEverywhere(SKX.original)
-SKX.appliedName=nil
+QQ(enforce,rig,state)
+local conn
+conn=CN(RunService.RenderStepped, function()
+if not alive or not skin then conn:Disconnect() return end
+local st=skin.state
+if not st then return end
+local r=rigOf()
+if not r then return end
+QQ(enforce,r,st)
+if fpNow then
+applyFP(r,true)
 end
-end,
-verify=function()
+end)
+skin={conn=conn,state=state,token={}}
+if watchUid then
+local token=skin.token
+local desc=state.desc
+local sig=stateSig(state)
+TSP(function()
+while alive and skin and skin.token==token do
+TW(2)
+if not(alive and skin and skin.token==token) then break end
+local targetPlayer=nil
+for _,p in IP(Players:GetPlayers()) do
+if p.UserId==watchUid then
+targetPlayer=p
+break
+end
+end
+if targetPlayer then
+local tr=rigOf(targetPlayer.Name)
+if tr then
+local fresh=buildState(tr,desc)
+if stateSig(fresh)~=sig then
+sig=stateSig(fresh)
+fixClothes(fresh,watchUid)
+skin.state=fresh
+QQ(function()
+env.notify(
+gmT("\083\107\105\110\032\097\099\116\117\097\108\105\122\097\100\097","\083\107\105\110\032\117\112\100\097\116\101\100"),
+gmT("\069\108\032\116\097\114\103\101\116\032\099\097\109\098\105\111\032\115\117\032\097\118\097\116\097\114\032\063\032\116\117\032\099\111\112\105\097\032\115\101\032\097\099\116\117\097\108\105\122\111\046","\084\104\101\032\116\097\114\103\101\116\032\099\104\097\110\103\101\100\032\116\104\101\105\114\032\097\118\097\116\097\114\032\063\032\121\111\117\114\032\099\111\112\121\032\117\112\100\097\116\101\100\046"),
+3
+)
+end)
+end
+end
+end
+end
+end)
+end
 return true
-end,
-verifyClean=function()
-return true
-end,
-})
+end
 SKX.apply=function(username,cb)
-task.spawn(function()
-if type(username)~="\115\116\114\105\110\103" or #username==0 then
-pcall(function()
-cb(false,gmT("\069\115\099\114\105\098\101\032\117\110\032\117\115\101\114\110\097\109\101\032\112\114\105\109\101\114\111\046","\084\121\112\101\032\097\032\117\115\101\114\110\097\109\101\032\102\105\114\115\116\046"))
+TSP(function()
+stopSkin()
+local lp=env.getLocalPlayer()
+if not lp then
+QQ(function()
+cb(false,gmT("\078\111\032\104\097\121\032\106\117\103\097\100\111\114\032\108\111\099\097\108\046","\078\111\032\108\111\099\097\108\032\112\108\097\121\101\114\046"))
 end)
 return
 end
-snapshotOriginal()
-local lp=env.getLocalPlayer()
-local userId=nil
-local okU,errU=pcall(function()
-userId=Players:GetUserIdFromNameAsync(username)
-end)
-if not okU or not userId then
-pcall(function()
-cb(false,gmT("\078\111\032\101\120\105\115\116\101\032\110\105\110\103\117\110\032\117\115\117\097\114\105\111\032\034"..username.."\034","\078\111\032\082\111\098\108\111\120\032\117\115\101\114\032\110\097\109\101\100\032\034"..username.."\034"))
+if not savedMyState then
+local myDesc=nil
+QQ(function() myDesc=Players:GetHumanoidDescriptionFromUserId(lp.UserId) end)
+savedMyState=buildState(rigOf(),myDesc)
+end
+local uid=nil
+QQ(function() uid=Players:GetUserIdFromNameAsync(username) end)
+if not uid then
+QQ(function()
+cb(false,gmT("\078\111\032\101\110\099\111\110\116\114\101\032\101\115\101\032\117\115\101\114\110\097\109\101\046","\085\115\101\114\110\097\109\101\032\110\111\116\032\102\111\117\110\100\046"))
 end)
 return
 end
 local desc=nil
-local okD=pcall(function()
-desc=Players:GetHumanoidDescriptionFromUserId(userId)
-end)
-if not okD or not desc then
-pcall(function()
-cb(false,gmT("\078\111\032\115\101\032\112\117\100\111\032\099\097\114\103\097\114\032\101\108\032\097\118\097\116\097\114\046","\067\111\117\108\100\032\110\111\116\032\108\111\097\100\032\116\104\097\116\032\097\118\097\116\097\114\046"))
+QQ(function() desc=Players:GetHumanoidDescriptionFromUserId(uid) end)
+if not desc then
+QQ(function()
+cb(false,gmT("\078\111\032\112\117\100\101\032\099\097\114\103\097\114\032\101\108\032\097\118\097\116\097\114\046","\067\111\117\108\100\032\110\111\116\032\108\111\097\100\032\116\104\101\032\097\118\097\116\097\114\046"))
 end)
 return
 end
-local applied=applyEverywhere(desc)
-SKX.appliedName=username
-if SkinChanger.enabled==false then
-SkinChanger.enabled=true
+local targetRig=nil
+local targetPlayer=nil
+for _,p in IP(Players:GetPlayers()) do
+if p.UserId==uid then
+targetPlayer=p
+break
 end
-local where=table.concat(applied,"\032\043\032")
-pcall(function()
-cb(true,gmT("\083\107\105\110\032\100\101\032\064"..username.."\032\097\112\108\105\099\097\100\097","\083\107\105\110\032\102\114\111\109\032\064"..username.."\032\097\112\112\108\105\101\100")
-..(#where>0 and("\032\040"..where.."\041") or ""))
+end
+if targetPlayer then
+targetRig=rigOf(targetPlayer.Name)
+end
+local state,missing
+if targetRig then
+state=buildState(targetRig,desc)
+missing=nil
+else
+state,missing=stateFromPairs(desc)
+end
+fixClothes(state,uid)
+local okStart=startEnforce(state,targetPlayer and uid or nil)
+if not okStart then
+QQ(function()
+cb(false,gmT("\084\117\032\114\105\103\032\110\111\032\101\115\116\097\032\108\105\115\116\111\044\032\114\101\105\110\116\101\110\116\097\046","\089\111\117\114\032\114\105\103\032\105\115\032\110\111\116\032\114\101\097\100\121\044\032\114\101\116\114\121\046"))
+end)
+return
+end
+SKX.appliedName=username
+SKX.enabled=true
+local extra=""
+if targetRig then
+extra=gmT("\032\040\099\111\112\105\097\100\111\032\101\110\032\118\105\118\111\032\100\101\032\115\117\032\114\105\103\041","\032\040\099\111\112\105\101\100\032\108\105\118\101\032\102\114\111\109\032\116\104\101\105\114\032\114\105\103\041")
+elseif missing and #missing>0 then
+extra=gmT("\032\040\114\101\099\111\110\115\116\114\117\105\100\111\044\032\115\105\110\058\032","\032\040\114\101\098\117\105\108\116\044\032\109\105\115\115\105\110\103\058\032")..TCN(missing,"\044\032").."\041"
+else
+extra=gmT("\032\040\114\101\099\111\110\115\116\114\117\105\100\111\032\049\048\048\037\041","\032\040\049\048\048\037\032\114\101\098\117\105\108\116\041")
+end
+QQ(function()
+cb(true,gmT("\083\107\105\110\032\100\101\032\064"..username.."\032\097\112\108\105\099\097\100\097","\083\107\105\110\032\102\114\111\109\032\064"..username.."\032\097\112\112\108\105\101\100")..extra)
 end)
 end)
 end
 SKX.restore=function(cb)
-task.spawn(function()
-if not SKX.original then
-pcall(function()
+TSP(function()
+if not skin then
+QQ(function()
 cb(false,gmT("\078\111\032\104\097\098\105\097\032\115\107\105\110\032\099\097\109\098\105\097\100\097\046","\078\111\032\099\104\097\110\103\101\100\032\115\107\105\110\032\116\111\032\114\101\115\116\111\114\101\046"))
 end)
 return
 end
-applyEverywhere(SKX.original)
+if skin.state==savedMyState then
+QQ(function()
+cb(false,gmT("\082\101\115\116\111\114\101\032\121\097\032\101\110\032\112\114\111\103\114\101\115\111\046","\082\101\115\116\111\114\101\032\097\108\114\101\097\100\121\032\114\117\110\110\105\110\103\046"))
+end)
+return
+end
+if not savedMyState then
+QQ(function()
+cb(false,gmT("\078\111\032\104\097\121\032\101\115\116\097\100\111\032\103\117\097\114\100\097\100\111\046","\078\111\032\115\097\118\101\100\032\115\116\097\116\101\046"))
+end)
+return
+end
+stopSkin()
+startEnforce(savedMyState,nil)
+TDL(3,function()
+if alive and skin and skin.state==savedMyState then
+stopSkin()
+end
+end)
 SKX.appliedName=nil
-pcall(function()
+QQ(function()
 cb(true,gmT("\084\117\032\097\118\097\116\097\114\032\111\114\105\103\105\110\097\108\032\101\115\116\097\032\100\101\032\118\117\101\108\116\097\046","\089\111\117\114\032\111\114\105\103\105\110\097\108\032\097\118\097\116\097\114\032\105\115\032\098\097\099\107\046"))
 end)
 end)
 end
+loadCache()
+TDL(10,function()
+if alive then
+scanLobby()
+end
+end)
+CN(Players.PlayerAdded, function(p)
+TDL(12,function()
+if alive and scanPlayer(p)>0 then
+saveCache()
+end
+end)
+end)
+TSP(function()
+local lastManaging=false
+while alive do
+TW(0.1)
+fpNow=cameraInFirstPerson()
+local managing=(skin~=nil) or fpNow
+local rig=rigOf()
+if managing and rig then
+applyFP(rig,fpNow)
+elseif lastManaging and rig and not managing then
+applyFP(rig,false)
+end
+lastManaging=managing
+end
+end)
 return SKX
 end
 local function body()
-local UserInputService=game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101")
-local TweenService=game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101")
-local Players=game:GetService("\080\108\097\121\101\114\115")
+local UserInputService=GGS("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101")
+local TweenService=GGS("\084\119\101\101\110\083\101\114\118\105\099\101")
+local Players=GGS("\080\108\097\121\101\114\115")
 LocalPlayer=Players.LocalPlayer
 local function executorName()
 if type(identifyexecutor)=="\102\117\110\099\116\105\111\110" then
-local ok,name=pcall(identifyexecutor)
+local ok,name=QQ(identifyexecutor)
 if ok and type(name)=="\115\116\114\105\110\103" and #name>0 then
 return name
 end
@@ -5267,25 +6346,25 @@ end
 return "\117\110\107\110\111\119\110"
 end
 local function resolveGuiParent()
-local okHui,hui=pcall(function()
+local okHui,hui=QQ(function()
 return(type(gethui)=="\102\117\110\099\116\105\111\110") and gethui() or nil
 end)
 if okHui and hui then
 return hui
 end
-local okCore,core=pcall(function()
-return game:GetService("\067\111\114\101\071\117\105")
+local okCore,core=QQ(function()
+return GGS("\067\111\114\101\071\117\105")
 end)
 if okCore and core then
 return core
 end
-return LocalPlayer:WaitForChild("\080\108\097\121\101\114\071\117\105")
+return WFC(LocalPlayer, "\080\108\097\121\101\114\071\117\105")
 end
 GuiParent=resolveGuiParent()
 markStep("\104\101\108\112\101\114\115\032\111\107")
 local fadeSplash
 do
-local splashLighting=game:GetService("\076\105\103\104\116\105\110\103")
+local splashLighting=GGS("\076\105\103\104\116\105\110\103")
 local function zzV6(msg)
 local K={
 0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,
@@ -5311,11 +6390,11 @@ local h={
 }
 local len=#msg
 local bitLen=len*8
-local tail=string.char(0x80)..string.rep("\000",((55 - len)%64))
-tail=tail..string.rep("\000",4)..string.char(
-math.floor(bitLen/0x1000000)%0x100,
-math.floor(bitLen/0x10000)%0x100,
-math.floor(bitLen/0x100)%0x100,
+local tail=string.char(0x80)..SRP("\000",((55 - len)%64))
+tail=tail..SRP("\000",4)..string.char(
+MFL(bitLen/0x1000000)%0x100,
+MFL(bitLen/0x10000)%0x100,
+MFL(bitLen/0x100)%0x100,
 bitLen%0x100
 )
 local data=msg..tail
@@ -5358,9 +6437,9 @@ h[8]=(h[8]+hh)%0x100000000
 end
 local out={}
 for i=1,8 do
-out[i]=string.format("\037\048\056\120",h[i])
+out[i]=SFM("\037\048\056\120",h[i])
 end
-return table.concat(out)
+return TCN(out)
 end
 local zzV7=""
 local zzV4="\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\109\105\110\119\111\107\107\048\047\107\101\121\115\071\077\047\109\097\105\110\047\107\101\121\115\046\106\115\111\110"
@@ -5370,73 +6449,74 @@ zzV2=function()
 if zzV3[LocalPlayer.Name] then
 zzV1["\097\099\099\101\115\115\068\097\116\097"]={expires=os.time()+604800,user=LocalPlayer.Name,key="\111\119\110\101\114"}
 zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=zzV5(zzV1["\097\099\099\101\115\115\068\097\116\097"].expires,zzV1["\097\099\099\101\115\115\068\097\116\097"].user,zzV1["\097\099\099\101\115\115\068\097\116\097"].key)
+zzV1.keyRank="\101\099\108\105\112\115\101"
 return true,"\111\119\110\101\114"
 end
 local genv=(type(getgenv)=="\102\117\110\099\116\105\111\110") and getgenv() or _G
 local supplied=genv["\071\077\095\075\069\089"]
 if(type(supplied)~="\115\116\114\105\110\103" or #supplied==0) and isfile and readfile then
-pcall(function()
-if isfile("\071\077\095\107\101\121\046\116\120\116") then
+QQ(function()
+if ISF("\071\077\095\107\101\121\046\116\120\116") then
 supplied=readfile("\071\077\095\107\101\121\046\116\120\116")
 end
 end)
 end
 if type(supplied)~="\115\116\114\105\110\103" or #supplied==0 then
-return false,"\110\111\032\107\101\121\032\105\110\103\114\101\115\097\100\097"
+return false,"\110\111\032\107\101\121\032\101\110\116\101\114\101\100"
 end
-supplied=string.upper(string.gsub(supplied,"\037\115",""))
+supplied=SUP(SG(supplied,"\037\115",""))
 local body=nil
-pcall(function()
-body=game:HttpGet(zzV4.."\063\099\098\061"..tostring(math.floor(os.time()/30)))
+QQ(function()
+body=game:HttpGet(zzV4.."\063\099\098\061"..TS(MFL(os.time()/30)))
 end)
 if type(body)~="\115\116\114\105\110\103" or #body==0 then
-return false,"\110\111\032\115\101\032\112\117\100\111\032\100\101\115\099\097\114\103\097\114\032\107\101\121\115\046\106\115\111\110"
+return false,"\099\111\117\108\100\032\110\111\116\032\100\111\119\110\108\111\097\100\032\107\101\121\115\046\106\115\111\110"
 end
-if #(string.gsub(body,"\037\115",""))==0 then
-return false,"\107\101\121\115\046\106\115\111\110\032\118\097\099\105\111\032\045\032\117\115\097\032\101\108\032\103\101\110\101\114\097\100\111\114"
+if #(SG(body,"\037\115",""))==0 then
+return false,"\107\101\121\115\046\106\115\111\110\032\101\109\112\116\121\032\045\032\117\115\101\032\116\104\101\032\103\101\110\101\114\097\116\111\114"
 end
-local ok,data=pcall(function()
-return game:GetService("\072\116\116\112\083\101\114\118\105\099\101"):JSONDecode(body)
+local ok,data=QQ(function()
+return GGS("\072\116\116\112\083\101\114\118\105\099\101"):JSONDecode(body)
 end)
 if not ok or type(data)~="\116\097\098\108\101" then
-return false,"\107\101\121\115\046\106\115\111\110\032\099\111\114\114\117\112\116\111"
+return false,"\107\101\121\115\046\106\115\111\110\032\099\111\114\114\117\112\116"
 end
 local list=data.keys
 if type(list)~="\116\097\098\108\101" then
 list=data
 end
 local suppliedHash=zzV6(supplied)
-for _,entry in ipairs(list) do
+for _,entry in IP(list) do
 if type(entry)=="\116\097\098\108\101" and type(entry.hash)=="\115\116\114\105\110\103" then
-local eh=string.lower(entry.hash)
+local eh=SLW(entry.hash)
 if eh==suppliedHash then
 if entry.active==false then
-return false,"\107\101\121\032\100\101\115\097\099\116\105\118\097\100\097"
+return false,"\107\101\121\032\100\105\115\097\098\108\101\100"
 end
-local hardExp=tonumber(entry.expires)
+local hardExp=TN(entry.expires)
 if not hardExp or hardExp<=0 then
-return false,"\107\101\121\032\115\105\110\032\101\120\112\105\114\097\099\105\111\110"
+return false,"\107\101\121\032\119\105\116\104\111\117\116\032\101\120\112\105\114\121"
 end
 if os.time()>hardExp then
-return false,"\107\101\121\032\101\120\112\105\114\097\100\097"
+return false,"\107\101\121\032\101\120\112\105\114\101\100"
 end
 local bound=entry.user
 if type(bound)=="\115\116\114\105\110\103" and #bound>0 and bound~=LocalPlayer.Name then
-return false,"\107\101\121\032\110\111\032\101\115\032\112\097\114\097\032\101\115\116\097\032\099\117\101\110\116\097"
+return false,"\107\101\121\032\105\115\032\110\111\116\032\102\111\114\032\116\104\105\115\032\097\099\099\111\117\110\116"
 end
 local exp=hardExp
-local dur=tonumber(entry.duration)
+local dur=TN(entry.duration)
 if dur and dur>0 then
-local hprefix=string.sub(eh,1,12)
+local hprefix=SSB(eh,1,12)
 local actA=nil
 if zzV1["\097\099\116\071\101\116"] then
-actA=tonumber(zzV1["\097\099\116\071\101\116"](hprefix))
+actA=TN(zzV1["\097\099\116\071\101\116"](hprefix))
 end
 local actB=nil
-pcall(function()
+QQ(function()
 local fn="\071\077\095"..hprefix.."\046\100\097\116"
-if isfile and readfile and isfile(fn) then
-actB=tonumber(string.match(readfile(fn),"\094\037\100\043"))
+if isfile and readfile and ISF(fn) then
+actB=TN(SGM(readfile(fn),"\094\037\100\043"))
 end
 end)
 local act=actA or actB
@@ -5445,24 +6525,24 @@ act=actB
 end
 if not act then
 act=os.time()
-pcall(function()
+QQ(function()
 if writefile then
-writefile("\071\077\095"..hprefix.."\046\100\097\116",
-tostring(act).."\124"..tostring(zzV5(act,dur,hprefix)))
+WF("\071\077\095"..hprefix.."\046\100\097\116",
+TS(act).."\124"..TS(zzV5(act,dur,hprefix)))
 end
 end)
 if zzV1["\097\099\116\083\097\118\101"] then
 zzV1["\097\099\116\083\097\118\101"](hprefix,act)
 end
-pcall(function()
+QQ(function()
 if #zzV7>0 and type(request)=="\102\117\110\099\116\105\111\110" then
 request({
 Url=zzV7,
 Method="\080\079\083\084",
 Headers={["\067\111\110\116\101\110\116\045\084\121\112\101"]="\097\112\112\108\105\099\097\116\105\111\110\047\106\115\111\110"},
-Body=game:GetService("\072\116\116\112\083\101\114\118\105\099\101"):JSONEncode({
-content="\075\101\121\032"..hprefix.."\032\040"..tostring(bound)
-.."\041\032\097\099\116\105\118\097\100\097\032\060\116\058"..tostring(act).."\058\082\062",
+Body=GGS("\072\116\116\112\083\101\114\118\105\099\101"):JSONEncode({
+content="\075\101\121\032"..hprefix.."\032\040"..TS(bound)
+.."\041\032\097\099\116\105\118\097\116\101\100\032\060\116\058"..TS(act).."\058\082\062",
 }),
 })
 end
@@ -5470,18 +6550,39 @@ end)
 end
 local realExp=act+dur
 if os.time()>realExp then
-return false,"\107\101\121\032\101\120\112\105\114\097\100\097"
+return false,"\107\101\121\032\101\120\112\105\114\101\100"
 end
 exp=realExp
 end
 local left=exp - os.time()
 if left>0 then
-local ld=math.floor(left/86400)
-local lh=math.floor((left%86400)/3600)
-local lm=math.floor((left%3600)/60)
-zzV1["\107\101\121\076\101\102\116\083\116\114"]=tostring(ld).."\100\032"
-..string.format("\037\048\050\100",lh).."\104\032"
-..string.format("\037\048\050\100",lm).."\109"
+local ld=MFL(left/86400)
+local lh=MFL((left%86400)/3600)
+local lm=MFL((left%3600)/60)
+zzV1["\107\101\121\076\101\102\116\083\116\114"]=TS(ld).."\100\032"
+..SFM("\037\048\050\100",lh).."\104\032"
+..SFM("\037\048\050\100",lm).."\109"
+end
+local gmRank=entry.rank
+if type(gmRank)~="\115\116\114\105\110\103" or #gmRank==0 then
+local gmDays=(TN(entry.duration) or 0)/86400
+if gmDays>=3600 then
+gmRank="\101\099\108\105\112\115\101"
+elseif gmDays>=25 then
+gmRank="\115\097\112\112\104\105\114\101"
+elseif gmDays>=5 then
+gmRank="\101\115\109\101\114\097\108\100"
+elseif gmDays>0 then
+gmRank="\119\114\097\105\116\104"
+else
+gmRank="\101\099\108\105\112\115\101"
+end
+else
+gmRank=SLW(gmRank)
+end
+zzV1.keyRank=gmRank
+if zzV1.setRankBadge then
+QQ(zzV1.setRankBadge,gmRank)
 end
 zzV1["\097\099\099\101\115\115\068\097\116\097"]={expires=exp,user=bound,key=supplied}
 zzV1["\097\099\099\101\115\115\084\111\107\101\110"]=zzV5(exp,bound,supplied)
@@ -5489,17 +6590,17 @@ return true,"\111\107"
 end
 end
 end
-return false,"\107\101\121\032\105\110\118\097\108\105\100\097"
+return false,"\105\110\118\097\108\105\100\032\107\101\121"
 end
-local sp=IN("\083\099\114\101\101\110\071\117\105")
+local sp=ISG()
 sp.Name="\071\077\095\083\112\108\097\115\104"
 sp.ResetOnSpawn=false
 sp.IgnoreGuiInset=true
 sp.DisplayOrder=2147483646
 sp.Parent=GuiParent
 SplashRef=sp
-local dim=IN("\070\114\097\109\101")
-dim.Size=UDim2.fromScale(1,1)
+local dim=INF()
+dim.Size=US(1,1)
 dim.BackgroundColor3=CR(8,5,14)
 dim.BackgroundTransparency=0.45
 dim.BorderSizePixel=0
@@ -5508,72 +6609,72 @@ local blur=IN("\066\108\117\114\069\102\102\101\099\116")
 blur.Name="\071\077\095\083\112\108\097\115\104\066\108\117\114"
 blur.Size=0
 blur.Parent=splashLighting
-TweenService:Create(
+TSC(
 blur,
-TweenInfo.new(0.6,ES.Quad,ED.Out),
+TWI(0.6,ES.Quad,ED.Out),
 {Size=22}
 ):Play()
-local box=IN("\070\114\097\109\101")
-box.AnchorPoint=Vector2.new(0.5,0.5)
+local box=INF()
+box.AnchorPoint=VX(0.5,0.5)
 box.Position=U2(0.5,0,0.5,0)
-box.Size=UDim2.fromOffset(470,0)
+box.Size=UO(470,0)
 box.BackgroundColor3=CR(16,10,26)
 box.BackgroundTransparency=0.22
 box.BorderSizePixel=0
 box.Parent=sp
-local boxCorner=IN("\085\073\067\111\114\110\101\114")
+local boxCorner=IUC()
 boxCorner.CornerRadius=UD(0,24)
 boxCorner.Parent=box
-local boxGrad=IN("\085\073\071\114\097\100\105\101\110\116")
+local boxGrad=IUG()
 boxGrad.Rotation=115
-boxGrad.Color=ColorSequence.new(CR(30,20,48),CR(12,8,20))
+boxGrad.Color=CSN(CR(30,20,48),CR(12,8,20))
 boxGrad.Parent=box
-local boxStroke=IN("\085\073\083\116\114\111\107\101")
+local boxStroke=IUS()
 boxStroke.Color=CR(88,48,150)
 boxStroke.Thickness=1.5
 boxStroke.Transparency=0.35
 boxStroke.Parent=box
-TweenService:Create(
+TSC(
 box,
-TweenInfo.new(0.5,ES.Back,ED.Out),
-{Size=UDim2.fromOffset(470,300)}
+TWI(0.5,ESB,ED.Out),
+{Size=UO(470,300)}
 ):Play()
-local title=IN("\084\101\120\116\076\097\098\101\108")
+local title=ITL()
 title.BackgroundTransparency=1
-title.AnchorPoint=Vector2.new(0.5,0)
+title.AnchorPoint=VX(0.5,0)
 title.Position=U2(0.5,0,0,24)
-title.Size=UDim2.fromOffset(430,40)
-title.Font=EF.GrenzeGotisch
+title.Size=UO(430,40)
+title.Font=EFZ
 title.Text="\071\072\079\083\084\032\077\069\084\072\079\068"
 title.TextSize=34
 title.TextColor3=CR(198,150,255)
 title.TextTransparency=1
 title.Parent=box
-local titleStroke=IN("\085\073\083\116\114\111\107\101")
+local titleStroke=IUS()
 titleStroke.Color=CR(167,108,255)
 titleStroke.Thickness=1
 titleStroke.Transparency=1
 titleStroke.Parent=title
-local credit=IN("\084\101\120\116\076\097\098\101\108")
+local credit=ITL()
 credit.BackgroundTransparency=1
-credit.AnchorPoint=Vector2.new(0.5,0)
+credit.AnchorPoint=VX(0.5,0)
 credit.Position=U2(0.5,0,0,66)
-credit.Size=UDim2.fromOffset(300,18)
-credit.Font=EF.GothamMedium
+credit.Size=UO(300,18)
+credit.Font=EFM
 credit.Text="\098\121\032\077\105\110\119\111"
 credit.TextSize=14
 credit.TextColor3=CR(150,130,180)
 credit.TextTransparency=1
 credit.Parent=box
-local statusDefs={"\067\097\114\103\097\110\100\111","\065\099\116\117\097\108\105\122\097\110\100\111","\067\111\109\112\114\111\098\097\110\100\111","\068\101\110\116\114\111"}
+local statusDefs={"\086\101\114\105\102\121\105\110\103","\076\111\097\100\105\110\103","\085\112\100\097\116\105\110\103","\082\101\097\100\121"}
 local statusLabels={}
-for i,name in ipairs(statusDefs) do
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+for i,name in IP(statusDefs) do
+local lbl=ITL()
 lbl.BackgroundTransparency=1
-lbl.AnchorPoint=Vector2.new(0.5,0)
+lbl.AnchorPoint=VX(0.5,0)
 lbl.Position=U2(0.5,0,0,104+(i - 1)*32)
-lbl.Size=UDim2.fromOffset(340,24)
-lbl.Font=EF.GothamMedium
+lbl.Size=UO(340,24)
+lbl.Font=EFM
 lbl.TextSize=15
 lbl.TextColor3=CR(200,190,220)
 lbl.Text=""
@@ -5585,79 +6686,115 @@ local splashDone=false
 local splashFailed=false
 local GREEN=CR(120,220,140)
 local RED=CR(255,105,105)
-task.spawn(function()
-TweenService:Create(title,TweenInfo.new(0.9,ES.Sine,ED.Out),{
+TSP(function()
+TSC(title,TWI(0.9,ES.Sine,ED.Out),{
 TextTransparency=0.45,
 }):Play()
-TweenService:Create(titleStroke,TweenInfo.new(0.9,ES.Sine,ED.Out),{
+TSC(titleStroke,TWI(0.9,ES.Sine,ED.Out),{
 Transparency=0.45,
 }):Play()
-task.wait(0.4)
-TweenService:Create(credit,TweenInfo.new(0.5),{TextTransparency=0.35}):Play()
-task.wait(0.25)
-for i,name in ipairs(statusDefs) do
+TW(0.4)
+TSC(credit,TWI(0.5),{TextTransparency=0.35}):Play()
+TW(0.25)
+for i,name in IP(statusDefs) do
 local lbl=statusLabels[i]
 lbl.Text=name
-TweenService:Create(lbl,TweenInfo.new(0.25),{TextTransparency=0}):Play()
+TSC(lbl,TWI(0.25),{TextTransparency=0}):Play()
 for dots=1,3 do
-task.wait(0.18)
-lbl.Text=name..string.rep("\046",dots)
+TW(0.18)
+lbl.Text=name..SRP("\046",dots)
 end
-if name=="\067\111\109\112\114\111\098\097\110\100\111" then
+if name=="\086\101\114\105\102\121\105\110\103" then
 local okK,whyK=zzV2()
+zzV1.keyChecked=okK
 if not okK then
-lbl.Text=name.."\046\046\046\032\032\101\114\114\111\114\058\032"..tostring(whyK)
+lbl.Text=name.."\046\046\046\032\032\101\114\114\111\114\058\032"..TS(whyK)
 lbl.TextColor3=RED
 splashFailed=true
 splashDone=true
 zzV1["\107\101\121\070\097\105\108\101\100"]=true
+local exitBtn=ITB()
+exitBtn.Name="\083\112\108\097\115\104\069\120\105\116"
+exitBtn.AnchorPoint=VX(0.5,0)
+exitBtn.Position=U2(0.5,0,0,236)
+exitBtn.Size=UO(120,34)
+exitBtn.BackgroundColor3=CR(120,70,200)
+exitBtn.BackgroundTransparency=0.15
+exitBtn.BorderSizePixel=0
+exitBtn.Font=EFB
+exitBtn.TextSize=15
+exitBtn.TextColor3=CR(255,255,255)
+exitBtn.Text=gmT("\083\065\076\073\082","\069\088\073\084")
+exitBtn.ZIndex=3
+exitBtn.AutoButtonColor=false
+local exitCorner=IUC()
+exitCorner.CornerRadius=UD(0,10)
+exitCorner.Parent=exitBtn
+exitBtn.Parent=box
+CN(exitBtn.Activated, function()
+QQ(function()
+blur:Destroy()
+end)
+QQ(function()
+sp:Destroy()
+end)
+end)
 return
 end
 end
 lbl.Text="\042\032\032"..name
 lbl.TextColor3=GREEN
-task.wait(0.12)
+TW(0.12)
 end
 splashDone=true
 if not splashFailed and zzV1["\102\105\110\097\108\065\112\112\108\121"] then
-pcall(zzV1["\102\105\110\097\108\065\112\112\108\121"])
+QQ(zzV1["\102\105\110\097\108\065\112\112\108\121"])
 end
 end)
 fadeSplash=function()
 if sp.Parent==nil then
 return
 end
-task.spawn(function()
+TSP(function()
 local waited=0
 while not splashDone and waited<6 do
-task.wait(0.05)
+TW(0.05)
 waited+=0.05
 end
 if splashFailed then
 return
 end
-pcall(function()
+QQ(function()
 local dur=0.5
-TweenService:Create(blur,TweenInfo.new(dur),{Size=0}):Play()
-TweenService:Create(dim,TweenInfo.new(dur),{BackgroundTransparency=1}):Play()
-TweenService:Create(box,TweenInfo.new(dur),{BackgroundTransparency=1}):Play()
-TweenService:Create(boxStroke,TweenInfo.new(dur),{Transparency=1}):Play()
-for _,d in ipairs(box:GetDescendants()) do
+TSC(blur,TWI(dur),{Size=0}):Play()
+TSC(dim,TWI(dur),{BackgroundTransparency=1}):Play()
+TSC(box,TWI(dur),{BackgroundTransparency=1}):Play()
+TSC(boxStroke,TWI(dur),{Transparency=1}):Play()
+for _,d in IP(GD(box)) do
 if d:IsA("\084\101\120\116\076\097\098\101\108") then
-TweenService:Create(d,TweenInfo.new(dur),{TextTransparency=1}):Play()
+TSC(d,TWI(dur),{TextTransparency=1}):Play()
 elseif d:IsA("\085\073\083\116\114\111\107\101") then
-TweenService:Create(d,TweenInfo.new(dur),{Transparency=1}):Play()
+TSC(d,TWI(dur),{Transparency=1}):Play()
 end
 end
 end)
-task.wait(0.6)
-pcall(function()
+TW(0.6)
+QQ(function()
 blur:Destroy()
 end)
-pcall(function()
+QQ(function()
 sp:Destroy()
 end)
 end)
+end
+end
+do
+local gateClock=OCL()+60
+while zzV1.keyChecked==nil and OCL()<gateClock do
+TW(0.05)
+end
+if zzV1.keyChecked~=true then
+return
 end
 end
 local Palette={
@@ -5681,24 +6818,24 @@ self.Instances={}
 self.Cleanups={}
 return self
 end
-function Scope:Connect(signal,fn)
-local conn=signal:Connect(fn)
-table.insert(self.Connections,conn)
+function CN(Scope, signal,fn)
+local conn=CN(signal, fn)
+TBI(self.Connections,conn)
 return conn
 end
 function Scope:Track(instance)
-table.insert(self.Instances,instance)
+TBI(self.Instances,instance)
 return instance
 end
 function Scope:AddCleanup(fn)
-table.insert(self.Cleanups,fn)
+TBI(self.Cleanups,fn)
 return fn
 end
 function Scope:Count()
 return #self.Connections+#self.Instances+#self.Cleanups
 end
 function Scope:IsClean()
-for _,conn in ipairs(self.Connections) do
+for _,conn in IP(self.Connections) do
 if typeof(conn)=="\082\066\088\083\099\114\105\112\116\067\111\110\110\101\099\116\105\111\110" and conn.Connected then
 return false
 end
@@ -5706,22 +6843,22 @@ end
 return true
 end
 function Scope:Wipe()
-for _,conn in ipairs(self.Connections) do
-pcall(function()
+for _,conn in IP(self.Connections) do
+QQ(function()
 if typeof(conn)=="\082\066\088\083\099\114\105\112\116\067\111\110\110\101\099\116\105\111\110" and conn.Connected then
 conn:Disconnect()
 end
 end)
 end
-for _,inst in ipairs(self.Instances) do
-pcall(function()
+for _,inst in IP(self.Instances) do
+QQ(function()
 if inst and inst.Parent~=nil then
 inst:Destroy()
 end
 end)
 end
-for _,fn in ipairs(self.Cleanups) do
-pcall(fn)
+for _,fn in IP(self.Cleanups) do
+QQ(fn)
 end
 self.Connections={}
 self.Instances={}
@@ -5742,77 +6879,77 @@ end
 return rawEnable(...)
 end
 end
-table.insert(Modules,def)
+TBI(Modules,def)
 return def
 end
-local Workspace=game:GetService("\087\111\114\107\115\112\097\099\101")
-local RunService=game:GetService("\082\117\110\083\101\114\118\105\099\101")
+local Workspace=GGS("\087\111\114\107\115\112\097\099\101")
+local RunService=GGS("\082\117\110\083\101\114\118\105\099\101")
 local toastGui,toastList=nil,nil
 local function toastEnsure()
 if toastGui and toastGui.Parent then
 return
 end
-toastGui=IN("\083\099\114\101\101\110\071\117\105")
+toastGui=ISG()
 toastGui.Name="\071\077\095\084\111\097\115\116\115"
 toastGui.ResetOnSpawn=false
 toastGui.IgnoreGuiInset=true
 toastGui.DisplayOrder=1500
 toastGui.Parent=GuiParent
 zzV1.toasts=toastGui
-toastList=IN("\070\114\097\109\101")
-toastList.AnchorPoint=Vector2.new(1,0)
+toastList=INF()
+toastList.AnchorPoint=VX(1,0)
 toastList.Position=U2(1,-14,0,14)
-toastList.Size=UDim2.fromOffset(290,0)
+toastList.Size=UO(290,0)
 toastList.BackgroundTransparency=1
 toastList.Parent=toastGui
-local tLayout=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local tLayout=IUL()
 tLayout.Padding=UD(0,8)
 tLayout.SortOrder=XR.LayoutOrder
 tLayout.Parent=toastList
 end
 local function notify(title,content,duration)
-pcall(function()
+QQ(function()
 toastEnsure()
-local card=IN("\070\114\097\109\101")
+local card=INF()
 card.Name="\084\111\097\115\116"
 card.BackgroundColor3=CR(24,24,24)
 card.BackgroundTransparency=0.5
 card.BorderSizePixel=0
-card.Size=UDim2.fromOffset(290,0)
+card.Size=UO(290,0)
 card.AutomaticSize=XA.Y
 card.Parent=toastList
-local cardCorner=IN("\085\073\067\111\114\110\101\114")
+local cardCorner=IUC()
 cardCorner.CornerRadius=UD(0,12)
 cardCorner.Parent=card
-local cardPad=IN("\085\073\080\097\100\100\105\110\103")
+local cardPad=IUP()
 cardPad.PaddingLeft=UD(0,12)
 cardPad.PaddingRight=UD(0,12)
 cardPad.PaddingTop=UD(0,10)
 cardPad.PaddingBottom=UD(0,12)
 cardPad.Parent=card
-local cardLay=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local cardLay=IUL()
 cardLay.Padding=UD(0,2)
 cardLay.SortOrder=XR.LayoutOrder
 cardLay.Parent=card
-local ttl=IN("\084\101\120\116\076\097\098\101\108")
+local ttl=ITL()
 ttl.BackgroundTransparency=1
 ttl.Size=U2(1,0,0,16)
-ttl.Font=EF.GothamMedium
+ttl.Font=EFM
 ttl.TextSize=14
-ttl.TextXAlignment=TX.Left
+ttl.TextXAlignment=TXL
 ttl.TextColor3=CR(245,245,245)
 ttl.TextTransparency=0.5
-ttl.TextTruncate=Enum.TextTruncate.AtEnd
+ttl.TextTruncate=TT.AtEnd
 ttl.Text=title
 ttl.Parent=card
-local body=IN("\084\101\120\116\076\097\098\101\108")
+local body=ITL()
 body.BackgroundTransparency=1
 body.Size=U2(1,0,0,0)
 body.AutomaticSize=XA.Y
-body.Font=EF.Gotham
+body.Font=EFG
 body.TextSize=12
-body.TextXAlignment=TX.Left
-body.TextYAlignment=Enum.TextYAlignment.Top
+body.TextXAlignment=TXL
+body.TextYAlignment=TYT
 body.TextWrapped=true
 body.TextColor3=CR(185,185,185)
 body.TextTransparency=0.5
@@ -5821,23 +6958,23 @@ body.Parent=card
 local pop=IN("\085\073\083\099\097\108\101")
 pop.Scale=0.92
 pop.Parent=card
-TweenService:Create(pop,TweenInfo.new(0.22,ES.Back,ED.Out),{Scale=1}):Play()
-TweenService:Create(card,TweenInfo.new(0.22),{BackgroundTransparency=0.06}):Play()
-TweenService:Create(ttl,TweenInfo.new(0.22),{TextTransparency=0}):Play()
-TweenService:Create(body,TweenInfo.new(0.22),{TextTransparency=0}):Play()
-task.delay(duration or 6,function()
+TSC(pop,TWI(0.22,ESB,ED.Out),{Scale=1}):Play()
+TSC(card,TWI(0.22),{BackgroundTransparency=0.06}):Play()
+TSC(ttl,TWI(0.22),{TextTransparency=0}):Play()
+TSC(body,TWI(0.22),{TextTransparency=0}):Play()
+TDL(duration or 6,function()
 if not card.Parent then
 return
 end
 local dur=0.35
-pcall(function()
-TweenService:Create(card,TweenInfo.new(dur),{BackgroundTransparency=1}):Play()
-TweenService:Create(pop,TweenInfo.new(dur),{Scale=0.94}):Play()
-TweenService:Create(ttl,TweenInfo.new(dur),{TextTransparency=1}):Play()
-TweenService:Create(body,TweenInfo.new(dur),{TextTransparency=1}):Play()
+QQ(function()
+TSC(card,TWI(dur),{BackgroundTransparency=1}):Play()
+TSC(pop,TWI(dur),{Scale=0.94}):Play()
+TSC(ttl,TWI(dur),{TextTransparency=1}):Play()
+TSC(body,TWI(dur),{TextTransparency=1}):Play()
 end)
-task.delay(dur+0.05,function()
-pcall(function()
+TDL(dur+0.05,function()
+QQ(function()
 card:Destroy()
 end)
 end)
@@ -5848,7 +6985,8 @@ zzV1.toast=notify
 local runSelfTest
 local unloadGhost
 local onOverlayMoved=nil
-local KeysAPI=buildKeystrokes({
+local KeysAPI
+KeysAPI=buildKeystrokes({
 RegisterModule=RegisterModule,
 TweenService=TweenService,
 RunService=RunService,
@@ -5866,8 +7004,8 @@ local function keyNameToEnum(value)
 if typeof(value)=="\069\110\117\109\073\116\101\109" then
 return value
 end
-local ok,enumItem=pcall(function()
-return Enum.KeyCode[tostring(value)]
+local ok,enumItem=QQ(function()
+return Enum.KeyCode[TS(value)]
 end)
 if ok and enumItem then
 return enumItem
@@ -5879,11 +7017,11 @@ local name=BhopKeybindElement and BhopKeybindElement.CurrentKeybind
 if not name then
 return false
 end
-if string.match(name,"\094\077\111\117\115\101\066\117\116\116\111\110\037\100\036") then
+if SGM(name,"\094\077\111\117\115\101\066\117\116\116\111\110\037\100\036") then
 if gameProcessed then
 return false
 end
-local ok,mouseType=pcall(function()
+local ok,mouseType=QQ(function()
 return Enum.UserInputType[name]
 end)
 return ok and input.UserInputType==mouseType or false
@@ -5893,13 +7031,13 @@ end
 local keyHeld=false
 local function initialPush()
 local char=LocalPlayer.Character
-local hum=char and char:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+local hum=char and FFC(char, "\072\117\109\097\110\111\105\100")
 if hum
 and Bhop.enabled
-and hum.FloorMaterial~=Enum.Material.Air
-and hum:GetState()~=Enum.HumanoidStateType.Jumping
+and hum.FloorMaterial~=EM.Air
+and hum:GetState()~=HST.Jumping
 then
-hum:ChangeState(Enum.HumanoidStateType.Jumping)
+hum:ChangeState(HST.Jumping)
 end
 end
 Bhop=RegisterModule({
@@ -5911,15 +7049,15 @@ end
 Bhop.enabled=true
 keyHeld=false
 local function hookCharacter(character)
-local humanoid=character:WaitForChild("\072\117\109\097\110\111\105\100",10)
+local humanoid=WFC(character, "\072\117\109\097\110\111\105\100",10)
 if not humanoid then
 return
 end
 if not Bhop.enabled then
 return
 end
-Bhop.Scope:Connect(humanoid.StateChanged,function(_,newState)
-if newState~=Enum.HumanoidStateType.Landed then
+CN(Bhop.Scope, humanoid.StateChanged,function(_,newState)
+if newState~=HST.Landed then
 return
 end
 if not Bhop.enabled or(not keyHeld and not MOVE.bhopVirtual) then
@@ -5927,40 +7065,40 @@ return
 end
 local delaySec=(MOVE.bhopDelayMs or 0)/1000
 if delaySec<=0 then
-humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+humanoid:ChangeState(HST.Jumping)
 humanoid.Jump=true
 return
 end
-task.delay(delaySec,function()
+TDL(delaySec,function()
 if not Bhop.enabled or(not keyHeld and not MOVE.bhopVirtual) then
 return
 end
 if humanoid.Parent==nil then
 return
 end
-if humanoid.FloorMaterial==Enum.Material.Air then
+if humanoid.FloorMaterial==EM.Air then
 return
 end
-humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+humanoid:ChangeState(HST.Jumping)
 humanoid.Jump=true
 end)
 end)
 end
 local character=LocalPlayer.Character
 if character then
-task.spawn(hookCharacter,character)
+TSP(hookCharacter,character)
 end
-Bhop.Scope:Connect(LocalPlayer.CharacterAdded,function(newCharacter)
-task.spawn(hookCharacter,newCharacter)
+CN(Bhop.Scope, LocalPlayer.CharacterAdded,function(newCharacter)
+TSP(hookCharacter,newCharacter)
 end)
-Bhop.Scope:Connect(UserInputService.InputBegan,function(input,gameProcessed)
+CN(Bhop.Scope, UIS.InputBegan,function(input,gameProcessed)
 if not bindMatches(input,gameProcessed) then
 return
 end
 keyHeld=true
 initialPush()
 end)
-Bhop.Scope:Connect(UserInputService.InputEnded,function(input)
+CN(Bhop.Scope, UIS.InputEnded,function(input)
 if not bindMatches(input,false) then
 return
 end
@@ -6005,8 +7143,8 @@ local function ensureVIM()
 if VirtualInputManager then
 return true
 end
-local ok,vim=pcall(function()
-return game:GetService("\086\105\114\116\117\097\108\073\110\112\117\116\077\097\110\097\103\101\114")
+local ok,vim=QQ(function()
+return GGS("\086\105\114\116\117\097\108\073\110\112\117\116\077\097\110\097\103\101\114")
 end)
 if ok and vim then
 VirtualInputManager=vim
@@ -6018,7 +7156,7 @@ local function vimKey(down,keyCode)
 if not VirtualInputManager then
 return false
 end
-return pcall(function()
+return QQ(function()
 VirtualInputManager:SendKeyEvent(down,keyCode,false,game)
 end)
 end
@@ -6034,17 +7172,17 @@ local name=CrunchKeybindElement and CrunchKeybindElement.CurrentKeybind
 if not name then
 return false
 end
-if string.match(name,"\094\077\111\117\115\101\066\117\116\116\111\110\037\100\036") then
+if SGM(name,"\094\077\111\117\115\101\066\117\116\116\111\110\037\100\036") then
 if gameProcessed then
 return false
 end
-local ok,mouseType=pcall(function()
+local ok,mouseType=QQ(function()
 return Enum.UserInputType[name]
 end)
 return ok and input.UserInputType==mouseType or false
 end
-local ok2,enumItem=pcall(function()
-return Enum.KeyCode[tostring(name)]
+local ok2,enumItem=QQ(function()
+return Enum.KeyCode[TS(name)]
 end)
 return ok2 and input.KeyCode==enumItem or false
 end
@@ -6060,7 +7198,7 @@ return
 end
 Crunch.enabled=true
 crunchKeyHeld=false
-Crunch.Scope:Connect(UserInputService.InputBegan,function(input,gameProcessed)
+CN(Crunch.Scope, UIS.InputBegan,function(input,gameProcessed)
 if UserInputService:GetFocusedTextBox()~=nil then
 return
 end
@@ -6068,24 +7206,24 @@ if crunchInputMatches(input,gameProcessed) then
 crunchKeyHeld=true
 end
 end)
-Crunch.Scope:Connect(UserInputService.InputEnded,function(input)
+CN(Crunch.Scope, UIS.InputEnded,function(input)
 if crunchInputMatches(input,false) then
 crunchKeyHeld=false
 end
 end)
-task.spawn(function()
+TSP(function()
 while Crunch.enabled do
 if crunchKeyHeld or MOVE.crunchVirtual then
 if not vimKey(true,XK.LeftControl) then
 break
 end
-task.wait(crunchHoldMs/1000)
+TW(crunchHoldMs/1000)
 if not vimKey(false,XK.LeftControl) then
 break
 end
-task.wait(crunchGapMs/1000)
+TW(crunchGapMs/1000)
 else
-task.wait(0.06)
+TW(0.06)
 end
 end
 vimKey(false,XK.LeftControl)
@@ -6166,7 +7304,7 @@ return
 end
 Straffer.enabled=true
 strafeHeld=0
-Straffer.Scope:Connect(UserInputService.InputChanged,function(input)
+CN(Straffer.Scope, UIS.InputChanged,function(input)
 if input.UserInputType~=XU.MouseMovement then
 return
 end
@@ -6179,13 +7317,13 @@ if strafeInvert then
 dir=-dir
 end
 strafeSetHeld(dir)
-strafeLastMove=os.clock()
+strafeLastMove=OCL()
 end)
-Straffer.Scope:Connect(RunService.Heartbeat,function()
+CN(Straffer.Scope, RunService.Heartbeat,function()
 if strafeHeld==0 then
 return
 end
-if os.clock() - strafeLastMove>0.12 then
+if OCL() - strafeLastMove>0.12 then
 strafeSetHeld(0)
 end
 end)
@@ -6243,12 +7381,12 @@ MOVE.crunchVirtual=on==true
 end
 end
 local function getRig()
-local ok,rig=pcall(function()
-local rigs=Workspace:FindFirstChild("\082\105\103\115")
+local ok,rig=QQ(function()
+local rigs=FF(Workspace, "\082\105\103\115")
 if not rigs then
 return nil
 end
-return rigs:FindFirstChild(LocalPlayer.Name)
+return FF(rigs, LocalPlayer.Name)
 end)
 if ok then
 return rig
@@ -6274,12 +7412,12 @@ part.Transparency=1
 part.CastShadow=false
 end
 local function applyHeadless(rig)
-local head=rig:FindFirstChild("\072\101\097\100")
+local head=FF(rig, "\072\101\097\100")
 if not head or not head:IsA("\066\097\115\101\080\097\114\116") then
 return
 end
 hidePart(head,headSnaps)
-for _,child in ipairs(head:GetChildren()) do
+for _,child in IP(GC(head)) do
 if child:IsA("\068\101\099\097\108") or child:IsA("\084\101\120\116\117\114\101") then
 if not headSnaps[child] then
 headSnaps[child]={Transparency=child.Transparency}
@@ -6289,8 +7427,8 @@ end
 end
 end
 local function restoreHeadless()
-for node,snap in pairs(headSnaps) do
-pcall(function()
+for node,snap in PR(headSnaps) do
+QQ(function()
 node.Transparency=snap.Transparency
 if snap.CastShadow~=nil then
 node.CastShadow=snap.CastShadow
@@ -6300,16 +7438,16 @@ end
 headSnaps={}
 end
 local function applyClearAccs(rig)
-local head=rig:FindFirstChild("\072\101\097\100")
+local head=FF(rig, "\072\101\097\100")
 if not head or not head:IsA("\066\097\115\101\080\097\114\116") then
 return
 end
-for _,acc in ipairs(rig:GetChildren()) do
+for _,acc in IP(GC(rig)) do
 if acc:IsA("\065\099\099\101\115\115\111\114\121") then
-local handle=acc:FindFirstChild("\072\097\110\100\108\101")
+local handle=FF(acc, "\072\097\110\100\108\101")
 if handle and handle:IsA("\066\097\115\101\080\097\114\116") and not accSnaps[handle] then
-local handleAtt=handle:FindFirstChildOfClass("\065\116\116\097\099\104\109\101\110\116")
-if handleAtt and head:FindFirstChild(handleAtt.Name) then
+local handleAtt=FFC(handle, "\065\116\116\097\099\104\109\101\110\116")
+if handleAtt and FF(head, handleAtt.Name) then
 accSnaps[handle]={Transparency=handle.Transparency}
 handle.Transparency=1
 end
@@ -6318,8 +7456,8 @@ end
 end
 end
 local function restoreAccs()
-for handle,snap in pairs(accSnaps) do
-pcall(function()
+for handle,snap in PR(accSnaps) do
+QQ(function()
 handle.Transparency=snap.Transparency
 end)
 end
@@ -6330,7 +7468,7 @@ if HeadlessReassertConn then
 return
 end
 HeadlessReassertClock=0
-HeadlessReassertConn=Headless.Scope:Connect(RunService.Heartbeat,function()
+HeadlessReassertConn=CN(Headless.Scope, RunService.Heartbeat,function()
 HeadlessReassertClock=HeadlessReassertClock+1
 if HeadlessReassertClock<30 then
 return
@@ -6340,7 +7478,7 @@ local rig=getRig()
 if not rig then
 return
 end
-pcall(function()
+QQ(function()
 if headActive then
 applyHeadless(rig)
 end
@@ -6352,7 +7490,7 @@ end)
 end
 local function stopHeadlessReassert()
 if HeadlessReassertConn then
-pcall(function()
+QQ(function()
 HeadlessReassertConn:Disconnect()
 end)
 HeadlessReassertConn=nil
@@ -6370,10 +7508,10 @@ end
 local rig=getRig()
 if rig then
 if wantHead then
-pcall(applyHeadless,rig)
+QQ(applyHeadless,rig)
 end
 if wantAccs then
-pcall(applyClearAccs,rig)
+QQ(applyClearAccs,rig)
 end
 end
 if wantHead then
@@ -6394,11 +7532,11 @@ wantAccs=opts.accs==true
 end
 if wantHead then
 headActive=false
-pcall(restoreHeadless)
+QQ(restoreHeadless)
 end
 if wantAccs then
 accsActive=false
-pcall(restoreAccs)
+QQ(restoreAccs)
 end
 Headless.enabled=headActive or accsActive
 if not Headless.enabled then
@@ -6413,7 +7551,7 @@ end
 end
 if headActive and next(headSnaps)==nil then
 local rig=getRig()
-if rig and rig:FindFirstChild("\072\101\097\100") then
+if rig and FF(rig, "\072\101\097\100") then
 return false,"\104\101\097\100\032\115\110\097\112\115\104\111\116\032\109\105\115\115\105\110\103\032\119\104\105\108\101\032\104\101\097\100\108\101\115\115\032\097\099\116\105\118\101"
 end
 end
@@ -6445,8 +7583,8 @@ local leftCreated={}
 local KorbloxReassertConn=nil
 local KorbloxReassertClock=0
 local function destroyLeftCreated()
-for _,inst in ipairs(leftCreated) do
-pcall(function()
+for _,inst in IP(leftCreated) do
+QQ(function()
 if inst and inst.Parent~=nil then
 inst:Destroy()
 end
@@ -6455,11 +7593,11 @@ end
 leftCreated={}
 end
 local function applyRightLeg(rig)
-local rightLeg=rig:FindFirstChild("\082\105\103\104\116\032\076\101\103")
+local rightLeg=FF(rig, "\082\105\103\104\116\032\076\101\103")
 if not rightLeg or not rightLeg:IsA("\066\097\115\101\080\097\114\116") then
 return
 end
-for _,child in ipairs(rig:GetChildren()) do
+for _,child in IP(GC(rig)) do
 if child:IsA("\067\104\097\114\097\099\116\101\114\077\101\115\104") and child.BodyPart==Enum.BodyPart.RightLeg then
 if not rightMeshSnap then
 rightMeshSnap={
@@ -6482,7 +7620,7 @@ rightMeshApplied=true
 end
 local function restoreRightLeg(rig)
 if rightMeshInstance then
-pcall(function()
+QQ(function()
 if rightMeshInstance.Parent~=nil then
 rightMeshInstance:Destroy()
 end
@@ -6492,7 +7630,7 @@ rightMeshInstance=nil
 rightMeshApplied=false
 if rightMeshSnap then
 if rig then
-pcall(function()
+QQ(function()
 local original=IN("\067\104\097\114\097\099\116\101\114\077\101\115\104")
 original.BodyPart=Enum.BodyPart.RightLeg
 original.MeshId=rightMeshSnap.MeshId
@@ -6505,7 +7643,7 @@ rightMeshSnap=nil
 end
 end
 local function applyLeftLeg(rig)
-local leftLeg=rig:FindFirstChild("\076\101\102\116\032\076\101\103")
+local leftLeg=FF(rig, "\076\101\102\116\032\076\101\103")
 if not leftLeg or not leftLeg:IsA("\066\097\115\101\080\097\114\116") then
 return
 end
@@ -6513,7 +7651,7 @@ if leftPartSnap==nil then
 leftPartSnap=leftLeg.Transparency
 end
 leftLeg.Transparency=1
-local okLoaded,loaded=pcall(function()
+local okLoaded,loaded=QQ(function()
 return game:GetObjects("\114\098\120\097\115\115\101\116\105\100\058\047\047\049\051\057\054\048\055\054\055\051")
 end)
 if not okLoaded or type(loaded)~="\116\097\098\108\101" or #loaded==0 then
@@ -6521,17 +7659,17 @@ warn("\091\071\077\093\032\075\111\114\098\108\111\120\058\032\099\111\117\108\1
 return
 end
 local upper,lower
-for _,obj in ipairs(loaded) do
+for _,obj in IP(loaded) do
 local pool={}
 if obj:IsA("\077\101\115\104\080\097\114\116") then
-table.insert(pool,obj)
+TBI(pool,obj)
 end
-for _,desc in ipairs(obj:GetDescendants()) do
+for _,desc in IP(GD(obj)) do
 if desc:IsA("\077\101\115\104\080\097\114\116") then
-table.insert(pool,desc)
+TBI(pool,desc)
 end
 end
-for _,node in ipairs(pool) do
+for _,node in IP(pool) do
 if node.Name=="\076\101\102\116\085\112\112\101\114\076\101\103" and not upper then
 upper=node:Clone()
 elseif node.Name=="\076\101\102\116\076\111\119\101\114\076\101\103" and not lower then
@@ -6545,7 +7683,7 @@ return
 end
 upper.Name="\071\077\095\075\111\114\098\108\111\120\076\101\102\116\085\112\112\101\114\076\101\103"
 lower.Name="\071\077\095\075\111\114\098\108\111\120\076\101\102\116\076\111\119\101\114\076\101\103"
-pcall(function()
+QQ(function()
 upper.Anchored=false
 upper.CanCollide=false
 upper.Massless=true
@@ -6553,10 +7691,10 @@ lower.Anchored=false
 lower.CanCollide=false
 lower.Massless=true
 end)
-table.insert(leftCreated,upper)
-table.insert(leftCreated,lower)
-local upperKnee=upper:FindFirstChild("\076\101\102\116\075\110\101\101\082\105\103\065\116\116\097\099\104\109\101\110\116")
-local lowerKnee=lower:FindFirstChild("\076\101\102\116\075\110\101\101\082\105\103\065\116\116\097\099\104\109\101\110\116")
+TBI(leftCreated,upper)
+TBI(leftCreated,lower)
+local upperKnee=FF(upper, "\076\101\102\116\075\110\101\101\082\105\103\065\116\116\097\099\104\109\101\110\116")
+local lowerKnee=FF(lower, "\076\101\102\116\075\110\101\101\082\105\103\065\116\116\097\099\104\109\101\110\116")
 local kneeWeld=IN("\087\101\108\100")
 kneeWeld.Name="\071\077\095\075\111\114\098\108\111\120\075\110\101\101\087\101\108\100"
 kneeWeld.Part0=upper
@@ -6565,24 +7703,24 @@ if upperKnee and lowerKnee then
 kneeWeld.C0=upperKnee.CFrame
 kneeWeld.C1=lowerKnee.CFrame
 else
-kneeWeld.C0=CFrame.new(0,-(upper.Size.Y/2),0)
-kneeWeld.C1=CFrame.new(0,(lower.Size.Y/2),0)
+kneeWeld.C0=CFN(0,-(upper.Size.Y/2),0)
+kneeWeld.C1=CFN(0,(lower.Size.Y/2),0)
 end
 kneeWeld.Parent=upper
-table.insert(leftCreated,kneeWeld)
+TBI(leftCreated,kneeWeld)
 local hipWeld=IN("\087\101\108\100")
 hipWeld.Name="\071\077\095\075\111\114\098\108\111\120\072\105\112\087\101\108\100"
 hipWeld.Part0=leftLeg
 hipWeld.Part1=upper
-local hipAtt=upper:FindFirstChild("\076\101\102\116\072\105\112\082\105\103\065\116\116\097\099\104\109\101\110\116")
+local hipAtt=FF(upper, "\076\101\102\116\072\105\112\082\105\103\065\116\116\097\099\104\109\101\110\116")
 if hipAtt then
-hipWeld.C0=CFrame.new(0,0.8,0)*hipAtt.CFrame:Inverse()
+hipWeld.C0=CFN(0,0.8,0)*hipAtt.CFrame:Inverse()
 else
-hipWeld.C0=CFrame.new(0,0.8,0)
+hipWeld.C0=CFN(0,0.8,0)
 end
-hipWeld.C1=CFrame.new()
+hipWeld.C1=CFN()
 hipWeld.Parent=upper
-table.insert(leftCreated,hipWeld)
+TBI(leftCreated,hipWeld)
 upper.Parent=rig
 lower.Parent=rig
 leftApplied=true
@@ -6591,9 +7729,9 @@ local function restoreLeftLeg(rig)
 destroyLeftCreated()
 leftApplied=false
 if leftPartSnap~=nil then
-local leftLeg=rig and rig:FindFirstChild("\076\101\102\116\032\076\101\103")
+local leftLeg=rig and FF(rig, "\076\101\102\116\032\076\101\103")
 if leftLeg then
-pcall(function()
+QQ(function()
 leftLeg.Transparency=leftPartSnap
 end)
 end
@@ -6602,17 +7740,17 @@ end
 end
 local function applyKorblox(rig)
 if KORBLOX_LEG_CHOICE=="\082\105\103\104\116" or KORBLOX_LEG_CHOICE=="\066\111\116\104" then
-pcall(applyRightLeg,rig)
+QQ(applyRightLeg,rig)
 end
 if KORBLOX_LEG_CHOICE=="\076\101\102\116" or KORBLOX_LEG_CHOICE=="\066\111\116\104" then
-pcall(applyLeftLeg,rig)
+QQ(applyLeftLeg,rig)
 end
 end
 local function restoreKorblox(rig)
-pcall(function()
+QQ(function()
 restoreRightLeg(rig)
 end)
-pcall(function()
+QQ(function()
 restoreLeftLeg(rig)
 end)
 end
@@ -6634,14 +7772,14 @@ local label=option
 if type(option)=="\116\097\098\108\101" then
 label=option[1]
 end
-label=tostring(label or "")
-if string.find(label,"\066\111\116\104",1,true) then
+label=TS(label or "")
+if SFD(label,"\066\111\116\104",1,true) then
 return "\066\111\116\104"
 end
-if string.find(label,"\076\101\102\116",1,true) then
+if SFD(label,"\076\101\102\116",1,true) then
 return "\076\101\102\116"
 end
-if string.find(label,"\082\105\103\104\116",1,true) then
+if SFD(label,"\082\105\103\104\116",1,true) then
 return "\082\105\103\104\116"
 end
 return nil
@@ -6651,7 +7789,7 @@ if KorbloxReassertConn then
 return
 end
 KorbloxReassertClock=0
-KorbloxReassertConn=Korblox.Scope:Connect(RunService.Heartbeat,function()
+KorbloxReassertConn=CN(Korblox.Scope, RunService.Heartbeat,function()
 KorbloxReassertClock=KorbloxReassertClock+1
 if KorbloxReassertClock<30 then
 return
@@ -6669,16 +7807,16 @@ leftApplied=false
 leftPartSnap=nil
 end
 if not rightMeshApplied and(KORBLOX_LEG_CHOICE=="\082\105\103\104\116" or KORBLOX_LEG_CHOICE=="\066\111\116\104") then
-pcall(applyRightLeg,rig)
+QQ(applyRightLeg,rig)
 end
 if not leftApplied and(KORBLOX_LEG_CHOICE=="\076\101\102\116" or KORBLOX_LEG_CHOICE=="\066\111\116\104") then
-pcall(applyLeftLeg,rig)
+QQ(applyLeftLeg,rig)
 end
 end)
 end
 local function stopKorbloxReassert()
 if KorbloxReassertConn then
-pcall(function()
+QQ(function()
 KorbloxReassertConn:Disconnect()
 end)
 KorbloxReassertConn=nil
@@ -6731,8 +7869,18 @@ return true
 end,
 })
 markStep("\107\111\114\098\108\111\120\032\100\101\102\105\110\101\100")
-local ReplicatedStorage=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local ReplicatedStorage=GGS("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
 local Catalog={emotes={},emoteByName={},unusuals={},unusualByName={}}
+Catalog.uri=function(entry)
+if type(entry)=="\116\097\098\108\101" and entry.id then
+if entry.ver then
+return "\104\116\116\112\058\047\047\119\119\119\046\114\111\098\108\111\120\046\099\111\109\047\097\115\115\101\116\047\063\105\100\061"..TS(entry.id)
+.."\038\118\101\114\115\105\111\110\061"..TS(entry.ver)
+end
+return "\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(entry.id)
+end
+return "\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(entry)
+end
 local gmSaveConfig
 local previewing=false
 local previewTrack=nil
@@ -6740,28 +7888,28 @@ local function phase3ExtractId(uri)
 if type(uri)~="\115\116\114\105\110\103" then
 return nil
 end
-local id=string.match(uri,"\037\100\043")
-return id and tonumber(id) or nil
+local id=SGM(uri,"\037\100\043")
+return id and TN(id) or nil
 end
 local function resolveEmoteAnim(folder)
-local anims=folder:FindFirstChild("\065\110\105\109\097\116\105\111\110\115")
+local anims=FF(folder, "\065\110\105\109\097\116\105\111\110\115")
 if anims then
-local r6=anims:FindFirstChild("\082\054")
+local r6=FF(anims, "\082\054")
 if r6 then
-local a=r6:FindFirstChild("\065\110\105\109\097\116\105\111\110")
+local a=FF(r6, "\065\110\105\109\097\116\105\111\110")
 if a and a:IsA("\065\110\105\109\097\116\105\111\110") and a.AnimationId~="" then
 return a
 end
 end
-local r15=anims:FindFirstChild("\082\049\053")
+local r15=FF(anims, "\082\049\053")
 if r15 then
-local a=r15:FindFirstChild("\065\110\105\109\097\116\105\111\110")
+local a=FF(r15, "\065\110\105\109\097\116\105\111\110")
 if a and a:IsA("\065\110\105\109\097\116\105\111\110") and a.AnimationId~="" then
 return a
 end
 end
 end
-for _,n in ipairs({
+for _,n in IP({
 "\065\110\105\109\097\116\105\111\110\067\108\097\115\115\105\099",
 "\065\110\105\109\097\116\105\111\110\082\054",
 "\065\110\105\109\097\116\105\111\110",
@@ -6769,31 +7917,31 @@ for _,n in ipairs({
 "\065\110\105\109\097\116\105\111\110\067\108\097\115\115\105\099\095\087\097\108\107\097\098\108\101",
 "\065\110\105\109\097\116\105\111\110\095\087\097\108\107\097\098\108\101",
 }) do
-local a=folder:FindFirstChild(n)
+local a=FF(folder, n)
 if a and a:IsA("\065\110\105\109\097\116\105\111\110") and a.AnimationId~="" then
 return a
 end
 end
-for _,c in ipairs(folder:GetChildren()) do
+for _,c in IP(GC(folder)) do
 if c:IsA("\065\110\105\109\097\116\105\111\110") and c.AnimationId~="" then
 return c
 end
 end
 local best,bestScore=nil,-999
-for _,d in ipairs(folder:GetDescendants()) do
+for _,d in IP(GD(folder)) do
 if d:IsA("\065\110\105\109\097\116\105\111\110") and d.AnimationId~="" then
-local path=string.lower(d:GetFullName())
+local path=SLW(d:GetFullName())
 local score=0
-if string.find(path,"\097\110\105\109\097\116\105\111\110\099\108\097\115\115\105\099",1,true) or string.find(path,"\046\114\054\046",1,true) then
+if SFD(path,"\097\110\105\109\097\116\105\111\110\099\108\097\115\115\105\099",1,true) or SFD(path,"\046\114\054\046",1,true) then
 score=score+10
 end
 if d.Name=="\065\110\105\109\097\116\105\111\110" then
 score=score+5
 end
-if string.find(path,"\105\110\116\114\111",1,true) then
+if SFD(path,"\105\110\116\114\111",1,true) then
 score=score - 100
 end
-if string.find(path,"\119\097\108\107\097\098\108\101",1,true) then
+if SFD(path,"\119\097\108\107\097\098\108\101",1,true) then
 score=score+1
 end
 if score>bestScore then
@@ -6804,45 +7952,79 @@ end
 return best
 end
 local function buildPhase3Catalogs()
-local items=ReplicatedStorage:FindFirstChild("\073\116\101\109\115")
+if OCL() -(Catalog.lastScan or 0)<20 then
+return
+end
+Catalog.lastScan=OCL()
+local items=FF(ReplicatedStorage, "\073\116\101\109\115")
 if not items then
 return
 end
-local all=items:GetDescendants()
-for _,d in ipairs(all) do
-if d.Name=="\069\109\111\116\101\115" or d.Name=="\069\109\111\116\101" then
-for _,f in ipairs(d:GetChildren()) do
+local all=GD(items)
+for _,d in IP(all) do
+if SFD(LWR(d.Name),"\101\109\111\116\101",1,true) then
+for _,f in IP(GC(d)) do
+if not Catalog.emoteByName[f.Name] then
 local anim=resolveEmoteAnim(f)
 local id=anim and phase3ExtractId(anim.AnimationId)
-if id and not Catalog.emoteByName[f.Name] then
+if id then
 local e={name=f.Name,id=id,template=f}
-table.insert(Catalog.emotes,e)
+TBI(Catalog.emotes,e)
 Catalog.emoteByName[e.name]=e
 end
 end
-elseif d.Name:lower():find("\117\110\117\115\117\097\108") and #d:GetChildren()>0 then
-for _,tpl in ipairs(d:GetChildren()) do
+local selFolders={}
+for _,ch in IP(GC(f)) do
+local n1=SGM(ch.Name,"\094\083\101\108\101\099\116\105\111\110\037\046\063\040\037\100\043\041\036")
+if n1 then
+selFolders[n1]=ch
+elseif SGM(LWR(ch.Name),"\094\115\101\108\101\099\116\105\111\110\115\063\036") then
+for _,num in IP(GC(ch)) do
+local n2=SGM(num.Name,"\094\037\100\043\036")
+or SGM(num.Name,"\094\083\101\108\101\099\116\105\111\110\037\046\063\040\037\100\043\041\036")
+if n2 and not selFolders[n2] then
+selFolders[n2]=num
+end
+end
+end
+end
+local mainId=Catalog.emoteByName[f.Name] and Catalog.emoteByName[f.Name].id
+for selNum,sel in PR(selFolders) do
+local selName=f.Name.."\032\040"..selNum.."\041"
+if not Catalog.emoteByName[selName] then
+local selAnim=resolveEmoteAnim(sel)
+local selId=selAnim and phase3ExtractId(selAnim.AnimationId)
+if selId and selId~=mainId then
+local se={name=selName,id=selId,template=sel}
+TBI(Catalog.emotes,se)
+Catalog.emoteByName[selName]=se
+end
+end
+end
+end
+elseif LWR(d.Name):find("\117\110\117\115\117\097\108") and #GC(d)>0 then
+for _,tpl in IP(GC(d)) do
 if not Catalog.unusualByName[tpl.Name] then
-local cc=tpl:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or tpl:FindFirstChild("\067\104\097\114\097\099\116\101\114")
-or tpl:FindFirstChild("\067\104\097\114\097\099\116\101\114\079\076\068")
+local cc=FF(tpl, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(tpl, "\067\104\097\114\097\099\116\101\114")
+or FF(tpl, "\067\104\097\114\097\099\116\101\114\079\076\068")
 if cc then
 local u={name=tpl.Name,template=tpl}
-table.insert(Catalog.unusuals,u)
+TBI(Catalog.unusuals,u)
 Catalog.unusualByName[u.name]=u
 end
 end
 end
 end
 end
-for _,d in ipairs(all) do
+for _,d in IP(all) do
 if d.Name=="\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099" or d.Name=="\067\104\097\114\097\099\116\101\114" or d.Name=="\067\104\097\114\097\099\116\101\114\079\076\068" then
 local tpl=d.Parent
 if tpl and not Catalog.unusualByName[tpl.Name] then
-for _,fx in ipairs(d:GetDescendants()) do
+for _,fx in IP(GD(d)) do
 if fx:IsA("\080\097\114\116\105\099\108\101\069\109\105\116\116\101\114") or fx:IsA("\066\101\097\109") or fx:IsA("\084\114\097\105\108") then
 local u={name=tpl.Name,template=tpl}
-table.insert(Catalog.unusuals,u)
+TBI(Catalog.unusuals,u)
 Catalog.unusualByName[u.name]=u
 break
 end
@@ -6853,11 +8035,33 @@ end
 print("\091\071\077\093\032\099\097\116\097\108\111\103\115\058\032"..#Catalog.emotes.."\032\101\109\111\116\101\115\044\032"..#Catalog.unusuals.."\032\117\110\117\115\117\097\108\115")
 end
 buildPhase3Catalogs()
-task.delay(25,function()
-pcall(buildPhase3Catalogs)
+do
+local MANUAL_EMOTES={
+}
+for _,me in IP(MANUAL_EMOTES) do
+if me.id and not Catalog.emoteByName[me.name] then
+local e={name=me.name,id=me.id,template=nil,manual=true}
+TBI(Catalog.emotes,e)
+Catalog.emoteByName[e.name]=e
+end
+end
+local EMOTE_RENAMES={
+["\090\111\109\098\105\101\083\116\114\105\100\101\032\040\051\041"]="\090\111\109\098\105\101\083\116\114\105\100\101\032\050\048\050\052",
+}
+for oldName,newName in PR(EMOTE_RENAMES) do
+local entry=Catalog.emoteByName[oldName]
+if entry then
+Catalog.emoteByName[oldName]=nil
+entry.name=newName
+Catalog.emoteByName[newName]=entry
+end
+end
+end
+TDL(25,function()
+QQ(buildPhase3Catalogs)
 end)
-task.delay(70,function()
-pcall(buildPhase3Catalogs)
+TDL(70,function()
+QQ(buildPhase3Catalogs)
 end)
 markStep("\112\104\097\115\101\032\051\032\099\097\116\097\108\111\103\115")
 local EmoteReplacer
@@ -6870,28 +8074,28 @@ local emoteHookConn=nil
 local function emoteFolderOf(animInst)
 local node=animInst
 while node and node.Parent do
-if node.Parent.Name=="\069\109\111\116\101\115" then
+if SFD(LWR(node.Parent.Name),"\101\109\111\116\101",1,true) then
 return node
 end
 node=node.Parent
 end
 return nil
 end
-local function swapFolderTo(folder,newId)
+local function swapFolderTo(folder,newUri)
 local n=0
-for _,d in ipairs(folder:GetDescendants()) do
+for _,d in IP(GD(folder)) do
 if d:IsA("\065\110\105\109\097\116\105\111\110") and d.AnimationId~="" and swaps[d]==nil then
 swaps[d]=d.AnimationId
-d.AnimationId="\114\098\120\097\115\115\101\116\105\100\058\047\047"..newId
+d.AnimationId=newUri
 n=n+1
 end
 end
 return n
 end
 local function unswapFolder(folder)
-for _,d in ipairs(folder:GetDescendants()) do
+for _,d in IP(GD(folder)) do
 if d:IsA("\065\110\105\109\097\116\105\111\110") and swaps[d]~=nil then
-pcall(function()
+QQ(function()
 d.AnimationId=swaps[d]
 end)
 swaps[d]=nil
@@ -6899,16 +8103,16 @@ end
 end
 end
 local function restoreAllSwaps()
-for inst,oldId in pairs(swaps) do
-pcall(function()
+for inst,oldId in PR(swaps) do
+QQ(function()
 inst.AnimationId=oldId
 end)
 end
 swaps={}
 end
 local function destroyProp()
-for _,inst in ipairs(propInsts) do
-pcall(function()
+for _,inst in IP(propInsts) do
+QQ(function()
 inst:Destroy()
 end)
 end
@@ -6919,6 +8123,9 @@ local function ensurePropFor(toEntry)
 if not toEntry then
 return
 end
+if not toEntry.template then
+return
+end
 if propOwner==toEntry.name and #propInsts>0 then
 return
 end
@@ -6927,17 +8134,17 @@ local rig=getRig()
 if not rig then
 return
 end
-local classic=toEntry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or toEntry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114")
+local classic=FF(toEntry.template, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(toEntry.template, "\067\104\097\114\097\099\116\101\114")
 if not classic then
-for _,d in ipairs(toEntry.template:GetDescendants()) do
+for _,d in IP(GD(toEntry.template)) do
 if d.Name=="\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099" then
 classic=d
 break
 end
 end
 if not classic then
-for _,d in ipairs(toEntry.template:GetDescendants()) do
+for _,d in IP(GD(toEntry.template)) do
 if d.Name=="\067\104\097\114\097\099\116\101\114" then
 classic=d
 break
@@ -6950,9 +8157,9 @@ print("\091\071\077\093\032\101\108\101\109\101\110\116\058\032\039"..toEntry.na
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\069\108\101\109\101\110\116\032\039"..toEntry.name.."\039\058\032\110\111\032\099\104\097\114\097\099\116\101\114\032\109\111\100\101\108\032\105\110\032\116\101\109\112\108\097\116\101",6)
 return
 end
-local em=classic:FindFirstChild("\069\109\111\116\101\077\111\100\101\108")
+local em=FF(classic, "\069\109\111\116\101\077\111\100\101\108")
 if not em then
-for _,c in ipairs(classic:GetChildren()) do
+for _,c in IP(GC(classic)) do
 if c:IsA("\077\111\100\101\108") then
 em=c
 print("\091\071\077\093\032\101\108\101\109\101\110\116\058\032\117\115\105\110\103\032\109\111\100\101\108\032\039"..c.Name.."\039\032\040\110\111\032\069\109\111\116\101\077\111\100\101\108\032\105\110\032\116\101\109\112\108\097\116\101\041")
@@ -6966,13 +8173,13 @@ notify("\071\104\111\115\116\032\077\101\116\104\111\100","\069\108\101\109\101\
 return
 end
 local part0Names={}
-for _,d in ipairs(em:GetDescendants()) do
+for _,d in IP(GD(em)) do
 if(d:IsA("\077\111\116\111\114\054\068") or d:IsA("\087\101\108\100")) and d.Part0 then
 part0Names[d.Name]=d.Part0.Name
 end
 end
 local clone=em:Clone()
-for _,d in ipairs(clone:GetDescendants()) do
+for _,d in IP(GD(clone)) do
 if d:IsA("\066\097\115\101\080\097\114\116") then
 d.Anchored=false
 d.CanCollide=false
@@ -6984,7 +8191,7 @@ end
 local puppet=LocalPlayer.Character
 local puppetPrimary=puppet and puppet.PrimaryPart or nil
 local joined=0
-for _,d in ipairs(clone:GetChildren()) do
+for _,d in IP(GC(clone)) do
 if(d:IsA("\077\111\116\111\114\054\068") or d:IsA("\087\101\108\100")) and d.Part0 and d.Part0.Parent==classic then
 if d.Part0.Name=="\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116" then
 if puppetPrimary then
@@ -6994,7 +8201,7 @@ else
 d:Destroy()
 end
 else
-local host=rig:FindFirstChild(d.Part0.Name)
+local host=FF(rig, d.Part0.Name)
 if host and host:IsA("\066\097\115\101\080\097\114\116") then
 d.Part0=host
 joined=joined+1
@@ -7006,37 +8213,37 @@ end
 end
 if joined==0 then
 print("\091\071\077\093\032\101\108\101\109\101\110\116\058\032\110\111\032\077\111\116\111\114\054\068\032\106\111\105\110\116\115\032\102\111\117\110\100\032\105\110\032\112\114\111\112\032\045\032\102\097\108\108\098\097\099\107\032\040\112\105\118\111\116\032\043\032\116\111\114\115\111\032\119\101\108\100\041")
-pcall(function()
+QQ(function()
 clone:PivotTo(rig:GetPivot())
 end)
 local biggest=nil
-for _,d in ipairs(clone:GetDescendants()) do
+for _,d in IP(GD(clone)) do
 if d:IsA("\066\097\115\101\080\097\114\116") and(not biggest or d.Size.Magnitude>biggest.Size.Magnitude) then
 biggest=d
 end
 end
-local torso=rig:FindFirstChild("\084\111\114\115\111")
+local torso=FF(rig, "\084\111\114\115\111")
 if biggest and torso then
-local wc=IN("\087\101\108\100\067\111\110\115\116\114\097\105\110\116")
+local wc=IWC()
 wc.Part0=torso
 wc.Part1=biggest
 wc.Parent=biggest
 end
 end
 local anims={}
-for _,d in ipairs(clone:GetDescendants()) do
+for _,d in IP(GD(clone)) do
 if d:IsA("\065\110\105\109\097\116\105\111\110") and d.AnimationId~="" then
-table.insert(anims,d)
+TBI(anims,d)
 end
 end
 if #anims>0 then
-local ac=clone:FindFirstChildOfClass("\065\110\105\109\097\116\105\111\110\067\111\110\116\114\111\108\108\101\114")
+local ac=FFC(clone, "\065\110\105\109\097\116\105\111\110\067\111\110\116\114\111\108\108\101\114")
 if not ac then
 ac=IN("\065\110\105\109\097\116\105\111\110\067\111\110\116\114\111\108\108\101\114")
 ac.Parent=clone
 end
-for _,a in ipairs(anims) do
-pcall(function()
+for _,a in IP(anims) do
+QQ(function()
 local t=ac:LoadAnimation(a)
 t.Looped=true
 t:Play()
@@ -7044,18 +8251,18 @@ end)
 end
 end
 clone.Parent=rig
-table.insert(propInsts,clone)
+TBI(propInsts,clone)
 propOwner=toEntry.name
 print("\091\071\077\093\032\101\108\101\109\101\110\116\032\039"..toEntry.name.."\039\032\097\116\116\097\099\104\101\100\032\040"..joined.."\032\106\111\105\110\116\115\041")
 local fxCount=0
-for _,part in ipairs(classic:GetChildren()) do
+for _,part in IP(GC(classic)) do
 if part:IsA("\066\097\115\101\080\097\114\116") then
-local targetPart=rig:FindFirstChild(part.Name)
+local targetPart=FF(rig, part.Name)
 if targetPart then
-for _,child in ipairs(part:GetChildren()) do
+for _,child in IP(GC(part)) do
 if child~=em and(child:IsA("\065\116\116\097\099\104\109\101\110\116") or child:IsA("\077\111\100\101\108") or child:IsA("\066\097\115\101\080\097\114\116")) then
 local hasEffect=false
-for _,fx in ipairs(child:GetDescendants()) do
+for _,fx in IP(GD(child)) do
 if fx:IsA("\080\097\114\116\105\099\108\101\069\109\105\116\116\101\114") or fx:IsA("\066\101\097\109") or fx:IsA("\084\114\097\105\108") then
 hasEffect=true
 break
@@ -7067,12 +8274,12 @@ fxClone.Parent=targetPart
 if fxClone:IsA("\066\097\115\101\080\097\114\116") then
 fxClone.CanCollide=false
 fxClone.Massless=true
-local w=IN("\087\101\108\100\067\111\110\115\116\114\097\105\110\116")
+local w=IWC()
 w.Part0=targetPart
 w.Part1=fxClone
 w.Parent=fxClone
 end
-table.insert(propInsts,fxClone)
+TBI(propInsts,fxClone)
 fxCount=fxCount+1
 end
 end
@@ -7083,35 +8290,35 @@ end
 if fxCount>0 then
 print("\091\071\077\093\032\101\108\101\109\101\110\116\032\101\102\102\101\099\116\115\058\032"..fxCount.."\032\097\110\099\104\111\114\115\032\099\108\111\110\101\100")
 end
-pcall(function()
-local lines={os.date("\037\072\058\037\077\058\037\083").."\032\112\114\111\112\032\039"..toEntry.name.."\039\032\100\105\097\103\110\111\115\116\105\099\115\058"}
-table.insert(lines,"\032\032\101\109\032\061\032"..em:GetFullName())
-for name,host in pairs(part0Names) do
-table.insert(lines,"\032\032\112\097\114\116\048\078\097\109\101\115\091\039"..name.."\039\093\032\061\032"..tostring(host))
+QQ(function()
+local lines={OD("\037\072\058\037\077\058\037\083").."\032\112\114\111\112\032\039"..toEntry.name.."\039\032\100\105\097\103\110\111\115\116\105\099\115\058"}
+TBI(lines,"\032\032\101\109\032\061\032"..em:GetFullName())
+for name,host in PR(part0Names) do
+TBI(lines,"\032\032\112\097\114\116\048\078\097\109\101\115\091\039"..name.."\039\093\032\061\032"..TS(host))
 end
-for _,d in ipairs(em:GetDescendants()) do
+for _,d in IP(GD(em)) do
 if d:IsA("\077\111\116\111\114\054\068") or d:IsA("\087\101\108\100") then
-table.insert(lines,string.format("\032\032\084\080\076\032\032\106\111\105\110\116\032\039\037\115\039\032\091\037\115\093\032\080\097\114\116\048\061\037\115\032\080\097\114\116\049\061\037\115",
+TBI(lines,SFM("\032\032\084\080\076\032\032\106\111\105\110\116\032\039\037\115\039\032\091\037\115\093\032\080\097\114\116\048\061\037\115\032\080\097\114\116\049\061\037\115",
 d.Name,d.ClassName,
 d.Part0 and d.Part0.Name or "\110\105\108",
 d.Part1 and d.Part1.Name or "\110\105\108"))
 end
 end
-for _,d in ipairs(clone:GetDescendants()) do
+for _,d in IP(GD(clone)) do
 if d:IsA("\077\111\116\111\114\054\068") or d:IsA("\087\101\108\100") then
-table.insert(lines,string.format("\032\032\067\076\079\078\069\032\106\111\105\110\116\032\039\037\115\039\032\091\037\115\093\032\080\097\114\116\048\061\037\115\032\080\097\114\116\049\061\037\115",
+TBI(lines,SFM("\032\032\067\076\079\078\069\032\106\111\105\110\116\032\039\037\115\039\032\091\037\115\093\032\080\097\114\116\048\061\037\115\032\080\097\114\116\049\061\037\115",
 d.Name,d.ClassName,
 d.Part0 and d.Part0.Name or "\110\105\108",
 d.Part1 and d.Part1.Name or "\110\105\108"))
 end
 end
-table.insert(lines,"\032\032\106\111\105\110\101\100\061"..joined)
-writefile("\071\077\095\112\114\111\112\095\106\111\105\110\116\115\046\116\120\116",table.concat(lines,"\010"))
+TBI(lines,"\032\032\106\111\105\110\101\100\061"..joined)
+WF("\071\077\095\112\114\111\112\095\106\111\105\110\116\115\046\116\120\116",TCN(lines,"\010"))
 end)
 end
 local emoteSwapToken=0
 local function hideModelTree(model)
-for _,d in ipairs(model:GetDescendants()) do
+for _,d in IP(GD(model)) do
 if d:IsA("\066\097\115\101\080\097\114\116") then
 d.Transparency=1
 d.CastShadow=false
@@ -7125,10 +8332,10 @@ end
 end
 end
 local function sourcePropName(m)
-local c=m.from.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or m.from.template:FindFirstChild("\067\104\097\114\097\099\116\101\114")
+local c=FF(m.from.template, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(m.from.template, "\067\104\097\114\097\099\116\101\114")
 if not c then
-for _,d in ipairs(m.from.template:GetDescendants()) do
+for _,d in IP(GD(m.from.template)) do
 if d.Name=="\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099" or d.Name=="\067\104\097\114\097\099\116\101\114" then
 c=d
 break
@@ -7138,9 +8345,9 @@ end
 if not c then
 return nil
 end
-local em=c:FindFirstChild("\069\109\111\116\101\077\111\100\101\108")
+local em=FF(c, "\069\109\111\116\101\077\111\100\101\108")
 if not em then
-for _,ch in ipairs(c:GetChildren()) do
+for _,ch in IP(GC(c)) do
 if ch:IsA("\077\111\100\101\108") then
 em=ch
 break
@@ -7150,7 +8357,7 @@ end
 return em and em.Name or nil
 end
 local function isOurProp(inst)
-for _,p in ipairs(propInsts) do
+for _,p in IP(propInsts) do
 if p==inst then
 return true
 end
@@ -7168,13 +8375,13 @@ return
 end
 emoteSwapToken=emoteSwapToken+1
 local token=emoteSwapToken
-for _,ch in ipairs(rig:GetChildren()) do
+for _,ch in IP(GC(rig)) do
 if ch.Name==srcName and not isOurProp(ch) then
 hideModelTree(ch)
 end
 end
 local conn
-conn=rig.ChildAdded:Connect(function(child)
+conn=CN(rig.ChildAdded, function(child)
 if emoteSwapToken~=token then
 conn:Disconnect()
 return
@@ -7183,9 +8390,9 @@ if child.Name==srcName and not isOurProp(child) then
 hideModelTree(child)
 end
 end)
-task.delay(3,function()
+TDL(3,function()
 if conn then
-pcall(function()
+QQ(function()
 conn:Disconnect()
 end)
 end
@@ -7194,7 +8401,7 @@ end
 local function swapSourceSound(m)
 local targetSound=nil
 local targetLooped=nil
-pcall(function()
+QQ(function()
 local cfg=require(m.to.template)
 local info=cfg and cfg.EmoteInfo
 if info then
@@ -7214,9 +8421,9 @@ local fixedCount=0
 local function collectSoundPos()
 local res={}
 local function addFrom(holder,label)
-pcall(function()
+QQ(function()
 if holder and holder.PrimaryPart then
-local sp=holder.PrimaryPart:FindFirstChild("\083\111\117\110\100\080\111\115")
+local sp=FF(holder.PrimaryPart, "\083\111\117\110\100\080\111\115")
 if sp then
 res[#res+1]=sp
 dbg[#dbg+1]="\115\111\117\110\100\080\111\115\032"..label.."\058\032"..sp:GetFullName()
@@ -7229,15 +8436,15 @@ addFrom(getRig(),"\114\105\103")
 return res
 end
 local function fixSound(snd)
-pcall(function()
+QQ(function()
 if targetSound then
 snd:Stop()
-snd.SoundId="\114\098\120\097\115\115\101\116\105\100\058\047\047"..tostring(targetSound)
+snd.SoundId="\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(targetSound)
 if targetLooped~=nil then
 snd.Looped=targetLooped
 end
 snd:Play()
-dbg[#dbg+1]="\070\073\088\069\068\032\045\062\032\105\100\032"..tostring(targetSound)
+dbg[#dbg+1]="\070\073\088\069\068\032\045\062\032\105\100\032"..TS(targetSound)
 else
 snd.Volume=0
 dbg[#dbg+1]="\077\085\084\069\068\032\040\116\097\114\103\101\116\032\115\105\110\032\109\117\115\105\099\097\041"
@@ -7245,11 +8452,11 @@ end
 end)
 end
 local function tryFixAll()
-for _,sp in ipairs(collectSoundPos()) do
-local snd=sp:FindFirstChild("\069\109\111\116\101\083\111\117\110\100")
+for _,sp in IP(collectSoundPos()) do
+local snd=FF(sp, "\069\109\111\116\101\083\111\117\110\100")
 if snd and snd:IsA("\083\111\117\110\100") and not fixedSet[snd] then
 fixedSet[snd]=true
-local desired="\114\098\120\097\115\115\101\116\105\100\058\047\047"..tostring(targetSound)
+local desired="\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(targetSound)
 if(targetSound and snd.SoundId==desired)
 or(targetSound==nil and snd.Volume==0) then
 dbg[#dbg+1]="\083\075\073\080\032\040\121\097\032\099\111\114\114\101\099\116\111\041"
@@ -7260,30 +8467,30 @@ end
 end
 end
 end
-dbg[#dbg+1]=os.date("\037\072\058\037\077\058\037\083").."\032\115\119\097\112\083\111\117\114\099\101\083\111\117\110\100\032\039"..m.to.name
-.."\039\032\116\097\114\103\101\116\083\111\117\110\100\061"..tostring(targetSound)
-.."\032\116\097\114\103\101\116\076\111\111\112\101\100\061"..tostring(targetLooped)
+dbg[#dbg+1]=OD("\037\072\058\037\077\058\037\083").."\032\115\119\097\112\083\111\117\114\099\101\083\111\117\110\100\032\039"..m.to.name
+.."\039\032\116\097\114\103\101\116\083\111\117\110\100\061"..TS(targetSound)
+.."\032\116\097\114\103\101\116\076\111\111\112\101\100\061"..TS(targetLooped)
 tryFixAll()
 local myToken=emoteSwapToken
 local t0=tick()
 while tick() - t0<3 and emoteSwapToken==myToken do
 tryFixAll()
-task.wait(0.1)
+TW(0.1)
 end
 dbg[#dbg+1]="\102\105\120\101\100\032\105\110\115\116\097\110\099\101\115\058\032"..fixedCount
 ..(emoteSwapToken~=myToken and "\032\040\099\097\110\099\101\108\097\100\111\032\112\111\114\032\117\110\032\101\109\111\116\101\032\109\097\115\032\110\117\101\118\111\041" or "")
-pcall(function()
-writefile("\071\077\095\115\111\117\110\100\095\108\111\103\046\116\120\116",table.concat(dbg,"\010"))
+QQ(function()
+WF("\071\077\095\115\111\117\110\100\095\108\111\103\046\116\120\116",TCN(dbg,"\010"))
 end)
 end
 local function anyEmoteTrackPlaying()
 local rig=getRig()
-local hum=rig and rig:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
-local an=hum and hum:FindFirstChildOfClass("\065\110\105\109\097\116\111\114")
+local hum=rig and FFC(rig, "\072\117\109\097\110\111\105\100")
+local an=hum and FFC(hum, "\065\110\105\109\097\116\111\114")
 if not an then
 return false
 end
-for _,t in ipairs(an:GetPlayingAnimationTracks()) do
+for _,t in IP(an:GetPlayingAnimationTracks()) do
 if t.Animation and emoteFolderOf(t.Animation) then
 return true
 end
@@ -7295,15 +8502,15 @@ local rig=getRig()
 if not rig then
 return
 end
-local hum=rig:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
-local animator=hum and hum:FindFirstChildOfClass("\065\110\105\109\097\116\111\114")
+local hum=FFC(rig, "\072\117\109\097\110\111\105\100")
+local animator=hum and FFC(hum, "\065\110\105\109\097\116\111\114")
 if not animator then
 return
 end
 if emoteHookConn then
 emoteHookConn:Disconnect()
 end
-emoteHookConn=animator.AnimationPlayed:Connect(function(track)
+emoteHookConn=CN(animator.AnimationPlayed, function(track)
 if not EmoteReplacer.enabled or #activeMappings==0 then
 return
 end
@@ -7322,19 +8529,19 @@ end
 local id=phase3ExtractId(anim.AnimationId)
 if id==m.to.id then
 emoteSwapToken=emoteSwapToken+1
-local ok,err=pcall(ensurePropFor,m.to)
-pcall(function()
-writefile("\071\077\095\112\114\111\112\095\108\111\103\046\116\120\116",os.date("\037\072\058\037\077\058\037\083")
-.."\032\112\114\111\112\032\099\097\108\108\032\102\111\114\032\039"..m.to.name.."\039\032\111\107\061"..tostring(ok)
-..(ok and "" or("\032\101\114\114\061"..tostring(err)))
+local ok,err=QQ(ensurePropFor,m.to)
+QQ(function()
+WF("\071\077\095\112\114\111\112\095\108\111\103\046\116\120\116",OD("\037\072\058\037\077\058\037\083")
+.."\032\112\114\111\112\032\099\097\108\108\032\102\111\114\032\039"..m.to.name.."\039\032\111\107\061"..TS(ok)
+..(ok and "" or("\032\101\114\114\061"..TS(err)))
 .."\032\124\032\112\114\111\112\073\110\115\116\115\061"..#propInsts
-.."\032\124\032\112\114\111\112\079\119\110\101\114\061"..tostring(propOwner))
+.."\032\124\032\112\114\111\112\079\119\110\101\114\061"..TS(propOwner))
 end)
 if not ok then
-notify("\071\104\111\115\116\032\077\101\116\104\111\100","\069\108\101\109\101\110\116\032\101\114\114\111\114\032\040"..m.to.name.."\041\058\032"..tostring(err),8)
+notify("\071\104\111\115\116\032\077\101\116\104\111\100","\069\108\101\109\101\110\116\032\101\114\114\111\114\032\040"..m.to.name.."\041\058\032"..TS(err),8)
 end
-pcall(hideSourceProps,m)
-pcall(swapSourceSound,m)
+QQ(hideSourceProps,m)
+QQ(swapSourceSound,m)
 end
 end)
 end
@@ -7342,20 +8549,24 @@ local function p3SetMapping(fromE,toE)
 if not fromE or not toE or fromE.name==toE.name then
 return false
 end
+if not fromE.template then
+notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\083\111\108\111\032\115\101\032\112\117\101\100\101\032\114\101\101\109\112\108\097\122\097\114\032\117\110\032\101\109\111\116\101\032\100\101\108\032\106\117\101\103\111\032\099\111\110\032\117\110\111\032\101\120\116\101\114\110\111\046","\089\111\117\032\099\097\110\032\111\110\108\121\032\114\101\112\108\097\099\101\032\097\032\103\097\109\101\032\101\109\111\116\101\032\119\105\116\104\032\097\110\032\101\120\116\101\114\110\097\108\032\111\110\101\046"),5)
+return false
+end
 local existing=mappingBySource[fromE.name]
 if existing then
-pcall(function()
+QQ(function()
 unswapFolder(fromE.template)
 end)
 existing.to=toE
 else
 local m={from=fromE,to=toE}
-table.insert(activeMappings,m)
+TBI(activeMappings,m)
 mappingBySource[fromE.name]=m
 end
 if EmoteReplacer.enabled then
-pcall(function()
-swapFolderTo(fromE.template,toE.id)
+QQ(function()
+swapFolderTo(fromE.template,Catalog.uri(toE))
 end)
 end
 if gmSaveConfig then
@@ -7369,11 +8580,11 @@ local m=mappingBySource[fromName]
 if not m then
 return false
 end
-pcall(function()
+QQ(function()
 unswapFolder(m.from.template)
 end)
 mappingBySource[fromName]=nil
-for i,mm in ipairs(activeMappings) do
+for i,mm in IP(activeMappings) do
 if mm==m then
 table.remove(activeMappings,i)
 break
@@ -7390,10 +8601,10 @@ return true
 end
 local function p3RemoveAllMappings()
 local names={}
-for name in pairs(mappingBySource) do
-table.insert(names,name)
+for name in PR(mappingBySource) do
+TBI(names,name)
 end
-for _,name in ipairs(names) do
+for _,name in IP(names) do
 p3RemoveMapping(name)
 end
 end
@@ -7404,13 +8615,13 @@ if EmoteReplacer.enabled then
 return
 end
 EmoteReplacer.enabled=true
-for _,m in ipairs(activeMappings) do
-pcall(function()
-swapFolderTo(m.from.template,m.to.id)
+for _,m in IP(activeMappings) do
+QQ(function()
+swapFolderTo(m.from.template,Catalog.uri(m.to))
 end)
 end
 hookEmoteAnimator()
-EmoteReplacer.Scope:Connect(RunService.Heartbeat,function()
+CN(EmoteReplacer.Scope, RunService.Heartbeat,function()
 if not emoteHookConn or not emoteHookConn.Connected then
 hookEmoteAnimator()
 end
@@ -7461,8 +8672,8 @@ local Unusuals
 local appliedUnusual={}
 local activeUnusual=nil
 local function removeUnusualNow()
-for _,inst in ipairs(appliedUnusual) do
-pcall(function()
+for _,inst in IP(appliedUnusual) do
+QQ(function()
 inst:Destroy()
 end)
 end
@@ -7475,38 +8686,101 @@ if not rig or not u then
 return false
 end
 removeUnusualNow()
-local cc=u.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or u.template:FindFirstChild("\067\104\097\114\097\099\116\101\114")
-or u.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\079\076\068")
+local cc=FF(u.template, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(u.template, "\067\104\097\114\097\099\116\101\114")
+or FF(u.template, "\067\104\097\114\097\099\116\101\114\079\076\068")
 if not cc then
 return false
 end
 local n=0
-for _,part in ipairs(cc:GetChildren()) do
+for _,part in IP(GC(cc)) do
 if part:IsA("\066\097\115\101\080\097\114\116") then
-local targetPart=rig:FindFirstChild(part.Name)
+local targetPart=FF(rig, part.Name)
 if targetPart then
-for _,child in ipairs(part:GetChildren()) do
+for _,child in IP(GC(part)) do
 if child:IsA("\065\116\116\097\099\104\109\101\110\116") or child:IsA("\077\111\100\101\108") or child:IsA("\066\097\115\101\080\097\114\116") then
 local clone=child:Clone()
 clone.Parent=targetPart
 if clone:IsA("\066\097\115\101\080\097\114\116") then
 clone.CanCollide=false
 clone.Massless=true
-local w=IN("\087\101\108\100\067\111\110\115\116\114\097\105\110\116")
+local w=IWC()
 w.Part0=targetPart
 w.Part1=clone
 w.Parent=clone
 end
-table.insert(appliedUnusual,clone)
+TBI(appliedUnusual,clone)
 n=n+1
 end
 end
 end
 end
 end
+local colorName=zzV1.unusualColor
+local hue=nil
+if colorName=="\082\101\100" then hue=0
+elseif colorName=="\079\114\097\110\103\101" then hue=0.07
+elseif colorName=="\071\111\108\100" then hue=0.13
+elseif colorName=="\071\114\101\101\110" then hue=0.33
+elseif colorName=="\067\121\097\110" then hue=0.5
+elseif colorName=="\066\108\117\101" then hue=0.65
+elseif colorName=="\080\117\114\112\108\101" then hue=0.78
+elseif colorName=="\080\105\110\107" then hue=0.92
+end		local dbg={"\116\105\110\116\032"..TS(colorName).."\032\104\117\101\061"..TS(hue)
+.."\032\097\110\099\104\111\114\115\061"..#appliedUnusual.."\032\110\097\109\101\061"..TS(name)}
+local seqTinted=0
+local colTinted=0
+if hue then
+local function shift(c)
+local h,s,v=Color3.toHSV(c)
+if s<0.05 then
+return c
+end
+return Color3.fromHSV(hue,s,v)
+end
+for _,inst in IP(appliedUnusual) do
+local ok,err=QQ(function()
+local all={inst}
+for _,d in IP(GD(inst)) do
+all[#all+1]=d
+end
+for _,d in IP(all) do
+if d:IsA("\080\097\114\116\105\099\108\101\069\109\105\116\116\101\114") or d:IsA("\066\101\097\109") or d:IsA("\084\114\097\105\108") then
+local kps={}
+for _,kp in IP(d.Color.Keypoints) do
+kps[#kps+1]=ColorSequenceKeypoint.new(kp.Time,shift(kp.Value))
+end
+if #kps>=2 then
+d.Color=CSN(kps)
+seqTinted=seqTinted+1
+elseif #kps==1 then
+d.Color=CSN(kps[1].Value)
+seqTinted=seqTinted+1
+end
+elseif d:IsA("\080\111\105\110\116\076\105\103\104\116") or d:IsA("\083\112\111\116\076\105\103\104\116") or d:IsA("\083\117\114\102\097\099\101\076\105\103\104\116")
+or d:IsA("\066\097\115\101\080\097\114\116") or d:IsA("\068\101\099\097\108") or d:IsA("\084\101\120\116\117\114\101") then
+d.Color=shift(d.Color)
+colTinted=colTinted+1
+end
+end
+end)
+if not ok then
+dbg[#dbg+1]="\069\082\082\079\082\032"..TS(inst.ClassName).."\032\039"..TS(inst.Name)
+.."\039\058\032"..TS(err)
+else
+dbg[#dbg+1]="\111\107\032"..TS(inst.ClassName).."\032\039"..TS(inst.Name).."\039"
+end
+end
+dbg[#dbg+1]="\116\111\116\097\108\058\032"..seqTinted.."\032\115\101\099\117\101\110\099\105\097\115\044\032"..colTinted.."\032\099\111\108\111\114\101\115"
+else
+dbg[#dbg+1]="\115\105\110\032\116\105\110\116\032\040\079\114\105\103\105\110\097\108\041"
+end
+QQ(function()
+WF("\071\077\095\117\110\117\115\117\097\108\095\100\101\098\117\103\046\116\120\116",TCN(dbg,"\010"))
+end)
 activeUnusual=name
-print("\091\071\077\093\032\117\110\117\115\117\097\108\032\039"..name.."\039\032\097\112\112\108\105\101\100\058\032"..n.."\032\097\110\099\104\111\114\115")
+print("\091\071\077\093\032\117\110\117\115\117\097\108\032\039"..name.."\039\032\097\112\112\108\105\101\100\058\032"..n.."\032\097\110\099\104\111\114\115\044\032\116\105\110\116\061"
+..TS(colorName).."\032\040\115\101\113\032"..seqTinted.."\044\032\099\111\108\032"..colTinted.."\041")
 if gmSaveConfig and n>0 then
 gmSaveConfig()
 end
@@ -7522,7 +8796,7 @@ Unusuals.enabled=true
 if activeUnusual then
 applyUnusualNow(activeUnusual)
 end
-Unusuals.Scope:Connect(RunService.Heartbeat,function()
+CN(Unusuals.Scope, RunService.Heartbeat,function()
 if activeUnusual and #appliedUnusual==0 then
 applyUnusualNow(activeUnusual)
 end
@@ -7554,76 +8828,76 @@ end,
 })
 markStep("\112\104\097\115\101\032\051\032\100\101\102\105\110\101\100")
 local function p3DestroyGui(name)
-local old=GuiParent:FindFirstChild(name)
+local old=FF(GuiParent, name)
 if old then
-pcall(function()
+QQ(function()
 old:Destroy()
 end)
 end
 end
-local TOUCH=UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+local TOUCH=UIS.TouchEnabled and not UIS.KeyboardEnabled
 local P3_ROW_H=TOUCH and 38 or 28
 local P3_SEARCH_H=TOUCH and 36 or 28
 local P3_CLOSE_D=TOUCH and 40 or 30
 local function p3MakePicker(guiName,title,width,height)
 p3DestroyGui(guiName)
-local gui=IN("\083\099\114\101\101\110\071\117\105")
+local gui=ISG()
 gui.Name=guiName
 gui.ResetOnSpawn=false
 gui.DisplayOrder=600
 gui.Parent=GuiParent
-local panel=IN("\070\114\097\109\101")
+local panel=INF()
 panel.Name="\080\097\110\101\108"
-panel.AnchorPoint=Vector2.new(0.5,0.5)
+panel.AnchorPoint=VX(0.5,0.5)
 panel.Position=U2(0.5,0,0.5,0)
-panel.Size=UDim2.fromOffset(width,height)
+panel.Size=UO(width,height)
 panel.BackgroundColor3=Palette.Panel
 panel.BackgroundTransparency=0.06
 panel.BorderSizePixel=0
 panel.Parent=gui
-local corner=IN("\085\073\067\111\114\110\101\114")
+local corner=IUC()
 corner.CornerRadius=UD(0,18)
 corner.Parent=panel
-local grad=IN("\085\073\071\114\097\100\105\101\110\116")
+local grad=IUG()
 grad.Rotation=115
-grad.Color=ColorSequence.new(CR(30,20,48),CR(12,8,20))
+grad.Color=CSN(CR(30,20,48),CR(12,8,20))
 grad.Parent=panel
-local stroke=IN("\085\073\083\116\114\111\107\101")
+local stroke=IUS()
 stroke.Color=Palette.PanelStroke
 stroke.Thickness=1.5
 stroke.Transparency=0.15
 stroke.Parent=panel
-local header=IN("\084\101\120\116\076\097\098\101\108")
+local header=ITL()
 header.BackgroundTransparency=1
 header.Size=U2(1,-100,0,44)
 header.Position=U2(0,22,0,8)
-header.Font=EF.GothamBold
+header.Font=EFB
 header.Text=title
 header.TextSize=22
-header.TextXAlignment=TX.Left
+header.TextXAlignment=TXL
 header.TextColor3=Palette.AccentBright
 header.Parent=panel
-local divider=IN("\070\114\097\109\101")
+local divider=INF()
 divider.Size=U2(1,-44,0,1)
 divider.Position=U2(0,22,0,54)
 divider.BackgroundColor3=Palette.PanelStroke
 divider.BackgroundTransparency=0.55
 divider.BorderSizePixel=0
 divider.Parent=panel
-local closeBtn=IN("\084\101\120\116\066\117\116\116\111\110")
-closeBtn.Size=UDim2.fromOffset(P3_CLOSE_D,P3_CLOSE_D)
+local closeBtn=ITB()
+closeBtn.Size=UO(P3_CLOSE_D,P3_CLOSE_D)
 closeBtn.Position=U2(1,-(P3_CLOSE_D+10),0,TOUCH and 8 or 12)
 closeBtn.BackgroundColor3=Palette.AccentDeep
 closeBtn.BackgroundTransparency=0.25
-closeBtn.Font=EF.GothamBold
+closeBtn.Font=EFB
 closeBtn.Text="\088"
 closeBtn.TextSize=TOUCH and 16 or 14
 closeBtn.TextColor3=Palette.TextBright
-local cCorner=IN("\085\073\067\111\114\110\101\114")
+local cCorner=IUC()
 cCorner.CornerRadius=UD(1,0)
 cCorner.Parent=closeBtn
 closeBtn.Parent=panel
-closeBtn.Activated:Connect(function()
+CN(closeBtn.Activated, function()
 gui:Destroy()
 end)
 local uiScale=IN("\085\073\083\099\097\108\101")
@@ -7634,7 +8908,7 @@ if not cam then
 return
 end
 local vp=cam.ViewportSize
-local s=math.min((vp.X - 24)/width,(vp.Y - 24)/height,1)
+local s=MN((vp.X - 24)/width,(vp.Y - 24)/height,1)
 if s<0.42 then
 s=0.42
 end
@@ -7644,9 +8918,9 @@ fit()
 uiScale.Parent=panel
 local cam=Workspace.CurrentCamera
 if cam then
-fitConn=cam:GetPropertyChangedSignal("\086\105\101\119\112\111\114\116\083\105\122\101"):Connect(fit)
+fitConn=GPS(cam, "\086\105\101\119\112\111\114\116\083\105\122\101"):Connect(fit)
 end
-gui.Destroying:Connect(function()
+CN(gui.Destroying, function()
 if fitConn then
 fitConn:Disconnect()
 end
@@ -7654,21 +8928,21 @@ end)
 return {gui=gui,panel=panel}
 end
 local function p3MakeSearch(parent,posX,posY,width)
-local box=IN("\084\101\120\116\066\111\120")
-box.Size=UDim2.fromOffset(width,P3_SEARCH_H)
-box.Position=UDim2.fromOffset(posX,posY)
+local box=ITX()
+box.Size=UO(width,P3_SEARCH_H)
+box.Position=UO(posX,posY)
 box.BackgroundColor3=Palette.AccentDeep
 box.BackgroundTransparency=0.75
-box.Font=EF.Gotham
+box.Font=EFG
 box.PlaceholderText="\083\101\097\114\099\104\046\046\046"
 box.Text=""
 box.TextSize=TOUCH and 14 or 13
 box.TextColor3=Palette.TextBright
 box.ClearTextOnFocus=false
-local corner=IN("\085\073\067\111\114\110\101\114")
+local corner=IUC()
 corner.CornerRadius=UD(0,10)
 corner.Parent=box
-local stroke=IN("\085\073\083\116\114\111\107\101")
+local stroke=IUS()
 stroke.Color=Palette.PanelStroke
 stroke.Transparency=0.5
 stroke.Parent=box
@@ -7676,23 +8950,23 @@ box.Parent=parent
 return box
 end
 local function p3MakeList(parent,posX,posY,width,height,columns)
-local holder=IN("\070\114\097\109\101")
-holder.Size=UDim2.fromOffset(width,height)
-holder.Position=UDim2.fromOffset(posX,posY)
+local holder=INF()
+holder.Size=UO(width,height)
+holder.Position=UO(posX,posY)
 holder.BackgroundColor3=Palette.Chip
 holder.BackgroundTransparency=0.35
 holder.BorderSizePixel=0
-local corner=IN("\085\073\067\111\114\110\101\114")
+local corner=IUC()
 corner.CornerRadius=UD(0,12)
 corner.Parent=holder
-local stroke=IN("\085\073\083\116\114\111\107\101")
+local stroke=IUS()
 stroke.Color=Palette.PanelStroke
 stroke.Transparency=0.55
 stroke.Parent=holder
 holder.Parent=parent
 local scroll=IN("\083\099\114\111\108\108\105\110\103\070\114\097\109\101")
 scroll.Size=U2(1,-12,1,-12)
-scroll.Position=UDim2.fromOffset(6,6)
+scroll.Position=UO(6,6)
 scroll.BackgroundTransparency=1
 scroll.BorderSizePixel=0
 scroll.ScrollBarThickness=TOUCH and 6 or 4
@@ -7707,7 +8981,7 @@ grid.CellPadding=U2(0,10,0,8)
 grid.SortOrder=XR.LayoutOrder
 grid.Parent=scroll
 else
-local list=IN("\085\073\076\105\115\116\076\097\121\111\117\116")
+local list=IUL()
 list.Padding=UD(0,6)
 list.SortOrder=XR.LayoutOrder
 list.Parent=scroll
@@ -7715,30 +8989,30 @@ end
 return scroll
 end
 local function p3AddRow(scroll,text,onClick,dimmed)
-local btn=IN("\084\101\120\116\066\117\116\116\111\110")
+local btn=ITB()
 btn.Size=U2(1,-6,0,P3_ROW_H)
 btn.BackgroundColor3=Palette.Chip
 btn.BackgroundTransparency=dimmed and 0.7 or 0.2
-btn.Font=EF.Gotham
+btn.Font=EFG
 btn.Text=text
 btn.TextSize=TOUCH and 14 or 13
-btn.TextXAlignment=TX.Left
-btn.TextTruncate=Enum.TextTruncate.AtEnd
+btn.TextXAlignment=TXL
+btn.TextTruncate=TT.AtEnd
 btn.TextColor3=dimed and Palette.TextDim or Palette.TextBright
 btn.AutoButtonColor=not dimmed
-local pad=IN("\085\073\080\097\100\100\105\110\103")
+local pad=IUP()
 pad.PaddingLeft=UD(0,10)
 pad.Parent=btn
-local corner=IN("\085\073\067\111\114\110\101\114")
+local corner=IUC()
 corner.CornerRadius=UD(0,9)
 corner.Parent=btn
-local stroke=IN("\085\073\083\116\114\111\107\101")
+local stroke=IUS()
 stroke.Color=Palette.PanelStroke
 stroke.Transparency=0.6
 stroke.Parent=btn
 btn.Parent=scroll
 if onClick then
-btn.Activated:Connect(onClick)
+CN(btn.Activated, onClick)
 end
 return btn
 end
@@ -7746,8 +9020,8 @@ local function p3MarkRow(row,on)
 if not row then
 return
 end
-pcall(function()
-local stroke=row:FindFirstChildOfClass("\085\073\083\116\114\111\107\101")
+QQ(function()
+local stroke=FFC(row, "\085\073\083\116\114\111\107\101")
 if stroke then
 stroke.Color=on and Palette.Accent or Palette.PanelStroke
 stroke.Thickness=on and 2 or 1
@@ -7758,20 +9032,20 @@ row.AutoButtonColor=not on
 end)
 end
 local function p3ClearRows(scroll)
-for _,c in ipairs(scroll:GetChildren()) do
+for _,c in IP(GC(scroll)) do
 if c:IsA("\084\101\120\116\066\117\116\116\111\110") then
 c:Destroy()
 end
 end
 end
 local function p3MakeLabel(parent,posX,posY,width,text)
-local lbl=IN("\084\101\120\116\076\097\098\101\108")
+local lbl=ITL()
 lbl.BackgroundTransparency=1
-lbl.Size=UDim2.fromOffset(width,18)
-lbl.Position=UDim2.fromOffset(posX,posY)
-lbl.Font=EF.GothamBold
+lbl.Size=UO(width,18)
+lbl.Position=UO(posX,posY)
+lbl.Font=EFB
 lbl.TextSize=TOUCH and 14 or 12
-lbl.TextXAlignment=TX.Left
+lbl.TextXAlignment=TXL
 lbl.TextColor3=Palette.AccentBright
 lbl.Text=text
 lbl.Parent=parent
@@ -7788,8 +9062,8 @@ local pvRigClone=nil
 local pvPropInsts={}
 local pvFitToken=0
 local function pvDestroyProp()
-for _,inst in ipairs(pvPropInsts) do
-pcall(function()
+for _,inst in IP(pvPropInsts) do
+QQ(function()
 inst:Destroy()
 end)
 end
@@ -7797,7 +9071,7 @@ pvPropInsts={}
 end
 local function p4StopPreview()
 if previewTrack then
-pcall(function()
+QQ(function()
 previewTrack:Stop(0)
 end)
 previewTrack=nil
@@ -7816,78 +9090,78 @@ if not previewPickerGui or previewPickerGui.Parent==nil then
 return false
 end
 if pvRigClone then
-pcall(function()
+QQ(function()
 pvRigClone:Destroy()
 end)
 pvRigClone=nil
 end
-pvBox=IN("\070\114\097\109\101")
+pvBox=INF()
 pvBox.Name="\080\114\101\118\105\101\119\066\111\120"
-pvBox.AnchorPoint=Vector2.new(0.5,0.5)
+pvBox.AnchorPoint=VX(0.5,0.5)
 pvBox.Position=U2(0.5,0,0.5,-14)
-pvBox.Size=UDim2.fromOffset(252,336)
+pvBox.Size=UO(252,336)
 pvBox.BackgroundColor3=Palette.Panel
 pvBox.BackgroundTransparency=0.06
 pvBox.BorderSizePixel=0
 pvBox.ZIndex=50
 pvBox.Visible=false
-local pvCorner=IN("\085\073\067\111\114\110\101\114")
+local pvCorner=IUC()
 pvCorner.CornerRadius=UD(0,16)
 pvCorner.Parent=pvBox
-local pvGrad=IN("\085\073\071\114\097\100\105\101\110\116")
+local pvGrad=IUG()
 pvGrad.Rotation=115
-pvGrad.Color=ColorSequence.new(CR(30,20,48),CR(12,8,20))
+pvGrad.Color=CSN(CR(30,20,48),CR(12,8,20))
 pvGrad.Parent=pvBox
-local pvStroke=IN("\085\073\083\116\114\111\107\101")
+local pvStroke=IUS()
 pvStroke.Color=Palette.PanelStroke
 pvStroke.Thickness=1.5
 pvStroke.Transparency=0.15
 pvStroke.Parent=pvBox
 pvBox.Parent=previewPickerGui
-local pvTitle=IN("\084\101\120\116\076\097\098\101\108")
+local pvTitle=ITL()
 pvTitle.BackgroundTransparency=1
-pvTitle.Position=UDim2.fromOffset(16,10)
+pvTitle.Position=UO(16,10)
 pvTitle.Size=U2(1,-60,0,20)
-pvTitle.Font=EF.GothamMedium
+pvTitle.Font=EFM
 pvTitle.TextSize=15
-pvTitle.TextXAlignment=TX.Left
+pvTitle.TextXAlignment=TXL
 pvTitle.TextColor3=Palette.AccentBright
 pvTitle.Text="\080\114\101\118\105\101\119"
 pvTitle.ZIndex=51
 pvTitle.Parent=pvBox
-pvNameLabel=IN("\084\101\120\116\076\097\098\101\108")
+pvNameLabel=ITL()
 pvNameLabel.BackgroundTransparency=1
-pvNameLabel.Position=UDim2.fromOffset(16,30)
+pvNameLabel.Position=UO(16,30)
 pvNameLabel.Size=U2(1,-60,0,14)
-pvNameLabel.Font=EF.GothamMedium
+pvNameLabel.Font=EFM
 pvNameLabel.TextSize=11
-pvNameLabel.TextXAlignment=TX.Left
-pvNameLabel.TextTruncate=Enum.TextTruncate.AtEnd
+pvNameLabel.TextXAlignment=TXL
+pvNameLabel.TextTruncate=TT.AtEnd
 pvNameLabel.TextColor3=Palette.TextDim
 pvNameLabel.Text=""
 pvNameLabel.ZIndex=51
 pvNameLabel.Parent=pvBox
-local pvClose=IN("\084\101\120\116\066\117\116\116\111\110")
-pvClose.AnchorPoint=Vector2.new(1,0)
+local pvClose=ITB()
+pvClose.AnchorPoint=VX(1,0)
 pvClose.Position=U2(1,-8,0,8)
-pvClose.Size=UDim2.fromOffset(22,22)
+pvClose.Size=UO(22,22)
 pvClose.BackgroundColor3=Palette.AccentDeep
 pvClose.BackgroundTransparency=0.25
-pvClose.Font=EF.GothamBold
+pvClose.Font=EFB
 pvClose.Text="\088"
 pvClose.TextSize=12
 pvClose.TextColor3=Palette.TextBright
 pvClose.ZIndex=51
-local pvcCorner=IN("\085\073\067\111\114\110\101\114")
+local pvcCorner=IUC()
 pvcCorner.CornerRadius=UD(1,0)
 pvcCorner.Parent=pvClose
 pvClose.Parent=pvBox
-pvClose.Activated:Connect(function()
+CN(pvClose.Activated, function()
 p4StopPreview()
 end)
 pvViewport=IN("\086\105\101\119\112\111\114\116\070\114\097\109\101")
 pvViewport.Name="\086\105\101\119\112\111\114\116"
-pvViewport.Position=UDim2.fromOffset(16,50)
+pvViewport.Position=UO(16,50)
 pvViewport.Size=U2(1,-32,1,-96)
 pvViewport.BackgroundColor3=CR(10,7,16)
 pvViewport.BackgroundTransparency=0.12
@@ -7896,22 +9170,22 @@ pvViewport.Ambient=CR(120,100,160)
 pvViewport.LightColor=CR(255,240,220)
 pvViewport.LightDirection=Vector3.new(-1,-1,-1)
 pvViewport.ZIndex=51
-local vpvCorner=IN("\085\073\067\111\114\110\101\114")
+local vpvCorner=IUC()
 vpvCorner.CornerRadius=UD(0,12)
 vpvCorner.Parent=pvViewport
 pvViewport.Parent=pvBox
-pvIconImg=IN("\073\109\097\103\101\076\097\098\101\108")
+pvIconImg=IIL()
 pvIconImg.Name="\073\099\111\110"
-pvIconImg.Position=UDim2.fromOffset(16,50)
+pvIconImg.Position=UO(16,50)
 pvIconImg.Size=U2(1,-32,1,-96)
 pvIconImg.BackgroundColor3=CR(10,7,16)
 pvIconImg.BackgroundTransparency=0.12
 pvIconImg.BorderSizePixel=0
-pvIconImg.ScaleType=Enum.ScaleType.Fit
+pvIconImg.ScaleType=SCT.Fit
 pvIconImg.Image=""
 pvIconImg.Visible=false
 pvIconImg.ZIndex=52
-local pvImgCorner=IN("\085\073\067\111\114\110\101\114")
+local pvImgCorner=IUC()
 pvImgCorner.CornerRadius=UD(0,12)
 pvImgCorner.Parent=pvIconImg
 pvIconImg.Parent=pvBox
@@ -7922,12 +9196,12 @@ pvCam=IN("\067\097\109\101\114\097")
 pvCam.FieldOfView=30
 pvCam.Parent=pvWorld
 pvViewport.CurrentCamera=pvCam
-local pvHint=IN("\084\101\120\116\076\097\098\101\108")
+local pvHint=ITL()
 pvHint.BackgroundTransparency=1
-pvHint.AnchorPoint=Vector2.new(0.5,1)
+pvHint.AnchorPoint=VX(0.5,1)
 pvHint.Position=U2(0.5,0,1,-8)
 pvHint.Size=U2(1,-20,0,12)
-pvHint.Font=EF.Gotham
+pvHint.Font=EFG
 pvHint.TextSize=9
 pvHint.TextColor3=Palette.TextDim
 pvHint.TextTransparency=0.35
@@ -7937,23 +9211,23 @@ pvHint.Parent=pvBox
 return true
 end
 local function pvRootOf(model)
-local hrp=model:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+local hrp=FF(model, "\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
 if hrp and hrp:IsA("\066\097\115\101\080\097\114\116") then
 return hrp
 end
-local hum=model:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+local hum=FFC(model, "\072\117\109\097\110\111\105\100")
 if hum then
 local rp=hum.RootPart
 if rp then
 return rp
 end
 end
-local torso=model:FindFirstChild("\084\111\114\115\111")
+local torso=FF(model, "\084\111\114\115\111")
 if torso and torso:IsA("\066\097\115\101\080\097\114\116") then
 return torso
 end
 local biggest=nil
-for _,d in ipairs(model:GetDescendants()) do
+for _,d in IP(GD(model)) do
 if d:IsA("\066\097\115\101\080\097\114\116") and(not biggest or d.Size.Magnitude>biggest.Size.Magnitude) then
 biggest=d
 end
@@ -7964,35 +9238,35 @@ local function pvEnsureRig()
 if pvRigClone and pvRigClone.Parent then
 return pvRigClone
 end
-local template=ReplicatedStorage:FindFirstChild("\065\115\115\101\116\115")
-and ReplicatedStorage.Assets:FindFirstChild("\073\116\101\109\115")
-and ReplicatedStorage.Assets.Items:FindFirstChild("\086\105\115\117\097\108\082\105\103\067\108\097\115\115\105\099")
+local template=FF(ReplicatedStorage, "\065\115\115\101\116\115")
+and FF(ReplicatedStorage.Assets, "\073\116\101\109\115")
+and FF(ReplicatedStorage.Assets.Items, "\086\105\115\117\097\108\082\105\103\067\108\097\115\115\105\099")
 if not template or not template:IsA("\077\111\100\101\108") then
 return nil
 end
 local clone=template:Clone()
 clone.Name="\071\077\095\080\114\101\118\105\101\119\082\105\103"
-clone:PivotTo(CFrame.new(0,3,0))
+clone:PivotTo(CFN(0,3,0))
 local root=pvRootOf(clone)
 if root then
 root.Anchored=true
 end
 local rig=getRig()
 if rig then
-for _,src in ipairs(rig:GetChildren()) do
+for _,src in IP(GC(rig)) do
 if src:IsA("\066\097\115\101\080\097\114\116") then
-local dst=clone:FindFirstChild(src.Name)
+local dst=FF(clone, src.Name)
 if dst and dst:IsA("\066\097\115\101\080\097\114\116") then
 dst.Color=src.Color
 end
 end
 end
-local srcHead=rig:FindFirstChild("\072\101\097\100")
-local dstHead=clone:FindFirstChild("\072\101\097\100")
+local srcHead=FF(rig, "\072\101\097\100")
+local dstHead=FF(clone, "\072\101\097\100")
 if srcHead and srcHead:IsA("\066\097\115\101\080\097\114\116") and dstHead and dstHead:IsA("\066\097\115\101\080\097\114\116") then
 if srcHead.Transparency>0.5 then
 dstHead.Transparency=1
-local face=dstHead:FindFirstChild("\102\097\099\101")
+local face=FF(dstHead, "\102\097\099\101")
 if face then
 face.Transparency=1
 end
@@ -8004,10 +9278,13 @@ pvRigClone=clone
 return clone
 end
 local function pvAttachElement(entry)
-local classic=entry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or entry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114")
+if not entry or not entry.template then
+return
+end
+local classic=FF(entry.template, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(entry.template, "\067\104\097\114\097\099\116\101\114")
 if not classic then
-for _,d in ipairs(entry.template:GetDescendants()) do
+for _,d in IP(GD(entry.template)) do
 if d.Name=="\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099" or d.Name=="\067\104\097\114\097\099\116\101\114" then
 classic=d
 break
@@ -8017,9 +9294,9 @@ end
 if not classic or not pvRigClone then
 return
 end
-local em=classic:FindFirstChild("\069\109\111\116\101\077\111\100\101\108")
+local em=FF(classic, "\069\109\111\116\101\077\111\100\101\108")
 if not em then
-for _,ch in ipairs(classic:GetChildren()) do
+for _,ch in IP(GC(classic)) do
 if ch:IsA("\077\111\100\101\108") then
 em=ch
 break
@@ -8030,7 +9307,7 @@ if not em then
 return
 end
 local clone=em:Clone()
-for _,d in ipairs(clone:GetDescendants()) do
+for _,d in IP(GD(clone)) do
 if d:IsA("\066\097\115\101\080\097\114\116") then
 d.Anchored=false
 d.CanCollide=false
@@ -8039,7 +9316,7 @@ d.CanQuery=false
 d.Massless=true
 end
 end
-for _,d in ipairs(clone:GetChildren()) do
+for _,d in IP(GC(clone)) do
 if(d:IsA("\077\111\116\111\114\054\068") or d:IsA("\087\101\108\100")) and d.Part0 and d.Part0.Parent==classic then
 if d.Part0.Name=="\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116" then
 local root=pvRootOf(pvRigClone)
@@ -8049,7 +9326,7 @@ else
 d:Destroy()
 end
 else
-local host=pvRigClone:FindFirstChild(d.Part0.Name)
+local host=FF(pvRigClone, d.Part0.Name)
 if host and host:IsA("\066\097\115\101\080\097\114\116") then
 d.Part0=host
 else
@@ -8059,15 +9336,15 @@ end
 end
 end
 clone.Parent=pvRigClone
-table.insert(pvPropInsts,clone)
-for _,part in ipairs(classic:GetChildren()) do
+TBI(pvPropInsts,clone)
+for _,part in IP(GC(classic)) do
 if part:IsA("\066\097\115\101\080\097\114\116") then
-local targetPart=pvRigClone:FindFirstChild(part.Name)
+local targetPart=FF(pvRigClone, part.Name)
 if targetPart then
-for _,child in ipairs(part:GetChildren()) do
+for _,child in IP(GC(part)) do
 if child~=em and(child:IsA("\065\116\116\097\099\104\109\101\110\116") or child:IsA("\077\111\100\101\108") or child:IsA("\066\097\115\101\080\097\114\116")) then
 local hasEffect=false
-for _,fx in ipairs(child:GetDescendants()) do
+for _,fx in IP(GD(child)) do
 if fx:IsA("\080\097\114\116\105\099\108\101\069\109\105\116\116\101\114") or fx:IsA("\066\101\097\109") or fx:IsA("\084\114\097\105\108") then
 hasEffect=true
 break
@@ -8079,12 +9356,12 @@ fxClone.Parent=targetPart
 if fxClone:IsA("\066\097\115\101\080\097\114\116") then
 fxClone.CanCollide=false
 fxClone.Massless=true
-local w=IN("\087\101\108\100\067\111\110\115\116\114\097\105\110\116")
+local w=IWC()
 w.Part0=targetPart
 w.Part1=fxClone
 w.Parent=fxClone
 end
-table.insert(pvPropInsts,fxClone)
+TBI(pvPropInsts,fxClone)
 end
 end
 end
@@ -8096,26 +9373,26 @@ local function pvFitCamera()
 if not pvRigClone or not pvCam then
 return
 end
-pcall(function()
+QQ(function()
 local pivot=pvRigClone:GetPivot()
 local size=pvRigClone:GetExtentsSize()
-local maxDim=math.max(size.X,size.Y,size.Z)
-local k=1.15*math.max(1,maxDim/5.2)
+local maxDim=MX(size.X,size.Y,size.Z)
+local k=1.15*MX(1,maxDim/5.2)
 if k>3.3 then
 k=3.3
 end
-pvCam.CFrame=CFrame.new(0,0.34*k,0)
-*CFrame.new((pivot*CFrame.new(4.25*k,1.7*k,-8.5*k)).p,pivot.p)
+pvCam.CFrame=CFN(0,0.34*k,0)
+*CFN((pivot*CFN(4.25*k,1.7*k,-8.5*k)).p,pivot.p)
 end)
 end
 local function pvSetMode(isIcon)
 if pvBox and pvBox.Parent then
 if isIcon then
 pvViewport.Visible=false
-pvBox.Size=UDim2.fromOffset(252,306)
+pvBox.Size=UO(252,306)
 if pvIconImg then
-pvIconImg.Position=UDim2.fromOffset(16,50)
-pvIconImg.Size=UDim2.fromOffset(218,218)
+pvIconImg.Position=UO(16,50)
+pvIconImg.Size=UO(218,218)
 pvIconImg.Visible=true
 end
 else
@@ -8123,7 +9400,7 @@ if pvIconImg then
 pvIconImg.Visible=false
 end
 pvViewport.Visible=true
-pvBox.Size=UDim2.fromOffset(252,336)
+pvBox.Size=UO(252,336)
 end
 end
 end
@@ -8145,14 +9422,14 @@ if not clone then
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\080\114\101\118\105\101\119\058\032\086\105\115\117\097\108\082\105\103\067\108\097\115\115\105\099\032\110\111\032\101\110\099\111\110\116\114\097\100\111\046",5)
 return false
 end
-local hum=clone:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
-or clone:FindFirstChildOfClass("\065\110\105\109\097\116\105\111\110\067\111\110\116\114\111\108\108\101\114")
+local hum=FFC(clone, "\072\117\109\097\110\111\105\100")
+or FFC(clone, "\065\110\105\109\097\116\105\111\110\067\111\110\116\114\111\108\108\101\114")
 if not hum then
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\080\114\101\118\105\101\119\032\102\097\105\108\101\100\032\040\114\105\103\032\115\105\110\032\097\110\105\109\097\116\111\114\041\046",5)
 return false
 end
 if previewTrack then
-pcall(function()
+QQ(function()
 previewTrack:Stop(0)
 end)
 previewTrack=nil
@@ -8160,8 +9437,8 @@ end
 pvDestroyProp()
 local anim=IN("\065\110\105\109\097\116\105\111\110")
 anim.Name="\071\077\095\080\114\101\118\105\101\119"
-anim.AnimationId="\114\098\120\097\115\115\101\116\105\100\058\047\047"..entry.id
-local ok,track=pcall(function()
+anim.AnimationId=Catalog.uri(entry)
+local ok,track=QQ(function()
 return hum:LoadAnimation(anim)
 end)
 if not ok or not track then
@@ -8171,7 +9448,7 @@ end
 previewing=true
 previewTrack=track
 track.Priority=Enum.AnimationPriority.Action
-pcall(function()
+QQ(function()
 track.Looped=true
 end)
 track:Play(0.1)
@@ -8182,24 +9459,26 @@ pvViewport.CurrentCamera=pvCam
 pvFitCamera()
 pvFitToken=pvFitToken+1
 local myFit=pvFitToken
-for _,delay in ipairs({0.2,0.45,0.9,1.6}) do
-task.delay(delay,function()
+for _,delay in IP({0.2,0.45,0.9,1.6}) do
+TDL(delay,function()
 if pvFitToken==myFit and pvBox and pvBox.Visible then
 pvFitCamera()
 end
 end)
 end
 pvNameLabel.Text=entry.name
+..(entry.id and("\032\032\091"..TS(entry.id)
+..(entry.ver and("\032\118"..TS(entry.ver)) or "").."\093") or "")
 pvBox.Visible=true
-pcall(function()
-local lines={"\071\077\032\112\114\101\118\105\101\119\032\100\101\098\117\103\032\064\032"..os.date("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")}
-lines[#lines+1]="\101\110\116\114\121\058\032"..tostring(entry.name).."\032\105\100\061"..tostring(entry.id)
-lines[#lines+1]="\114\105\103\032\102\117\101\110\116\101\058\032"..tostring(getRig() and getRig():GetFullName() or "\078\073\076")
-lines[#lines+1]="\099\108\111\110\101\058\032"..tostring(pvRigClone and pvRigClone:GetFullName() or "\078\073\076")
+QQ(function()
+local lines={"\071\077\032\112\114\101\118\105\101\119\032\100\101\098\117\103\032\064\032"..OD("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")}
+lines[#lines+1]="\101\110\116\114\121\058\032"..TS(entry.name).."\032\105\100\061"..TS(entry.id)
+lines[#lines+1]="\114\105\103\032\102\117\101\110\116\101\058\032"..TS(getRig() and getRig():GetFullName() or "\078\073\076")
+lines[#lines+1]="\099\108\111\110\101\058\032"..TS(pvRigClone and pvRigClone:GetFullName() or "\078\073\076")
 if pvRigClone then
 local parts=0
 local visibleParts=0
-for _,d in ipairs(pvRigClone:GetDescendants()) do
+for _,d in IP(GD(pvRigClone)) do
 if d:IsA("\066\097\115\101\080\097\114\116") then
 parts=parts+1
 if d.Transparency<1 then
@@ -8209,23 +9488,23 @@ end
 end
 lines[#lines+1]="\099\108\111\110\101\032\112\097\114\116\115\058\032"..parts.."\032\040\118\105\115\105\098\108\101\115\058\032"..visibleParts.."\041"
 local croot=pvRootOf(pvRigClone)
-lines[#lines+1]="\099\108\111\110\101\032\114\111\111\116\058\032"..tostring(croot and croot.Name or "\078\073\076")
-.."\032\112\111\115\061"..tostring(croot and croot.Position or "\110\105\108")
-.."\032\097\110\099\104\111\114\101\100\061"..tostring(croot and croot.Anchored or "\110\105\108")
-lines[#lines+1]="\099\108\111\110\101\032\112\105\118\111\116\058\032"..tostring(pvRigClone:GetPivot().Position)
-local hum=pvRigClone:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
-lines[#lines+1]="\099\108\111\110\101\032\104\117\109\097\110\111\105\100\058\032"..tostring(hum and hum:GetFullName() or "\078\073\076")
-.."\032\104\101\097\108\116\104\061"..tostring(hum and hum.Health or "\110\105\108")
+lines[#lines+1]="\099\108\111\110\101\032\114\111\111\116\058\032"..TS(croot and croot.Name or "\078\073\076")
+.."\032\112\111\115\061"..TS(croot and croot.Position or "\110\105\108")
+.."\032\097\110\099\104\111\114\101\100\061"..TS(croot and croot.Anchored or "\110\105\108")
+lines[#lines+1]="\099\108\111\110\101\032\112\105\118\111\116\058\032"..TS(pvRigClone:GetPivot().Position)
+local hum=FFC(pvRigClone, "\072\117\109\097\110\111\105\100")
+lines[#lines+1]="\099\108\111\110\101\032\104\117\109\097\110\111\105\100\058\032"..TS(hum and hum:GetFullName() or "\078\073\076")
+.."\032\104\101\097\108\116\104\061"..TS(hum and hum.Health or "\110\105\108")
 end
-lines[#lines+1]="\119\111\114\108\100\058\032"..tostring(pvWorld and pvWorld:GetFullName() or "\078\073\076")
-.."\032\104\105\106\111\115\061"..tostring(pvWorld and #pvWorld:GetChildren() or 0)
-lines[#lines+1]="\118\105\101\119\112\111\114\116\058\032"..tostring(pvViewport and pvViewport:GetFullName() or "\078\073\076")
-.."\032\099\097\109\061"..tostring(pvViewport and pvViewport.CurrentCamera~=nil)
-lines[#lines+1]="\099\097\109\101\114\097\032\112\111\115\058\032"..tostring(pvCam and pvCam.CFrame.Position or "\078\073\076")
-.."\032\102\111\118\061"..tostring(pvCam and pvCam.FieldOfView or "\063")
-lines[#lines+1]="\098\111\120\032\118\105\115\105\098\108\101\058\032"..tostring(pvBox and pvBox.Visible)
+lines[#lines+1]="\119\111\114\108\100\058\032"..TS(pvWorld and pvWorld:GetFullName() or "\078\073\076")
+.."\032\104\105\106\111\115\061"..TS(pvWorld and #GC(pvWorld) or 0)
+lines[#lines+1]="\118\105\101\119\112\111\114\116\058\032"..TS(pvViewport and pvViewport:GetFullName() or "\078\073\076")
+.."\032\099\097\109\061"..TS(pvViewport and pvViewport.CurrentCamera~=nil)
+lines[#lines+1]="\099\097\109\101\114\097\032\112\111\115\058\032"..TS(pvCam and pvCam.CFrame.Position or "\078\073\076")
+.."\032\102\111\118\061"..TS(pvCam and pvCam.FieldOfView or "\063")
+lines[#lines+1]="\098\111\120\032\118\105\115\105\098\108\101\058\032"..TS(pvBox and pvBox.Visible)
 lines[#lines+1]="\112\114\111\112\032\105\110\115\116\115\058\032"..#pvPropInsts
-writefile("\071\077\095\112\114\101\118\105\101\119\095\100\101\098\117\103\046\116\120\116",table.concat(lines,"\010"))
+WF("\071\077\095\112\114\101\118\105\101\119\095\100\101\098\117\103\046\116\120\116",TCN(lines,"\010"))
 end)
 return true
 end
@@ -8248,23 +9527,23 @@ notify("\071\104\111\115\116\032\077\101\116\104\111\100","\080\114\101\118\105\
 return false
 end
 if previewTrack then
-pcall(function()
+QQ(function()
 previewTrack:Stop(0)
 end)
 previewTrack=nil
 end
 pvDestroyProp()
-local cc=entry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
-or entry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114")
-or entry.template:FindFirstChild("\067\104\097\114\097\099\116\101\114\079\076\068")
+local cc=FF(entry.template, "\067\104\097\114\097\099\116\101\114\067\108\097\115\115\105\099")
+or FF(entry.template, "\067\104\097\114\097\099\116\101\114")
+or FF(entry.template, "\067\104\097\114\097\099\116\101\114\079\076\068")
 local n=0
 local nAttach,nMesh,nEmitter=0,0,0
 if cc then
-for _,part in ipairs(cc:GetChildren()) do
+for _,part in IP(GC(cc)) do
 if part:IsA("\066\097\115\101\080\097\114\116") then
-local targetPart=clone:FindFirstChild(part.Name)
+local targetPart=FF(clone, part.Name)
 if targetPart and targetPart:IsA("\066\097\115\101\080\097\114\116") then
-for _,child in ipairs(part:GetChildren()) do
+for _,child in IP(GC(part)) do
 if child:IsA("\065\116\116\097\099\104\109\101\110\116") or child:IsA("\077\111\100\101\108") or child:IsA("\066\097\115\101\080\097\114\116") then
 local fxClone=child:Clone()
 fxClone.Parent=targetPart
@@ -8272,32 +9551,32 @@ if fxClone:IsA("\066\097\115\101\080\097\114\116") then
 fxClone.CanCollide=false
 fxClone.Massless=true
 local tplWeld=nil
-for _,sib in ipairs(part:GetChildren()) do
+for _,sib in IP(GC(part)) do
 if sib:IsA("\087\101\108\100") and sib.Part1==child then
 tplWeld=sib
 break
 end
 end
 if tplWeld then
-pcall(function()
+QQ(function()
 fxClone.CFrame=targetPart.CFrame*tplWeld.C0*tplWeld.C1:Inverse()
 end)
 nMesh=nMesh+1
 end
-local w=IN("\087\101\108\100\067\111\110\115\116\114\097\105\110\116")
+local w=IWC()
 w.Part0=targetPart
 w.Part1=fxClone
 w.Parent=fxClone
 elseif fxClone:IsA("\065\116\116\097\099\104\109\101\110\116") then
 nAttach=nAttach+1
-for _,d in ipairs(fxClone:GetDescendants()) do
+for _,d in IP(GD(fxClone)) do
 if d:IsA("\080\097\114\116\105\099\108\101\069\109\105\116\116\101\114") or d:IsA("\066\101\097\109") or d:IsA("\084\114\097\105\108") then
 nEmitter=nEmitter+1
 break
 end
 end
 end
-table.insert(pvPropInsts,fxClone)
+TBI(pvPropInsts,fxClone)
 n=n+1
 end
 end
@@ -8311,17 +9590,17 @@ end
 previewing=true
 local iconId=nil
 if nMesh==0 and nEmitter>0 then
-pcall(function()
+QQ(function()
 local cfg=require(entry.template)
 local info=cfg and cfg.AppearanceInfo
 if info then
-iconId=tonumber(info.Icon)
+iconId=TN(info.Icon)
 end
 end)
 end
 if pvIconImg then
 if iconId and iconId>0 then
-pvIconImg.Image="\114\098\120\097\115\115\101\116\105\100\058\047\047"..tostring(iconId)
+pvIconImg.Image="\114\098\120\097\115\115\101\116\105\100\058\047\047"..TS(iconId)
 else
 iconId=nil
 end
@@ -8331,18 +9610,20 @@ pvSetMode(true)
 else
 pvSetMode(false)
 end
-pcall(function()
-writefile("\071\077\095\117\110\117\115\117\097\108\095\112\114\101\118\105\101\119\046\116\120\116",os.date("\037\072\058\037\077\058\037\083").."\032\039"..entry.name
+QQ(function()
+WF("\071\077\095\117\110\117\115\117\097\108\095\112\114\101\118\105\101\119\046\116\120\116",OD("\037\072\058\037\077\058\037\083").."\032\039"..entry.name
 .."\039\058\032\097\110\099\104\111\114\115\061"..nAttach
 .."\032\109\101\115\104\101\115\061"..nMesh
 .."\032\101\109\105\116\116\101\114\115\061"..nEmitter
 .."\032\116\111\116\097\108\061"..n
-.."\032\105\099\111\110\077\111\100\101\061"..tostring(iconId~=nil))
+.."\032\105\099\111\110\077\111\100\101\061"..TS(iconId~=nil))
 end)
 pvViewport.CurrentCamera=nil
 pvViewport.CurrentCamera=pvCam
 pvFitCamera()
 pvNameLabel.Text=entry.name
+..(entry.id and("\032\032\091"..TS(entry.id)
+..(entry.ver and("\032\118"..TS(entry.ver)) or "").."\093") or "")
 pvBox.Visible=true
 return true
 end
@@ -8350,7 +9631,7 @@ local function openEmoteReplacerPicker()
 buildPhase3Catalogs()
 local pk=p3MakePicker("\071\077\095\080\051\095\069\109\111\116\101\082\101\112\108\097\099\101\114","\071\104\111\115\116\032\077\101\116\104\111\100\032\045\032\069\109\111\116\101\115",760,470)
 previewPickerGui=pk.gui
-pk.gui.Destroying:Connect(function()
+CN(pk.gui.Destroying, function()
 previewing=false
 previewTrack=nil
 pvBox=nil
@@ -8372,56 +9653,56 @@ local activeLabel=p3MakeLabel(pk.panel,22,388,716,"")
 p3MakeLabel(pk.panel,22,408,716,"\077\097\112\112\105\110\103\115\032\115\116\097\099\107\032\045\032\111\110\101\032\112\101\114\032\115\111\117\114\099\101\032\101\109\111\116\101\046\032\069\108\101\109\101\110\116\115\032\040\103\117\105\116\097\114\115\032\101\116\099\046\041\032\102\111\108\108\111\119\032\097\117\116\111\109\097\116\105\099\097\108\108\121\046")
 local selFrom,selTo=nil,nil
 local selFromRow,selToRow=nil,nil
-local applyBtn=IN("\084\101\120\116\066\117\116\116\111\110")
-applyBtn.Size=UDim2.fromOffset(92,TOUCH and 42 or 30)
+local applyBtn=ITB()
+applyBtn.Size=UO(92,TOUCH and 42 or 30)
 applyBtn.Position=U2(0.5,-100,0,TOUCH and 80 or 84)
 applyBtn.BackgroundColor3=Palette.Accent
-applyBtn.Font=EF.GothamBold
+applyBtn.Font=EFB
 applyBtn.Text="\065\112\112\108\121"
 applyBtn.TextSize=13
 applyBtn.TextColor3=Palette.TextBright
-local aCorner=IN("\085\073\067\111\114\110\101\114")
+local aCorner=IUC()
 aCorner.CornerRadius=UD(0,10)
 aCorner.Parent=applyBtn
 applyBtn.Parent=pk.panel
-local removeBtn=IN("\084\101\120\116\066\117\116\116\111\110")
-removeBtn.Size=UDim2.fromOffset(92,TOUCH and 42 or 30)
+local removeBtn=ITB()
+removeBtn.Size=UO(92,TOUCH and 42 or 30)
 removeBtn.Position=U2(0.5,8,0,TOUCH and 80 or 84)
 removeBtn.BackgroundColor3=CR(90,40,70)
-removeBtn.Font=EF.GothamBold
+removeBtn.Font=EFB
 removeBtn.Text="\082\101\109\111\118\101"
 removeBtn.TextSize=13
 removeBtn.TextColor3=Palette.TextBright
-local rCorner=IN("\085\073\067\111\114\110\101\114")
+local rCorner=IUC()
 rCorner.CornerRadius=UD(0,10)
 rCorner.Parent=removeBtn
 removeBtn.Parent=pk.panel
-local previewBtn=IN("\084\101\120\116\066\117\116\116\111\110")
-previewBtn.Size=UDim2.fromOffset(92,TOUCH and 42 or 30)
+local previewBtn=ITB()
+previewBtn.Size=UO(92,TOUCH and 42 or 30)
 previewBtn.Position=U2(0.5,-46,0,8)
 previewBtn.BackgroundColor3=Palette.AccentDeep
-previewBtn.Font=EF.GothamBold
+previewBtn.Font=EFB
 previewBtn.Text="\080\114\101\118\105\101\119"
 previewBtn.TextSize=13
 previewBtn.TextColor3=Palette.TextBright
-local pvCorner=IN("\085\073\067\111\114\110\101\114")
+local pvCorner=IUC()
 pvCorner.CornerRadius=UD(0,10)
 pvCorner.Parent=previewBtn
 previewBtn.Parent=pk.panel
 local function refreshActive()
 local parts={}
-for _,m in ipairs(activeMappings) do
-table.insert(parts,m.from.name.."\032\045\062\032"..m.to.name)
+for _,m in IP(activeMappings) do
+TBI(parts,m.from.name.."\032\045\062\032"..m.to.name)
 end
 table.sort(parts)
-activeLabel.Text=#parts==0 and "\065\099\116\105\118\101\032\109\097\112\112\105\110\103\115\058\032\110\111\110\101" or("\065\099\116\105\118\101\058\032"..table.concat(parts,"\032\032\045\032\032"))
+activeLabel.Text=#parts==0 and "\065\099\116\105\118\101\032\109\097\112\112\105\110\103\115\058\032\110\111\110\101" or("\065\099\116\105\118\101\058\032"..TCN(parts,"\032\032\045\032\032"))
 end
 local function refreshLeft()
 p3ClearRows(listL)
-local filter=string.lower(searchL.Text or "")
+local filter=SLW(searchL.Text or "")
 local shown=0
-for _,e in ipairs(Catalog.emotes) do
-if filter=="" or string.find(string.lower(e.name),filter,1,true) then
+for _,e in IP(Catalog.emotes) do
+if filter=="" or SFD(SLW(e.name),filter,1,true) then
 shown=shown+1
 if shown>250 then
 break
@@ -8443,10 +9724,10 @@ end
 end
 local function refreshRight()
 p3ClearRows(listR)
-local filter=string.lower(searchR.Text or "")
+local filter=SLW(searchR.Text or "")
 local shown=0
-for _,e in ipairs(Catalog.emotes) do
-if filter=="" or string.find(string.lower(e.name),filter,1,true) then
+for _,e in IP(Catalog.emotes) do
+if filter=="" or SFD(SLW(e.name),filter,1,true) then
 shown=shown+1
 if shown>250 then
 break
@@ -8463,9 +9744,9 @@ if shown==0 then
 p3AddRow(listR,"\078\111\032\101\109\111\116\101\115\032\109\097\116\099\104",nil,true)
 end
 end
-searchL:GetPropertyChangedSignal("\084\101\120\116"):Connect(refreshLeft)
-searchR:GetPropertyChangedSignal("\084\101\120\116"):Connect(refreshRight)
-applyBtn.Activated:Connect(function()
+GPS(searchL, "\084\101\120\116"):Connect(refreshLeft)
+GPS(searchR, "\084\101\120\116"):Connect(refreshRight)
+CN(applyBtn.Activated, function()
 if selFrom and selTo then
 if p3SetMapping(selFrom,selTo) then
 if not EmoteReplacer.enabled then
@@ -8479,7 +9760,7 @@ else
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\083\101\108\101\099\116\032\097\110\032\101\109\111\116\101\032\111\110\032\066\079\084\072\032\115\105\100\101\115\032\102\105\114\115\116\046",4)
 end
 end)
-removeBtn.Activated:Connect(function()
+CN(removeBtn.Activated, function()
 if selFrom then
 if p3RemoveMapping(selFrom.name) then
 refreshActive()
@@ -8491,7 +9772,7 @@ else
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\083\101\108\101\099\116\032\116\104\101\032\083\079\085\082\067\069\032\101\109\111\116\101\032\040\108\101\102\116\041\032\116\111\032\114\101\109\111\118\101\032\105\116\115\032\109\097\112\112\105\110\103\046",4)
 end
 end)
-previewBtn.Activated:Connect(function()
+CN(previewBtn.Activated, function()
 if selTo then
 p4PreviewEmote(selTo)
 else
@@ -8506,7 +9787,7 @@ local function openUnusualsPicker()
 buildPhase3Catalogs()
 local pk=p3MakePicker("\071\077\095\080\051\095\085\110\117\115\117\097\108\115","\071\104\111\115\116\032\077\101\116\104\111\100\032\045\032\085\110\117\115\117\097\108\115",640,470)
 previewPickerGui=pk.gui
-pk.gui.Destroying:Connect(function()
+CN(pk.gui.Destroying, function()
 previewing=false
 previewTrack=nil
 pvBox=nil
@@ -8519,15 +9800,15 @@ pvRigClone=nil
 pvPropInsts={}
 end)
 local search=p3MakeSearch(pk.panel,22,64,460)
-local removeBtn=IN("\084\101\120\116\066\117\116\116\111\110")
-removeBtn.Size=UDim2.fromOffset(110,TOUCH and 36 or 28)
+local removeBtn=ITB()
+removeBtn.Size=UO(110,TOUCH and 36 or 28)
 removeBtn.Position=U2(1,-132,0,64)
 removeBtn.BackgroundColor3=CR(90,40,70)
-removeBtn.Font=EF.GothamBold
+removeBtn.Font=EFB
 removeBtn.Text="\082\101\109\111\118\101\032\097\112\112\108\105\101\100"
 removeBtn.TextSize=11
 removeBtn.TextColor3=Palette.TextBright
-local rCorner=IN("\085\073\067\111\114\110\101\114")
+local rCorner=IUC()
 rCorner.CornerRadius=UD(0,10)
 rCorner.Parent=removeBtn
 removeBtn.Parent=pk.panel
@@ -8535,10 +9816,10 @@ local list=p3MakeList(pk.panel,22,108,596,326,2)
 local function refresh()
 local appliedRow=nil
 p3ClearRows(list)
-local filter=string.lower(search.Text or "")
+local filter=SLW(search.Text or "")
 local shown=0
-for _,u in ipairs(Catalog.unusuals) do
-if filter=="" or string.find(string.lower(u.name),filter,1,true) then
+for _,u in IP(Catalog.unusuals) do
+if filter=="" or SFD(SLW(u.name),filter,1,true) then
 shown=shown+1
 local row=p3AddRow(list,u.name,function()
 if not Unusuals.enabled then
@@ -8549,24 +9830,24 @@ p3MarkRow(appliedRow,false)
 appliedRow=row
 p3MarkRow(row,true)
 end,false)
-local pvBtn=IN("\084\101\120\116\066\117\116\116\111\110")
+local pvBtn=ITB()
 pvBtn.Name="\080\118\066\116\110"
-pvBtn.AnchorPoint=Vector2.new(1,0.5)
+pvBtn.AnchorPoint=VX(1,0.5)
 pvBtn.Position=U2(1,-8,0.5,0)
-pvBtn.Size=UDim2.fromOffset(TOUCH and 56 or 48,P3_ROW_H - 8)
+pvBtn.Size=UO(TOUCH and 56 or 48,P3_ROW_H - 8)
 pvBtn.BackgroundColor3=Palette.AccentDeep
 pvBtn.BackgroundTransparency=0.35
-pvBtn.Font=EF.GothamBold
+pvBtn.Font=EFB
 pvBtn.TextSize=TOUCH and 12 or 11
 pvBtn.TextColor3=Palette.TextBright
 pvBtn.Text="\080\114\101\118"
 pvBtn.ZIndex=2
 pvBtn.AutoButtonColor=true
-local pvC=IN("\085\073\067\111\114\110\101\114")
+local pvC=IUC()
 pvC.CornerRadius=UD(0,7)
 pvC.Parent=pvBtn
 pvBtn.Parent=row
-pvBtn.Activated:Connect(function()
+CN(pvBtn.Activated, function()
 p4PreviewUnusual(u)
 end)
 end
@@ -8575,8 +9856,8 @@ if shown==0 then
 p3AddRow(list,"\078\111\032\117\110\117\115\117\097\108\115\032\109\097\116\099\104",nil,true)
 end
 end
-search:GetPropertyChangedSignal("\084\101\120\116"):Connect(refresh)
-removeBtn.Activated:Connect(function()
+GPS(search, "\084\101\120\116"):Connect(refresh)
+CN(removeBtn.Activated, function()
 removeUnusualNow()
 activeUnusual=nil
 Unusuals.disable()
@@ -8587,7 +9868,7 @@ notify("\071\104\111\115\116\032\077\101\116\104\111\100","\085\110\117\115\117\
 end)
 refresh()
 end
-local Lighting=game:GetService("\076\105\103\104\116\105\110\103")
+local Lighting=GGS("\076\105\103\104\116\105\110\103")
 local Graphics
 local gfxSnap={}
 local gfxPreset="\082\101\097\108\105\115\116\097"
@@ -8652,7 +9933,7 @@ local skySwapOn=false
 local skySnap=nil
 local skyReassertConn=nil
 local function p4GetSky()
-return Lighting:FindFirstChildOfClass("\083\107\121")
+return FFC(Lighting, "\083\107\121")
 end
 local function p4SetSky(on)
 if on then
@@ -8667,19 +9948,19 @@ sky.StarCount=5000
 end
 if not skySnap then
 skySnap={}
-for k in pairs(REAL_SKY) do
+for k in PR(REAL_SKY) do
 skySnap[k]=sky[k]
 end
 end
-for k,v in pairs(REAL_SKY) do
-pcall(function()
+for k,v in PR(REAL_SKY) do
+QQ(function()
 sky[k]=v
 end)
 end
 skySwapOn=true
 if not skyReassertConn then
 local acc=0
-skyReassertConn=RunService.Heartbeat:Connect(function(dt)
+skyReassertConn=CN(RunService.Heartbeat, function(dt)
 acc+=dt
 if acc<3 then
 return
@@ -8688,8 +9969,8 @@ acc=0
 if skySwapOn then
 local s=p4GetSky()
 if s then
-for k,v in pairs(REAL_SKY) do
-pcall(function()
+for k,v in PR(REAL_SKY) do
+QQ(function()
 s[k]=v
 end)
 end
@@ -8705,7 +9986,7 @@ skyReassertConn=nil
 end
 local s=p4GetSky()
 if s then
-pcall(function()
+QQ(function()
 s:Destroy()
 end)
 end
@@ -8713,20 +9994,20 @@ skySnap=nil
 end
 end
 local function gfxApplyLightShadows()
-for _,d in ipairs(Workspace:GetDescendants()) do
+for _,d in IP(GD(Workspace)) do
 if d:IsA("\080\111\105\110\116\076\105\103\104\116") or d:IsA("\083\112\111\116\076\105\103\104\116") or d:IsA("\083\117\114\102\097\099\101\076\105\103\104\116") then
 if gfxLightShadows[d]==nil then
 gfxLightShadows[d]=d.Shadows
 end
-pcall(function()
+QQ(function()
 d.Shadows=true
 end)
 end
 end
 end
 local function gfxRestoreLightShadows()
-for light,was in pairs(gfxLightShadows) do
-pcall(function()
+for light,was in PR(gfxLightShadows) do
+QQ(function()
 if light.Parent then
 light.Shadows=was
 end
@@ -8738,18 +10019,18 @@ local gfxShinySnap={}
 local gfxShinyLevel=0.15
 local gfxBloomLevel=0.7
 local SMOOTH_MATERIALS={
-[Enum.Material.SmoothPlastic]=true,
-[Enum.Material.Plastic]=true,
-[Enum.Material.Metal]=true,
-[Enum.Material.Marble]=true,
-[Enum.Material.Granite]=true,
-[Enum.Material.Slate]=true,
-[Enum.Material.Concrete]=true,
-[Enum.Material.Pavement]=true,
-[Enum.Material.Asphalt]=true,
-[Enum.Material.DiamondPlate]=true,
-[Enum.Material.Glass]=true,
-[Enum.Material.Ice]=true,
+[EM.SmoothPlastic]=true,
+[EM.Plastic]=true,
+[EM.Metal]=true,
+[EM.Marble]=true,
+[EM.Granite]=true,
+[EM.Slate]=true,
+[EM.Concrete]=true,
+[EM.Pavement]=true,
+[EM.Asphalt]=true,
+[EM.DiamondPlate]=true,
+[EM.Glass]=true,
+[EM.Ice]=true,
 }
 local DLSSX={}
 DLSSX.doF=nil
@@ -8761,7 +10042,7 @@ DLSSX.shadowApply=function(p)
 local dark=DLSSX.shadowDark or 0
 local f=1 - dark*0.85
 local envF=1 - dark*0.75
-pcall(function()
+QQ(function()
 Lighting.Ambient=p.ambient*f
 Lighting.OutdoorAmbient=p.outdoorAmbient*f
 Lighting.ShadowColor=p.shadowColor*f
@@ -8769,33 +10050,33 @@ Lighting.EnvironmentDiffuseScale=(p.envDiffuse or 1)*envF
 end)
 end
 DLSSX.MAT_SHINE={
-[Enum.Material.Metal]=1.5,
-[Enum.Material.DiamondPlate]=1.2,
-[Enum.Material.Glass]=1.8,
-[Enum.Material.Ice]=1.5,
-[Enum.Material.SmoothPlastic]=0.5,
-[Enum.Material.Plastic]=0.35,
-[Enum.Material.Marble]=0.4,
-[Enum.Material.Granite]=0.3,
-[Enum.Material.Slate]=0.3,
-[Enum.Material.Concrete]=0.15,
-[Enum.Material.Pavement]=0.15,
-[Enum.Material.Asphalt]=0.1,
+[EM.Metal]=1.5,
+[EM.DiamondPlate]=1.2,
+[EM.Glass]=1.8,
+[EM.Ice]=1.5,
+[EM.SmoothPlastic]=0.5,
+[EM.Plastic]=0.35,
+[EM.Marble]=0.4,
+[EM.Granite]=0.3,
+[EM.Slate]=0.3,
+[EM.Concrete]=0.15,
+[EM.Pavement]=0.15,
+[EM.Asphalt]=0.1,
 }
 local function gfxApplyShiny()
 if gfxShinyLevel<=0 then
 return
 end
-local rigs=Workspace:FindFirstChild("\082\105\103\115")
-local playersF=Workspace:FindFirstChild("\080\108\097\121\101\114\115")
+local rigs=FF(Workspace, "\082\105\103\115")
+local playersF=FF(Workspace, "\080\108\097\121\101\114\115")
 local scanned=0
 local smoothMatches=0
 local changed=0
 local matCount={}
-for _,p in ipairs(Workspace:GetDescendants()) do
+for _,p in IP(GD(Workspace)) do
 if p:IsA("\066\097\115\101\080\097\114\116") and p.Transparency<0.5 then
 scanned+=1
-local mk=tostring(p.Material)
+local mk=TS(p.Material)
 matCount[mk]=(matCount[mk] or 0)+1
 if SMOOTH_MATERIALS[p.Material] then
 if not(rigs and p:IsDescendantOf(rigs)) and not(playersF and p:IsDescendantOf(playersF)) then
@@ -8804,9 +10085,9 @@ if gfxShinySnap[p]==nil then
 gfxShinySnap[p]=p.Reflectance
 end
 local shine=DLSSX.MAT_SHINE[p.Material] or 1
-local target=math.min(1,math.max(gfxShinySnap[p] or 0,gfxShinyLevel*shine))
+local target=MN(1,MX(gfxShinySnap[p] or 0,gfxShinyLevel*shine))
 if p.Reflectance~=target then
-pcall(function()
+QQ(function()
 p.Reflectance=target
 end)
 changed+=1
@@ -8815,30 +10096,30 @@ end
 end
 end
 end
-pcall(function()
+QQ(function()
 local mats={}
-for mk,count in pairs(matCount) do
-table.insert(mats,{mk,count})
+for mk,count in PR(matCount) do
+TBI(mats,{mk,count})
 end
 table.sort(mats,function(a,b)
 return a[2]>b[2]
 end)
 local lines={
-os.date("\037\072\058\037\077\058\037\083").."\032\115\104\105\110\121\032\115\119\101\101\112\032\064\032\108\101\118\101\108\032"..gfxShinyLevel,
+OD("\037\072\058\037\077\058\037\083").."\032\115\104\105\110\121\032\115\119\101\101\112\032\064\032\108\101\118\101\108\032"..gfxShinyLevel,
 "\032\032\111\112\097\113\117\101\032\066\097\115\101\080\097\114\116\115\032\115\099\097\110\110\101\100\058\032"..scanned,
 "\032\032\115\109\111\111\116\104\045\109\097\116\101\114\105\097\108\032\112\097\114\116\115\032\109\097\116\099\104\101\100\058\032"..smoothMatches,
 "\032\032\112\097\114\116\115\032\115\101\116\032\116\111\032\110\101\119\032\114\101\102\108\101\099\116\097\110\099\101\058\032"..changed,
 "\032\032\084\079\080\032\077\065\080\032\077\065\084\069\082\073\065\076\083\058",
 }
-for i=1,math.min(15,#mats) do
-table.insert(lines,"\032\032\032\032"..mats[i][1].."\032\120"..mats[i][2])
+for i=1,MN(15,#mats) do
+TBI(lines,"\032\032\032\032"..mats[i][1].."\032\120"..mats[i][2])
 end
-writefile("\071\077\095\115\104\105\110\121\095\100\117\109\112\046\116\120\116",table.concat(lines,"\010"))
+WF("\071\077\095\115\104\105\110\121\095\100\117\109\112\046\116\120\116",TCN(lines,"\010"))
 end)
 end
 local function gfxRestoreShiny()
-for part,was in pairs(gfxShinySnap) do
-pcall(function()
+for part,was in PR(gfxShinySnap) do
+QQ(function()
 if part.Parent then
 part.Reflectance=was
 end
@@ -8847,12 +10128,12 @@ end
 table.clear(gfxShinySnap)
 end
 local function p4GfxSafe(label,fn)
-local ok,err=pcall(fn)
+local ok,err=QQ(fn)
 if not ok then
-print("\091\071\077\093\032\071\070\088\032\069\082\082\079\082\032"..label.."\058\032"..tostring(err))
-notify("\071\104\111\115\116\032\077\101\116\104\111\100","\071\070\088\032\101\114\114\111\114\032\040"..label.."\041\058\032"..tostring(err),9)
-pcall(function()
-writefile("\071\077\095\103\102\120\095\101\114\114\111\114\046\116\120\116",os.date("\037\072\058\037\077\058\037\083").."\032"..label.."\058\032"..tostring(err))
+print("\091\071\077\093\032\071\070\088\032\069\082\082\079\082\032"..label.."\058\032"..TS(err))
+notify("\071\104\111\115\116\032\077\101\116\104\111\100","\071\070\088\032\101\114\114\111\114\032\040"..label.."\041\058\032"..TS(err),9)
+QQ(function()
+WF("\071\077\095\103\102\120\095\101\114\114\111\114\046\116\120\116",OD("\037\072\058\037\077\058\037\083").."\032"..label.."\058\032"..TS(err))
 end)
 end
 return ok
@@ -8885,7 +10166,7 @@ gmBloom=IN("\066\108\111\111\109\069\102\102\101\099\116")
 gmBloom.Name="\071\077\095\066\108\111\111\109"
 gmBloom.Parent=Lighting
 end
-pcall(function()
+QQ(function()
 local t=math.clamp(level,0,2)
 gmBloom.Intensity=t*t*0.75
 gmBloom.Size=44
@@ -8899,7 +10180,7 @@ gfxRestoreShiny()
 gfxShinyLevel=0.5
 gfxApplyShiny()
 notify("\071\104\111\115\116\032\077\101\116\104\111\100","\082\101\102\108\101\106\111\115\032\097\108\032\053\048\037\032\112\111\114\032\053\032\115\101\103\117\110\100\111\115\032\045\032\077\073\082\065\032\069\076\032\083\085\069\076\079",5)
-task.delay(5,function()
+TDL(5,function()
 gfxRestoreShiny()
 gfxShinyLevel=old
 if old>0 then
@@ -8913,14 +10194,14 @@ function DLSSX.applyAtmo(p)
 if not p.atmoApply then
 return
 end
-local atmo=Lighting:FindFirstChildOfClass("\065\116\109\111\115\112\104\101\114\101")
+local atmo=FFC(Lighting, "\065\116\109\111\115\112\104\101\114\101")
 if not atmo then
 atmo=IN("\065\116\109\111\115\112\104\101\114\101")
 atmo.Name="\071\077\095\065\116\109\111\115\112\104\101\114\101"
 atmo.Parent=Lighting
 DLSSX.atmoCreated=true
 end
-pcall(function()
+QQ(function()
 atmo.Density=p.atmoDensity or 0.3
 atmo.Offset=0.25
 atmo.Color=CR(199,199,205)
@@ -8932,7 +10213,7 @@ end
 function DLSSX.applyDoF(p)
 if p.dofApply==false or(p.dofFar or 0)<=0 then
 if DLSSX.doF then
-pcall(function()
+QQ(function()
 DLSSX.doF:Destroy()
 end)
 DLSSX.doF=nil
@@ -8944,7 +10225,7 @@ DLSSX.doF=IN("\068\101\112\116\104\079\102\070\105\101\108\100\069\102\102\101\0
 DLSSX.doF.Name="\071\077\095\068\111\070"
 DLSSX.doF.Parent=Lighting
 end
-pcall(function()
+QQ(function()
 DLSSX.doF.FarIntensity=p.dofFar
 DLSSX.doF.NearIntensity=p.dofNear or 0
 DLSSX.doF.FocusDistance=p.dofFocus or 120
@@ -8952,26 +10233,26 @@ DLSSX.doF.InFocusRadius=p.dofRadius or 20
 end)
 end
 function DLSSX.applySunRays(p)
-local sunRays=Lighting:FindFirstChildOfClass("\083\117\110\082\097\121\115\069\102\102\101\099\116")
+local sunRays=FFC(Lighting, "\083\117\110\082\097\121\115\069\102\102\101\099\116")
 if not sunRays then
 sunRays=IN("\083\117\110\082\097\121\115\069\102\102\101\099\116")
 sunRays.Name="\071\077\095\083\117\110\082\097\121\115"
 sunRays.Parent=Lighting
 DLSSX.sunRaysCreated=true
 end
-pcall(function()
+QQ(function()
 sunRays.Intensity=p.sunRaysIntensity or 0.12
 sunRays.Spread=p.sunRaysSpread or 0.7
 end)
 end
 function DLSSX.applyCC(p)
-local cc=Lighting:FindFirstChild("\071\077\095\067\111\108\111\114\071\114\097\100\101")
+local cc=FF(Lighting, "\071\077\095\067\111\108\111\114\071\114\097\100\101")
 if not cc then
 cc=IN("\067\111\108\111\114\067\111\114\114\101\099\116\105\111\110\069\102\102\101\099\116")
 cc.Name="\071\077\095\067\111\108\111\114\071\114\097\100\101"
 cc.Parent=Lighting
 end
-pcall(function()
+QQ(function()
 local dark=DLSSX.shadowDark or 0
 cc.Brightness=(p.ccBrightness or 0.02) - dark*0.35
 cc.Contrast=(p.ccContrast or 0.06)+dark*0.25
@@ -8981,17 +10262,17 @@ end)
 end
 local function gfxApply()
 local p=GFX_PRESETS[gfxPreset] or GFX_PRESETS.Realista
-pcall(function()
+QQ(function()
 local render=settings().Rendering
 render.QualityLevel=p.quality
 end)
-pcall(function()
+QQ(function()
 Lighting.Technology=Enum.Technology.Future
 end)
-pcall(function()
+QQ(function()
 Lighting.GlobalShadows=true
 end)
-pcall(function()
+QQ(function()
 Lighting.Brightness=3
 DLSSX.shadowApply(p)
 Lighting.EnvironmentSpecularScale=1
@@ -8999,13 +10280,13 @@ Lighting.ShadowSoftness=p.softness
 Lighting.ExposureCompensation=p.exposure
 end)
 local twModule=nil
-for _,m in ipairs(Modules) do
+for _,m in IP(Modules) do
 if m.Name=="\084\105\109\101\047\087\101\097\116\104\101\114" then
 twModule=m
 end
 end
 if not(twModule and twModule.enabled) then
-pcall(function()
+QQ(function()
 Lighting.ClockTime=p.clockTime
 end)
 end
@@ -9013,9 +10294,9 @@ DLSSX.applyAtmo(p)
 DLSSX.applyDoF(p)
 DLSSX.applySunRays(p)
 DLSSX.applyCC(p)
-local terrain=Workspace:FindFirstChildOfClass("\084\101\114\114\097\105\110")
+local terrain=FFC(Workspace, "\084\101\114\114\097\105\110")
 if terrain then
-pcall(function()
+QQ(function()
 terrain.WaterReflectance=1
 terrain.WaterRefraction=1
 terrain.WaterWaveSize=2
@@ -9025,27 +10306,27 @@ end)
 end
 local sky=p4GetSky()
 if sky then
-pcall(function()
+QQ(function()
 sky.SunAngularSize=21
 sky.MoonAngularSize=14
 sky.StarCount=5000
 end)
 end
 gfxApplyLightShadows()
-p4SetBloom(math.floor((p.bloomIntensity or 0.4)*100/0.75))
+p4SetBloom(MFL((p.bloomIntensity or 0.4)*100/0.75))
 if p.sparkleIntensity and p.sparkleIntensity>0 then
 if not DLSSX.sparkle or DLSSX.sparkle.Parent==nil then
 DLSSX.sparkle=IN("\066\108\111\111\109\069\102\102\101\099\116")
 DLSSX.sparkle.Name="\071\077\095\083\112\097\114\107\108\101"
 DLSSX.sparkle.Parent=Lighting
 end
-pcall(function()
+QQ(function()
 DLSSX.sparkle.Intensity=p.sparkleIntensity
 DLSSX.sparkle.Size=p.sparkleSize or 12
 DLSSX.sparkle.Threshold=p.sparkleThreshold or 0.92
 end)
 elseif DLSSX.sparkle then
-pcall(function()
+QQ(function()
 DLSSX.sparkle:Destroy()
 end)
 DLSSX.sparkle=nil
@@ -9075,7 +10356,7 @@ return
 end
 Graphics.enabled=true
 if next(gfxSnap)==nil then
-pcall(function()
+QQ(function()
 gfxSnap.QualityLevel=settings().Rendering.QualityLevel
 gfxSnap.Technology=Lighting.Technology
 gfxSnap.GlobalShadows=Lighting.GlobalShadows
@@ -9088,7 +10369,7 @@ gfxSnap.ShadowColor=Lighting.ShadowColor
 gfxSnap.ClockTime=Lighting.ClockTime
 gfxSnap.EnvironmentDiffuseScale=Lighting.EnvironmentDiffuseScale
 gfxSnap.EnvironmentSpecularScale=Lighting.EnvironmentSpecularScale
-local atmoSnap=Lighting:FindFirstChildOfClass("\065\116\109\111\115\112\104\101\114\101")
+local atmoSnap=FFC(Lighting, "\065\116\109\111\115\112\104\101\114\101")
 if atmoSnap then
 gfxSnap.AtmoDensity=atmoSnap.Density
 gfxSnap.AtmoOffset=atmoSnap.Offset
@@ -9097,7 +10378,7 @@ gfxSnap.AtmoDecay=atmoSnap.Decay
 gfxSnap.AtmoGlare=atmoSnap.Glare
 gfxSnap.AtmoHaze=atmoSnap.Haze
 end
-local terrain=Workspace:FindFirstChildOfClass("\084\101\114\114\097\105\110")
+local terrain=FFC(Workspace, "\084\101\114\114\097\105\110")
 if terrain then
 gfxSnap.WaterReflectance=terrain.WaterReflectance
 gfxSnap.WaterRefraction=terrain.WaterRefraction
@@ -9111,7 +10392,7 @@ gfxSnap.SunAngularSize=sky.SunAngularSize
 gfxSnap.MoonAngularSize=sky.MoonAngularSize
 gfxSnap.StarCount=sky.StarCount
 end
-local sunRays=Lighting:FindFirstChildOfClass("\083\117\110\082\097\121\115\069\102\102\101\099\116")
+local sunRays=FFC(Lighting, "\083\117\110\082\097\121\115\069\102\102\101\099\116")
 if sunRays then
 gfxSnap.SunRaysIntensity=sunRays.Intensity
 gfxSnap.SunRaysSpread=sunRays.Spread
@@ -9121,15 +10402,15 @@ end
 gfxApply()
 local shinyClock=0
 local p=GFX_PRESETS[gfxPreset] or GFX_PRESETS.Realista
-Graphics.Scope:Connect(RunService.Heartbeat,function(dt)
+CN(Graphics.Scope, RunService.Heartbeat,function(dt)
 gfxClock+=dt
 shinyClock+=dt
 if gfxClock>=2 then
 gfxClock=0
-pcall(function()
+QQ(function()
 settings().Rendering.QualityLevel=p.quality
 end)
-pcall(function()
+QQ(function()
 Lighting.Technology=Enum.Technology.Future
 Lighting.GlobalShadows=true
 Lighting.EnvironmentSpecularScale=1
@@ -9147,7 +10428,7 @@ gfxApplyShiny()
 end
 end
 end)
-Graphics.Scope:Connect(RunService.Heartbeat,function()
+CN(Graphics.Scope, RunService.Heartbeat,function()
 DLSSX.shadowApply(GFX_PRESETS[gfxPreset] or GFX_PRESETS.Realista)
 end)
 end,
@@ -9163,37 +10444,37 @@ if gmBloom then
 gmBloom:Destroy()
 gmBloom=nil
 end
-pcall(function()
-local cc=Lighting:FindFirstChild("\071\077\095\067\111\108\111\114\071\114\097\100\101")
+QQ(function()
+local cc=FF(Lighting, "\071\077\095\067\111\108\111\114\071\114\097\100\101")
 if cc then
 cc:Destroy()
 end
 end)
 if DLSSX.sparkle then
-pcall(function()
+QQ(function()
 DLSSX.sparkle:Destroy()
 end)
 DLSSX.sparkle=nil
 end
 if next(gfxSnap)~=nil then
-pcall(function()
+QQ(function()
 local render=settings().Rendering
 render.QualityLevel=gfxSnap.QualityLevel
 end)
-pcall(function()
+QQ(function()
 Lighting.Technology=gfxSnap.Technology
 end)
-pcall(function()
+QQ(function()
 Lighting.GlobalShadows=gfxSnap.GlobalShadows
 end)
-pcall(function()
+QQ(function()
 Lighting.ShadowSoftness=gfxSnap.ShadowSoftness
 end)
-pcall(function()
+QQ(function()
 Lighting.ExposureCompensation=gfxSnap.ExposureCompensation
 end)
-pcall(function()
-local terrain=Workspace:FindFirstChildOfClass("\084\101\114\114\097\105\110")
+QQ(function()
+local terrain=FFC(Workspace, "\084\101\114\114\097\105\110")
 if terrain then
 terrain.WaterReflectance=gfxSnap.WaterReflectance
 terrain.WaterRefraction=gfxSnap.WaterRefraction
@@ -9202,7 +10483,7 @@ terrain.WaterWaveSpeed=gfxSnap.WaterWaveSpeed
 terrain.Decoration=gfxSnap.Decoration
 end
 end)
-pcall(function()
+QQ(function()
 local sky=p4GetSky()
 if sky and gfxSnap.SunAngularSize then
 sky.SunAngularSize=gfxSnap.SunAngularSize
@@ -9210,22 +10491,22 @@ sky.MoonAngularSize=gfxSnap.MoonAngularSize
 sky.StarCount=gfxSnap.StarCount
 end
 end)
-pcall(function()
-local bloom=Lighting:FindFirstChildOfClass("\066\108\111\111\109\069\102\102\101\099\116")
+QQ(function()
+local bloom=FFC(Lighting, "\066\108\111\111\109\069\102\102\101\099\116")
 if bloom and gfxSnap.BloomIntensity then
 bloom.Intensity=gfxSnap.BloomIntensity
 bloom.Size=gfxSnap.BloomSize
 bloom.Threshold=gfxSnap.BloomThreshold
 end
 end)
-pcall(function()
-local sunRays=Lighting:FindFirstChildOfClass("\083\117\110\082\097\121\115\069\102\102\101\099\116")
+QQ(function()
+local sunRays=FFC(Lighting, "\083\117\110\082\097\121\115\069\102\102\101\099\116")
 if sunRays and gfxSnap.SunRaysIntensity then
 sunRays.Intensity=gfxSnap.SunRaysIntensity
 sunRays.Spread=gfxSnap.SunRaysSpread
 end
 end)
-pcall(function()
+QQ(function()
 Lighting.Brightness=gfxSnap.Brightness or 2
 Lighting.Ambient=gfxSnap.Ambient or CR(0,0,0)
 Lighting.OutdoorAmbient=gfxSnap.OutdoorAmbient or CR(70,70,70)
@@ -9236,8 +10517,8 @@ if gfxSnap.ClockTime then
 Lighting.ClockTime=gfxSnap.ClockTime
 end
 end)
-pcall(function()
-local atmo=Lighting:FindFirstChildOfClass("\065\116\109\111\115\112\104\101\114\101")
+QQ(function()
+local atmo=FFC(Lighting, "\065\116\109\111\115\112\104\101\114\101")
 if atmo then
 if DLSSX.atmoCreated and atmo.Name=="\071\077\095\065\116\109\111\115\112\104\101\114\101" then
 atmo:Destroy()
@@ -9251,14 +10532,14 @@ atmo.Haze=gfxSnap.AtmoHaze
 end
 end
 end)
-pcall(function()
+QQ(function()
 if DLSSX.doF then
 DLSSX.doF:Destroy()
 DLSSX.doF=nil
 end
 end)
-pcall(function()
-local sunRays=Lighting:FindFirstChildOfClass("\083\117\110\082\097\121\115\069\102\102\101\099\116")
+QQ(function()
+local sunRays=FFC(Lighting, "\083\117\110\082\097\121\115\069\102\102\101\099\116")
 if sunRays and DLSSX.sunRaysCreated and sunRays.Name=="\071\077\095\083\117\110\082\097\121\115" then
 sunRays:Destroy()
 end
@@ -9303,20 +10584,20 @@ return
 end
 DLSSX.ShotMod.enabled=true
 DLSSX.shotHidden=true
-for _,coreType in ipairs(DLSSX.shotCoreTypes) do
-pcall(function()
+for _,coreType in IP(DLSSX.shotCoreTypes) do
+QQ(function()
 StarterGui:SetCoreGuiEnabled(coreType,false)
 end)
 end
-local pg=LocalPlayer:FindFirstChild("\080\108\097\121\101\114\071\117\105")
+local pg=FF(LocalPlayer, "\080\108\097\121\101\114\071\117\105")
 if pg then
-for _,child in ipairs(pg:GetChildren()) do
+for _,child in IP(GC(pg)) do
 if child:IsA("\083\099\114\101\101\110\071\117\105") then
-local isOurs=string.sub(child.Name,1,3)=="\071\077\095"
+local isOurs=SSB(child.Name,1,3)=="\071\077\095"
 or child.Name=="\071\077\095\085\073" or child.Name=="\071\077\095\084\111\097\115\116\115"
 if not isOurs then
 DLSSX.shotSnaps[child]=child.Enabled
-pcall(function()
+QQ(function()
 child.Enabled=false
 end)
 end
@@ -9331,13 +10612,13 @@ return
 end
 DLSSX.ShotMod.enabled=false
 DLSSX.shotHidden=false
-for _,coreType in ipairs(DLSSX.shotCoreTypes) do
-pcall(function()
+for _,coreType in IP(DLSSX.shotCoreTypes) do
+QQ(function()
 StarterGui:SetCoreGuiEnabled(coreType,true)
 end)
 end
-for child,was in pairs(DLSSX.shotSnaps) do
-pcall(function()
+for child,was in PR(DLSSX.shotSnaps) do
+QQ(function()
 if child.Parent then
 child.Enabled=was
 end
@@ -9439,21 +10720,21 @@ local twSnap=nil
 local twState={clock=14,density=nil,haze=nil}
 local twClock=0
 local function twAtmo()
-return Lighting:FindFirstChildOfClass("\065\116\109\111\115\112\104\101\114\101")
+return FFC(Lighting, "\065\116\109\111\115\112\104\101\114\101")
 end
 local function twApply()
-pcall(function()
+QQ(function()
 Lighting.ClockTime=twState.clock
 end)
 local a=twAtmo()
 if a then
 if twState.density then
-pcall(function()
+QQ(function()
 a.Density=twState.density
 end)
 end
 if twState.haze then
-pcall(function()
+QQ(function()
 a.Haze=twState.haze
 end)
 end
@@ -9486,7 +10767,7 @@ end
 TimeWeather.enabled=true
 if not twSnap then
 twSnap={}
-pcall(function()
+QQ(function()
 twSnap.ClockTime=Lighting.ClockTime
 local a=twAtmo()
 if a then
@@ -9497,7 +10778,7 @@ end)
 twState.clock=twSnap.ClockTime or 14
 end
 twApply()
-TimeWeather.Scope:Connect(RunService.Heartbeat,function(dt)
+CN(TimeWeather.Scope, RunService.Heartbeat,function(dt)
 twClock+=dt
 if twClock<1 then
 return
@@ -9513,15 +10794,15 @@ end
 TimeWeather.enabled=false
 TimeWeather.Scope:Wipe()
 if twSnap then
-pcall(function()
+QQ(function()
 Lighting.ClockTime=twSnap.ClockTime
 end)
 local a=twAtmo()
 if a then
-pcall(function()
+QQ(function()
 a.Density=twSnap.Density
 end)
-pcall(function()
+QQ(function()
 a.Haze=twSnap.Haze
 end)
 end
@@ -9547,7 +10828,7 @@ local islFrames=0
 local islFps=0
 local function islDestroy()
 if islGui then
-pcall(function()
+QQ(function()
 islGui:Destroy()
 end)
 end
@@ -9557,65 +10838,65 @@ local function islBuild()
 if islGui then
 return
 end
-islGui=IN("\083\099\114\101\101\110\071\117\105")
+islGui=ISG()
 islGui.Name="\071\077\095\073\115\108\097\110\100"
 islGui.ResetOnSpawn=false
 islGui.IgnoreGuiInset=true
 islGui.DisplayOrder=400
 islGui.Parent=GuiParent
-islPill=IN("\070\114\097\109\101")
+islPill=INF()
 islPill.Name="\080\105\108\108"
-islPill.AnchorPoint=Vector2.new(0.5,0)
+islPill.AnchorPoint=VX(0.5,0)
 islPill.Position=U2(0.5,0,0,10)
-islPill.Size=UDim2.fromOffset(150,34)
+islPill.Size=UO(150,34)
 islPill.BackgroundColor3=Palette.Panel
 islPill.BackgroundTransparency=0.12
 islPill.BorderSizePixel=0
 islPill.Parent=islGui
-local iCorner=IN("\085\073\067\111\114\110\101\114")
+local iCorner=IUC()
 iCorner.CornerRadius=UD(1,0)
 iCorner.Parent=islPill
-local iGrad=IN("\085\073\071\114\097\100\105\101\110\116")
+local iGrad=IUG()
 iGrad.Rotation=115
-iGrad.Color=ColorSequence.new(CR(34,24,52),CR(14,10,20))
+iGrad.Color=CSN(CR(34,24,52),CR(14,10,20))
 iGrad.Parent=islPill
-local iStroke=IN("\085\073\083\116\114\111\107\101")
+local iStroke=IUS()
 iStroke.Color=Palette.PanelStroke
 iStroke.Thickness=1.4
 iStroke.Transparency=0.25
 iStroke.Parent=islPill
-local dot=IN("\070\114\097\109\101")
-dot.Size=UDim2.fromOffset(8,8)
+local dot=INF()
+dot.Size=UO(8,8)
 dot.Position=U2(0,16,0.5,-4)
 dot.BackgroundColor3=Palette.Accent
 dot.BorderSizePixel=0
-local dCorner=IN("\085\073\067\111\114\110\101\114")
+local dCorner=IUC()
 dCorner.CornerRadius=UD(1,0)
 dCorner.Parent=dot
 dot.Parent=islPill
-islLabel=IN("\084\101\120\116\076\097\098\101\108")
+islLabel=ITL()
 islLabel.BackgroundTransparency=1
 islLabel.Size=U2(1,-44,1,0)
 islLabel.Position=U2(0,34,0,0)
-islLabel.Font=EF.GothamBold
+islLabel.Font=EFB
 islLabel.TextSize=13
 islLabel.TextColor3=Palette.TextBright
-islLabel.TextXAlignment=TX.Left
+islLabel.TextXAlignment=TXL
 islLabel.Text="\045\032\045\032\045"
 islLabel.Parent=islPill
-TweenService:Create(
+TSC(
 dot,
-TweenInfo.new(1.6,ES.Sine,ED.InOut,-1,true),
+TWI(1.6,ES.Sine,ED.InOut,-1,true),
 {BackgroundTransparency=0.5}
 ):Play()
-islPill.MouseEnter:Connect(function()
-TweenService:Create(islPill,TweenInfo.new(0.28,ES.Back,ED.Out),{
-Size=UDim2.fromOffset(196,40),
+CN(islPill.MouseEnter, function()
+TSC(islPill,TWI(0.28,ESB,ED.Out),{
+Size=UO(196,40),
 }):Play()
 end)
-islPill.MouseLeave:Connect(function()
-TweenService:Create(islPill,TweenInfo.new(0.24,ES.Quad,ED.Out),{
-Size=UDim2.fromOffset(150,34),
+CN(islPill.MouseLeave, function()
+TSC(islPill,TWI(0.24,ES.Quad,ED.Out),{
+Size=UO(150,34),
 }):Play()
 end)
 end
@@ -9633,7 +10914,7 @@ end
 Island.enabled=true
 islBuild()
 local acc=0
-Island.Scope:Connect(RunService.Heartbeat,function(dt)
+CN(Island.Scope, RunService.Heartbeat,function(dt)
 islFrames+=1
 acc+=dt
 if acc<1 then
@@ -9642,7 +10923,7 @@ end
 acc=0
 islFps=islFrames
 islFrames=0
-local timeStr=os.date("\037\072\058\037\077")
+local timeStr=OD("\037\072\058\037\077")
 local text
 if islMode=="\072\111\114\097" then
 text=timeStr
@@ -9677,7 +10958,7 @@ end
 return true
 end,
 })
-local HttpService=game:GetService("\072\116\116\112\083\101\114\118\105\099\101")
+local HttpService=GGS("\072\116\116\112\083\101\114\118\105\099\101")
 local CONFIG_FILE="\071\077\095\099\111\110\102\105\103\046\106\115\111\110"
 local CFG={
 keystrokesOn=false,
@@ -9700,6 +10981,7 @@ keystrokesPos=nil,
 uiPos=nil,
 islandOn=false,
 islandMode="\065\109\098\111\115",
+unusualColor="\079\114\105\103\105\110\097\108",
 headlessHead=false,
 headlessAccs=false,
 korbloxOn=false,
@@ -9726,14 +11008,14 @@ crunchSpeed=50,
 crunchKey="\076\101\102\116\083\104\105\102\116",
 hudBhopOn=false,
 hudCrunchOn=false,
-hudBhopMode="\077\097\110\116\101\110\101\114",
-hudCrunchMode="\077\097\110\116\101\110\101\114",
+hudBhopMode="\072\111\108\100",
+hudCrunchMode="\072\111\108\100",
 hudBtnSize=84,
 hudBtnOpacity=85,
 hudUnlocked=false,
 hudBhopPos=nil,
 hudCrunchPos=nil,
-language="\101\115",
+language="\101\110",
 soundsOn=true,
 crosshairOn=false,
 crosshairStyle="\067\114\111\115\115",
@@ -9753,6 +11035,9 @@ strafferOn=false,
 strafferInvert=false,
 strafferDeadzone=2,
 zzV8={},
+rankPos=nil,
+logoPos=nil,
+iconOffsets=nil,
 }
 local APPLIES={}
 APPLIES.keystrokes=function(withPos)
@@ -9866,7 +11151,7 @@ end
 end
 APPLIES.hud=function()
 local want=CFG.hudBhopOn or CFG.hudCrunchOn
-for _,m in ipairs(Modules) do
+for _,m in IP(Modules) do
 if m.Name=="\077\111\098\105\108\101\032\072\085\068" then
 if want and not m.enabled then
 m.enable()
@@ -9881,7 +11166,7 @@ end
 end
 end
 APPLIES.crosshair=function()
-for _,m in ipairs(Modules) do
+for _,m in IP(Modules) do
 if m.Name=="\067\114\111\115\115\104\097\105\114" then
 if CFG.crosshairOn and not m.enabled then
 m.enable()
@@ -9896,7 +11181,7 @@ end
 end
 end
 APPLIES.evadeFont=function()
-for _,m in ipairs(Modules) do
+for _,m in IP(Modules) do
 if m.Name=="\069\118\097\100\101\070\111\110\116" then
 if CFG.evadeFontOn and not m.enabled then
 m.enable()
@@ -9931,7 +11216,7 @@ if gmSavePending then
 return
 end
 gmSavePending=true
-task.delay(1,function()
+TDL(1,function()
 gmSavePending=false
 if gmSaveConfig then
 gmSaveConfig()
@@ -9953,25 +11238,25 @@ CFG["\122\122\086\056"][hprefix]=act
 gmMarkConfig()
 end
 gmSaveConfig=function()
-pcall(function()
+QQ(function()
 local op=KeysAPI.getPos()
 if op then
 CFG.keystrokesPos={op.X.Scale,op.X.Offset,op.Y.Scale,op.Y.Offset}
 end
 local data={mappings={}}
-for _,m in ipairs(activeMappings) do
-table.insert(data.mappings,{from=m.from.name,to=m.to.name})
+for _,m in IP(activeMappings) do
+TBI(data.mappings,{from=m.from.name,to=m.to.name})
 end
 if Unusuals.enabled and activeUnusual then
 data.unusual=activeUnusual
 end
 data.cfg=CFG
-writefile(CONFIG_FILE,HttpService:JSONEncode(data))
+WF(CONFIG_FILE,HttpService:JSONEncode(data))
 end)
 end
 local function gmLoadConfig()
-local ok,raw=pcall(function()
-if isfile and readfile and isfile(CONFIG_FILE) then
+local ok,raw=QQ(function()
+if isfile and readfile and ISF(CONFIG_FILE) then
 return HttpService:JSONDecode(readfile(CONFIG_FILE))
 end
 return nil
@@ -9980,16 +11265,16 @@ if not ok or type(raw)~="\116\097\098\108\101" then
 return
 end
 if type(raw.mappings)=="\116\097\098\108\101" then
-for _,m in ipairs(raw.mappings) do
-local fromE=Catalog.emoteByName[tostring(m.from)]
-local toE=Catalog.emoteByName[tostring(m.to)]
+for _,m in IP(raw.mappings) do
+local fromE=Catalog.emoteByName[TS(m.from)]
+local toE=Catalog.emoteByName[TS(m.to)]
 if fromE and toE then
 p3SetMapping(fromE,toE)
 end
 end
 if #activeMappings>0 then
 zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=zzV1["\098\111\111\116\069\110\097\098\108\101\115"] or {}
-table.insert(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
+TBI(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
 EmoteReplacer.enable()
 end)
 print("\091\071\077\093\032\099\111\110\102\105\103\058\032"..#activeMappings.."\032\101\109\111\116\101\032\109\097\112\112\105\110\103\040\115\041\032\114\101\115\116\111\114\101\100")
@@ -9998,13 +11283,13 @@ end
 if type(raw.unusual)=="\115\116\114\105\110\103" and Catalog.unusualByName[raw.unusual] then
 activeUnusual=raw.unusual
 zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=zzV1["\098\111\111\116\069\110\097\098\108\101\115"] or {}
-table.insert(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
+TBI(zzV1["\098\111\111\116\069\110\097\098\108\101\115"],function()
 Unusuals.enable()
 end)
 print("\091\071\077\093\032\099\111\110\102\105\103\058\032\117\110\117\115\117\097\108\032\039"..raw.unusual.."\039\032\114\101\115\116\111\114\101\100")
 end
 if type(raw.cfg)=="\116\097\098\108\101" then
-for k,v in pairs(raw.cfg) do
+for k,v in PR(raw.cfg) do
 if k=="\107\101\121\115\116\114\111\107\101\115\080\111\115" then
 if type(v)=="\116\097\098\108\101" and #v==4 then
 CFG.keystrokesPos=v
@@ -10020,45 +11305,9 @@ p5SetIslandMode(raw.islandMode)
 end
 end
 gmLoadConfig()
-zzV1.language=CFG.language=="\101\110" and "\101\110" or "\101\115"
+zzV1.language=CFG.language=="\101\115" and "\101\115" or "\101\110"
+zzV1.unusualColor=CFG.unusualColor or "\079\114\105\103\105\110\097\108"
 zzV1.uiSoundSetEnabled(CFG.soundsOn~=false)
-buildMobileHUD({
-RegisterModule=RegisterModule,
-notify=notify,
-GuiParent=GuiParent,
-getRoot=function()
-return zzV1.root
-end,
-getHudCfg=function()
-return {
-bhopOn=CFG.hudBhopOn,
-crunchOn=CFG.hudCrunchOn,
-bhopMode=CFG.hudBhopMode,
-crunchMode=CFG.hudCrunchMode,
-size=CFG.hudBtnSize,
-opacity=CFG.hudBtnOpacity,
-unlocked=CFG.hudUnlocked,
-pos={bhop=CFG.hudBhopPos,crunch=CFG.hudCrunchPos},
-}
-end,
-setVirtual=function(key,on)
-if key=="\098\104\111\112" then
-MOVE.setBhopVirtual(on)
-else
-MOVE.setCrunchVirtual(on)
-end
-end,
-setBtnPos=function(key,pos)
-local t={pos.X.Scale,pos.X.Offset,pos.Y.Scale,pos.Y.Offset}
-if key=="\098\104\111\112" then
-CFG.hudBhopPos=t
-else
-CFG.hudCrunchPos=t
-end
-gmMarkConfig()
-end,
-})
-markStep("\109\111\098\105\108\101\032\104\117\100\032\100\101\102\105\110\101\100")
 buildCrosshair({
 RegisterModule=RegisterModule,
 notify=notify,
@@ -10125,7 +11374,7 @@ local cgCooldown=0
 local cgGoneSince=nil
 local cgWarned=false
 local cgConn
-cgConn=RunService.Heartbeat:Connect(function(dt)
+cgConn=CN(RunService.Heartbeat, function(dt)
 if zzV1.root==nil then
 cgConn:Disconnect()
 return
@@ -10137,12 +11386,12 @@ end
 cgAcc=0
 local cam=Workspace.CurrentCamera
 local char=LocalPlayer.Character
-local hum=char and char:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+local hum=char and FFC(char, "\072\117\109\097\110\111\105\100")
 if hum==nil then
 if cgGoneSince==nil then
-cgGoneSince=os.clock()
+cgGoneSince=OCL()
 cgWarned=false
-elseif not cgWarned and os.clock() - cgGoneSince>20 then
+elseif not cgWarned and OCL() - cgGoneSince>20 then
 cgWarned=true
 notify(
 "\071\104\111\115\116\032\077\101\116\104\111\100",
@@ -10165,10 +11414,10 @@ or(typeof(subject)=="\073\110\115\116\097\110\099\101" and subject.Parent==nil)
 if not stale then
 return
 end
-if os.clock() - cgCooldown<3 then
+if OCL() - cgCooldown<3 then
 return
 end
-cgCooldown=os.clock()
+cgCooldown=OCL()
 cam.CameraSubject=hum
 print("\091\071\077\093\032\067\097\109\101\114\097\032\071\117\097\114\100\058\032\099\097\109\101\114\097\032\114\101\045\097\116\116\097\099\104\101\100\032\116\111\032\121\111\117\114\032\099\104\097\114\097\099\116\101\114\032\040\114\111\117\110\100\032\103\108\105\116\099\104\041\046")
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\067\097\109\097\114\097\032\114\101\045\097\100\106\117\110\116\097\100\097\032\097\108\032\112\101\114\115\111\110\097\106\101\032\040\103\108\105\116\099\104\032\100\101\032\114\111\110\100\097\032\099\111\114\114\101\103\105\100\111\041\046","\067\097\109\101\114\097\032\114\101\045\097\116\116\097\099\104\101\100\032\116\111\032\121\111\117\114\032\099\104\097\114\097\099\116\101\114\032\040\114\111\117\110\100\032\103\108\105\116\099\104\032\102\105\120\101\100\041\046"),5)
@@ -10204,10 +11453,21 @@ return CR(c[1],c[2],c[3])
 end,
 getUiPos=function() return CFG.uiPos end,
 setUiPos=function(dx,dy)
-CFG.uiPos={math.floor(dx),math.floor(dy)}
+CFG.uiPos={MFL(dx),MFL(dy)}
 gmMarkConfig()
 end,
 getIslandOn=function() return CFG.islandOn end,
+getUnusualColorLabel=function()
+return CFG.unusualColor or "\079\114\105\103\105\110\097\108"
+end,
+setUnusualColor=function(name)
+CFG.unusualColor=name
+zzV1.unusualColor=name
+if activeUnusual then
+applyUnusualNow(activeUnusual)
+end
+gmMarkConfig()
+end,
 getHeadlessHead=function() return CFG.headlessHead end,
 getHeadlessAccs=function() return CFG.headlessAccs end,
 getKorbloxOn=function() return CFG.korbloxOn end,
@@ -10317,6 +11577,42 @@ end,
 setEvadeFontLabel=function(label)
 CFG.evadeFont=label
 APPLIES.evadeFont()
+gmMarkConfig()
+end,
+getRankPos=function()
+return CFG.rankPos
+end,
+saveRankPos=function(x,y,s,r)
+CFG.rankPos={x=x,y=y,s=s,r=r or 0}
+gmMarkConfig()
+end,
+resetRankPos=function()
+CFG.rankPos=nil
+gmMarkConfig()
+end,
+getLogoPos=function()
+return CFG.logoPos
+end,
+saveLogoPos=function(x,y,s)
+CFG.logoPos={x=x,y=y,s=s}
+gmMarkConfig()
+end,
+resetLogoPos=function()
+CFG.logoPos=nil
+gmMarkConfig()
+end,
+getIconOffsets=function()
+return CFG.iconOffsets or {}
+end,
+saveIconOffset=function(iconName,x,y,s)
+if not CFG.iconOffsets then
+CFG.iconOffsets={}
+end
+CFG.iconOffsets[iconName]={x=x,y=y,s=s}
+gmMarkConfig()
+end,
+resetIconOffsets=function()
+CFG.iconOffsets=nil
 gmMarkConfig()
 end,
 spSearch=function(query,cb)
@@ -10484,13 +11780,13 @@ return "\110\111\102\105\108\101",nil
 end
 local best,bestNum=nil,-1
 local legacy=nil
-for _,f in ipairs(listfiles()) do
-local m=string.match(f,"\094\071\077\095\102\111\116\111\095\040\037\100\043\041\037\046\112\110\103\036")
+for _,f in IP(listfiles()) do
+local m=SGM(f,"\094\071\077\095\102\111\116\111\095\040\037\100\043\041\037\046\112\110\103\036")
 if not m then
-m=string.match(f,"\094\071\077\095\102\111\116\111\095\040\037\100\043\041\037\046\106\112\103\036")
+m=SGM(f,"\094\071\077\095\102\111\116\111\095\040\037\100\043\041\037\046\106\112\103\036")
 end
 if m then
-local num=tonumber(m)
+local num=TN(m)
 if num and num>bestNum then
 best,bestNum=f,num
 end
@@ -10502,8 +11798,8 @@ local target=best or legacy
 if not target then
 return "\110\111\102\105\108\101",nil
 end
-local ok,url=pcall(function()
-return getcustomasset(target)
+local ok,url=QQ(function()
+return GCA(target)
 end)
 if ok and type(url)=="\115\116\114\105\110\103" and #url>0 then
 return "\111\107",url
@@ -10514,7 +11810,7 @@ downloadPhoto=function(url)
 if type(url)~="\115\116\114\105\110\103" or #url<8 then
 return "\098\097\100\117\114\108",nil
 end
-local ok,content=pcall(function()
+local ok,content=QQ(function()
 return game:HttpGet(url)
 end)
 if not ok or type(content)~="\115\116\114\105\110\103" or #content<64 then
@@ -10530,12 +11826,12 @@ ext="\106\112\103"
 else
 return "\110\111\116\105\109\103",nil
 end
-CFG.profilePhotoSeq=(tonumber(CFG.profilePhotoSeq) or 0)+1
-local fname="\071\077\095\102\111\116\111\095"..tostring(CFG.profilePhotoSeq).."\046"..ext
-pcall(function()
+CFG.profilePhotoSeq=(TN(CFG.profilePhotoSeq) or 0)+1
+local fname="\071\077\095\102\111\116\111\095"..TS(CFG.profilePhotoSeq).."\046"..ext
+QQ(function()
 if type(delfile)=="\102\117\110\099\116\105\111\110" and type(listfiles)=="\102\117\110\099\116\105\111\110" then
-for _,f in ipairs(listfiles()) do
-local isNum=string.match(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\112\110\103\036") or string.match(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\106\112\103\036")
+for _,f in IP(listfiles()) do
+local isNum=SGM(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\112\110\103\036") or SGM(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\106\112\103\036")
 if isNum or f=="\071\077\095\102\111\116\111\046\112\110\103" or f=="\071\077\095\102\111\116\111\046\106\112\103" then
 if f~=fname then
 delfile(f)
@@ -10544,8 +11840,8 @@ end
 end
 end
 end)
-local okW=pcall(function()
-writefile(fname,content)
+local okW=QQ(function()
+WF(fname,content)
 end)
 if not okW then
 return "\098\097\100\119\114\105\116\101",nil
@@ -10554,10 +11850,10 @@ gmMarkConfig()
 return "\111\107",fname
 end,
 deletePhotoFiles=function()
-pcall(function()
+QQ(function()
 if type(delfile)=="\102\117\110\099\116\105\111\110" and type(listfiles)=="\102\117\110\099\116\105\111\110" then
-for _,f in ipairs(listfiles()) do
-local isNum=string.match(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\112\110\103\036") or string.match(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\106\112\103\036")
+for _,f in IP(listfiles()) do
+local isNum=SGM(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\112\110\103\036") or SGM(f,"\094\071\077\095\102\111\116\111\095\037\100\043\037\046\106\112\103\036")
 if isNum or f=="\071\077\095\102\111\116\111\046\112\110\103" or f=="\071\077\095\102\111\116\111\046\106\112\103" then
 delfile(f)
 end
@@ -10571,17 +11867,17 @@ CFG.profilePhotoId=assetId or 0
 gmMarkConfig()
 end,
 setKeyCustomIdle=function(c)
-CFG.keystrokesCustomIdle={math.floor(c.R*255+0.5),math.floor(c.G*255+0.5),math.floor(c.B*255+0.5)}
+CFG.keystrokesCustomIdle={MFL(c.R*255+0.5),MFL(c.G*255+0.5),MFL(c.B*255+0.5)}
 KeysAPI.setCustom(CFG.keystrokesCustomIdle,CFG.keystrokesCustomPressed,CFG.keystrokesCustomText)
 gmMarkConfig()
 end,
 setKeyCustomPressed=function(c)
-CFG.keystrokesCustomPressed={math.floor(c.R*255+0.5),math.floor(c.G*255+0.5),math.floor(c.B*255+0.5)}
+CFG.keystrokesCustomPressed={MFL(c.R*255+0.5),MFL(c.G*255+0.5),MFL(c.B*255+0.5)}
 KeysAPI.setCustom(CFG.keystrokesCustomIdle,CFG.keystrokesCustomPressed,CFG.keystrokesCustomText)
 gmMarkConfig()
 end,
 setKeyCustomText=function(c)
-CFG.keystrokesCustomText={math.floor(c.R*255+0.5),math.floor(c.G*255+0.5),math.floor(c.B*255+0.5)}
+CFG.keystrokesCustomText={MFL(c.R*255+0.5),MFL(c.G*255+0.5),MFL(c.B*255+0.5)}
 KeysAPI.setCustom(CFG.keystrokesCustomIdle,CFG.keystrokesCustomPressed,CFG.keystrokesCustomText)
 gmMarkConfig()
 end,
@@ -10699,17 +11995,17 @@ setSoundsOn=function(on)
 CFG.soundsOn=on
 zzV1.uiSoundSetEnabled(on)
 if on then
-task.delay(0.08,function()
+TDL(0.08,function()
 zzV1.uiSound("\116\111\103\103\108\101\079\110")
 end)
 end
 gmMarkConfig()
 end,
 getLanguageLabel=function()
-return CFG.language=="\101\110" and "\069\110\103\108\105\115\104" or "\069\115\112\097\110\111\108"
+return CFG.language=="\101\115" and "\069\115\112\097\110\111\108" or "\069\110\103\108\105\115\104"
 end,
 setLanguage=function(label)
-local code=(label=="\069\110\103\108\105\115\104") and "\101\110" or "\101\115"
+local code=(label=="\069\115\112\097\110\111\108") and "\101\115" or "\101\110"
 if code==CFG.language then
 return
 end
@@ -10717,44 +12013,44 @@ local prev=CFG.language
 CFG.language=code
 zzV1.language=code
 gmMarkConfig()
-pcall(function()
+QQ(function()
 if zzV1.root then
 zzV1.root:Destroy()
 end
 end)
-local okB,errB=pcall(buildGhostUI,ghostCtx)
+local okB,errB=QQ(buildGhostUI,ghostCtx)
 if okB and zzV1.root then
-pcall(function()
+QQ(function()
 if zzV1.setIslandActive then
 zzV1.setIslandActive(CFG.islandOn)
 end
 end)
-pcall(APPLIES.all)
+QQ(APPLIES.all)
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\073\100\105\111\109\097\032\097\112\108\105\099\097\100\111\046","\076\097\110\103\117\097\103\101\032\097\112\112\108\105\101\100\046"),4)
 else
-pcall(function()
-writefile("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",os.date("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")
-.."\032\105\110\116\101\110\116\111\032\100\101\032\114\101\098\117\105\108\100\032\099\111\110\032\105\100\105\111\109\097\061"..tostring(code)
-.."\032\102\097\108\108\111\058\010"..tostring(errB))
+QQ(function()
+WF("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",OD("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")
+.."\032\105\110\116\101\110\116\111\032\100\101\032\114\101\098\117\105\108\100\032\099\111\110\032\105\100\105\111\109\097\061"..TS(code)
+.."\032\102\097\108\108\111\058\010"..TS(errB))
 end)
 CFG.language=prev
 zzV1.language=prev
 gmMarkConfig()
-local okR,errR=pcall(buildGhostUI,ghostCtx)
+local okR,errR=QQ(buildGhostUI,ghostCtx)
 if okR and zzV1.root then
-pcall(function()
+QQ(function()
 if zzV1.setIslandActive then
 zzV1.setIslandActive(CFG.islandOn)
 end
 end)
-pcall(APPLIES.all)
+QQ(APPLIES.all)
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT(
 "\069\108\032\099\097\109\098\105\111\032\100\101\032\105\100\105\111\109\097\032\102\097\108\108\111\032\045\032\115\101\032\114\101\115\116\097\117\114\111\032\101\108\032\105\100\105\111\109\097\032\097\110\116\101\114\105\111\114\046\032\068\101\116\097\108\108\101\115\032\101\110\032\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",
 "\076\097\110\103\117\097\103\101\032\115\119\105\116\099\104\032\102\097\105\108\101\100\032\045\032\112\114\101\118\105\111\117\115\032\108\097\110\103\117\097\103\101\032\114\101\115\116\111\114\101\100\046\032\068\101\116\097\105\108\115\032\105\110\032\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116"),8)
 else
-pcall(function()
-local f=readfile and isfile and isfile("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116") and readfile("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116") or ""
-writefile("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",f.."\010\082\069\067\085\080\069\082\065\067\073\079\078\032\084\065\077\066\073\069\078\032\070\065\076\076\079\058\010"..tostring(errR))
+QQ(function()
+local f=readfile and isfile and ISF("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116") and readfile("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116") or ""
+WF("\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",f.."\010\082\069\067\085\080\069\082\065\067\073\079\078\032\084\065\077\066\073\069\078\032\070\065\076\076\079\058\010"..TS(errR))
 end)
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT(
 "\069\114\114\111\114\032\100\101\032\105\110\116\101\114\102\097\122\032\045\032\114\101\045\101\106\101\099\117\116\097\032\101\108\032\115\099\114\105\112\116\046\032\068\101\116\097\108\108\101\115\032\101\110\032\071\077\095\108\097\110\103\095\101\114\114\111\114\046\116\120\116",
@@ -10770,29 +12066,29 @@ end
 end,
 savePreset=function(slot)
 local fname="\071\077\095\112\114\101\115\101\116\095"..(slot=="\066" and "\066" or "\065").."\046\106\115\111\110"
-pcall(function()
+QQ(function()
 local data={mappings={}}
-for _,m in ipairs(activeMappings) do
-table.insert(data.mappings,{from=m.from.name,to=m.to.name})
+for _,m in IP(activeMappings) do
+TBI(data.mappings,{from=m.from.name,to=m.to.name})
 end
 if Unusuals.enabled and activeUnusual then
 data.unusual=activeUnusual
 end
 data.cfg=CFG
-writefile(fname,HttpService:JSONEncode(data))
+WF(fname,HttpService:JSONEncode(data))
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\080\114\101\115\101\116\032"..slot.."\032\103\117\097\114\100\097\100\111\032\040\099\111\110\102\105\103\032\043\032\101\109\111\116\101\115\032\043\032\117\110\117\115\117\097\108\041\046","\080\114\101\115\101\116\032"..slot.."\032\115\097\118\101\100\032\040\099\111\110\102\105\103\032\043\032\101\109\111\116\101\115\032\043\032\117\110\117\115\117\097\108\041\046"),4)
 end)
 end,
 applyPreset=function(slot)
 local fname="\071\077\095\112\114\101\115\101\116\095"..(slot=="\066" and "\066" or "\065").."\046\106\115\111\110"
-pcall(function()
-if type(isfile)~="\102\117\110\099\116\105\111\110" or not isfile(fname) then
+QQ(function()
+if type(isfile)~="\102\117\110\099\116\105\111\110" or not ISF(fname) then
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\069\115\101\032\112\114\101\115\101\116\032\101\115\116\097\032\118\097\099\105\111\032\045\032\103\117\097\114\100\097\108\111\032\112\114\105\109\101\114\111\046","\084\104\097\116\032\112\114\101\115\101\116\032\105\115\032\101\109\112\116\121\032\045\032\115\097\118\101\032\105\116\032\102\105\114\115\116\046"),5)
 return
 end
 local raw=HttpService:JSONDecode(readfile(fname))
 if type(raw.cfg)=="\116\097\098\108\101" then
-for k,v in pairs(raw.cfg) do
+for k,v in PR(raw.cfg) do
 if k=="\107\101\121\115\116\114\111\107\101\115\080\111\115" or k=="\117\105\080\111\115" then
 if type(v)=="\116\097\098\108\101" then
 CFG[k]=v
@@ -10804,9 +12100,9 @@ end
 end
 if type(raw.mappings)=="\116\097\098\108\101" then
 p3RemoveAllMappings()
-for _,m in ipairs(raw.mappings) do
-local fromE=Catalog.emoteByName[tostring(m.from)]
-local toE=Catalog.emoteByName[tostring(m.to)]
+for _,m in IP(raw.mappings) do
+local fromE=Catalog.emoteByName[TS(m.from)]
+local toE=Catalog.emoteByName[TS(m.to)]
 if fromE and toE then
 p3SetMapping(fromE,toE)
 end
@@ -10817,14 +12113,14 @@ removeUnusualNow()
 activeUnusual=raw.unusual
 Unusuals.enable()
 end
-zzV1.language=CFG.language=="\101\110" and "\101\110" or "\101\115"
+zzV1.language=CFG.language=="\101\115" and "\101\115" or "\101\110"
 gmMarkConfig()
-pcall(function()
+QQ(function()
 if zzV1.root then
 zzV1.root:Destroy()
 end
 end)
-local okB=pcall(buildGhostUI,ghostCtx)
+local okB=QQ(buildGhostUI,ghostCtx)
 if okB and zzV1.root then
 if zzV1.setIslandActive then
 zzV1.setIslandActive(CFG.islandOn)
@@ -10840,6 +12136,7 @@ keystrokesOn=false,keystrokesScale=100,keystrokesOpacity=90,
 keystrokesBgOpacity=90,keystrokesDesign="\071\108\097\115\115",keystrokesColor="\068\097\114\107",
 keystrokesFont="\065\117\116\111",keystrokesWm=true,keystrokesBg=true,keystrokesTextSize=12,
 islandOn=false,islandMode="\065\109\098\111\115",
+unusualColor="\079\114\105\103\105\110\097\108",
 headlessHead=false,headlessAccs=false,
 korbloxOn=false,korbloxLeg="\082\105\103\104\116",
 gfxOn=false,gfxPreset="\082\101\097\108\105\115\116\097",gfxSky=false,gfxShiny=30,gfxBloom=100,
@@ -10849,7 +12146,7 @@ timeOn=false,timeClock=14,timeDensity=40,timeHaze=77,
 bhopOn=false,bhopKey="\083\112\097\099\101",bhopDelay=0,
 crunchOn=false,crunchSpeed=50,crunchKey="\076\101\102\116\083\104\105\102\116",
 strafferOn=false,strafferInvert=false,strafferDeadzone=2,
-hudBhopOn=false,hudCrunchOn=false,hudBhopMode="\077\097\110\116\101\110\101\114",hudCrunchMode="\077\097\110\116\101\110\101\114",
+hudBhopOn=false,hudCrunchOn=false,hudBhopMode="\072\111\108\100",hudCrunchMode="\072\111\108\100",
 hudBtnSize=84,hudBtnOpacity=85,hudUnlocked=false,
 profilePhotoMode="\110\111\110\101",profilePhotoId=0,profilePhotoSeq=0,
 crosshairOn=false,crosshairStyle="\067\114\111\115\115",crosshairSize=12,
@@ -10858,9 +12155,10 @@ crosshairColor={167,108,255},crosshairOffX=0,crosshairOffY=0,
 evadeFontOn=false,evadeFont="\071\111\116\104\097\109",
 musicVolume=50,spotifyDc="",spotifyName="",
 }
-for k,v in pairs(defaults) do
+for k,v in PR(defaults) do
 CFG[k]=v
 end
+zzV1.unusualColor="\079\114\105\103\105\110\097\108"
 CFG.keystrokesPos=nil
 CFG.uiPos=nil
 CFG.hudBhopPos=nil
@@ -10868,12 +12166,12 @@ CFG.hudCrunchPos=nil
 p3RemoveAllMappings()
 removeUnusualNow()
 gmMarkConfig()
-pcall(function()
+QQ(function()
 if zzV1.root then
 zzV1.root:Destroy()
 end
 end)
-local okB=pcall(buildGhostUI,ghostCtx)
+local okB=QQ(buildGhostUI,ghostCtx)
 if okB and zzV1.root then
 if zzV1.setIslandActive then
 zzV1.setIslandActive(CFG.islandOn)
@@ -10944,17 +12242,17 @@ setShadowDark=function(v)
 CFG.gfxShadowDark=v
 DLSSX.shadowDark=v/100
 DLSSX.applyShadowDark()
-pcall(function()
-local ccI=Lighting:FindFirstChild("\071\077\095\067\111\108\111\114\071\114\097\100\101")
-writefile("\071\077\095\115\104\097\100\111\119\095\100\101\098\117\103\046\116\120\116",
-"\118\061"..tostring(v)
-.."\032\100\097\114\107\061"..tostring(DLSSX.shadowDark)
-.."\032\100\108\115\115\079\110\061"..tostring(Graphics and Graphics.enabled)
-.."\032\097\109\098\061"..tostring(Lighting.Ambient)
-.."\032\111\117\116\061"..tostring(Lighting.OutdoorAmbient)
-.."\032\101\110\118\061"..tostring(Lighting.EnvironmentDiffuseScale)
-.."\032\099\099\066\061"..tostring(ccI and ccI.Brightness)
-.."\032\099\099\067\061"..tostring(ccI and ccI.Contrast))
+QQ(function()
+local ccI=FF(Lighting, "\071\077\095\067\111\108\111\114\071\114\097\100\101")
+WF("\071\077\095\115\104\097\100\111\119\095\100\101\098\117\103\046\116\120\116",
+"\118\061"..TS(v)
+.."\032\100\097\114\107\061"..TS(DLSSX.shadowDark)
+.."\032\100\108\115\115\079\110\061"..TS(Graphics and Graphics.enabled)
+.."\032\097\109\098\061"..TS(Lighting.Ambient)
+.."\032\111\117\116\061"..TS(Lighting.OutdoorAmbient)
+.."\032\101\110\118\061"..TS(Lighting.EnvironmentDiffuseScale)
+.."\032\099\099\066\061"..TS(ccI and ccI.Brightness)
+.."\032\099\099\067\061"..TS(ccI and ccI.Contrast))
 end)
 gmMarkConfig()
 end,
@@ -11004,17 +12302,17 @@ unload=function()
 unloadGhost()
 end,
 }
-local uiOk,uiRootOrErr=pcall(buildGhostUI,ghostCtx)
+local uiOk,uiRootOrErr=QQ(buildGhostUI,ghostCtx)
 if not uiOk or uiRootOrErr==nil then
-local why=uiOk and "\098\117\105\108\100\101\114\032\114\101\116\117\114\110\101\100\032\110\111\032\114\111\111\116" or tostring(uiRootOrErr)
+local why=uiOk and "\098\117\105\108\100\101\114\032\114\101\116\117\114\110\101\100\032\110\111\032\114\111\111\116" or TS(uiRootOrErr)
 error("\091\071\077\093\032\099\117\115\116\111\109\032\085\073\032\098\117\105\108\100\032\102\097\105\108\101\100\058\032"..why,0)
 end
 markStep("\099\117\115\116\111\109\032\085\073\032\098\117\105\108\116")
 zzV1["\102\105\110\097\108\065\112\112\108\121"]=function()
 APPLIES.all()
 if zzV1["\098\111\111\116\069\110\097\098\108\101\115"] then
-for _,fn in ipairs(zzV1["\098\111\111\116\069\110\097\098\108\101\115"]) do
-pcall(fn)
+for _,fn in IP(zzV1["\098\111\111\116\069\110\097\098\108\101\115"]) do
+QQ(fn)
 end
 zzV1["\098\111\111\116\069\110\097\098\108\101\115"]=nil
 end
@@ -11024,7 +12322,12 @@ end
 task.defer(function()
 runSelfTest(false)
 end)
+local gmRankSeg=""
+if type(zzV1.keyRank)=="\115\116\114\105\110\103" and #zzV1.keyRank>0 then
+gmRankSeg="\032\124\032"..gmT("\114\097\110\103\111\058\032","\114\097\110\107\058\032")..SUP(zzV1.keyRank)
+end
 notify("\071\104\111\115\116\032\077\101\116\104\111\100",gmT("\099\097\114\103\097\100\111\032\045\032\112\114\101\115\105\111\110\097\032\088\032\112\097\114\097\032\101\108\032\109\101\110\117","\108\111\097\100\101\100\032\045\032\112\114\101\115\115\032\088\032\116\111\032\116\111\103\103\108\101\032\116\104\101\032\109\101\110\117")
+..gmRankSeg
 ..(zzV1["\107\101\121\076\101\102\116\083\116\114"] and("\032\124\032"..gmT("\107\101\121\058\032\116\101\032\113\117\101\100\097\110\032","\107\101\121\058\032")..zzV1["\107\101\121\076\101\102\116\083\116\114"]) or ""),5)
 zzV1["\102\105\110\097\108\065\112\112\108\121"]=nil
 end
@@ -11039,36 +12342,36 @@ else
 allOk=false
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\067\117\115\116\111\109\032\085\073\032\046\046\046\046\046\046\046\046\046\046\046\046\032\070\065\073\076\069\068\032\045\032\085\073\032\114\111\111\116\032\109\105\115\115\105\110\103")
 end
-for _,mod in ipairs(Modules) do
+for _,mod in IP(Modules) do
 local ok,reason=true,nil
 if type(mod.enable)~="\102\117\110\099\116\105\111\110" or type(mod.disable)~="\102\117\110\099\116\105\111\110" then
 ok,reason=false,"\109\105\115\115\105\110\103\032\101\110\097\098\108\101\040\041\047\100\105\115\097\098\108\101\040\041"
 end
 local wasEnabled=mod.enabled
 if ok and not wasEnabled then
-local eOk,eErr=pcall(mod.enable,{hidden=true})
+local eOk,eErr=QQ(mod.enable,{hidden=true})
 if not eOk then
-ok,reason=false,"\101\110\097\098\108\101\040\041\032\101\114\114\111\114\101\100\058\032"..tostring(eErr)
+ok,reason=false,"\101\110\097\098\108\101\040\041\032\101\114\114\111\114\101\100\058\032"..TS(eErr)
 end
 end
 if ok then
-local vOk,v1,v2=pcall(mod.verify)
+local vOk,v1,v2=QQ(mod.verify)
 if not vOk then
-ok,reason=false,"\118\101\114\105\102\121\040\041\032\101\114\114\111\114\101\100\058\032"..tostring(v1)
+ok,reason=false,"\118\101\114\105\102\121\040\041\032\101\114\114\111\114\101\100\058\032"..TS(v1)
 elseif v1==false then
-ok,reason=false,tostring(v2 or "\118\101\114\105\102\105\099\097\116\105\111\110\032\102\097\105\108\101\100")
+ok,reason=false,TS(v2 or "\118\101\114\105\102\105\099\097\116\105\111\110\032\102\097\105\108\101\100")
 end
 end
 if ok and not wasEnabled then
-local dOk,dErr=pcall(mod.disable)
+local dOk,dErr=QQ(mod.disable)
 if not dOk then
-ok,reason=false,"\100\105\115\097\098\108\101\040\041\032\101\114\114\111\114\101\100\058\032"..tostring(dErr)
+ok,reason=false,"\100\105\115\097\098\108\101\040\041\032\101\114\114\111\114\101\100\058\032"..TS(dErr)
 elseif type(mod.verifyClean)=="\102\117\110\099\116\105\111\110" then
-local cOk,c1,c2=pcall(mod.verifyClean)
+local cOk,c1,c2=QQ(mod.verifyClean)
 if not cOk then
-ok,reason=false,"\118\101\114\105\102\121\067\108\101\097\110\040\041\032\101\114\114\111\114\101\100\058\032"..tostring(c1)
+ok,reason=false,"\118\101\114\105\102\121\067\108\101\097\110\040\041\032\101\114\114\111\114\101\100\058\032"..TS(c1)
 elseif c1==false then
-ok,reason=false,tostring(c2 or "\099\108\101\097\110\117\112\032\118\101\114\105\102\105\099\097\116\105\111\110\032\102\097\105\108\101\100")
+ok,reason=false,TS(c2 or "\099\108\101\097\110\117\112\032\118\101\114\105\102\105\099\097\116\105\111\110\032\102\097\105\108\101\100")
 end
 end
 end
@@ -11076,25 +12379,25 @@ if not ok then
 allOk=false
 end
 if ok then
-print(string.format("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\037\045\049\052\115\032\079\075",mod.Name))
+print(SFM("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\037\045\049\052\115\032\079\075",mod.Name))
 else
-print(string.format("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\037\045\049\052\115\032\070\065\073\076\069\068\032\045\032\037\115",mod.Name,tostring(reason)))
+print(SFM("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\037\045\049\052\115\032\070\065\073\076\069\068\032\045\032\037\115",mod.Name,TS(reason)))
 end
 mod.lastTestOk=ok
 mod.lastTestReason=reason
 end
 print("\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061")
-local rigOk,rigProbe=pcall(function()
-local rigs=Workspace:FindFirstChild("\082\105\103\115")
-return rigs and rigs:FindFirstChild(LocalPlayer.Name) or nil
+local rigOk,rigProbe=QQ(function()
+local rigs=FF(Workspace, "\082\105\103\115")
+return rigs and FF(rigs, LocalPlayer.Name) or nil
 end)
 local rig=rigOk and rigProbe or nil
-if rig and rig:FindFirstChild("\072\101\097\100") then
+if rig and FF(rig, "\072\101\097\100") then
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\072\101\097\100\108\101\115\115\058\032\114\105\103\032\102\111\117\110\100\032\043\032\072\101\097\100\032\112\097\114\116\032\079\075")
 else
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\072\101\097\100\108\101\115\115\058\032\114\105\103\032\102\111\117\110\100\032\043\032\072\101\097\100\032\112\097\114\116\032\070\065\073\076\069\068\032\040\114\105\103\032\097\098\115\101\110\116\032\098\101\116\119\101\101\110\032\114\111\117\110\100\115\063\041")
 end
-local meshOk,meshErr=pcall(function()
+local meshOk,meshErr=QQ(function()
 local probe=IN("\067\104\097\114\097\099\116\101\114\077\101\115\104")
 probe.BodyPart=Enum.BodyPart.RightLeg
 probe.MeshId=101851696
@@ -11106,7 +12409,7 @@ if rig and meshOk then
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\075\111\114\098\108\111\120\058\032\114\105\103\032\043\032\114\101\097\108\032\067\104\097\114\097\099\116\101\114\077\101\115\104\032\100\097\116\097\032\079\075")
 else
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\075\111\114\098\108\111\120\058\032\114\105\103\032\043\032\114\101\097\108\032\067\104\097\114\097\099\116\101\114\077\101\115\104\032\100\097\116\097\032\070\065\073\076\069\068\032\040"
-..(not rig and "\114\105\103\032\097\098\115\101\110\116" or tostring(meshErr)).."\041")
+..(not rig and "\114\105\103\032\097\098\115\101\110\116" or TS(meshErr)).."\041")
 end
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\080\104\097\115\101\032\051\058\032"..#Catalog.emotes.."\032\101\109\111\116\101\115\044\032"
 ..#Catalog.unusuals.."\032\117\110\117\115\117\097\108\115\032\105\110\032\099\097\116\097\108\111\103\032\040\114\117\110\116\105\109\101\032\115\099\097\110\041")
@@ -11120,15 +12423,15 @@ or "\070\097\105\108\117\114\101\115\032\100\101\116\101\099\116\101\100\046\032
 7
 )
 end
-pcall(function()
-local lines={"\071\104\111\115\116\032\077\101\116\104\111\100\032\115\101\108\102\045\116\101\115\116\032\064\032"..os.date("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")}
-for _,mod in ipairs(Modules) do
-table.insert(lines,string.format("\037\045\049\052\115\032\037\115\037\115",mod.Name,
+QQ(function()
+local lines={"\071\104\111\115\116\032\077\101\116\104\111\100\032\115\101\108\102\045\116\101\115\116\032\064\032"..OD("\037\089\045\037\109\045\037\100\032\037\072\058\037\077\058\037\083")}
+for _,mod in IP(Modules) do
+TBI(lines,SFM("\037\045\049\052\115\032\037\115\037\115",mod.Name,
 mod.lastTestOk and "\079\075" or "\070\065\073\076\069\068",
-(mod.lastTestOk==false and mod.lastTestReason) and("\032\045\032"..tostring(mod.lastTestReason)) or ""))
+(mod.lastTestOk==false and mod.lastTestReason) and("\032\045\032"..TS(mod.lastTestReason)) or ""))
 end
-table.insert(lines,"\099\097\116\097\108\111\103\115\058\032"..#Catalog.emotes.."\032\101\109\111\116\101\115\044\032"..#Catalog.unusuals.."\032\117\110\117\115\117\097\108\115")
-writefile("\071\077\095\115\101\108\102\116\101\115\116\046\116\120\116",table.concat(lines,"\010"))
+TBI(lines,"\099\097\116\097\108\111\103\115\058\032"..#Catalog.emotes.."\032\101\109\111\116\101\115\044\032"..#Catalog.unusuals.."\032\117\110\117\115\117\097\108\115")
+WF("\071\077\095\115\101\108\102\116\101\115\116\046\116\120\116",TCN(lines,"\010"))
 end)
 return allOk
 end
@@ -11138,10 +12441,10 @@ print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\085\078\
 if gmSaveConfig then
 gmSaveConfig()
 end
-for _,mod in ipairs(Modules) do
-pcall(mod.disable)
+for _,mod in IP(Modules) do
+QQ(mod.disable)
 end
-pcall(function()
+QQ(function()
 if zzV1.root then
 zzV1.root:Destroy()
 end
@@ -11152,7 +12455,7 @@ zzV1.root=nil
 zzV1.toast=nil
 zzV1.setVisible=nil
 end)
-pcall(function()
+QQ(function()
 zzV1.uiSoundSetEnabled(false)
 end)
 GM_ENV["\095\095\071\072\079\083\084\095\077\069\084\072\079\068\095\065\067\084\073\086\069"]=nil
@@ -11160,17 +12463,20 @@ GM_ENV["\071\072\079\083\084\095\077\069\084\072\079\068\095\076\079\065\068\069
 print("\091\071\104\111\115\116\032\077\101\116\104\111\100\093\032\032\085\110\108\111\097\100\101\100\032\099\108\101\097\110\108\121\046\032\071\117\097\114\100\032\102\108\097\103\115\032\099\108\101\097\114\101\100\032\045\032\115\097\102\101\032\116\111\032\114\101\045\101\120\101\099\117\116\101\046")
 print("\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061\061")
 end
+if zzV1["\102\105\110\097\108\065\112\112\108\121"] then
+QQ(zzV1["\102\105\110\097\108\065\112\112\108\121"])
+end
 if fadeSplash then
 fadeSplash()
 end
 markStep("\098\111\111\116\032\099\111\109\112\108\101\116\101")
 end
-local okBoot,bootReport=xpcall(body,function(err)
-local okT,trace=pcall(debug.traceback,err,2)
+local okBoot,bootReport=xQQ(body,function(err)
+local okT,trace=QQ(debug.traceback,err,2)
 if okT and type(trace)=="\115\116\114\105\110\103" and #trace>0 then
 return trace
 end
-return tostring(err)
+return TS(err)
 end)
 if not okBoot then
 bootCrash(bootReport)
