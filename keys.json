@@ -147,6 +147,16 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "40121b42e974c22fc302c4f0c20c55915b0ffce422ed4f1b87f507ea5bb7e595",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792335159,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
