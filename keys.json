@@ -35,7 +35,8 @@
       "duration": 2592000,
       "activatedAt": 1791503274,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "b1c64cca0e6c3c9e631f3c10d2ae862455e033c35d3f2f48ff7c5e4d9331120d",
