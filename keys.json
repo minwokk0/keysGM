@@ -187,6 +187,17 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "b2db70801c8bbde45925de26db71473dd784030d3c9008bf785e95a452cb7f6a",
+      "user": "Misshannixa",
+      "expires": 1792515060,
+      "duration": 172800,
+      "rank": "wraith",
+      "platform": "pc",
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
