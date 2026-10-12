@@ -119,61 +119,11 @@
       "active": false
     },
     {
-      "hash": "f186294db97e6010425fcf46b99f30825f0d32c340b87b79e2566c251388a6a6",
-      "user": "ksjsnhsjsbdn",
-      "expires": 1792332534,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
-      "hash": "70090a66cf4c1f4b90558323767723770e9bb50ce9a7e90b88f512bed6dd5b90",
-      "user": "ksjsnhsjsbdn",
-      "expires": 1792334061,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
       "hash": "a6668da2d23fdda336c0b8d7b9e963d6767a73fcb7ce27a8d5bfd24af80bb944",
       "user": "Misshannixa",
       "expires": 1792334220,
       "duration": 172800,
       "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
-      "hash": "40121b42e974c22fc302c4f0c20c55915b0ffce422ed4f1b87f507ea5bb7e595",
-      "user": "ksjsnhsjsbdn",
-      "expires": 1792335159,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
-      "hash": "b1640ee6194f326f4841ddb3fea4fcbca1abc15fee6d3a11e6b23b87141a4a51",
-      "user": "ksjsnhsjsbdn",
-      "expires": 1792335220,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
-      "hash": "5c3ecdf8d51bdd7b5fb7c9356b05ef27e0b76b38369abe1e8ab50170900d54d7",
-      "user": "ksjsnhsjsbdn",
-      "expires": 1792795755,
-      "duration": 604800,
-      "rank": "esmerald",
       "activatedAt": null,
       "note": "",
       "active": false
@@ -234,6 +184,17 @@
       "note": "",
       "active": true,
       "paused": true
+    },
+    {
+      "hash": "6f31ee935523e1120f4b4f3fd4b1338dbd93968dd0c8260c388795c7117e6577",
+      "user": "ksjsnhsjsbdn",
+      "expires": 4945974576,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
@@ -352,6 +313,66 @@
       "note": "",
       "active": false,
       "archivedAt": 1791556620,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "f186294db97e6010425fcf46b99f30825f0d32c340b87b79e2566c251388a6a6",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792332534,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791769776,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "70090a66cf4c1f4b90558323767723770e9bb50ce9a7e90b88f512bed6dd5b90",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792334061,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791769776,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "40121b42e974c22fc302c4f0c20c55915b0ffce422ed4f1b87f507ea5bb7e595",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792335159,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791769776,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "b1640ee6194f326f4841ddb3fea4fcbca1abc15fee6d3a11e6b23b87141a4a51",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792335220,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791769776,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "5c3ecdf8d51bdd7b5fb7c9356b05ef27e0b76b38369abe1e8ab50170900d54d7",
+      "user": "ksjsnhsjsbdn",
+      "expires": 1792795755,
+      "duration": 604800,
+      "rank": "esmerald",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1791769776,
       "archivedReason": "revocada"
     }
   ]
