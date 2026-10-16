@@ -216,7 +216,8 @@
       "platform": "pc",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "eef59b86735b621e17a36afbdc6cf884d37a77c4c617c976ff0ebc193029ff13",
