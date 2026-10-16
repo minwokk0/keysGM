@@ -240,7 +240,8 @@
       "platform": "mobile",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "890b103ba31cab41e5674960b328483bfdb7deb9de4e0c8d2a2bd17dacb27196",
