@@ -245,7 +245,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": true
+      "paused": false
     },
     {
       "hash": "6551a956e54e36c66305154241db613f5645b903a1cdfd4d266807fec2e4e9ab",
