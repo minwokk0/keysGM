@@ -46,7 +46,7 @@
       "duration": 2592000,
       "activatedAt": 1791503131,
       "note": "",
-      "active": true,
+      "active": false,
       "paused": true
     },
     {
