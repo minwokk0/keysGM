@@ -2,16 +2,6 @@
   "version": 3,
   "keys": [
     {
-      "hash": "ceba685b27f4c8d249b866dd748e13f826d00df120d87cdede722740cfe86546",
-      "user": "dnwkdnwls",
-      "expires": 1792075679,
-      "duration": 172800,
-      "activatedAt": 1791503282,
-      "note": "",
-      "active": false,
-      "paused": false
-    },
-    {
       "hash": "ceb0e592cdda67b5a4c295c4a88c3df5222dca59b320027c8388b00f8f955e72",
       "user": "Cristian_a47",
       "expires": 1792077041,
@@ -264,6 +254,17 @@
       "activatedAt": null,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "81e381ba735e4a255349c36d71d527683587f04f7afbb4c99550369baf1f9f9f",
+      "user": "dnwkdnwls",
+      "expires": 4946405625,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": null,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
@@ -442,6 +443,18 @@
       "note": "",
       "active": false,
       "archivedAt": 1791769776,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "ceba685b27f4c8d249b866dd748e13f826d00df120d87cdede722740cfe86546",
+      "user": "dnwkdnwls",
+      "expires": 1792075679,
+      "duration": 172800,
+      "activatedAt": 1791503282,
+      "note": "",
+      "active": false,
+      "paused": false,
+      "archivedAt": 1792200826,
       "archivedReason": "revocada"
     }
   ]
