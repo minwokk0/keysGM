@@ -184,7 +184,8 @@
       "platform": "pc",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "71e6fb8d65a1de446a75421cc89d032a1f7162eaf1edcaf8df4a45a369b82dd6",
@@ -208,7 +209,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": false
+      "paused": true
     },
     {
       "hash": "eef59b86735b621e17a36afbdc6cf884d37a77c4c617c976ff0ebc193029ff13",
@@ -220,7 +221,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": false
+      "paused": true
     },
     {
       "hash": "49f7414d66b148b3b597f8f09d2f24ba1c209db611f4af561542080ac97f6db1",
@@ -255,7 +256,8 @@
       "platform": "pc",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "81e381ba735e4a255349c36d71d527683587f04f7afbb4c99550369baf1f9f9f",
@@ -266,7 +268,8 @@
       "platform": "pc",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     }
   ],
   "archived": [
