@@ -197,7 +197,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": true
+      "paused": false
     },
     {
       "hash": "fca0090b6d10509e62b9015ed6ce972a31608cf3e5190a1e32cb8d54df17b84b",
