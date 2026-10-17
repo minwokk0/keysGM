@@ -176,30 +176,6 @@
       "paused": true
     },
     {
-      "hash": "6f31ee935523e1120f4b4f3fd4b1338dbd93968dd0c8260c388795c7117e6577",
-      "user": "ksjsnhsjsbdn",
-      "expires": 4945974576,
-      "duration": 3153600000,
-      "rank": "eclipse",
-      "platform": "pc",
-      "activatedAt": null,
-      "note": "",
-      "active": false,
-      "paused": false
-    },
-    {
-      "hash": "71e6fb8d65a1de446a75421cc89d032a1f7162eaf1edcaf8df4a45a369b82dd6",
-      "user": "ksjsnhsjsbdn",
-      "expires": 4945974582,
-      "duration": 3153600000,
-      "rank": "eclipse",
-      "platform": "mobile",
-      "activatedAt": null,
-      "note": "",
-      "active": false,
-      "paused": false
-    },
-    {
       "hash": "fca0090b6d10509e62b9015ed6ce972a31608cf3e5190a1e32cb8d54df17b84b",
       "user": "jisusxdpera",
       "expires": 4946228493,
@@ -290,6 +266,17 @@
       "rank": "wraith",
       "platform": "pc",
       "activatedAt": 1792209842,
+      "note": "",
+      "active": true
+    },
+    {
+      "hash": "56155edbfe94212d17002d04f05e0820978d800517715a8a0dda60cdb7303b8b",
+      "user": "ksjsnhsjsbdn",
+      "expires": 4945852800,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": 1792252800,
       "note": "",
       "active": true
     }
@@ -482,6 +469,34 @@
       "active": false,
       "paused": false,
       "archivedAt": 1792200826,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "6f31ee935523e1120f4b4f3fd4b1338dbd93968dd0c8260c388795c7117e6577",
+      "user": "ksjsnhsjsbdn",
+      "expires": 4945974576,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "paused": false,
+      "archivedAt": 1792252800,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "71e6fb8d65a1de446a75421cc89d032a1f7162eaf1edcaf8df4a45a369b82dd6",
+      "user": "ksjsnhsjsbdn",
+      "expires": 4945974582,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "mobile",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "paused": false,
+      "archivedAt": 1792252800,
       "archivedReason": "revocada"
     }
   ]
