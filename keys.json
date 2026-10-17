@@ -270,6 +270,17 @@
       "note": "",
       "active": true,
       "paused": true
+    },
+    {
+      "hash": "d272ef8ee9d6527a2389d0d6d3e69059a1d77060c896189072f7e1dcaaa67478",
+      "user": "vicenteromero13",
+      "expires": 4945808237,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": 1792208237,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
