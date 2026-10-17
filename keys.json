@@ -196,7 +196,7 @@
       "platform": "mobile",
       "activatedAt": null,
       "note": "",
-      "active": true,
+      "active": false,
       "paused": false
     },
     {
