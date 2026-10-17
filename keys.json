@@ -281,6 +281,17 @@
       "activatedAt": 1792208237,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "8cae2f7f0a216b34cbe532aea40027294785e5af35b792e13d9f469454bfea17",
+      "user": "d4arrs",
+      "expires": 1792382642,
+      "duration": 172800,
+      "rank": "wraith",
+      "platform": "pc",
+      "activatedAt": 1792209842,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
