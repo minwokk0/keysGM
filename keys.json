@@ -173,7 +173,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": false
+      "paused": true
     },
     {
       "hash": "6f31ee935523e1120f4b4f3fd4b1338dbd93968dd0c8260c388795c7117e6577",
@@ -195,7 +195,8 @@
       "platform": "mobile",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "fca0090b6d10509e62b9015ed6ce972a31608cf3e5190a1e32cb8d54df17b84b",
@@ -231,7 +232,7 @@
       "activatedAt": null,
       "note": "",
       "active": true,
-      "paused": false
+      "paused": true
     },
     {
       "hash": "890b103ba31cab41e5674960b328483bfdb7deb9de4e0c8d2a2bd17dacb27196",
@@ -242,7 +243,8 @@
       "platform": "mobile",
       "activatedAt": null,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "6551a956e54e36c66305154241db613f5645b903a1cdfd4d266807fec2e4e9ab",
