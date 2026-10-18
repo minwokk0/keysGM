@@ -290,6 +290,17 @@
       "activatedAt": 1792252805,
       "note": "",
       "active": true
+    },
+    {
+      "hash": "19bf14463a57a9b46bc8e00e1fe87c755825a0b5542dfae5aeeb2aca09a3f0c5",
+      "user": "jxsderlis",
+      "expires": 4945960882,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": 1792360882,
+      "note": "",
+      "active": true
     }
   ],
   "archived": [
