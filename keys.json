@@ -99,26 +99,6 @@
       "paused": false
     },
     {
-      "hash": "7f112fd301748bffae4d6b1fe20da00b172f6d20a6e9f678c8b3f800e0ec1e48",
-      "user": "Misshannixa",
-      "expires": 1792328011,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": 1791550431,
-      "note": "",
-      "active": false
-    },
-    {
-      "hash": "a6668da2d23fdda336c0b8d7b9e963d6767a73fcb7ce27a8d5bfd24af80bb944",
-      "user": "Misshannixa",
-      "expires": 1792334220,
-      "duration": 172800,
-      "rank": "wraith",
-      "activatedAt": null,
-      "note": "",
-      "active": false
-    },
-    {
       "hash": "958e95cb3824e853ef84721b239628f40b85b833b64346a1d39cfc584b48cfc1",
       "user": "Mr_Goku55",
       "expires": 1792508831,
@@ -128,17 +108,6 @@
       "note": "",
       "active": false,
       "paused": true
-    },
-    {
-      "hash": "b2db70801c8bbde45925de26db71473dd784030d3c9008bf785e95a452cb7f6a",
-      "user": "Misshannixa",
-      "expires": 1792515060,
-      "duration": 172800,
-      "rank": "wraith",
-      "platform": "pc",
-      "activatedAt": null,
-      "note": "",
-      "active": false
     },
     {
       "hash": "21591acf1a9180545c8c438c949133a970e0856d25b852712843da3928689f86",
@@ -299,6 +268,17 @@
       "rank": "eclipse",
       "platform": "pc",
       "activatedAt": 1792360882,
+      "note": "",
+      "active": true
+    },
+    {
+      "hash": "6a17ee93ffbea04c239e3cc598b8989f06a0b1df255946dbccaa91e2b4f42ac1",
+      "user": "Misshannixa",
+      "expires": 4946024411,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "mobile",
+      "activatedAt": 1792424411,
       "note": "",
       "active": true
     }
@@ -519,6 +499,43 @@
       "active": false,
       "paused": false,
       "archivedAt": 1792252800,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "7f112fd301748bffae4d6b1fe20da00b172f6d20a6e9f678c8b3f800e0ec1e48",
+      "user": "Misshannixa",
+      "expires": 1792328011,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": 1791550431,
+      "note": "",
+      "active": false,
+      "archivedAt": 1792424411,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "a6668da2d23fdda336c0b8d7b9e963d6767a73fcb7ce27a8d5bfd24af80bb944",
+      "user": "Misshannixa",
+      "expires": 1792334220,
+      "duration": 172800,
+      "rank": "wraith",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1792424411,
+      "archivedReason": "revocada"
+    },
+    {
+      "hash": "b2db70801c8bbde45925de26db71473dd784030d3c9008bf785e95a452cb7f6a",
+      "user": "Misshannixa",
+      "expires": 1792515060,
+      "duration": 172800,
+      "rank": "wraith",
+      "platform": "pc",
+      "activatedAt": null,
+      "note": "",
+      "active": false,
+      "archivedAt": 1792424411,
       "archivedReason": "revocada"
     }
   ]
