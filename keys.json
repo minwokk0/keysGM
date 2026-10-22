@@ -137,7 +137,8 @@
       "platform": "mobile",
       "activatedAt": 1792252805,
       "note": "",
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "19bf14463a57a9b46bc8e00e1fe87c755825a0b5542dfae5aeeb2aca09a3f0c5",
