@@ -199,7 +199,8 @@
       "rank": "eclipse",
       "platform": "pc",
       "activatedAt": 1792608841,
-      "active": true
+      "active": true,
+      "paused": true
     }
   ],
   "archived": [
