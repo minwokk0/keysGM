@@ -186,7 +186,8 @@
       "rank": "wraith",
       "platform": "pc",
       "activatedAt": 1792568842,
-      "active": true
+      "active": true,
+      "paused": true
     },
     {
       "hash": "84ba842454d92a860480fd82f83e052cbbaa599a3df77dc8db9ca11d343493ad",
