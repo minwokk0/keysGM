@@ -126,7 +126,7 @@
       "activatedAt": 1792252800,
       "note": "",
       "active": true,
-      "paused": true
+      "paused": false
     },
     {
       "hash": "211747afdb6d90f34bcea53fd1173962da525154d6923475c21e3f52719263ca",
