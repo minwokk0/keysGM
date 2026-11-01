@@ -249,6 +249,18 @@
       "platform": "pc",
       "activatedAt": 1792894711,
       "active": true
+    },
+    {
+      "hash": "068b75c77f54326c33a04f193d62e0cd5c22a289b61fe11b9280e3486ee9b9d4",
+      "keyText": "MGZX-U5A8",
+      "user": "Misshannixa",
+      "discord": "",
+      "expires": 1793664581,
+      "duration": 172800,
+      "rank": "wraith",
+      "platform": "pc",
+      "activatedAt": 1793491781,
+      "active": true
     }
   ],
   "archived": [
