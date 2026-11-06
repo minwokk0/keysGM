@@ -285,6 +285,18 @@
       "platform": "pc",
       "activatedAt": 1793588091,
       "active": true
+    },
+    {
+      "hash": "835eea696ab01b2f73c9b51755ef42615bb270148db890000e0f124518cf2b99",
+      "keyText": "8TX3-63FE",
+      "user": "howgi53",
+      "discord": "",
+      "expires": 1794590900,
+      "duration": 604800,
+      "rank": "esmerald",
+      "platform": "pc",
+      "activatedAt": 1793986100,
+      "active": true
     }
   ],
   "archived": [
