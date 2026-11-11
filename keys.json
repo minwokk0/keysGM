@@ -297,6 +297,18 @@
       "platform": "pc",
       "activatedAt": 1793986100,
       "active": true
+    },
+    {
+      "hash": "b5a6bf6be4aad7947b5b2cb8cfe4fd1852f5906257dc6238f389718e1ff71f77",
+      "keyText": "9MWT-Z69F",
+      "user": "Cristian_a47",
+      "discord": "",
+      "expires": 4948019610,
+      "duration": 3153600000,
+      "rank": "eclipse",
+      "platform": "pc",
+      "activatedAt": 1794419610,
+      "active": true
     }
   ],
   "archived": [
